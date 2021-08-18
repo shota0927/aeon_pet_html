@@ -1,0 +1,24 @@
+.anchor-text {
+  display: inline-block;
+  color: $color-main;
+  text-decoration: underline;
+}
+
+.anchor-text__right-arrow {
+  display: inline-block;
+  margin-right: 10px;
+  border: 0px;
+  border-top: solid 1px $color-main;
+  border-right: solid 1px $color-main;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateY(-50%);
+  width: 8px;
+  height: 8px;
+}
+
+.anchor-text__last-arrow {
+  @include _arrow-right;
+  border-bottom: solid 1px $color-main;
+  border-right: solid 1px $color-main;
+}

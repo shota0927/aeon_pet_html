@@ -1,0 +1,39 @@
+@import "setting/reset";
+@import "setting/setting";
+@import "mixin/button-base";
+@import "mixin/button-icon";
+@import "mixin/arrow-right";
+@import "module/header";
+@import "module/category-title";
+@import "module/most-important-button";
+@import "module/second-important-button";
+@import "module/inactive-button";
+@import "module/sub-button";
+@import "module/logout-button";
+@import "module/anchor-text";
+@import "module/table";
+@import "module/footer";
+@import "module/calendar";
+@import "module/search";
+@import "module/accordion";
+@import "module/_link";
+@import "module/circle-icon";
+@import "module/switch-on-off";
+@import "module/switch-check";
+@import "module/checkbox";
+@import "module/radio";
+@import "module/circle-buttons";
+@import "module/counter";
+@import "module/pager";
+@import "module/required-icon";
+@import "module/tab";
+@import "module/breadcrumb";
+@import "module/input-area";
+@import "module/send";
+@import "module/textarea";
+@import "module/check-radio";
+@import "page/test";
+
+.test{
+  background-color: #fff;
+}

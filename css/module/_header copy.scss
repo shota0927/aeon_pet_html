@@ -1,0 +1,116 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #fff;
+  @include mq(md) {
+    height: 80px;
+  }
+}
+.header__left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__logo{
+  margin-left: 10px;
+  display: block;
+  @include mq(md) {
+    margin-left: 20px;
+  }
+}
+.header__logo a{
+  display: block;
+}
+.header__logo-pc{
+  width: 240px;
+  height: 54px;
+}
+.header__logo-sp{
+  width: 210px;
+  height: 42px;
+}
+.header__search{
+  margin-left: 60px;
+  display: none;
+  @media screen and (min-width: 940px) {
+    display: block;
+  }
+}
+.header__search a{
+  display: block;
+}
+.header__search img{
+  width: 180px;
+  height: 40px;
+}
+.header__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before{
+    display: none;
+    @media screen and (min-width: 940px) {
+      display: block;
+      position: absolute;
+      content: "ご予約には会員登録が必要となります。";
+      width: 180px;
+      height: auto;
+      bottom: -16px;
+      right: 0;
+      font-size: 1rem;
+    }
+  }
+}
+.header__login{
+  display: none;
+  @media screen and (min-width: 940px) {
+    display: block;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid $color-accent-brown;
+    color: $color-accent-brown;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    width: 145px;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+.header__member{
+  display: none;
+  @media screen and (min-width: 940px) {
+    display: block;
+    margin-left: 10px;
+    background-color: $color-accent-brown;
+    color: #fff;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    width: 145px;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+.hamburger__menu{
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.hamburger__menu img{
+  width: 48px;
+  height: 48px;
+  @include mq(md) {
+    width: 55px;
+    height: 55px;
+  }
+}
