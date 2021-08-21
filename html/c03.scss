@@ -1,0 +1,174 @@
+@import "./_CommonVariable.scss";
+
+.content {
+    &__title {
+        text-align: center;
+        color: $main_color_green
+    }
+
+    &__formlist {
+        list-style: none;
+    }
+}
+
+.form {
+    >* {
+        display: inline-block;
+        vertical-align: middle; 
+    }
+}
+
+
+
+
+.radio__wrapper--individual {
+    height: auto;
+}
+
+.select__wrapper--shevron {
+    width: auto;
+}
+
+#radio {
+    &__sex {
+        &-man {
+            &::after {
+                content: "男性"
+            }
+        }
+
+        &-woman {
+            &::after {
+                content: "女性"
+            }
+        }
+
+        &-noreply {
+            &::after {
+                content: "無回答"
+            }
+        }
+
+    }
+
+    &__dm {
+        &-yes {
+            &::after {
+                content: "はい"
+            }
+        }
+
+        &-no {
+            &::after {
+                content: "いいえ"
+            }
+        }
+    }
+}
+
+.radio__wrapper--item::after {
+    content: "";
+}
+
+.input__area--default {
+    width: inherit;
+}
+
+@media all and(min-width: 1336px) {
+    .content {
+        width: 930px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 20px; 
+    }
+
+    .form {
+        margin-bottom: 35px;
+
+        &__title {
+            width: 248px;
+            margin-right: 20px;
+        }
+
+        &__label{
+            display: inline-block;
+        }
+
+        &__field{
+            display: inline-block;
+            width: 625px;
+        }
+    }
+
+
+
+    .name-field {
+        width: 191px;
+        display: inline-block;
+        
+
+        &__name-label {
+            display: inline-block;
+        }
+
+        &__name-text {
+            width: 160px;
+            display: inline-block;
+            margin-right: 18px;
+        }
+    }
+
+    .sex-field{
+        width: 280px;
+
+        >*{
+            display: inline-block;
+            width: 72px;
+            margin-right: 10px;
+        }
+    }
+
+    .birth-field {
+        width: 280px;
+
+        >*{
+            display: inline-block;
+            margin-right: 2px;
+        }
+
+        &__year{
+            width: 100px;
+        }
+
+        &__month, &__day{
+            width: 80px;
+        }
+    }
+
+    .phone-field {
+        width: 341px;
+    }
+
+    .representative-field{
+        width: 625px;
+        display: inline-block;
+        margin: 0;
+
+        &__text{
+            display: inline-block;
+            width: 230px;
+        }
+
+        &__caution{
+            font-size: 10px;
+        }
+    }
+
+    .postal-field{
+        width: 211px;
+
+        &__search-button{
+            width: 81px;
+        }
+    }
+}
