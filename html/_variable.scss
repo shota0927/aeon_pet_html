@@ -1,0 +1,12 @@
+$main-color-green: #6F8D1B;
+$store-color: #608120;
+$address-color: #333333;
+$not-sans: "Noto Sans JP";
+$lato: "Lato";
+
+@mixin font-shape($font-color, $font-size, $font-family: "Noto Sans JP") {
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: normal;
+    font-family: $font-family, 'san-serif';
+}

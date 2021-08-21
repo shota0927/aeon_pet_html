@@ -1,0 +1,223 @@
+@import "_variable.scss";
+@import "./aeon_pet_html/css/setting/_setting.scss";
+
+.l__inner {
+    padding: 0px;
+
+    .tab__wrapper {
+        margin: 0 auto;
+
+    }
+
+    .text__wrapper {
+        padding-top: 1rem;
+    }
+}
+
+.content {
+    width: 100%;
+
+    &__title {
+        @include font-shape($color-main, 30px);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__store {
+        background-color: #F2F5E9;
+        width: 100%;
+    }
+
+    &__map {
+        width: 100%;
+    }
+}
+
+.tab__store {
+    display: block;
+}
+
+.tab__map {
+    display: none;
+}
+
+.storelist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.store {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 450px;
+    height: 237px;
+    margin: 15px 15px 15px;
+    padding: 2em;
+
+    &__name {
+        @include font-shape($color-main, 18px, $lato);
+
+    }
+
+    &__info-list {
+        @include font-shape($color-text-main, 16px);
+        height: 145px;
+    }
+
+    &__icon {
+        width: 1em;
+    }
+}
+
+.google-map {
+    display: block;
+
+    &__map {
+        display: block;
+        margin-top: 5%;
+    }
+
+    &__button {
+        margin: 5% auto 10% auto;
+    }
+}
+
+.address-info {
+    &__postal {
+        @include font-shape($color-text-main, 16px);
+        display: inline-block;
+    }
+
+    &__address {
+        @include font-shape($color-text-main, 16px);
+        margin-left: 19px;
+    }
+}
+
+.operation-info {
+    &__time {
+        @include font-shape($color-text-main, 16px);
+        display: inline-block;
+
+        p {
+            display: inline-block;
+        }
+    }
+
+    &__phone {
+        @include font-shape($color-text-main, 16px);
+        display: inline-block;
+        margin-left: 16px;
+
+        p {
+            display: inline-block;
+            border-bottom: solid 1px $color-text-main;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.second-important-button {
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+@media all and(min-width: 681px) {
+    .tab__section {
+        min-width: 930px;
+    }
+
+    .l__inner {
+        .tab__wrapper {
+            width: 930px;
+            margin: 0 auto;
+
+        }
+    }
+
+    .content {
+        width: 100%;
+
+        &__title {
+            @include font-shape($color-main, 30px);
+            width: 930px;
+        }
+
+        &__store {
+            width: 100%;
+        }
+    }
+
+    .storelist {
+        width: 930px;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+
+    .google-map {
+        width: 930px;
+        margin: 0 auto;
+        padding: 15px 0;
+
+        &__button {
+            width: 277px;
+        }
+    }
+
+    .store:nth-child(2n+1) {
+        margin: 15px 15px 15px 0;
+    }
+
+    .store:nth-child(2n) {
+        margin: 15px 0px 15px 15px;
+    }
+}
+
+@media all and(max-width: 680px) {
+    .tab__section {
+        min-width: 375px;
+    }
+
+    .l__inner {
+        .tab__wrapper {
+            width: 375px;
+            margin: 0 auto;
+
+        }
+    }
+
+    .storelist {
+        width: 355px;
+        margin: 0 auto;
+    }
+
+    .google-map {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 0;
+
+        &__map {
+            width: 100%;
+            height: 480px;
+        }
+
+        &__button {
+            width: 277px;
+        }
+    }
+
+    .store {
+        width: 355px;
+        margin: 15px 0;
+    }
+
+    .operation-info {
+        &__phone {
+            display: block;
+            margin: 0;
+        }
+    }
+}
