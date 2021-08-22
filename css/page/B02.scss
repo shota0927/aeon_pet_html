@@ -1,16 +1,12 @@
 @import "../setting/_setting.scss";
 
-$main-color-green: #6F8D1B;
-$store-color: #608120;
-$address-color: #333333;
-$not-sans: "Noto Sans JP";
 $lato: "Lato";
 
-@mixin font-shape($font-color, $font-size: inherit, $font-family: ($font-family-base, 1)) {
+@mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
     font-size: $font-size;
     color: $font-color;
     font-weight: normal;
-    font-family: $font-family, 'san-serif';
+    font-family: $font-family, nth($font-family-base, 3);
 }
 
 .l__inner {
@@ -80,7 +76,7 @@ footer,
     margin: 15px 0;
 
     &__name {
-        @include font-shape($color-main, 1.6rem, ($font-family-base, 2));
+        @include font-shape($color-main, 1.6rem, nth($font-family-base, 2));
     }
 
     &__info-list {
@@ -188,7 +184,7 @@ footer,
         height: 237px;
 
         &__name {
-            @include font-shape($color-main, 1.8rem, $lato);
+            @include font-shape($color-main, 1.8rem, nth($font-family-base, 2));
         }
 
         &__info-list {
