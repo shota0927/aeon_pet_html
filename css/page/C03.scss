@@ -1,9 +1,16 @@
-@import "./_CommonVariable.scss";
+@import "../setting/_setting.scss";
+
+@mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: normal;
+    font-family: $font-family, nth($font-family-base, 3);
+}
 
 .content {
     &__title {
         text-align: center;
-        color: $main_color_green
+        color: $color-main;
     }
 
     &__formlist {
@@ -14,7 +21,7 @@
 .form {
     >* {
         display: inline-block;
-        vertical-align: middle; 
+        vertical-align: middle;
     }
 }
 
@@ -79,7 +86,7 @@
         width: 930px;
         margin: 0 auto;
         padding-left: 10px;
-        padding-right: 20px; 
+        padding-right: 20px;
     }
 
     .form {
@@ -90,11 +97,11 @@
             margin-right: 20px;
         }
 
-        &__label{
+        &__label {
             display: inline-block;
         }
 
-        &__field{
+        &__field {
             display: inline-block;
             width: 625px;
         }
@@ -105,7 +112,7 @@
     .name-field {
         width: 191px;
         display: inline-block;
-        
+
 
         &__name-label {
             display: inline-block;
@@ -118,10 +125,10 @@
         }
     }
 
-    .sex-field{
+    .sex-field {
         width: 280px;
 
-        >*{
+        >* {
             display: inline-block;
             width: 72px;
             margin-right: 10px;
@@ -131,16 +138,17 @@
     .birth-field {
         width: 280px;
 
-        >*{
+        >* {
             display: inline-block;
             margin-right: 2px;
         }
 
-        &__year{
+        &__year {
             width: 100px;
         }
 
-        &__month, &__day{
+        &__month,
+        &__day {
             width: 80px;
         }
     }
@@ -149,25 +157,25 @@
         width: 341px;
     }
 
-    .representative-field{
+    .representative-field {
         width: 625px;
         display: inline-block;
         margin: 0;
 
-        &__text{
+        &__text {
             display: inline-block;
             width: 230px;
         }
 
-        &__caution{
+        &__caution {
             font-size: 10px;
         }
     }
 
-    .postal-field{
+    .postal-field {
         width: 211px;
 
-        &__search-button{
+        &__search-button {
             width: 81px;
         }
     }
