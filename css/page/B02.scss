@@ -1,12 +1,24 @@
-@import "_variable.scss";
-@import "../css/setting/_setting.scss";
+@import "../setting/_setting.scss";
+
+$main-color-green: #6F8D1B;
+$store-color: #608120;
+$address-color: #333333;
+$not-sans: "Noto Sans JP";
+$lato: "Lato";
+
+@mixin font-shape($font-color, $font-size: inherit, $font-family: ($font-family-base, 1)) {
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: normal;
+    font-family: $font-family, 'san-serif';
+}
 
 .l__inner {
     padding: 0px;
 
     .tab__wrapper {
         margin: 0 auto;
-
+        max-width: 100%;
     }
 
     .text__wrapper {
@@ -14,11 +26,18 @@
     }
 }
 
+
+header,
+footer,
+.content {
+    min-width: 375px;
+}
+
 .content {
     width: 100%;
 
     &__title {
-        @include font-shape($color-main, 30px);
+        @include font-shape($color-main, 2.4rem);
         text-align: center;
         margin: 0 auto;
     }
@@ -43,26 +62,29 @@
 
 .storelist {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
+    width: 70%;
+    max-width: 355px;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
 .store {
     background-color: #FFFFFF;
     border-radius: 10px;
-    width: 450px;
-    height: 237px;
     padding: 2em;
 
-    &__name {
-        @include font-shape($color-main, 18px, $lato);
+    flex-basis: 45%;
+    margin: 15px 0;
 
+    &__name {
+        @include font-shape($color-main, 1.6rem, ($font-family-base, 2));
     }
 
     &__info-list {
-        @include font-shape($color-text-main, 16px);
+        @include font-shape($color-text-main, 1.4rem);
         height: 145px;
     }
 
@@ -73,6 +95,9 @@
 
 .google-map {
     display: block;
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 15px 0;
 
     &__map {
         display: block;
@@ -81,6 +106,7 @@
 
     &__button {
         margin: 5% auto 10% auto;
+        max-width: 277px;
     }
 }
 
@@ -97,22 +123,19 @@
 }
 
 .operation-info {
+
     &__time {
         @include font-shape($color-text-main, 16px);
-        display: inline-block;
 
-        p {
-            display: inline-block;
+        span {
+            margin-bottom: 5px;
         }
     }
 
     &__phone {
         @include font-shape($color-text-main, 16px);
-        display: inline-block;
-        margin-left: 16px;
 
-        p {
-            display: inline-block;
+        span {
             border-bottom: solid 1px $color-text-main;
             margin-bottom: 5px;
         }
@@ -124,69 +147,26 @@
     margin-top: 1.5em;
 }
 
-@media all and(min-width: 681px) {
+@include mq() {
 
-    .tab__section {
-        // min-width: 930px;
+    header,
+    footer,
+    .content {
+        min-width: 1336px;
     }
 
     .l__inner {
         .tab__wrapper {
-            max-width: 930px;
-            margin: 0 auto;
-
-        }
-    }
-
-    .content {
-        width: 100%;
-
-        &__title {
-            @include font-shape($color-main, 30px);
-            max-width: 930px;
-        }
-
-        &__store {
             width: 100%;
         }
     }
 
     .storelist {
-        max-width: 930px;
-        margin: 0 auto;
         padding: 15px 0;
-        overflow-x: hidden;
-        gap: 30px;
-    }
-
-    .google-map {
         max-width: 930px;
-        margin: 0 auto;
-        padding: 15px 0;
-
-        &__button {
-            max-width: 277px;
-        }
-    }
-}
-
-@media all and(max-width: 680px) {
-    .tab__section {
-        // min-width: 375px;
-    }
-
-    .l__inner {
-        .tab__wrapper {
-            max-width: 375px;
-            margin: 0 auto;
-
-        }
-    }
-
-    .storelist {
-        max-width: 355px;
-        flex-direction: column;
-        margin: 0 auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 5%;
     }
 
     .google-map {
@@ -205,14 +185,20 @@
     }
 
     .store {
-        max-width: 355px;
-        margin: 15px 0;
+        height: 237px;
+
+        &__name {
+            @include font-shape($color-main, 1.8rem, $lato);
+        }
+
+        &__info-list {
+            @include font-shape($color-text-main, 1.4rem);
+        }
     }
 
     .operation-info {
-        &__phone {
-            display: block;
-            margin: 0;
-        }
+        display: flex;
+        gap: 5%;
     }
+
 }

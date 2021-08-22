@@ -62,10 +62,17 @@ a:hover {
 
 .l__inner .tab__wrapper {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .l__inner .text__wrapper {
   padding-top: 1rem;
+}
+
+header,
+footer,
+.content {
+  min-width: 375px;
 }
 
 .content {
@@ -73,10 +80,10 @@ a:hover {
 }
 
 .content__title {
-  font-size: 30px;
+  font-size: 2.4rem;
   color: #6F8D1B;
   font-weight: normal;
-  font-family: "Noto Sans JP", "san-serif";
+  font-family: "Noto Sans JP", "Lato", sans-serif, 1, "san-serif";
   text-align: center;
   margin: 0 auto;
 }
@@ -102,35 +109,41 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
+  width: 70%;
+  max-width: 355px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
 }
 
 .store {
   background-color: #FFFFFF;
   border-radius: 10px;
-  width: 450px;
-  height: 237px;
   padding: 2em;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin: 15px 0;
 }
 
 .store__name {
-  font-size: 18px;
+  font-size: 1.6rem;
   color: #6F8D1B;
   font-weight: normal;
-  font-family: "Lato", "san-serif";
+  font-family: "Noto Sans JP", "Lato", sans-serif, 2, "san-serif";
 }
 
 .store__info-list {
-  font-size: 16px;
+  font-size: 1.4rem;
   color: #333;
   font-weight: normal;
-  font-family: "Noto Sans JP", "san-serif";
+  font-family: "Noto Sans JP", "Lato", sans-serif, 1, "san-serif";
   height: 145px;
 }
 
@@ -140,6 +153,9 @@ a:hover {
 
 .google-map {
   display: block;
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
 .google-map__map {
@@ -149,13 +165,14 @@ a:hover {
 
 .google-map__button {
   margin: 5% auto 10% auto;
+  max-width: 277px;
 }
 
 .address-info__postal {
   font-size: 16px;
   color: #333;
   font-weight: normal;
-  font-family: "Noto Sans JP", "san-serif";
+  font-family: "Noto Sans JP", "Lato", sans-serif, 1, "san-serif";
   display: inline-block;
 }
 
@@ -163,7 +180,7 @@ a:hover {
   font-size: 16px;
   color: #333;
   font-weight: normal;
-  font-family: "Noto Sans JP", "san-serif";
+  font-family: "Noto Sans JP", "Lato", sans-serif, 1, "san-serif";
   margin-left: 19px;
 }
 
@@ -171,25 +188,21 @@ a:hover {
   font-size: 16px;
   color: #333;
   font-weight: normal;
-  font-family: "Noto Sans JP", "san-serif";
-  display: inline-block;
+  font-family: "Noto Sans JP", "Lato", sans-serif, 1, "san-serif";
 }
 
-.operation-info__time p {
-  display: inline-block;
+.operation-info__time span {
+  margin-bottom: 5px;
 }
 
 .operation-info__phone {
   font-size: 16px;
   color: #333;
   font-weight: normal;
-  font-family: "Noto Sans JP", "san-serif";
-  display: inline-block;
-  margin-left: 16px;
+  font-family: "Noto Sans JP", "Lato", sans-serif, 1, "san-serif";
 }
 
-.operation-info__phone p {
-  display: inline-block;
+.operation-info__phone span {
   border-bottom: solid 1px #333;
   margin-bottom: 5px;
 }
@@ -199,53 +212,25 @@ a:hover {
   margin-top: 1.5em;
 }
 
-@media all and (min-width: 681px) {
-  .l__inner .tab__wrapper {
-    max-width: 930px;
-    margin: 0 auto;
-  }
+@media (min-width: 768px) {
+  header,
+  footer,
   .content {
-    width: 100%;
+    min-width: 1336px;
   }
-  .content__title {
-    font-size: 30px;
-    color: #6F8D1B;
-    font-weight: normal;
-    font-family: "Noto Sans JP", "san-serif";
-    max-width: 930px;
-  }
-  .content__store {
-    width: 100%;
-  }
-  .storelist {
-    max-width: 930px;
-    margin: 0 auto;
-    padding: 15px 0;
-    overflow-x: hidden;
-    gap: 30px;
-  }
-  .google-map {
-    max-width: 930px;
-    margin: 0 auto;
-    padding: 15px 0;
-  }
-  .google-map__button {
-    max-width: 277px;
-  }
-}
-
-@media all and (max-width: 680px) {
   .l__inner .tab__wrapper {
-    max-width: 375px;
-    margin: 0 auto;
+    width: 100%;
   }
   .storelist {
-    max-width: 355px;
-    -webkit-box-orient: vertical;
+    padding: 15px 0;
+    max-width: 930px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5%;
   }
   .google-map {
     width: 100%;
@@ -260,12 +245,25 @@ a:hover {
     width: 277px;
   }
   .store {
-    max-width: 355px;
-    margin: 15px 0;
+    height: 237px;
   }
-  .operation-info__phone {
-    display: block;
-    margin: 0;
+  .store__name {
+    font-size: 1.8rem;
+    color: #6F8D1B;
+    font-weight: normal;
+    font-family: "Lato", "san-serif";
+  }
+  .store__info-list {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: normal;
+    font-family: "Noto Sans JP", "Lato", sans-serif, 1, "san-serif";
+  }
+  .operation-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5%;
   }
 }
-/*# sourceMappingURL=B02_list.css.map */
+/*# sourceMappingURL=B02.css.map */
