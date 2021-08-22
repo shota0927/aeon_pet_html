@@ -1,0 +1,78 @@
+@import "../css/setting/setting";
+@import "../css/setting/reset";
+
+.pie__main__wrapper {
+    height: 1800px;
+
+    .pie__txt--pet-infomation-change {
+        text-align: center;
+        color: $color-main;
+        font-size: 26pt;
+        font-family: $font-family-base;
+        margin-top: 27px;
+    }
+
+    .pie__inputform__wrapper--pet-name {
+        text-align: center;
+        position: relative;
+        right: 14%;
+        margin-top: 50px;
+
+        .pie__txt-required-wrapper-pet-name {
+            display: inline-block;
+            width: 27.6%;
+
+            .pie__required-wrapper--pet-name {
+                display: inline-block;
+                margin-right: 7%;
+            }
+
+            .pie__txt--pet-name {
+                display: inline-block;
+                font-family: $font-family-base;
+            }
+        }
+
+        .pie__input__wrapper--pet-name {
+            display: inline-block;
+
+            .pie__input__area--pet-name {
+                width: 385px;
+            }
+        }
+    }
+
+    .pie__inputform__wrapper--pet-name-katakana {
+        text-align: center;
+        position: relative;
+        right: 11.1%;
+        margin-top: 18px;
+
+        .pie__txt-required-wrapper--pet-name-katakana {
+            display: inline-block;
+            width: 21.7%;
+
+            .pie__required-wrapper--pet-name-katakana{
+                display: inline-block;
+                margin-right: 8%;
+            }
+
+            .pie__txt--pet-neme-katakana {
+                display: inline-block;
+                font-family: $font-family-base;
+            }
+        }
+    }
+
+    .pie__input__wrapper--pet-name-katakana {
+        display: inline-block;
+
+        .pie__input__area--pet-name--katakana{
+            width: 385px;
+
+        }
+
+    }
+}
+
+

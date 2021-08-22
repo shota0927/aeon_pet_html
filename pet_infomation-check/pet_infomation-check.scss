@@ -1,0 +1,40 @@
+@import "../css/setting/setting";
+@import "../css/setting/reset";
+
+.pic__main__wrapper{
+    height: 651px;
+
+    .pic__txt--pet-infomation-detales{
+        color: $color-main;
+        text-align: center;
+        margin: 37px 0 45px 0;
+        font-size: 26pt;
+        font-weight: $font-weight-base;
+        font-family: $font-family-base;
+    }
+    .pic__btn__warpper--change{
+        text-align: right;
+        margin-right: 13.5%;
+        margin-bottom: 5px;
+    }
+    
+    .pic__table__wrapper{
+        display: inline-block;
+        width: 560px;
+        margin-left: 15%;
+
+        .pic__table--pet-infomation{
+
+            .pic__table__text--left{
+                width: 280px;
+            }
+        }
+    }
+    .pic__bottom-link{
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+

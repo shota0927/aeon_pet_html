@@ -1,0 +1,87 @@
+@import "css/setting/_reset.scss";
+@import "css/setting/_setting.scss";
+// @import "css/setting/_reset.scss";
+// @import "css/styles.scss";
+
+.bdcc__background--grey {
+    height: 735px;
+    background: #999;
+    text-align: center;
+
+    .bdcc__inner__group{
+
+        .bdcc__crossbtn__wrapper {
+    
+            .bdcc__crossbtn {
+                background-color: $color-accordion-icon;
+                position: absolute;
+                left: 83.8%;
+                top: 29%;
+
+                @media screen and(max-width:768px) {
+                    position: absolute;
+                    left: 91.6%;
+                    top: 29%;
+                    
+                }
+            }
+        }
+    
+        .bdcc__container--white {
+            background: $color-background-base;
+            display: inline-block;
+            width: 72vw;
+            height: 265px;
+            border-radius: 10px;
+            margin-top: 230px;
+
+            @media screen and(max-width: 768px){
+                width: 90%;
+            }
+    
+            .bdcc__txt--cancel {
+                color: $color-text-main;
+                margin-top: 73px;
+                font-size: 14pt;
+                font-family: $font-family-base;
+                font-weight: $font-weight-base;
+
+                @media screen and(max-width:768px){
+                    margin-top: 60px;
+                    font-size: 97.5%;
+                    
+                }
+            }
+    
+            .bdcc__btn-wrapper--yes-no {
+                margin-top: 52px;
+
+                @media screen and(max-width:768px) {
+                    margin-top: 43px;
+                    
+                }
+    
+                .bdcc__btn--no,
+                .bdcc__btn--yes {
+                    margin: 0 5px 0 5px;
+                    width: 192px;
+
+                    @media screen and(max-width:768px) {
+                        display: block;
+                        margin: 10px auto;
+                        width: 205px;
+                        
+                    }
+                }
+            }
+    
+    
+    
+    
+        }
+
+
+    }
+
+    
+}
