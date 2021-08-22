@@ -1,7 +1,5 @@
 @import "../setting/_setting.scss";
 
-$lato: "Lato";
-
 @mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
     font-size: $font-size;
     color: $font-color;
