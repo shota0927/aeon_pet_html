@@ -273,12 +273,14 @@ footer,
 
 @include mq() {
 
+    body,
     header,
     footer {
         min-width: 1336px;
     }
 
     .content {
+        box-sizing: content-box;
         width: 930px;
         margin: 0 auto;
 

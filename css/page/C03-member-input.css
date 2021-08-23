@@ -303,11 +303,14 @@ footer,
 }
 
 @media (min-width: 768px) {
+  body,
   header,
   footer {
     min-width: 1336px;
   }
   .content {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     width: 930px;
     margin: 0 auto;
   }
@@ -384,4 +387,4 @@ footer,
     left: auto;
   }
 }
-/*# sourceMappingURL=C03.css.map */
+/*# sourceMappingURL=C03-member-input.css.map */
