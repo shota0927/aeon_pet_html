@@ -191,65 +191,164 @@ select::-ms-expand {
   font-size: 26pt;
   font-family: "Noto Sans JP", "Lato", sans-serif;
   margin-top: 27px;
+  margin-bottom: 45px;
 }
 
-.pie__main__wrapper .pie__inputform__wrapper--pet-name {
-  text-align: center;
-  position: relative;
-  right: 14%;
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt {
+  display: inline-block;
+  width: 620px;
+  margin-left: 19%;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper--required-group {
+  display: inline-block;
+  width: 50px;
+  height: 1000px;
+  margin-left: 0%;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper--required-group .f11_pie__required-wrapper--1 {
+  margin: 0;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper--required-group .f11_pie__required-wrapper--2 {
+  margin-top: 45px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper--required-group .f11_pie__required-wrapper--3 {
+  margin-top: 58px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper--required-group .f11_pie__required-wrapper--4 {
+  margin-top: 58px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper--required-group .f11_pie__required-wrapper--5 {
+  margin-top: 58px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper--required-group .f11_pie__required-wrapper--6 {
+  margin-top: 47px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper--required-group .f11_pie__required-wrapper--7 {
+  margin-top: 314px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item {
+  position: absolute;
+  top: 238px;
+  display: inline-block;
+  height: 1000px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--pet-name {
+  margin-top: 0;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--pet-name-katakana {
+  margin-top: 38px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--pet-gender {
   margin-top: 50px;
 }
 
-.pie__main__wrapper .pie__inputform__wrapper--pet-name .pie__txt-required-wrapper-pet-name {
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--pet-birthdate {
+  margin-top: 51px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--type-of-pet {
+  margin-top: 51px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--valid-rabies-vaccination {
+  margin-top: 42px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--mixed-vaccine {
+  margin-top: 57px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--rabies-vaccine {
+  margin-top: 96px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--pet-breeds {
+  margin-top: 99px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn {
   display: inline-block;
-  width: 27.6%;
+  position: absolute;
+  top: 226px;
+  margin-left: 230px;
 }
 
-.pie__main__wrapper .pie__inputform__wrapper--pet-name .pie__txt-required-wrapper-pet-name .pie__required-wrapper--pet-name {
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__input__wrapper--pet-name-katakana {
+  margin-top: 17px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--pet-gander {
+  margin-top: 28px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--pet-gander .f11__pie__radiobtn-wrapper--male {
   display: inline-block;
-  margin-right: 7%;
 }
 
-.pie__main__wrapper .pie__inputform__wrapper--pet-name .pie__txt-required-wrapper-pet-name .pie__txt--pet-name {
-  display: inline-block;
-  font-family: "Noto Sans JP", "Lato", sans-serif;
-}
-
-.pie__main__wrapper .pie__inputform__wrapper--pet-name .pie__input__wrapper--pet-name {
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--pet-gander .f11__pie__radiobtn-wrapper--female {
   display: inline-block;
 }
 
-.pie__main__wrapper .pie__inputform__wrapper--pet-name .pie__input__wrapper--pet-name .pie__input__area--pet-name {
-  width: 385px;
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__group-wrapper__input-dropdown--birth-date {
+  margin-top: 29px;
 }
 
-.pie__main__wrapper .pie__inputform__wrapper--pet-name-katakana {
-  text-align: center;
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__group-wrapper__input-dropdown--birth-date .f11__input-dropdown__wrapper--birth-date-year {
+  display: inline-block;
+  width: 92px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__group-wrapper__input-dropdown--birth-date .f11__input-dropdown__wrapper--birth-date-month {
+  display: inline-block;
+  width: 73px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__group-wrapper__input-dropdown--birth-date .f11__input-dropdown__wrapper--birth-date-day {
+  display: inline-block;
+  width: 73px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--type-of-pet {
+  margin-top: 29px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--type-of-pet .f11__pie__radiobtn-wrapper--dog {
+  display: inline-block;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--type-of-pet .f11__pie__radiobtn-wrapper--cat {
+  display: inline-block;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__wrapper--mixed-vaccine-calender {
+  display: inline-block;
+  margin-top: 95px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__wrapper--mixed-vaccine-calender .f11__pie__radiobtn-wrapper--mixed-vaccine-completed {
+  display: inline-block;
   position: relative;
-  right: 11.1%;
-  margin-top: 18px;
+  top: 10px;
 }
 
-.pie__main__wrapper .pie__inputform__wrapper--pet-name-katakana .pie__txt-required-wrapper--pet-name-katakana {
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__wrapper--mixed-vaccine-calender .f11__pie__calender__wrapper--mixed-vaccine {
   display: inline-block;
-  width: 21.7%;
+  width: 165px;
 }
 
-.pie__main__wrapper .pie__inputform__wrapper--pet-name-katakana .pie__txt-required-wrapper--pet-name-katakana .pie__required-wrapper--pet-name-katakana {
-  display: inline-block;
-  margin-right: 8%;
-}
-
-.pie__main__wrapper .pie__inputform__wrapper--pet-name-katakana .pie__txt-required-wrapper--pet-name-katakana .pie__txt--pet-neme-katakana {
-  display: inline-block;
-  font-family: "Noto Sans JP", "Lato", sans-serif;
-}
-
-.pie__main__wrapper .pie__input__wrapper--pet-name-katakana {
-  display: inline-block;
-}
-
-.pie__main__wrapper .pie__input__wrapper--pet-name-katakana .pie__input__area--pet-name--katakana {
-  width: 385px;
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--mixed-vaccin-incomprete {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=F11_pet_infomation-edit.css.map */

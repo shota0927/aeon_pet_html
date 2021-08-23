@@ -122,133 +122,190 @@
     </div>
   </div>
 
+  <!-- ここから 8/23 -->
   <div class="pie__main__wrapper">
     <!-- テキスト(ペット情報変更) -->
     <div class="pie__txt__wrapper--pet-infomation-change">
       <p class="pie__txt--pet-infomation-change">ペット情報変更</p>
     </div>
-    <!-- ペットのお名前  -->
-    <div class="pie__inputform__wrapper--pet-name">
-      <div class="pie__txt-required-wrapper-pet-name">
-        <div class="icon__wrapper--required pie__required-wrapper--pet-name">
-          <p class="icon__text--required pie__txt--required--pet-name">必須</p>
+    <div class="f11_pie__wrapper--required-edititem-txt">
+      <div class="f11_pie__wrapper--required-group">
+        <div class="icon__wrapper--required f11_pie__required-wrapper f11_pie__required-wrapper--1">
+          <p class="icon__text--required f11_pie__txt--required">必須</p>
         </div>
-        <p class="pie__txt--pet-name">ペットのお名前</p>
+        <div class="icon__wrapper--required f11_pie__required-wrapper f11_pie__required-wrapper--2">
+          <p class="icon__text--required f11_pie__txt--required">必須</p>
+        </div>
+        <div class="icon__wrapper--required f11_pie__required-wrapper f11_pie__required-wrapper--3">
+          <p class="icon__text--required f11_pie__txt--required">必須</p>
+        </div>
+        <div class="icon__wrapper--required f11_pie__required-wrapper f11_pie__required-wrapper--4">
+          <p class="icon__text--required f11_pie__txt--required">必須</p>
+        </div>
+        <div class="icon__wrapper--required f11_pie__required-wrapper f11_pie__required-wrapper--5">
+          <p class="icon__text--required f11_pie__txt--required">必須</p>
+        </div>
+        <div class="icon__wrapper--required f11_pie__required-wrapper f11_pie__required-wrapper--6">
+          <p class="icon__text--required f11_pie__txt--required">必須</p>
+        </div>
+        <div class="icon__wrapper--required f11_pie__required-wrapper f11_pie__required-wrapper--7">
+          <p class="icon__text--required f11_pie__txt--required">必須</p>
+        </div>
       </div>
-      <div class="input__wrapper pie__input__wrapper--pet-name">
-        <input type="text" class="input__area--default pie__input__area--pet-name" placeholder="小太郎">
+      <!-- テキスト系  -->
+      <div class="f11_pie__wrapper__edit-item">
+        <p class="f11_pie__txt--pet-name">ペットのお名前</p>
+        <p class="f11_pie__txt--pet-name-katakana">ペットのお名前（カナ）</p>
+        <p class="f11_pie__txt--pet-gender">ペットの性別</p>
+        <p class="f11_pie__txt--pet-birthdate">ペットの生年月日</p>
+        <p class="f11_pie__txt--type-of-pet">ペットの種類</p>
+        <p class="f11_pie__txt--valid-rabies-vaccination">有効な狂犬病・ワクチン 接種</p>
+        <p class="f11_pie__txt--mixed-vaccine">混合ワクチン</p>
+        <p class="f11_pie__txt--rabies-vaccine">狂犬病ワクチン</p>
+        <p class="f11_pie__txt--pet-breeds">ペットの品種</p>
       </div>
-    </div>
+      <!-- インプット・ボタン系 -->
+      <div class="f11__pie__wrapper--input-btn">
+        <!-- インプット*２ -->
+        <div class="input__wrapper f11__pie__input__wrapper--pet-name">
+          <input type="text" class="input__area--default f11__pie__input__area--pet-name" placeholder="小太郎">
+        </div>
+        <div class="input__wrapper f11__pie__input__wrapper--pet-name-katakana">
+          <input type="text" class="input__area--default f11__pie__input__area--pet-name--katakana" placeholder="コタロウ">
+        </div>
+        <!-- ラジオボタン オス・メス-->
+        <div class="f11__pie__radiobtn-wrapper--pet-gander">
+          <div class="radio__wrapper--individual f11__pie__radiobtn-wrapper--male">
+            <label class="radio__label">
+              <div class="radio__wrapper--checked">
+                <input type="radio" name="radio2" class="radio__invisible" checked>
+                <div class="radio__indicator2"></div>
+              </div>
+            </label>
+          </div>
+          <div class="radio__wrapper--individual f11__pie__radiobtn-wrapper--female">
+            <label class="radio__label ">
+              <div class="radio__wrapper--focused">
+                <input type="radio" name="radio2" class="radio__invisible">
+                <div class="radio__indicator2"></div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <!-- インプットドロップダウン -->
+        <div class="f11__group-wrapper__input-dropdown--birth-date">
+          <div class="input__wrapper select__wrapper--shevron f11__input-dropdown__wrapper--birth-date-year">
+            <select name="" id="" class="select__wrapper is-empty">
+              <option value="" class="select__option" selected>年</option>
+              <option value="option1" class="select__option">選択済み項目1</option>
+              <option value="option2" class="select__option">選択済み項目2</option>
+            </select>
+          </div>
+          <div class="input__wrapper select__wrapper--shevron f11__input-dropdown__wrapper--birth-date-month">
+            <select name="" id="" class="select__wrapper is-empty">
+              <option value="" class="select__option" selected>月</option>
+              <option value="option1" class="select__option">選択済み項目1</option>
+              <option value="option2" class="select__option">選択済み項目2</option>
+            </select>
+          </div>
+          <div class="input__wrapper select__wrapper--shevron f11__input-dropdown__wrapper--birth-date-day">
+            <select name="" id="" class="select__wrapper is-empty">
+              <option value="" class="select__option" selected>日</option>
+              <option value="option1" class="select__option">選択済み項目1</option>
+              <option value="option2" class="select__option">選択済み項目2</option>
+            </select>
+          </div>
+        </div>
+        <!-- ラジオボタン　犬・猫 -->
+        <div class="f11__pie__radiobtn-wrapper--type-of-pet">
+          <div class="radio__wrapper--individual f11__pie__radiobtn-wrapper--dog">
+            <label class="radio__label">
+              <div class="radio__wrapper--checked">
+                <input type="radio" name="radio2" class="radio__invisible" checked>
+                <div class="radio__indicator2"></div>
+              </div>
+            </label>
+          </div>
+          <div class="radio__wrapper--individual f11__pie__radiobtn-wrapper--cat">
+            <label class="radio__label ">
+              <div class="radio__wrapper--focused">
+                <input type="radio" name="radio2" class="radio__invisible">
+                <div class="radio__indicator2"></div>
+              </div>
+            </label>
+          </div>
+        </div>
 
-    <div class="pie__inputform__wrapper--pet-name-katakana">
-      <!--ペットのお名前（カナ）-->
-      <div class="pie__txt-required-wrapper--pet-name-katakana">
-        <div class="icon__wrapper--required pie__required-wrapper--pet-name-katakana">
-          <p class="icon__text--required pie__txt--required--pet-name-katakana">必須</p>
+        <!-- ラジオボタン・カレンダー　混合・狂犬病 -->
+        <djv class="f11__pie__wrapper--mixed-vaccine-calender">
+          <div class="radio__wrapper--individual f11__pie__radiobtn-wrapper--mixed-vaccine-completed">
+            <label class="radio__label">
+              <div class="radio__wrapper--checked">
+                <input type="radio" name="radio2" class="radio__invisible" checked>
+                <div class="radio__indicator2"></div>
+              </div>
+            </label>
+          </div>
+          <div class="calendar__wrapper f11__pie__calender__wrapper--mixed-vaccine">
+            <form action="" class="box__datepicker">
+              <input type="text" id="datepicker" class="datepicker" placeholder="日付を入力してください">
+            </form>
+          </div>
+        </djv>
+        <div class="radio__wrapper--individual f11__pie__radiobtn-wrapper--mixed-vaccin-incomprete">
+          <label class="radio__label ">
+            <div class="radio__wrapper--focused">
+              <input type="radio" name="radio2" class="radio__invisible">
+              <div class="radio__indicator2"></div>
+            </div>
+          </label>
         </div>
-        <p class="pie__txt--pet-neme-katakana">ペットのお名前（カナ）</p>
+
+
+
+
+
+
+
+
       </div>
-      <div class="input__wrapper pie__input__wrapper--pet-name-katakana">
-        <input type="text" class="input__area--default pie__input__area--pet-name--katakana" placeholder="コタロウ">
+
+
+
+    </div>
+    <!-- メインここまで -->
+  </div>
+
+
+
+
+
+
+
+  <div class="radio__wrapper--individual">
+    <label class="radio__label">
+      <div class="radio__wrapper--checked">
+        <input type="radio" name="radio2" class="radio__invisible" checked>
+        <div class="radio__indicator2"></div>
       </div>
-    </div>
-    <!-- ペットの性別 -->
-    <div class="icon__wrapper--required pie__required-wrapper--3">
-      <p class="icon__text--required pie__txt--required--3">必須</p>
-    </div>
-    <p class="pie__txt--pet-gender">ペットの性別</p>
-    <div class="radio__wrapper--individual pie__radiobtn-wrapper--male">
+    </label>
+    <div class="radio__wrapper--individual">
       <label class="radio__label">
-        <div class="radio__wrapper--checked">
-          <input type="radio" name="radio2" class="radio__invisible" checked>
-          <div class="radio__indicator2"></div>
-        </div>
-      </label>
-    </div>
-    <div class="radio__wrapper--individual pie__radiobtn-wrapper--female">
-      <label class="radio__label ">
         <div class="radio__wrapper--focused">
           <input type="radio" name="radio2" class="radio__invisible">
           <div class="radio__indicator2"></div>
         </div>
       </label>
     </div>
-    <!-- ペットの生年月日 -->
-    <div class="pie__wrapper--pet-birthdate-input">
-      <div class="icon__wrapper--required pie__required-wrapper--4">
-        <p class="icon__text--required pie__txt--required--4">必須</p>
-      </div>
-      <p class="pie__txt--pet-birthdate">ペットの生年月日</p>
-
-      <div class="input__wrapper select__wrapper--shevron">
-        <select name="" id="" class="select__wrapper is-empty">
-          <option value="" class="select__option" selected>選択してください</option>
-          <option value="option1" class="select__option">選択済み項目1</option>
-          <option value="option2" class="select__option">選択済み項目2</option>
-        </select>
-      </div>
-      <div class="input__wrapper select__wrapper--shevron">
-        <select name="" id="" class="select__wrapper is-empty">
-          <option value="" class="select__option" selected>選択してください</option>
-          <option value="option1" class="select__option">選択済み項目1</option>
-          <option value="option2" class="select__option">選択済み項目2</option>
-        </select>
-      </div>
-      <div class="input__wrapper select__wrapper--shevron">
-        <select name="" id="" class="select__wrapper is-empty">
-          <option value="" class="select__option" selected>選択してください</option>
-          <option value="option1" class="select__option">選択済み項目1</option>
-          <option value="option2" class="select__option">選択済み項目2</option>
-        </select>
-      </div>
-    </div>
-    <!-- ペットの種類 -->
-    <div class="icon__wrapper--required">
-      <p class="icon__text--required">必須</p>
-    </div>
-    <p class="pie__txt--pet-neme-katakana">ペットの種類</p>
-    <div class="radio__wrapper--individual">
-      <label class="radio__label">
-        <div class="radio__wrapper--checked">
-          <input type="radio" name="radio2" class="radio__invisible" checked>
-          <div class="radio__indicator2"></div>
-        </div>
-      </label>
-      <div class="radio__wrapper--individual">
-        <label class="radio__label">
-          <div class="radio__wrapper--focused">
-            <input type="radio" name="radio2" class="radio__invisible">
-            <div class="radio__indicator2"></div>
-          </div>
-        </label>
-      </div>
-    </div>
-    <!-- 混合ワクチン -->
-    <p class="pie__txt--mixed-vaccine">混合ワクチン</p>
-    <div class="radio__wrapper--individual">
-      <label class="radio__label">
-        <div class="radio__wrapper--checked">
-          <input type="radio" name="radio2" class="radio__invisible" checked>
-          <div class="radio__indicator2"></div>
-        </div>
-      </label>
-      <div class="radio__wrapper--individual">
-        <label class="radio__label">
-          <div class="radio__wrapper--focused">
-            <input type="radio" name="radio2" class="radio__invisible">
-            <div class="radio__indicator2"></div>
-          </div>
-        </label>
-      </div>
-    </div>
+  </div>
   </div>
 
   <!-- カレンダー -->
-  <!-- <div class="calendar__wrapper"> -->
-  <!-- <form action="" class="box__datepicker"> -->
-  <!-- <input type="text" id="datepicker" class="datepicker" placeholder="日付を入力してください"> -->
-  <!-- </form> -->
-  <!-- </div> -->
+  <div class="calendar__wrapper">
+    <form action="" class="box__datepicker">
+      <input type="text" id="datepicker" class="datepicker" placeholder="日付を入力してください">
+    </form>
+  </div>
 
 
   <!-- ボタン（最重要） -->
@@ -258,7 +315,7 @@
   <!-- alt="サーチアイコン">条件を変えて再検索する</a> -->
   <!-- アンカーテキスト（右矢印） -->
   <!-- <a href="" class="anchor-text"><span class="anchor-text__right-arrow"></span>パスワードをお忘れの方へ</a> -->
-  </div>
+
 
   <!-- フッター -->
   <footer class="footer">

@@ -10,69 +10,192 @@
         font-size: 26pt;
         font-family: $font-family-base;
         margin-top: 27px;
+        margin-bottom: 45px;
     }
 
-    .pie__inputform__wrapper--pet-name {
-        text-align: center;
-        position: relative;
-        right: 14%;
-        margin-top: 50px;
+    .f11_pie__wrapper--required-edititem-txt {
 
-        .pie__txt-required-wrapper-pet-name {
-            display: inline-block;
-            width: 27.6%;
-
-            .pie__required-wrapper--pet-name {
-                display: inline-block;
-                margin-right: 7%;
-            }
-
-            .pie__txt--pet-name {
-                display: inline-block;
-                font-family: $font-family-base;
-            }
-        }
-
-        .pie__input__wrapper--pet-name {
-            display: inline-block;
-
-            .pie__input__area--pet-name {
-                width: 385px;
-            }
-        }
-    }
-
-    .pie__inputform__wrapper--pet-name-katakana {
-        text-align: center;
-        position: relative;
-        right: 11.1%;
-        margin-top: 18px;
-
-        .pie__txt-required-wrapper--pet-name-katakana {
-            display: inline-block;
-            width: 21.7%;
-
-            .pie__required-wrapper--pet-name-katakana{
-                display: inline-block;
-                margin-right: 8%;
-            }
-
-            .pie__txt--pet-neme-katakana {
-                display: inline-block;
-                font-family: $font-family-base;
-            }
-        }
-    }
-
-    .pie__input__wrapper--pet-name-katakana {
         display: inline-block;
+        width: 620px;
+        margin-left: 19%;
 
-        .pie__input__area--pet-name--katakana{
-            width: 385px;
+
+        .f11_pie__wrapper--required-group {
+            display: inline-block;
+            width: 50px;
+            height: 1000px;
+            margin-left: 0%;
+
+
+
+
+            .f11_pie__required-wrapper--1 {
+                margin: 0;
+
+            }
+
+            .f11_pie__required-wrapper--2 {
+                margin-top: 45px;
+            }
+
+            .f11_pie__required-wrapper--3 {
+                margin-top: 58px;
+            }
+
+            .f11_pie__required-wrapper--4 {
+                margin-top: 58px;
+
+            }
+
+            .f11_pie__required-wrapper--5 {
+                margin-top: 58px;
+            }
+
+            .f11_pie__required-wrapper--6 {
+                margin-top: 47px;
+            }
+
+            .f11_pie__required-wrapper--7 {
+                margin-top: 314px;
+            }
 
         }
 
+        .f11_pie__wrapper__edit-item {
+            position: absolute;
+            top: 238px;
+            display: inline-block;
+            height: 1000px;
+
+
+
+            .f11_pie__txt--pet-name {
+                margin-top: 0;
+            }
+
+            .f11_pie__txt--pet-name-katakana {
+                margin-top: 38px;
+            }
+
+            .f11_pie__txt--pet-gender {
+                margin-top: 50px;
+            }
+
+            .f11_pie__txt--pet-birthdate {
+                margin-top: 51px;
+            }
+
+            .f11_pie__txt--type-of-pet {
+                margin-top: 51px;
+            }
+
+            .f11_pie__txt--valid-rabies-vaccination {
+                margin-top: 42px;
+            }
+
+            .f11_pie__txt--mixed-vaccine {
+                margin-top: 57px;
+
+            }
+
+            .f11_pie__txt--rabies-vaccine {
+                margin-top: 96px;
+            }
+
+            .f11_pie__txt--pet-breeds {
+                margin-top: 99px;
+            }
+
+        }
+
+        .f11__pie__wrapper--input-btn {
+            display: inline-block;
+            position: absolute;
+            top: 226px;
+            margin-left: 230px;
+
+            .f11__pie__input__wrapper--pet-name-katakana {
+                margin-top: 17px;
+            }
+
+            .f11__pie__radiobtn-wrapper--pet-gander {
+
+                margin-top: 28px;
+
+                .f11__pie__radiobtn-wrapper--male {
+                    display: inline-block;
+                }
+
+                .f11__pie__radiobtn-wrapper--female {
+                    display: inline-block;
+                }
+            }
+
+            .f11__group-wrapper__input-dropdown--birth-date {
+                margin-top: 29px;
+
+                .f11__input-dropdown__wrapper--birth-date-year {
+                    display: inline-block;
+                    width: 92px;
+                }
+
+                .f11__input-dropdown__wrapper--birth-date-month {
+                    display: inline-block;
+                    width: 73px;
+                }
+
+                .f11__input-dropdown__wrapper--birth-date-day {
+                    display: inline-block;
+                    width: 73px;
+                }
+            }
+
+            .f11__pie__radiobtn-wrapper--type-of-pet {
+
+                margin-top: 29px;
+
+                .f11__pie__radiobtn-wrapper--dog {
+
+                    display: inline-block;
+                }
+
+                .f11__pie__radiobtn-wrapper--cat {
+                    display: inline-block;
+                }
+            }
+
+            .f11__pie__wrapper--mixed-vaccine-calender {
+                display: inline-block;
+                margin-top: 95px;
+
+                .f11__pie__radiobtn-wrapper--mixed-vaccine-completed {
+                    display: inline-block;
+                    position: relative;
+                    top: 10px;
+
+                }
+
+                .f11__pie__calender__wrapper--mixed-vaccine {
+                    display: inline-block;
+                    width: 165px;
+                   
+                }
+            }
+            .f11__pie__radiobtn-wrapper--mixed-vaccin-incomprete{
+                margin-top: 20px;
+            }
+
+
+
+
+
+        }
+
+
     }
+
+
+
+
+
 }
-
-
