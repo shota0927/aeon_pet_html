@@ -94,8 +94,26 @@ footer,
   width: 100%;
 }
 
+.content__error {
+  background-color: #F5E1E2;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 .content__formlist {
   list-style: none;
+}
+
+.errorlist {
+  color: #F4451C;
+  list-style-position: inside;
+  font-size: 1.4rem;
+}
+
+.errorlist > li::before {
+  content: "・";
+  width: 3px;
 }
 
 .resistration-form {
@@ -319,6 +337,9 @@ footer,
   }
   .content__formlist {
     padding-left: 10px;
+  }
+  .errorlist {
+    font-size: 1.6rem;
   }
   .resistration-form {
     -webkit-box-align: center;

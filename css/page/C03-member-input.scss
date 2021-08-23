@@ -37,8 +37,28 @@ footer,
         width: 100%;
     }
 
+    &__error {
+        background-color: $color-error;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
     &__formlist {
         list-style: none;
+    }
+}
+
+.errorlist {
+    color: $color-alert;
+    list-style-position: inside;
+    font-size: 1.4rem;
+
+    >li {
+        &::before {
+            content: "・";
+            width: 3px;
+        }
     }
 }
 
@@ -291,6 +311,10 @@ footer,
         &__formlist {
             padding-left: 10px;
         }
+    }
+
+    .errorlist {
+        font-size: 1.6rem;
     }
 
     .resistration-form {
