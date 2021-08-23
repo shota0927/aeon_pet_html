@@ -1,0 +1,103 @@
+.main__underline{
+  color: #707070;
+}
+.main__reserve__campaign__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  padding: 20px 0;
+  margin: 20px 0 0 0;
+}
+
+.main__reserve__campaign__container{
+  background-color: #F2F5E9;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 10px 0;
+  & .checkbox__indicator2{
+    position: absolute;
+    right: 0px;
+  }
+  & .main__reserve__campaign-1{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 0 0 0;
+    & .label__wrapper--checked::after {
+      content: none;
+      top: 60%;
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+  }
+   & .main__reserve__campaign-2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 0 0 0;
+    & .label__wrapper--item:after {
+      content: none;
+      top: 60%;
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+  }
+  & .main__reserve__campaign-3{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 0 0 0;
+    & .label__wrapper--checked::after {
+      content: none;
+      top: 60%;
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+  }
+}
+.main__reserve__campaign__text-title{
+  color: #6F8D1B;
+  text-align: left;
+  font-size: 1.6rem;
+  padding: 0 0 15px 0;
+}
+
+.main__reserve__campaign__button{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 0 0 45px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__reserve__campaign{
+    & .container{
+      margin: auto;
+      width: 1010px;
+    }
+  }
+  .main__reserve__campaign__title{
+    padding: 30px 0;
+    margin: 15px 0 0 0;
+  }
+  .main__reserve__campaign__container{
+    display: inline-block;
+    & .main__reserve__campaign-1{
+      padding: 90px 0 0 0;
+    }
+    & .main__reserve__campaign-2{
+      padding: 90px 0 0 0;
+    }
+    & .main__reserve__campaign-3{
+      padding: 90px 0 0 0;
+    }
+  }
+  .main__reserve__campaign__text-title{
+    font-size: 1.8rem;
+  }
+  .main__reserve__campaign__button{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    margin: 0 0 70px 0;
+  }
+}

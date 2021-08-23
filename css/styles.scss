@@ -32,7 +32,18 @@
 @import "module/send";
 @import "module/textarea";
 @import "module/check-radio";
-@import "page/test";
+
+@import "page/C01member";
+@import "page/C04member-confirm";
+@import "page/C08pets_information-finish";
+@import "page/D02reserve-confirm";
+@import "page/D04reserve-option";
+@import "page/D05reserve-campaign";
+@import "page/D07reserve-error";
+@import "page/D08reserve-finish";
+@import "page/E05password-finish";
+@import "page/F15mypage-pets_information-finish";
+@import "page/F18mypage-interview-finish";
 
 .test{
   background-color: #fff;

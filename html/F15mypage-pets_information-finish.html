@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- meta情報 -->
-    <title>予約エラー｜イオンペット グルーミング予約サイト</title>
-    <meta name="description" content="イオンペット グルーミング予約サイトの「予約エラー」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <title>マイページ＞ペット情報（完了）｜イオンペット グルーミング予約サイト</title>
+    <meta name="description" content="イオンペット グルーミング予約サイトの「ペット情報（完了）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
     <meta name="keywords" content="" />
     <!-- reset css -->
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
     <!-- Google Fonts -->
@@ -21,30 +21,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="icon" href="" />
   </head>
 
   <body>
-    <!-- ヘッダー（ログイン） -->
+
+    <!-- ヘッダー（未ログイン） -->
     <header class="header header--non-login">
       <div class="header__left">
         <h1>
           <a href="/">
             <picture class="header__logo" aria-hidden="true">
-              <source srcset="/image/common/logo-pc.png" media="(min-width: 768px)" class="header__logo-pc"/>
-              <img src="/image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
+              <source srcset="../image/common/logo-pc.png" media="(min-width: 768px)" class="header__logo-pc"/>
+              <img src="../image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
             </picture>
           </a>
         </h1>
-        <a href="" class="header__search"><img src="/image/common/search-icon.png" alt="サーチアイコン">店舗検索・ご予約</a>
+        <a href="" class="header__search"><img src="../image/common/search-icon.png" alt="サーチアイコン">店舗検索・ご予約</a>
       </div>
       <div class="header__right">
         <div class="header__btns">
           <a href="" class="header__mypage">マイページ</a>
         </div>
         <div class="hamburger__menu js-hamburger--login">
-          <img src="/image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
+          <img src="../image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
         </div>
       </div>
       <nav class="header__nav header-nav header-nav--login">
@@ -58,75 +59,81 @@
         </div>
         <ul class="header-nav__items">
           <li class="header-nav__item">
-            <a href="#"><img class="header-nav__title-icon" src="/image/common/home-icon.png" alt="">ホーム</a>
+            <a href="#"><img class="header-nav__title-icon" src="../image/common/home-icon.png" alt="">ホーム</a>
           </li>
           <li class="header-nav__item">
-            <a href="#"><img class="header-nav__title-icon" src="/image/common/search-icon-small.png" alt="">店舗検索・ご予約</a>
+            <a href="#"><img class="header-nav__title-icon" src="../image/common/search-icon-small.png" alt="">店舗検索・ご予約</a>
           </li>
           <li class="header-nav__item">
-            <a href="#"><img class="header-nav__title-icon" src="/image/common/current-booking-icon.png" alt="">現在のご予約<span class="header-nav__number header-nav__number--booking">99</span></a>
+            <a href="#"><img class="header-nav__title-icon" src="../image/common/current-booking-icon.png" alt="">現在のご予約<span class="header-nav__number header-nav__number--booking">99</span></a>
           </li>
           <li class="header-nav__item">
-            <a href="#"><img class="header-nav__title-icon" src="/image/common/mypage-icon-green.png" alt="">マイページ</a>
+            <a href="#"><img class="header-nav__title-icon" src="../image/common/mypage-icon-green.png" alt="">マイページ</a>
           </li>
           <li class="header-nav__item">
-            <a href="#"><img class="header-nav__title-icon" src="/image/common/pet-info-icon.png" alt="">
-              ペット情報<img class="header-nav__dog-icon" src="/image/common/dog-icon.png" alt=""><span class="header-nav__number">99</span><img class="header-nav__cat-icon" src="/image/common/cat-icon.png" alt=""><span class="header-nav__number">99</span>
+            <a href="#"><img class="header-nav__title-icon" src="../image/common/pet-info-icon.png" alt="">
+              ペット情報<img class="header-nav__dog-icon" src="../image/common/dog-icon.png" alt=""><span class="header-nav__number">99</span><img class="header-nav__cat-icon" src="../image/common/cat-icon.png" alt=""><span class="header-nav__number">99</span>
             </a>
           </li>
         </ul>
         <ul class="header-nav__items">
           <li class="header-nav__item">
-            <a href="#"><img class="header-nav__title-icon" src="/image/common/booking-icon-green.png" alt="">ご予約方法</a>
+            <a href="#"><img class="header-nav__title-icon" src="../image/common/booking-icon-green.png" alt="">ご予約方法</a>
           </li>
           <li class="header-nav__item">
-            <a href="#"><img class="header-nav__title-icon" src="/image/common/mypage-icon-green.png" alt="">マイページのご利用方法</a>
+            <a href="#"><img class="header-nav__title-icon" src="../image/common/mypage-icon-green.png" alt="">マイページのご利用方法</a>
           </li>
           <div class="header-nav__logout-button">
-            <a href="" class="logout-button"><img src="/image/common/logout-icon.png" alt="ログアウトアイコン">ログアウト</a>
+            <a href="" class="logout-button"><img src="../image/common/logout-icon.png" alt="ログアウトアイコン">ログアウト</a>
           </div>
         </ul>
       </nav>
       
       <div class="header__burger-musk"></div>
     </header>
+
     <!-- パンくずリスト -->
     <div class="breadcrumb container">
       <div class="inner">
         <span class="breadcrumb__item">
           <a href="" class="brandcrumb__item-link">
-            <img src="/image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン" class="breadcrumb__item-icon">
+            <img src="../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン" class="breadcrumb__item-icon">
           </a>
         </span>
         /
         <span class="breadcrumb__item breadcrumb__item--orange">
           <a href="" class="brandcrumb__item-link">
-            予約エラー
+            マイページ
+          </a>
+        </span>
+        /
+        <span class="breadcrumb__item">
+          <a href="" class="brandcrumb__item-link">
+            ペット情報（完了）
           </a>
         </span>
       </div>
     </div>
-    <!-- main_reserve_error -->
+
+    <!-- main_mypage_pets_information_finish -->
     <hr class="main__underline">
-    <main class="main__reserve__error">
+    <main class="main__mypage__pets__information__finish">
       <div class="container">
-        <h2 class="main__reserve__error__title">予約重複</h2>
-        <div class="main__reserve__error__text-fir">
-          <p class="main__item">
-            予約が重複しています。[エラーコード:000000]
-          </p>
+        <h2 class="main__mypage__pets__information__finish__title">ペット情報登録</h2>
+        <div class="main__mypage__pets__information__finish__text">
+          <p class="main__item">ご登録ありがとうございました。</p>
         </div>
-        <div class="main__reserve__error__text-sec">
-          <p class="main__item">
-            お手数おかけしますが再度「予約カレンダー」から日時を選択の上、予約へお進みください。
-          </p>
+        <!-- ボタン（最重要） -->
+        <div class="main__mypage__pets__information__finish-button">
+          <a href="" class="most-important-button">続けてペット情報を登録</a>
         </div>
-        <!-- ボタン（予約カレンダーへ） -->
-        <div class="main__reserve__error-button">
-          <a href="" class="most-important-button">予約カレンダーへ</a>
+        <!-- アンカーテキスト（右矢印） -->
+        <div class="main__mypage__pets__information__finish-link">
+          <a href="" class="anchor-text"><span class="anchor-text__right-arrow"></span>ペット情報一覧へ戻る</a>
         </div>
       </div>
     </main>
+
     <!-- フッター -->
     <footer class="footer">
       <a class="footer__page-top-button" href="#">
@@ -134,18 +141,18 @@
       </a>
       <div class="footer__inner">
         <div class="footer__logo">
-          <img src="/image/common/footer-logo.png" alt="ロゴ">
+          <img src="../image/common/footer-logo.png" alt="ロゴ">
         </div>
         <nav class="footer__nav">
           <ul class="footer__nav-items--top">
             <li class="footer__nav-item--top">
               <a href="">
-                <img class="footer__icon" src="/image/common/booking-icon.png" alt="">ご予約方法
+                <img class="footer__icon" src="../image/common/booking-icon.png" alt="">ご予約方法
               </a>
             </li>
             <li class="footer__nav-item--top">
               <a href="">
-                <img class="footer__icon" src="/image/common/mypage-icon.png" alt="">マイページのご利用方法
+                <img class="footer__icon" src="../image/common/mypage-icon.png" alt="">マイページのご利用方法
               </a>
             </li>
           </ul>
@@ -158,17 +165,17 @@
               </li>
               <li class="footer__nav-item">
                 <a href="">
-                  <img class="footer__icon--page" src="/image/common/page-icon.png" alt="">プライバシーポリシー
+                  <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">プライバシーポリシー
                 </a>
               </li>
               <li class="footer__nav-item">
                 <a href="">
-                  <img class="footer__icon--page" src="/image/common/page-icon.png" alt="">お問い合わせ
+                  <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">お問い合わせ
                 </a>
               </li>
               <li class="footer__nav-item">
                 <a href="">
-                  <img class="footer__icon--page" src="/image/common/page-icon.png" alt="">企業情報
+                  <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">企業情報
                 </a>
               </li>
             </ul>
@@ -180,12 +187,12 @@
               </li>
               <li class="footer__nav-item">
                 <a href="">
-                  <img class="footer__icon--page" src="/image/common/page-icon.png" alt="">よくあるご質問
+                  <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">よくあるご質問
                 </a>
               </li>
               <li class="footer__nav-item">
                 <a href="">
-                  <img class="footer__icon--page" src="/image/common/page-icon.png" alt="">サービスについて
+                  <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">サービスについて
                 </a>
               </li>
             </ul>
@@ -197,6 +204,6 @@
 
 
     <!-- js -->
-    <script defer type="text/javascript" src="./js/script.js"></script>
+    <script defer type="text/javascript" src="../js/script.js"></script>
   </body>
 </html>
