@@ -57,130 +57,320 @@ a:hover {
   }
 }
 
+body {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+input,
+select {
+  font-size: 1.4rem;
+}
+
+.content {
+  margin: 0 auto;
+  width: 375px;
+  padding: 0 17px;
+}
+
 .content__title {
-  text-align: center;
+  font-size: 2.4rem;
   color: #6F8D1B;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+}
+
+.content__note {
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .content__formlist {
   list-style: none;
 }
 
-.form > * {
+.resistration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.resistration-form__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.resistration-form__title--dm > * {
+  display: block;
+}
+
+.resistration-form__field > * {
   display: inline-block;
-  vertical-align: middle;
+}
+
+.name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.name-container > * {
+  width: 160px;
+}
+
+.name-container__name-label {
+  display: inline-block;
+}
+
+.name-container__name-text {
+  width: 140px;
+  display: inline-block;
+}
+
+.birth-container {
+  width: 280px;
+}
+
+.birth-container__year {
+  display: inline-block;
+  width: 100px;
+}
+
+.birth-container__month, .birth-container__day {
+  display: inline-block;
+  width: 80px;
+}
+
+.phone-container .text-phone {
+  width: 340px;
+}
+
+.representative-container {
+  width: 100%;
+}
+
+.representative-container > * {
+  display: inline-block;
+}
+
+.representative-container__relation-label {
+  margin-left: 0px;
+}
+
+.representative-container__text {
+  width: 100%;
+}
+
+.postal-container__text-postal {
+  width: 120px;
+}
+
+.postal-container__button-search {
+  width: 81px;
+  font-size: 1.4rem;
+  color: #FFF;
+  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  background-color: #888;
+}
+
+.address-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.address-container__select-prefecture {
+  width: 120px;
+}
+
+.address-container__text-city {
+  width: 211px;
+}
+
+.address-container__text-city > input {
+  width: inherit;
+}
+
+.building-container .text-building {
+  width: 340px;
+}
+
+.password-container__text-password {
+  width: 340px;
+}
+
+.password-container__icon-password--visible {
+  position: relative;
+  z-index: 10;
+  left: 31.5rem;
+  bottom: 3.5rem;
+}
+
+.password-container__icon-password--invisible {
+  display: none;
+  position: relative;
+  z-index: 10;
+  bottom: 3.5rem;
+  left: 31.5rem;
+}
+
+.address-number-container__text-number {
+  width: 340px;
+}
+
+.cirtificate-button {
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.caution--title {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.caution--representative {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.caution--password {
+  font-size: 1.2rem;
+  display: block;
+  width: 340px;
+}
+
+.icon__wrapper--optional {
+  margin: 0;
 }
 
 .radio__wrapper--individual {
   height: auto;
 }
 
-.select__wrapper--shevron {
-  width: auto;
-}
-
-#radio__sex-man::after {
-  content: "男性";
-}
-
-#radio__sex-woman::after {
-  content: "女性";
-}
-
-#radio__sex-noreply::after {
-  content: "無回答";
-}
-
-#radio__dm-yes::after {
-  content: "はい";
-}
-
-#radio__dm-no::after {
-  content: "いいえ";
-}
-
 .radio__wrapper--item::after {
   content: "";
 }
 
-.input__area--default {
-  width: inherit;
+.select__wrapper--shevron::after {
+  right: 0.5rem;
 }
 
-@media all and (min-width: 1336px) {
+#radio__sex--man::after {
+  content: "男性";
+}
+
+#radio__sex--woman::after {
+  content: "女性";
+}
+
+#radio__sex--noreply::after {
+  content: "無回答";
+}
+
+#radio__dm--yes::after {
+  content: "はい";
+}
+
+#radio__dm--no::after {
+  content: "いいえ";
+}
+
+@media (min-width: 768px) {
   .content {
     width: 930px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 20px;
   }
-  .form {
+  .content__title {
+    font-size: 3rem;
+  }
+  .resistration-form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
     margin-bottom: 35px;
+    gap: 20px;
   }
-  .form__title {
-    width: 248px;
-    margin-right: 20px;
+  .resistration-form__title {
+    -ms-flex-preferred-size: 248px;
+        flex-basis: 248px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .form__label {
-    display: inline-block;
+  .resistration-form__title--dm {
+    -ms-flex-preferred-size: 248px;
+        flex-basis: 248px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .form__field {
-    display: inline-block;
-    width: 625px;
+  .resistration-form__title--dm > * {
+    display: inline;
   }
-  .name-field {
-    width: 191px;
-    display: inline-block;
+  .resistration-form__field {
+    -ms-flex-preferred-size: 632px;
+        flex-basis: 632px;
   }
-  .name-field__name-label {
-    display: inline-block;
+  .name-container {
+    gap: 20px;
   }
-  .name-field__name-text {
+  .name-container > * {
+    width: 190px;
+  }
+  .name-container__name-label {
+    margin-right: 5px;
+  }
+  .name-container__name-text {
     width: 160px;
-    display: inline-block;
-    margin-right: 18px;
   }
-  .sex-field {
-    width: 280px;
+  .representative-container {
+    width: auto;
   }
-  .sex-field > * {
-    display: inline-block;
-    width: 72px;
-    margin-right: 10px;
+  .representative-container__relation-label {
+    margin-left: 40px;
   }
-  .birth-field {
-    width: 280px;
-  }
-  .birth-field > * {
-    display: inline-block;
-    margin-right: 2px;
-  }
-  .birth-field__year {
-    width: 100px;
-  }
-  .birth-field__month, .birth-field__day {
-    width: 80px;
-  }
-  .phone-field {
-    width: 341px;
-  }
-  .representative-field {
-    width: 625px;
-    display: inline-block;
-    margin: 0;
-  }
-  .representative-field__text {
-    display: inline-block;
+  .representative-container__text {
     width: 230px;
   }
-  .representative-field__caution {
-    font-size: 10px;
+  .password-container__text-password {
+    width: 340px;
   }
-  .postal-field {
-    width: 211px;
+  .password-container__icon-password--visible {
+    right: 3rem;
+    left: auto;
+    bottom: auto;
   }
-  .postal-field__search-button {
-    width: 81px;
+  .password-container__icon-password--invisible {
+    right: 3rem;
+    left: auto;
+    left: auto;
   }
 }
 /*# sourceMappingURL=C03.css.map */
