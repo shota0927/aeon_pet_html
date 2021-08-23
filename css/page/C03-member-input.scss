@@ -1,0 +1,395 @@
+@import "../setting/_setting.scss";
+
+@mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: normal;
+    font-family: $font-family, nth($font-family-base, 3);
+}
+
+body {
+    @include font-shape($color-text-main, 1.6rem);
+}
+
+input,
+select {
+    font-size: 1.4rem;
+}
+
+header,
+footer,
+.content {
+    min-width: 375px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 375px;
+    padding: 0 17px;
+
+    &__title {
+        @include font-shape($color-main, 2.4rem);
+        text-align: center;
+    }
+
+    &__note {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &__error {
+        background-color: $color-error;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__formlist {
+        list-style: none;
+    }
+}
+
+.errorlist {
+    color: $color-alert;
+    list-style-position: inside;
+    font-size: 1.4rem;
+
+    >li {
+        &::before {
+            content: "・";
+            width: 3px;
+        }
+    }
+}
+
+.resistration-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        &--dm {
+            >* {
+                display: block;
+            }
+        }
+    }
+
+    &__field {
+        >* {
+            display: inline-block;
+        }
+
+    }
+}
+
+.name-container {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+
+    >* {
+        width: 160px;
+    }
+
+    &__name-label {
+        display: inline-block;
+    }
+
+    &__name-text {
+        width: 140px;
+        display: inline-block;
+    }
+}
+
+.birth-container {
+    width: 280px;
+
+    &__year {
+        display: inline-block;
+        width: 100px;
+    }
+
+    &__month,
+    &__day {
+        display: inline-block;
+        width: 80px;
+    }
+}
+
+.phone-container {
+    .text-phone {
+        width: 340px;
+    }
+}
+
+.representative-container {
+    width: 100%;
+
+    >* {
+        display: inline-block;
+    }
+
+    &__relation-label {
+        margin-left: 0px;
+    }
+
+    &__text {
+        width: 100%;
+    }
+}
+
+.postal-container {
+    &__text-postal {
+        width: 120px;
+    }
+
+    &__button-search {
+        width: 81px;
+        @include font-shape(#FFF, 1.4rem, nth($font-family-base, 2));
+        font-weight: bold;
+        background-color: $color-icon-default;
+    }
+}
+
+.address-container {
+    display: flex;
+    gap: 5px;
+
+    &__select-prefecture {
+        width: 120px;
+    }
+
+    &__text-city {
+        width: 211px;
+
+        >input {
+            width: inherit;
+        }
+    }
+}
+
+.building-container {
+    .text-building {
+        width: 340px;
+    }
+}
+
+.password-container {
+    &__text-password {
+        width: 340px;
+    }
+
+    &__icon-password {
+        &--visible {
+            position: relative;
+            z-index: 10;
+            left: 31.5rem;
+            bottom: 3.5rem;
+        }
+
+        &--invisible {
+            display: none;
+            position: relative;
+            z-index: 10;
+            bottom: 3.5rem;
+            left: 31.5rem;
+        }
+    }
+}
+
+.address-number-container {
+    &__text-number {
+        width: 340px;
+    }
+}
+
+.cirtificate-button {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.caution {
+    &--title {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    &--representative {
+        font-size: 1.2rem;
+        display: block;
+    }
+
+    &--password {
+        font-size: 1.2rem;
+        display: block;
+        width: 340px;
+    }
+}
+
+.icon__wrapper--optional {
+    margin: 0;
+}
+
+.radio {
+
+    &__wrapper {
+        &--individual {
+            height: auto;
+        }
+
+        &--item::after {
+            content: "";
+        }
+    }
+}
+
+.select__wrapper--shevron::after {
+    right: 0.5rem;
+}
+
+#radio {
+    &__sex {
+        &--man {
+            &::after {
+                content: "男性"
+            }
+        }
+
+        &--woman {
+            &::after {
+                content: "女性"
+            }
+        }
+
+        &--noreply {
+            &::after {
+                content: "無回答"
+            }
+        }
+
+    }
+
+    &__dm {
+        &--yes {
+            &::after {
+                content: "はい"
+            }
+        }
+
+        &--no {
+            &::after {
+                content: "いいえ"
+            }
+        }
+    }
+}
+
+@include mq() {
+
+    body,
+    header,
+    footer {
+        min-width: 1336px;
+    }
+
+    .content {
+        box-sizing: content-box;
+        width: 930px;
+        margin: 0 auto;
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__formlist {
+            padding-left: 10px;
+        }
+    }
+
+    .errorlist {
+        font-size: 1.6rem;
+    }
+
+    .resistration-form {
+        align-items: center;
+        flex-direction: unset;
+        margin-bottom: 35px;
+        gap: 20px;
+
+        &__title {
+            flex-basis: 248px;
+            align-items: center;
+
+            &--dm {
+                flex-basis: 248px;
+                align-items: center;
+
+                >* {
+                    display: inline;
+                }
+            }
+        }
+
+        &__field {
+            flex-basis: 632px;
+        }
+    }
+
+    .name-container {
+        gap: 20px;
+
+        >* {
+            width: 190px;
+        }
+
+
+        &__name-label {
+            margin-right: 5px;
+        }
+
+        &__name-text {
+            width: 160px;
+        }
+    }
+
+    .representative-container {
+        width: auto;
+
+        &__relation-label {
+            margin-left: 40px;
+        }
+
+        &__text {
+            width: 230px;
+        }
+    }
+
+    .password-container {
+
+        &__text-password {
+            width: 340px;
+        }
+
+        &__icon-password {
+            &--visible {
+                right: 3rem;
+                left: auto;
+                bottom: auto;
+            }
+
+            &--invisible {
+                right: 3rem;
+                left: auto;
+                left: auto;
+            }
+        }
+    }
+
+}
