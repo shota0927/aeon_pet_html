@@ -16,6 +16,12 @@ select {
     font-size: 1.4rem;
 }
 
+header,
+footer,
+.content {
+    min-width: 375px;
+}
+
 .content {
     margin: 0 auto;
     width: 375px;
@@ -266,14 +272,22 @@ select {
 }
 
 @include mq() {
+
+    header,
+    footer {
+        min-width: 1336px;
+    }
+
     .content {
         width: 930px;
         margin: 0 auto;
-        padding-left: 10px;
-        padding-right: 20px;
 
         &__title {
             font-size: 3rem;
+        }
+
+        &__formlist {
+            padding-left: 10px;
         }
     }
 

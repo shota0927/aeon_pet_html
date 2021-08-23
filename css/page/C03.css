@@ -69,6 +69,12 @@ select {
   font-size: 1.4rem;
 }
 
+header,
+footer,
+.content {
+  min-width: 375px;
+}
+
 .content {
   margin: 0 auto;
   width: 375px;
@@ -297,14 +303,19 @@ select {
 }
 
 @media (min-width: 768px) {
+  header,
+  footer {
+    min-width: 1336px;
+  }
   .content {
     width: 930px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 20px;
   }
   .content__title {
     font-size: 3rem;
+  }
+  .content__formlist {
+    padding-left: 10px;
   }
   .resistration-form {
     -webkit-box-align: center;
