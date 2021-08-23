@@ -75,6 +75,10 @@ footer,
   min-width: 375px;
 }
 
+.modal-container {
+  display: none;
+}
+
 .content {
   margin: 0 auto;
   width: 375px;
@@ -134,8 +138,15 @@ footer,
   gap: 10px;
 }
 
-.resistration-form__title--dm > * {
-  display: block;
+.resistration-form__title--pet-kind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
 }
 
 .resistration-form__field > * {
@@ -178,7 +189,13 @@ footer,
 }
 
 .pet-birth-container__age {
+  display: inline-block;
   background-color: #F2F5E9;
+  margin: 10px auto;
+  width: 250px;
+  height: 46px;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .pet-birth-container__age .age-font {
@@ -192,80 +209,60 @@ footer,
   width: 340px;
 }
 
-.representative-container {
-  width: 100%;
+.vaccine-container {
+  position: relative;
 }
 
-.representative-container > * {
-  display: inline-block;
+.vaccine-container__radio {
+  display: block;
 }
 
-.representative-container__relation-label {
-  margin-left: 0px;
+.vaccine-container__calender {
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  z-index: 10;
 }
 
-.representative-container__text {
-  width: 100%;
+.vaccine-container__date-vaccine {
+  width: 180px;
 }
 
-.postal-container__text-postal {
-  width: 120px;
-}
-
-.postal-container__button-search {
-  width: 81px;
+.dog-kind__others {
+  display: block;
+  margin: 0 auto;
   font-size: 1.4rem;
-  color: #FFF;
-  font-weight: normal;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  background-color: #888;
+  text-align: center;
 }
 
-.address-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 5px;
+.dog-kind__table {
+  border-spacing: 7px;
 }
 
-.address-container__select-prefecture {
-  width: 120px;
+.dog-kind__table td {
+  width: 107px;
+  height: 107px;
 }
 
-.address-container__text-city {
-  width: 211px;
+.dog-kind__table img {
+  width: 89px;
+  height: 63px;
+  display: block;
+  margin: auto;
+  image-rendering: -webkit-optimize-contrast;
 }
 
-.address-container__text-city > input {
-  width: inherit;
+.dog-kind__table label {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  font-size: 1.2rem;
 }
 
-.building-container .text-building {
-  width: 340px;
-}
-
-.password-container__text-password {
-  width: 340px;
-}
-
-.password-container__icon-password--visible {
-  position: relative;
-  z-index: 10;
-  left: 31.5rem;
-  bottom: 3.5rem;
-}
-
-.password-container__icon-password--invisible {
-  display: none;
-  position: relative;
-  z-index: 10;
-  bottom: 3.5rem;
-  left: 31.5rem;
-}
-
-.address-number-container__text-number {
-  width: 340px;
+.dog-kind__table label > span {
+  display: block;
 }
 
 .cirtificate-button {
@@ -273,22 +270,6 @@ footer,
   width: 220px;
   margin: 0 auto;
   margin-bottom: 30px;
-}
-
-.caution--title {
-  margin: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.caution--representative {
-  font-size: 1.2rem;
-  display: block;
-}
-
-.caution--password {
-  font-size: 1.2rem;
-  display: block;
-  width: 340px;
 }
 
 .icon__wrapper--optional {
@@ -316,12 +297,30 @@ footer,
   content: "女の子";
 }
 
-#radio__dm--yes::after {
+#radio__mix-vaccine--done::after, #radio__rabies-vaccine--done::after {
+  content: "済";
+}
+
+#radio__mix-vaccine--not-yet::after, #radio__rabies-vaccine--not-yet::after {
+  content: "未";
+}
+
+#radio__shelter--yes::after, #radio__fix--yes::after {
   content: "はい";
 }
 
-#radio__dm--no::after {
+#radio__shelter--no::after, #radio__fix--no::after {
   content: "いいえ";
+}
+
+.radio__dog-kind--label {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.radio__dog-kind--radio:checked + .radio__dog-kind--label {
+  background-color: #F2F5E9;
+  border: #6F8D1B solid 1px;
 }
 
 @media (min-width: 768px) {
@@ -349,10 +348,10 @@ footer,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-        -ms-flex-direction: unset;
-            flex-direction: unset;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-bottom: 35px;
     gap: 20px;
   }
@@ -363,15 +362,19 @@ footer,
         -ms-flex-align: center;
             align-items: center;
   }
-  .resistration-form__title--dm {
+  .resistration-form__title--title > * {
+    display: block;
+  }
+  .resistration-form__title--vaccine {
     -ms-flex-preferred-size: 248px;
         flex-basis: 248px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-left: 4rem;
+    margin-bottom: 45px;
   }
-  .resistration-form__title--dm > * {
-    display: inline;
+  .resistration-form__title--pet-kind {
+    -ms-flex-preferred-size: 248px;
+        flex-basis: 248px;
+    margin-bottom: 810px;
   }
   .resistration-form__field {
     -ms-flex-preferred-size: 632px;
@@ -389,31 +392,33 @@ footer,
   .pet-container__name-text {
     width: 160px;
   }
+  .pet-birth-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
   .pet-birth-container__age {
-    display: inline-block;
-    text-align: right;
+    margin: 0;
+    margin-left: auto;
   }
-  .representative-container {
-    width: auto;
+  .dog-kind__others {
+    font-size: 1.6rem;
   }
-  .representative-container__relation-label {
-    margin-left: 40px;
+  .dog-kind__table {
+    border-spacing: 7px;
   }
-  .representative-container__text {
-    width: 230px;
+  .dog-kind__table td {
+    width: 212px;
+    height: 212px;
   }
-  .password-container__text-password {
-    width: 340px;
+  .dog-kind__table img {
+    width: 176px;
+    height: 129px;
   }
-  .password-container__icon-password--visible {
-    right: 3rem;
-    left: auto;
-    bottom: auto;
-  }
-  .password-container__icon-password--invisible {
-    right: 3rem;
-    left: auto;
-    left: auto;
+  .dog-kind__table label {
+    padding: 5px;
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=C06pets_information-input.css.map */

@@ -22,6 +22,10 @@ footer,
     min-width: 375px;
 }
 
+.modal-container {
+    display: none;
+}
+
 .content {
     margin: 0 auto;
     width: 375px;
@@ -68,10 +72,10 @@ footer,
         flex-direction: row;
         gap: 10px;
 
-        &--dm {
-            >* {
-                display: block;
-            }
+        &--pet-kind {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
         }
     }
 
@@ -117,7 +121,13 @@ footer,
     }
 
     &__age {
+        display: inline-block;
         background-color: $color-thin-green;
+        margin: 10px auto;
+        width: 250px;
+        height: 46px;
+        text-align: center;
+        padding-top: 5px;
 
         .age-font {
             @include font-shape($color-main, 2.0rem)
@@ -131,84 +141,61 @@ footer,
     }
 }
 
-.representative-container {
-    width: 100%;
+.vaccine-container {
+    position: relative;
 
-    >* {
-        display: inline-block;
+    &__radio {
+        display: block;
     }
 
-    &__relation-label {
-        margin-left: 0px;
+    &__calender {
+        position: absolute;
+        top: 5px;
+        left: 100px;
+        z-index: 10;
     }
 
-    &__text {
-        width: 100%;
-    }
-}
-
-.postal-container {
-    &__text-postal {
-        width: 120px;
-    }
-
-    &__button-search {
-        width: 81px;
-        @include font-shape(#FFF, 1.4rem, nth($font-family-base, 2));
-        font-weight: bold;
-        background-color: $color-icon-default;
+    &__date-vaccine {
+        width: 180px;
     }
 }
 
-.address-container {
-    display: flex;
-    gap: 5px;
-
-    &__select-prefecture {
-        width: 120px;
+.dog-kind {
+    &__others {
+        display: block;
+        margin: 0 auto;
+        font-size: 1.4rem;
+        text-align: center;
     }
 
-    &__text-city {
-        width: 211px;
+    &__table {
+        border-spacing: 7px;
 
-        >input {
-            width: inherit;
-        }
-    }
-}
-
-.building-container {
-    .text-building {
-        width: 340px;
-    }
-}
-
-.password-container {
-    &__text-password {
-        width: 340px;
-    }
-
-    &__icon-password {
-        &--visible {
-            position: relative;
-            z-index: 10;
-            left: 31.5rem;
-            bottom: 3.5rem;
+        td {
+            width: 107px;
+            height: 107px;
         }
 
-        &--invisible {
-            display: none;
-            position: relative;
-            z-index: 10;
-            bottom: 3.5rem;
-            left: 31.5rem;
+        img {
+            width: 89px;
+            height: 63px;
+            display: block;
+            margin: auto;
+            image-rendering: -webkit-optimize-contrast;
         }
-    }
-}
 
-.address-number-container {
-    &__text-number {
-        width: 340px;
+        label {
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            font-size: 1.2rem;
+
+            >span {
+                display: block;
+            }
+        }
     }
 }
 
@@ -217,24 +204,6 @@ footer,
     width: 220px;
     margin: 0 auto;
     margin-bottom: 30px;
-}
-
-.caution {
-    &--title {
-        margin: 0.5rem;
-        font-size: 1.2rem;
-    }
-
-    &--representative {
-        font-size: 1.2rem;
-        display: block;
-    }
-
-    &--password {
-        font-size: 1.2rem;
-        display: block;
-        width: 340px;
-    }
 }
 
 .icon__wrapper--optional {
@@ -274,7 +243,23 @@ footer,
         }
     }
 
-    &__dm {
+    &__mix-vaccine,
+    &__rabies-vaccine {
+        &--done {
+            &::after {
+                content: "済"
+            }
+        }
+
+        &--not-yet {
+            &::after {
+                content: "未"
+            }
+        }
+    }
+
+    &__shelter,
+    &__fix {
         &--yes {
             &::after {
                 content: "はい"
@@ -288,6 +273,21 @@ footer,
         }
     }
 }
+
+.radio {
+    &__dog-kind {
+        &--label {
+            background-color: $color-calendar-background;
+            border-radius: 10px;
+        }
+
+        &--radio:checked+&--label {
+            background-color: $color-thin-green;
+            border: $color-circle-border solid 1px;
+        }
+    }
+}
+
 
 @include mq() {
 
@@ -317,7 +317,7 @@ footer,
 
     .resistration-form {
         align-items: center;
-        flex-direction: unset;
+        flex-direction: row;
         margin-bottom: 35px;
         gap: 20px;
 
@@ -325,13 +325,19 @@ footer,
             flex-basis: 248px;
             align-items: center;
 
-            &--dm {
-                flex-basis: 248px;
-                align-items: center;
+            &--title>* {
+                display: block;
+            }
 
-                >* {
-                    display: inline;
-                }
+            &--vaccine {
+                flex-basis: 248px;
+                margin-left: 4rem;
+                margin-bottom: 45px;
+            }
+
+            &--pet-kind {
+                flex-basis: 248px;
+                margin-bottom: 810px;
             }
         }
 
@@ -358,46 +364,37 @@ footer,
     }
 
     .pet-birth-container {
+        display: flex;
+        gap: 10px;
 
         &__age {
-            display: inline-block;
-            text-align: right;
-
+            margin: 0;
+            margin-left: auto;
         }
     }
 
-
-    .representative-container {
-        width: auto;
-
-        &__relation-label {
-            margin-left: 40px;
+    .dog-kind {
+        &__others {
+            font-size: 1.6rem;
         }
 
-        &__text {
-            width: 230px;
-        }
-    }
+        &__table {
+            border-spacing: 7px;
 
-    .password-container {
-
-        &__text-password {
-            width: 340px;
-        }
-
-        &__icon-password {
-            &--visible {
-                right: 3rem;
-                left: auto;
-                bottom: auto;
+            td {
+                width: 212px;
+                height: 212px;
             }
 
-            &--invisible {
-                right: 3rem;
-                left: auto;
-                left: auto;
+            img {
+                width: 176px;
+                height: 129px;
+            }
+
+            label {
+                padding: 5px;
+                font-size: 1.6rem;
             }
         }
     }
-
 }
