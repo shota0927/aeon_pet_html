@@ -87,11 +87,7 @@ footer,
   font-weight: normal;
   font-family: "Noto Sans JP", sans-serif;
   text-align: center;
-}
-
-.content__note {
   margin-bottom: 20px;
-  width: 100%;
 }
 
 .content__error {
@@ -167,21 +163,32 @@ footer,
   display: inline-block;
 }
 
-.birth-container {
+.pet-birth-container {
   width: 280px;
 }
 
-.birth-container__year {
+.pet-birth-container__year {
   display: inline-block;
   width: 100px;
 }
 
-.birth-container__month, .birth-container__day {
+.pet-birth-container__month, .pet-birth-container__day {
   display: inline-block;
   width: 80px;
 }
 
-.phone-container__text-phone {
+.pet-birth-container__age {
+  background-color: #F2F5E9;
+}
+
+.pet-birth-container__age .age-font {
+  font-size: 2rem;
+  color: #6F8D1B;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.pet-container__pet-name {
   width: 340px;
 }
 
@@ -290,6 +297,7 @@ footer,
 
 .radio__wrapper--individual {
   height: auto;
+  margin-right: 20px;
 }
 
 .radio__wrapper--item::after {
@@ -300,16 +308,12 @@ footer,
   right: 0.5rem;
 }
 
-#radio__sex--man::after {
-  content: "男性";
+#radio__pet-sex--male::after {
+  content: "男の子";
 }
 
-#radio__sex--woman::after {
-  content: "女性";
-}
-
-#radio__sex--noreply::after {
-  content: "無回答";
+#radio__pet-sex--female::after {
+  content: "女の子";
 }
 
 #radio__dm--yes::after {
@@ -373,17 +377,21 @@ footer,
     -ms-flex-preferred-size: 632px;
         flex-basis: 632px;
   }
-  .name-container {
+  .pet-container {
     gap: 20px;
   }
-  .name-container > * {
+  .pet-container > * {
     width: 190px;
   }
-  .name-container__name-label {
+  .pet-container__name-label {
     margin-right: 5px;
   }
-  .name-container__name-text {
+  .pet-container__name-text {
     width: 160px;
+  }
+  .pet-birth-container__age {
+    display: inline-block;
+    text-align: right;
   }
   .representative-container {
     width: auto;
@@ -408,4 +416,4 @@ footer,
     left: auto;
   }
 }
-/*# sourceMappingURL=C03-member-input.css.map */
+/*# sourceMappingURL=C06pets_information-input.css.map */

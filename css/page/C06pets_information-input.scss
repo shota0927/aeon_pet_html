@@ -30,11 +30,7 @@ footer,
     &__title {
         @include font-shape($color-main, 2.4rem);
         text-align: center;
-    }
-
-    &__note {
         margin-bottom: 20px;
-        width: 100%;
     }
 
     &__error {
@@ -106,7 +102,7 @@ footer,
     }
 }
 
-.birth-container {
+.pet-birth-container {
     width: 280px;
 
     &__year {
@@ -119,10 +115,18 @@ footer,
         display: inline-block;
         width: 80px;
     }
+
+    &__age {
+        background-color: $color-thin-green;
+
+        .age-font {
+            @include font-shape($color-main, 2.0rem)
+        }
+    }
 }
 
-.phone-container {
-    &__text-phone {
+.pet-container {
+    &__pet-name {
         width: 340px;
     }
 }
@@ -242,6 +246,7 @@ footer,
     &__wrapper {
         &--individual {
             height: auto;
+            margin-right: 20px;
         }
 
         &--item::after {
@@ -255,25 +260,18 @@ footer,
 }
 
 #radio {
-    &__sex {
-        &--man {
+    &__pet-sex {
+        &--male {
             &::after {
-                content: "男性"
+                content: "男の子"
             }
         }
 
-        &--woman {
+        &--female {
             &::after {
-                content: "女性"
+                content: "女の子"
             }
         }
-
-        &--noreply {
-            &::after {
-                content: "無回答"
-            }
-        }
-
     }
 
     &__dm {
@@ -342,7 +340,7 @@ footer,
         }
     }
 
-    .name-container {
+    .pet-container {
         gap: 20px;
 
         >* {
@@ -358,6 +356,16 @@ footer,
             width: 160px;
         }
     }
+
+    .pet-birth-container {
+
+        &__age {
+            display: inline-block;
+            text-align: right;
+
+        }
+    }
+
 
     .representative-container {
         width: auto;

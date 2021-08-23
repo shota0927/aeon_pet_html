@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta情報 -->
-    <title>会員登録（入力）｜イオンペット グルーミング予約サイト</title>
-    <meta name="description" content="イオンペット グルーミング予約サイトの「会員登録（入力）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <title>ペット登録（入力）｜イオンペット グルーミング予約サイト</title>
+    <meta name="description" content="イオンペット グルーミング予約サイトの「ペット登録（入力）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
     <meta name="keywords" content="" />
     <!-- reset css -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -24,7 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/page/C03-member-input.css" />
+    <link rel="stylesheet" href="../css/page/C06pets_information-input.css" />
     <link rel="icon" href="" />
 </head>
 
@@ -95,15 +95,110 @@
             /
             <span class="breadcrumb__item breadcrumb__item--orange">
                 <a href="" class="brandcrumb__item-link">
-                    会員登録（入力）
+                    ペット登録（入力）
                 </a>
             </span>
         </div>
     </div>
     <div class="content">
-        <h1 class="content__title">会員登録</h1>
-        <p class="content__note">以下より必要事項をご入力いただき本登録を行ってください。</p>
+        <h1 class="content__title">ペット情報登録</h1>
         <ul class="content__formlist">
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required resistration-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <label for="text-pet-name" class="resistration-form__title--title">
+                        ペットのお名前
+                    </label>
+                </div>
+                <div class="input__wrapper resistration-form__field pet-container">
+                    <input type="text" class="input__area--default pet-container__pet-phone" placeholder="小太郎"
+                        id="text-pet-name">
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required resistration-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <label for="text-pet-name" class="resistration-form__title--title">
+                        ペットのお名前（カナ）
+                    </label>
+                </div>
+                <div class="input__wrapper resistration-form__field pet-container">
+                    <input type="text" class="input__area--default pet-container__pet-phone" placeholder="コタロウ"
+                        id="text-pet-name">
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required resistration-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="resistration-form__title--title">
+                        ペットの性別
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__pet-sex--male">
+                                <input type="radio" name="radio__sex" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__pet-sex--female">
+                                <input type="radio" name="radio__sex" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form" id="birth-field">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required resistration-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="resistration-form__title--title">
+                        ペットの生年月日
+                    </span>
+                </div>
+                <div class="resistration-form__field pet-birth-container">
+                    <div class="input__wrapper select__wrapper--shevron pet-birth-container__year">
+                        <select name="select__birth-year" id="select__birth-year"
+                            class="select__wrapper is-empty pet-birth-field__select">
+                            <option value="" class="select__option" selected>年</option>
+                            <option value="option1" class="select__option">選択済み項目1</option>
+                            <option value="option2" class="select__option">選択済み項目2</option>
+                        </select>
+                    </div>
+                    <div class="input__wrapper select__wrapper--shevron pet-birth-container__month">
+                        <select name="select__birth-month" id="select__birth-month"
+                            class="select__wrapper is-empty pet-birth-field__select">
+                            <option value="" class="select__option" selected>月</option>
+                            <option value="option1" class="select__option">選択済み項目1</option>
+                            <option value="option2" class="select__option">選択済み項目2</option>
+                        </select>
+                    </div>
+                    <div class="input__wrapper select__wrapper--shevron pet-birth-container__day">
+                        <select name="select__birth-day" id="select__birth-day"
+                            class="select__wrapper is-empty pet-birth-field__select">
+                            <option value="" class="select__option" selected>月</option>
+                            <option value="option1" class="select__option">選択済み項目1</option>
+                            <option value="option2" class="select__option">選択済み項目2</option>
+                        </select>
+                    </div>
+                    <div class="pet-birth-container__age">
+                        年齢<span class="age-font">00歳00ヶ月</span>
+                    </div>
+
+                </div>
+            </li>
             <li class="resistration-form">
                 <div class="resistration-form__title">
                     <div class="icon__wrapper--required resistration-form__title--icon">
@@ -148,86 +243,15 @@
                     </div>
                 </div>
             </li>
+
+
             <li class="resistration-form">
                 <div class="resistration-form__title">
                     <div class="icon__wrapper--required resistration-form__title--icon">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <span class="resistration-form__title--title">
-                        性別
-                    </span>
-                </div>
-                <div class="resistration-form__field">
-                    <div class="radio__wrapper--individual">
-                        <label class="radio__label">
-                            <div class="radio__wrapper--item" id="radio__sex--man">
-                                <input type="radio" name="radio__sex" class="radio__invisible" checked>
-                                <div class="radio__indicator2"></div>
-                            </div>
-                        </label>
-                    </div>
-                    <div class="radio__wrapper--individual">
-                        <label class="radio__label">
-                            <div class="radio__wrapper--item" id="radio__sex--woman">
-                                <input type="radio" name="radio__sex" class="radio__invisible">
-                                <div class="radio__indicator2"></div>
-                            </div>
-                        </label>
-                    </div>
-                    <div class="radio__wrapper--individual">
-                        <label class="radio__label">
-                            <div class="radio__wrapper--item" id="radio__sex--noreply">
-                                <input type="radio" name="radio__sex" class="radio__invisible">
-                                <div class="radio__indicator2"></div>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-            </li>
-            <li class="resistration-form" id="birth-field">
-                <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
-                        <p class="icon__text--required">必須</p>
-                    </div>
-                    <span class="resistration-form__title--title">
-                        生年月日
-                    </span>
-                </div>
-                <div class="resistration-form__field birth-container">
-                    <div class="input__wrapper select__wrapper--shevron birth-container__year">
-                        <select name="select__birth-year" id="select__birth-year"
-                            class="select__wrapper is-empty birth-field__select">
-                            <option value="" class="select__option" selected>年</option>
-                            <option value="option1" class="select__option">選択済み項目1</option>
-                            <option value="option2" class="select__option">選択済み項目2</option>
-                        </select>
-                    </div>
-                    <div class="input__wrapper select__wrapper--shevron birth-container__month">
-                        <select name="select__birth-month" id="select__birth-month"
-                            class="select__wrapper is-empty birth-field__select">
-                            <option value="" class="select__option" selected>月</option>
-                            <option value="option1" class="select__option">選択済み項目1</option>
-                            <option value="option2" class="select__option">選択済み項目2</option>
-                        </select>
-                    </div>
-                    <div class="input__wrapper select__wrapper--shevron birth-container__day">
-                        <select name="select__birth-day" id="select__birth-day"
-                            class="select__wrapper is-empty birth-field__select">
-                            <option value="" class="select__option" selected>月</option>
-                            <option value="option1" class="select__option">選択済み項目1</option>
-                            <option value="option2" class="select__option">選択済み項目2</option>
-                        </select>
-                    </div>
-                </div>
-            </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
-                        <p class="icon__text--required">必須</p>
-                    </div>
-                    <label for="text-phone-1" class="resistration-form__title--title">
-                        電話番号1<span class="caution--title">※ハイフンなし</span>
-                    </label>
+                    <label for="text-phone-1" class="resistration-form__title--title">電話番号1<span
+                            class="caution--title">※ハイフンなし</span></label>
                 </div>
                 <div class="input__wrapper resistration-form__field phone-container">
                     <input type="text" class="input__area--default phone-container__text-phone"
@@ -239,8 +263,8 @@
                     <div class="icon__wrapper--optional resistration-form__title--icon">
                         <p class="icon__text--optional">任意</p>
                     </div>
-                    <label for="text-phone-2" class="resistration-form__title--title">
-                        電話番号2<span class="caution--title">※ハイフンなし</span></label>
+                    <label for="text-phone-2" class="resistration-form__title--title">電話番号2<span
+                            class="caution--title">※ハイフンなし</span></label>
                 </div>
                 <div class="input__wrapper resistration-form__field phone-container">
                     <input type="text" class="input__area--default  phone-container__text-phone"
@@ -252,9 +276,8 @@
                     <div class="icon__wrapper--optional resistration-form__title--icon">
                         <p class="icon__text--optional">任意</p>
                     </div>
-                    <label for="representative-field__phone" class="resistration-form__title--title">
-                        代理人電話番号<span class="caution--title">※ハイフンなし</span>
-                    </label>
+                    <label for="representative-field__phone" class="resistration-form__title--title">代理人電話番号<span
+                            class="caution--title">※ハイフンなし</span></label>
                 </div>
                 <div class="resistration-form__field">
                     <div class="input__wrapper representative-container">
