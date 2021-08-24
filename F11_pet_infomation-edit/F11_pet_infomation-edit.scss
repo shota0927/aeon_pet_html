@@ -17,13 +17,13 @@
 
         display: inline-block;
         width: 620px;
-        margin-left: 19%;
+        margin-left: 18%;
 
 
         .f11_pie__wrapper--required-group {
             display: inline-block;
             width: 50px;
-            height: 1000px;
+            height: 724px;
             margin-left: 0%;
 
 
@@ -65,7 +65,7 @@
             position: absolute;
             top: 238px;
             display: inline-block;
-            height: 1000px;
+            height: 724px;
 
 
 
@@ -185,17 +185,38 @@
                 margin-top: 20px;
             }
 
+            .f11__pie__wrapper--rabies-vaccine-calender{
+                display: inline-block;
+                margin-top: 14px;
 
-
-
+                .f11__pie__radiobtn-wrapper--rabies-vaccine-completed{
+                    display: inline-block;
+                    position: relative;
+                    top: 10px;
+                }
+                .f11__pie__calender__wrapper--rabies-vaccine{
+                    display: inline-block;
+                    width: 165px;
+                }
+            }
+            .f11__pie__radiobtn-wrapper--rabies-vaccine-incomprete{
+                margin-top: 20px;
+            }
 
         }
-
-
     }
 
+}
+.f11__pie__changebtn_back-to-petinfomation__wrapper{
+    text-align: center;
 
-
-
-
+    .f11__pie__change-btn--orange{
+        display: inline-block
+        
+    }
+    .f11__pie__linktxt--back-to-pet-infomation{
+        display: block;
+        margin-top: 45px;
+        margin-bottom: 105px;
+    }
 }

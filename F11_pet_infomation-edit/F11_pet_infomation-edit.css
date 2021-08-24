@@ -197,13 +197,13 @@ select::-ms-expand {
 .pie__main__wrapper .f11_pie__wrapper--required-edititem-txt {
   display: inline-block;
   width: 620px;
-  margin-left: 19%;
+  margin-left: 18%;
 }
 
 .pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper--required-group {
   display: inline-block;
   width: 50px;
-  height: 1000px;
+  height: 724px;
   margin-left: 0%;
 }
 
@@ -239,7 +239,7 @@ select::-ms-expand {
   position: absolute;
   top: 238px;
   display: inline-block;
-  height: 1000px;
+  height: 724px;
 }
 
 .pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11_pie__wrapper__edit-item .f11_pie__txt--pet-name {
@@ -350,5 +350,39 @@ select::-ms-expand {
 
 .pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--mixed-vaccin-incomprete {
   margin-top: 20px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__wrapper--rabies-vaccine-calender {
+  display: inline-block;
+  margin-top: 14px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__wrapper--rabies-vaccine-calender .f11__pie__radiobtn-wrapper--rabies-vaccine-completed {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__wrapper--rabies-vaccine-calender .f11__pie__calender__wrapper--rabies-vaccine {
+  display: inline-block;
+  width: 165px;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--rabies-vaccine-incomprete {
+  margin-top: 20px;
+}
+
+.f11__pie__changebtn_back-to-petinfomation__wrapper {
+  text-align: center;
+}
+
+.f11__pie__changebtn_back-to-petinfomation__wrapper .f11__pie__change-btn--orange {
+  display: inline-block;
+}
+
+.f11__pie__changebtn_back-to-petinfomation__wrapper .f11__pie__linktxt--back-to-pet-infomation {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 105px;
 }
 /*# sourceMappingURL=F11_pet_infomation-edit.css.map */
