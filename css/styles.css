@@ -3265,8 +3265,8 @@ a:hover {
           justify-content: center;
   color: #6F8D1B;
   font-weight: 100;
-  padding: 30px 0;
-  margin: 5px 0 0 0;
+  padding: 25px 0;
+  margin: 10px 0 0 0;
 }
 
 .main__reserve__elderly__dog__text {
@@ -3281,14 +3281,32 @@ a:hover {
   padding: 15px 0;
 }
 
-.main__reserve__elderly__dog__table-small thead tr th {
+.main__reserve__elderly__dog__table {
+  width: 450px;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.main__reserve__elderly__dog__table thead tr th {
   background-color: #98AD5C;
   text-align: center;
   color: #fff;
+  font-size: 1.6rem;
 }
 
-.main__reserve__elderly__dog__table-small tbody tr:first-chaild {
+.main__reserve__elderly__dog__table thead tr td {
   background-color: #B0C17E;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.main__reserve__elderly__dog__table thead tr td:nth-of-type(1) {
+  border-right: 1px solid #fff;
+}
+
+.main__reserve__elderly__dog__table tbody tr td {
+  font-size: 1.4rem;
 }
 
 .main__reserve__elderly__dog__button {
@@ -3308,8 +3326,25 @@ a:hover {
     width: 1010px;
   }
   .main__reserve__elderly__dog__title {
-    padding: 30px 0;
-    margin: 15px 0 0 0;
+    padding: 35px 0;
+    margin: 5px 0 0 0;
+  }
+  .main__reserve__elderly__dog__text {
+    padding: 0;
+  }
+  .main__reserve__elderly__dog__text .main__item {
+    padding: 0 0 30px 0;
+  }
+  .main__reserve__elderly__dog__text-condition {
+    padding: 20px 0;
+  }
+  .main__reserve__elderly__dog__table-dondition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main__reserve__elderly__dog__button {
     display: -webkit-box;
@@ -3318,8 +3353,8 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 30px 0;
-    margin: 0 0 70px 0;
+    padding: 45px 0;
+    margin: 0 0 55px 0;
   }
 }
 
