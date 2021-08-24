@@ -71,6 +71,7 @@ footer,
         display: flex;
         flex-direction: row;
         gap: 10px;
+        margin-bottom: 10px;
 
         &--dm {
             >* {
@@ -227,6 +228,7 @@ footer,
     }
 
     &--password {
+        margin-top: -20px;
         font-size: 1.2rem;
         display: block;
         width: 340px;
@@ -392,4 +394,9 @@ footer,
         }
     }
 
+    .caution {
+        &--password {
+            margin-top: 0px;
+        }
+    }
 }

@@ -136,6 +136,7 @@ footer,
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .resistration-form__title--dm > * {
@@ -279,6 +280,7 @@ footer,
 }
 
 .caution--password {
+  margin-top: -20px;
   font-size: 1.2rem;
   display: block;
   width: 340px;
@@ -407,5 +409,8 @@ footer,
     left: auto;
     left: auto;
   }
+  .caution--password {
+    margin-top: 0px;
+  }
 }
-/*# sourceMappingURL=C03-member-input.css.map */
+/*# sourceMappingURL=C03member-input.css.map */
