@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta情報 -->
+    <title>マイページ＞事前確認事項（入力）｜イオンペット グルーミング予約サイト</title>
+    <meta name="description" content="イオンペット グルーミング予約サイトの「事前確認事項（完了）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <meta name="keywords" content="" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/page/F16mypage-interview-input.css" />
+    <link rel="icon" href="" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__left">
+            <h1>
+                <a href="/">
+                    <picture class="header__logo" aria-hidden="true">
+                        <source srcset="../image/common/logo-pc.png" media="(min-width: 768px)"
+                            class="header__logo-pc" />
+                        <img src="../image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
+                    </picture>
+                </a>
+            </h1>
+            <a href="" class="header__search"><img src="../image/common/search-icon.png" alt="サーチアイコン">店舗検索・ご予約</a>
+        </div>
+        <div class="header__right">
+            <div class="header__btns">
+                <a href="" class="header__login">ログイン</a>
+                <a href="" class="header__member">無料会員登録</a>
+            </div>
+            <div class="hamburger__menu js-hamburger--non-login">
+                <img src="../image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
+            </div>
+        </div>
+        <nav class="header__nav header-nav header-nav--non-login">
+            <div class="header-nav__title">
+                <p class="sp">こんにちは<br>ゲストさん (ログイン)</p>
+                <p class="pc">こんにちは　ゲストさん (ログイン)</p>
+                <div class="header-nav__bars js-bars">
+                    <span class="header-nav__bar header-nav__bar--left"></span>
+                    <span class="header-nav__bar header-nav__bar--right"></span>
+                </div>
+            </div>
+            <ul class="header-nav__items">
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../image/common/home-icon.png" alt="">ホーム</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../image/common/search-icon-small.png"
+                            alt="">店舗検索・ご予約</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../image/common/login-icon.png" alt="">ログイン</a>
+                </li>
+            </ul>
+            <ul class="header-nav__items">
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../image/common/booking-icon-green.png"
+                            alt="">ご予約方法</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../image/common/mypage-icon-green.png"
+                            alt="">マイページのご利用方法</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__burger-musk"></div>
+    </header>
+    <div class="breadcrumb container">
+        <div class="inner">
+            <span class="breadcrumb__item">
+                <a href="" class="brandcrumb__item-link">
+                    <img src="../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン" class="breadcrumb__item-icon">
+                </a>
+            </span>
+            /
+            <span class="breadcrumb__item breadcrumb__item--orange">
+                <a href="" class="brandcrumb__item-link">
+                    マイページ
+                </a>
+            </span>
+            /
+            <span class="breadcrumb__item breadcrumb__item--orange">
+                <a href="" class="brandcrumb__item-link">
+                    事前確認事項（入力）
+                </a>
+            </span>
+        </div>
+    </div>
+    <div class="content">
+        <h1 class="content__title">事前問診票</h1>
+        <ul class="content__formlist">
+            <li class="interview-form">
+                <div class="interview-form__title">
+                    <div class="icon__wrapper--optional interview-form__title--icon">
+                        <p class="icon__text--optional">任意</p>
+                    </div>
+                    <label for="text-pet-doctor" class="interview-form__title--tile">
+                        かかりつけの獣医
+                    </label>
+                </div>
+                <div class="interview-form__field">
+                    <div class="input__wrapper text-container--long">
+                        <input type="text" class="input__area--default text-container--long__form" placeholder="小太郎"
+                            id="text-pet-doctor">
+                    </div>
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title">
+                    <div class="icon__wrapper--required interview-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="interview-form__title--title">
+                        健康状態
+                    </span>
+                </div>
+                <div class="interview-form__field two-choice">
+                    <div class="radio__wrapper--individual two-choice__radio-module">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item two-choice__radio-block" id="radio__pet-health--bad">
+                                <input type="radio" name="radio__sex" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--individual two-choice__radio-module">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__pet-health--good">
+                                <input type="radio" name="radio__sex" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title">
+                    <div class="icon__wrapper--required interview-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="interview-form__title--title">
+                        ペットの生年月日
+                    </span>
+                </div>
+                <div class="interview-form__field pet-birth-container">
+                    <div class="input__wrapper select__wrapper--thevron pet-birth-container__year">
+                        <select name="select__birth-year" id="select__birth-year"
+                            class="select__wrapper is-empty pet-birth-field__select">
+                            <option value="" class="select__option" selected>年</option>
+                            <option value="option1" class="select__option">選択済み項目1</option>
+                            <option value="option2" class="select__option">選択済み項目2</option>
+                        </select>
+                    </div>
+                    <div class="input__wrapper select__wrapper--thevron pet-birth-container__month">
+                        <select name="select__birth-month" id="select__birth-month"
+                            class="select__wrapper is-empty pet-birth-field__select">
+                            <option value="" class="select__option" selected>月</option>
+                            <option value="option1" class="select__option">選択済み項目1</option>
+                            <option value="option2" class="select__option">選択済み項目2</option>
+                        </select>
+                    </div>
+                    <div class="input__wrapper select__wrapper--thevron pet-birth-container__day">
+                        <select name="select__birth-day" id="select__birth-day"
+                            class="select__wrapper is-empty pet-birth-field__select">
+                            <option value="" class="select__option" selected>月</option>
+                            <option value="option1" class="select__option">選択済み項目1</option>
+                            <option value="option2" class="select__option">選択済み項目2</option>
+                        </select>
+                    </div>
+                    <div class="pet-birth-container__age">
+                        年齢<span class="age-font">00歳00ヶ月</span>
+                    </div>
+
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title">
+                    <div class="icon__wrapper--required interview-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="interview-form__title--title">
+                        お名前
+                    </span>
+                </div>
+                <div class="interview-form__field name-container">
+                    <div class="input__wrapper name-container__last-name">
+                        <label for="input__lastname-kanji" class="name-container__name-label">姓</label>
+                        <input type="text" class="input__area--default name-container__name-text" placeholder="日本"
+                            id="text__lastname-kanji">
+                    </div>
+                    <div class="input__wrapper name-container__first-name">
+                        <label for="text__firstname-kanji" class="name-container__name-label">名</label>
+                        <input type="text" class="input__area--default name-container__name-text" placeholder="花子"
+                            id="text__firstname-kanji">
+                    </div>
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title">
+                    <div class="icon__wrapper--required interview-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="interview-form__title--title">
+                        ふりがな
+                    </span>
+                </div>
+                <div class="interview-form__field name-container">
+                    <div class="input__wrapper name-container__last-name">
+                        <label for="text__lastname-kana" class="name-container__name-label">姓</label>
+                        <input type="text" class="input__area--default name-container__name-text" placeholder="にほん"
+                            id="text__lastname-kana">
+                    </div>
+                    <div class="input__wrapper name-container__first-name">
+                        <label for="text__firstname-kana" class="name-container__name-label">名</label>
+                        <input type="text" class="input__area--default name-container__name-text" placeholder="はなこ"
+                            id="text__firstname-kana">
+                    </div>
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title">
+                    <div class="icon__wrapper--required interview-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="interview-form__title--title">
+                        狂犬病・混合ワクチンの<span>最終接種日</span>
+                    </span>
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title--vaccine">
+                    混合ワクチン
+                </div>
+                <div class="interview-form__field vaccine-container">
+                    <div class="radio__wrapper--individual vaccine-container__radio">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__mix-vaccine--done">
+                                <input type="radio" name="radio__mix-vacctine" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--individual vaccine-container__radio">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__mix-vaccine--not-yet">
+                                <input type="radio" name="radio__mix-vacctine" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input__wrapper vaccine-container__calender">
+                        <input type="date" class="input__area--default vaccine-container__date-vaccine"
+                            id="date-mix-vaccine">
+                    </div>
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title--vaccine">
+                    狂犬病ワクチン
+                </div>
+                <div class="interview-form__field vaccine-container">
+                    <div class="radio__wrapper--individual vaccine-container__radio">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__rabies-vaccine--done">
+                                <input type="radio" name="radio__rabies-vacctine" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--individual vaccine-container__radio">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__rabies-vaccine--not-yet">
+                                <input type="radio" name="radio__rabies-vacctine" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input__wrapper vaccine-container__calender">
+                        <input type="date" class="input__area--default vaccine-container__date-vaccine"
+                            id="date-rabies-vaccine">
+                    </div>
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title">
+                    <div class="icon__wrapper--required interview-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="interview-form__title--title">
+                        保健所登録は<span>済んでいますか？</span>
+                    </span>
+                </div>
+                <div class="interview-form__field">
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__shelter--yes">
+                                <input type="radio" name="radio__shelter" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__shelter--no">
+                                <input type="radio" name="radio__shelter" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title">
+                    <div class="icon__wrapper--required interview-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="interview-form__title--title">
+                        避妊・去勢はしていますか？
+                    </span>
+                </div>
+                <div class="interview-form__field">
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__fix--yes">
+                                <input type="radio" name="radio__fix" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__fix--no">
+                                <input type="radio" name="radio__fix" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </li>
+            <li class="interview-form">
+                <div class="interview-form__title--pet-kind">
+                    <div class="icon__wrapper--required interview-form__title--icon">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span class="interview-form__title--title">
+                        ペットの犬種
+                    </span>
+                </div>
+                <div class="interview-form__field">
+                    <div class="dog-kind__container">
+                        <table class="dog-kind__table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio" checked
+                                            id="radio__dog-kind--dachshund">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--dachshund">
+                                            <img src="dogs/dachshund_long.png">
+                                            <span>ダックス</span><span>（ロング）</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--chihuahua">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--chihuahua">
+                                            <img src="dogs/chihuahua_long.png">
+                                            <span>チワワ</span><span>（ロング）</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--pomeranian">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--pomeranian">
+                                            <img src="dogs/pomeranian.png">
+                                            <span>ポメラニアン</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--maltese">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--maltese">
+                                            <img src="dogs/maltese.png">
+                                            <span>マルチーズ</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--Yorkshire">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--Yorkshire">
+                                            <img src="dogs/yorkshire.png">
+                                            <span>ヨーキー</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--thih-tzu">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--thih-tzu">
+                                            <img src="dogs/shih_tzu.png">
+                                            <span>シー・ズー</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--thibainu">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--thibainu">
+                                            <img src="dogs/shibainu.png">
+                                            <span>柴犬</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--m-schnauzer">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--m-schnauzer">
+                                            <img src="dogs/m_schnauzer.png">
+                                            <span>Mシュナウザー</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--toy-poodle">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--toy-poodle">
+                                            <img src="dogs/toy_poodle.png">
+                                            <span>トイ・プードル</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--corgi-1">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--corgi-1">
+                                            <img src="dogs/dachshund_long.png">
+                                            <span>ウェルシュ・コーギー・ペンブローク</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--corgi-2">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--corgi-2">
+                                            <img src="dogs/chihuahua_long.png">
+                                            <span>ウェルシュ・コーギー・ペンブローク</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--corgi-3">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--corgi-3">
+                                            <img src="dogs/pomeranian.png">
+                                            <span>ウェルシュ・コーギー・ペンブローク</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="" class="anchor-text dog-kind__others modal-open"><span
+                                class="anchor-text__right-arrow"></span>その他の犬種を選択</a>
+                        <div class="selected-pet-container">
+                            <p>選択した犬種</p>
+                            <p class="selected-pet-container__selected" id="selected-pet">アメリカンコッカースパニエル</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a href="" class="most-important-button cirtificate-button">確認画面へ</a>
+    </div>
+
+    <footer class="footer">
+        <a class="footer__page-top-button" href="#">
+            <span></span>
+        </a>
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="../image/common/footer-logo.png" alt="ロゴ">
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__nav-items--top">
+                    <li class="footer__nav-item--top">
+                        <a href="">
+                            <img class="footer__icon" src="../image/common/booking-icon.png" alt="">ご予約方法
+                        </a>
+                    </li>
+                    <li class="footer__nav-item--top">
+                        <a href="">
+                            <img class="footer__icon" src="../image/common/mypage-icon.png" alt="">マイページのご利用方法
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__wrapper">
+                    <ul class="footer__nav-items--bottom-left">
+                        <li class="footer__nav-item">
+                            <a href=""><span class="footer__arrow-right"></span>
+                                会員規約
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">プライバシーポリシー
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">お問い合わせ
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">企業情報
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-items--bottom-right">
+                        <li class="footer__nav-item">
+                            <a href=""><span class="footer__arrow-right"></span>
+                                当サイトのご利用規約
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">よくあるご質問
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../image/common/page-icon.png" alt="">サービスについて
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <small class="footer__copyright">Copyright Aeonpet.Co.LTD.All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

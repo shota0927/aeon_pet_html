@@ -1,0 +1,451 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-size: 1.4rem;
+  background-color: #fff;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Noto Sans JP", "Lato", sans-serif;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.container {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .inner {
+    width: 100%;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+input,
+select {
+  font-size: 1.4rem;
+}
+
+header,
+footer,
+.content {
+  min-width: 375px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 375px;
+  padding: 0 17px;
+}
+
+.content__title {
+  font-size: 2.4rem;
+  color: #6F8D1B;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content__error {
+  background-color: #F5E1E2;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content__formlist {
+  list-style: none;
+}
+
+.errorlist {
+  color: #F4451C;
+  list-style-position: inside;
+  font-size: 1.4rem;
+}
+
+.errorlist > li::before {
+  content: "・";
+  width: 3px;
+}
+
+.interview-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.interview-form__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.interview-form__title--pet-kind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.interview-form__field > * {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.name-container > * {
+  width: 160px;
+}
+
+.name-container__name-label {
+  display: inline-block;
+}
+
+.name-container__name-text {
+  width: 140px;
+  display: inline-block;
+}
+
+.pet-birth-container {
+  width: 280px;
+}
+
+.pet-birth-container__year {
+  display: inline-block;
+  width: 100px;
+}
+
+.pet-birth-container__month, .pet-birth-container__day {
+  display: inline-block;
+  width: 80px;
+}
+
+.pet-birth-container__age {
+  display: inline-block;
+  background-color: #F2F5E9;
+  margin: 10px auto;
+  width: 250px;
+  height: 46px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.pet-birth-container__age .age-font {
+  font-size: 2rem;
+  color: #6F8D1B;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.pet-container__pet-name {
+  width: 340px;
+}
+
+.vaccine-container {
+  position: relative;
+}
+
+.vaccine-container__radio {
+  display: block;
+}
+
+.vaccine-container__calender {
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  z-index: 10;
+}
+
+.vaccine-container__date-vaccine {
+  width: 180px;
+}
+
+.dog-kind__others {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.dog-kind__container > * {
+  margin: 10px 0;
+}
+
+.dog-kind__table {
+  border-spacing: 7px;
+}
+
+.dog-kind__table td {
+  width: 107px;
+  height: 107px;
+}
+
+.dog-kind__table img {
+  width: 89px;
+  height: 63px;
+  display: block;
+  margin: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.dog-kind__table label {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.dog-kind__table label > span {
+  display: block;
+}
+
+.cirtificate-button {
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.icon__wrapper--optional {
+  margin: 0;
+}
+
+.radio__wrapper--individual {
+  height: auto;
+  margin-right: 20px;
+}
+
+.radio__wrapper--item::after {
+  content: "";
+}
+
+.two-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.two-choice__radio-block {
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+  width: auto;
+  margin: 0px;
+  display: inline-block;
+}
+
+.select__wrapper--shevron::after {
+  right: 0.5rem;
+}
+
+#radio__pet-health--good::after {
+  content: "異常なし";
+}
+
+#radio__pet-health--bad::after {
+  content: "異常あり";
+}
+
+#radio__mix-vaccine--done::after, #radio__rabies-vaccine--done::after {
+  content: "済";
+}
+
+#radio__mix-vaccine--not-yet::after, #radio__rabies-vaccine--not-yet::after {
+  content: "未";
+}
+
+#radio__shelter--yes::after, #radio__fix--yes::after {
+  content: "はい";
+}
+
+#radio__shelter--no::after, #radio__fix--no::after {
+  content: "いいえ";
+}
+
+.radio__dog-kind--label {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  display: block;
+}
+
+.radio__dog-kind--radio:checked + .radio__dog-kind--label {
+  background-color: #F2F5E9;
+  border: #6F8D1B solid 1px;
+}
+
+@media (min-width: 768px) {
+  body,
+  header,
+  footer {
+    min-width: 1336px;
+  }
+  .content {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 930px;
+    margin: 0 auto;
+  }
+  .content__title {
+    font-size: 3rem;
+  }
+  .content__formlist {
+    padding-left: 10px;
+  }
+  .errorlist {
+    font-size: 1.6rem;
+  }
+  .interview-form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 35px;
+    gap: 20px;
+  }
+  .interview-form__title {
+    -ms-flex-preferred-size: 248px;
+        flex-basis: 248px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .interview-form__title--title > * {
+    display: block;
+  }
+  .interview-form__title--vaccine {
+    -ms-flex-preferred-size: 248px;
+        flex-basis: 248px;
+    margin-left: 4rem;
+    margin-bottom: 45px;
+  }
+  .interview-form__title--pet-kind {
+    -ms-flex-preferred-size: 248px;
+        flex-basis: 248px;
+    margin-bottom: 900px;
+  }
+  .interview-form__field {
+    -ms-flex-preferred-size: 632px;
+        flex-basis: 632px;
+  }
+  .text-container--long__form {
+    width: 341px;
+  }
+  .pet-container {
+    gap: 20px;
+  }
+  .pet-container > * {
+    width: 190px;
+  }
+  .pet-container__name-label {
+    margin-right: 5px;
+  }
+  .pet-container__name-text {
+    width: 160px;
+  }
+  .pet-birth-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .pet-birth-container__age {
+    margin: 0;
+    margin-left: auto;
+  }
+  .dog-kind__others {
+    font-size: 1.6rem;
+  }
+  .dog-kind__table {
+    border-spacing: 7px;
+  }
+  .dog-kind__table td {
+    width: 212px;
+    height: 212px;
+  }
+  .dog-kind__table img {
+    width: 176px;
+    height: 129px;
+  }
+  .dog-kind__table label {
+    padding: 5px;
+    font-size: 1.6rem;
+  }
+  .modal-container__content {
+    width: 930px;
+    height: 738px;
+  }
+  .tab-table__label {
+    padding: 20px;
+    height: 69px;
+  }
+}
+/*# sourceMappingURL=F16mypage-interview-input.css.map */
