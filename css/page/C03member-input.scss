@@ -1,4 +1,5 @@
 @import "../setting/_setting.scss";
+@import "../styles.scss";
 
 @mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
     font-size: $font-size;
@@ -65,17 +66,40 @@ footer,
 .resistration-form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+
+    @include mq() {
+        margin: 10px 0;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+    }
 
     &__title {
         display: flex;
         flex-direction: row;
         gap: 10px;
-        margin-bottom: 10px;
+        margin: 10px 0px;
+
+        @include mq() {
+            margin-bottom: 0;
+            flex-basis: 248px;
+            align-items: center;
+        }
 
         &--dm {
-            >* {
-                display: block;
+            @include mq() {
+                flex-basis: 248px;
+                align-items: center;
+
+                >* {
+                    display: inline;
+
+                }
+
+                >* {
+                    display: block;
+                }
             }
         }
     }
@@ -85,62 +109,136 @@ footer,
             display: inline-block;
         }
 
+        @include mq() {
+            flex-basis: 632px;
+        }
+
+        &--name {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        &--birth {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
     }
 }
 
-.name-container {
-    display: flex;
-    margin: 0 auto;
-    gap: 20px;
+.input {
+    &__wrapper {
 
-    >* {
-        width: 160px;
+        &--name {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            gap: 20px;
+            display: inline-block;
+
+            @include mq() {
+                width: 191px;
+                flex-basis: 191px;
+            }
+        }
+
+        &--birth-year {
+            width: 100px;
+        }
+
+        &--birth-month,
+        &--birth-day {
+            width: 80px;
+        }
+
+        &--phone {
+            width: 340px;
+        }
+
+        &--prefecture {
+            width: 120px;
+        }
     }
 
-    &__name-label {
+    &__name--label {
         display: inline-block;
     }
 
-    &__name-text {
-        width: 140px;
-        display: inline-block;
+    &__area {
+        @mixin extInputTxt() {
+            @extend .input__area--default;
+        }
+
+        &--name {
+            @include extInputTxt();
+            width: 140px;
+
+            @include mq() {
+                margin-left: 5px;
+                width: 161px;
+            }
+        }
+
+        &--phone,
+        &--address,
+        &--building,
+        &--password {
+            @include extInputTxt();
+            width: 340px;
+        }
+
+        &--representative {
+            @include extInputTxt();
+            width: 340px;
+
+            @include mq() {
+                width: 230px;
+            }
+        }
+
+        &--postal {
+            @include extInputTxt();
+            width: 120px;
+        }
+
+        &--city {
+            @include extInputTxt();
+            width: 211px;
+        }
     }
 }
 
-.birth-container {
-    width: 280px;
+.icon-password {
 
-    &__year {
-        display: inline-block;
-        width: 100px;
-    }
+    &--visible,
+    &--invisible {
+        display: block;
+        float: right;
+        position: relative;
+        z-index: 10;
+        top: -30px;
+        right: 10px;
 
-    &__month,
-    &__day {
-        display: inline-block;
-        width: 80px;
+
+        @include mq() {
+            display: inline;
+            float: none;
+            top: 0px;
+            right: 30px;
+        }
+
     }
 }
 
-.phone-container {
-    &__text-phone {
-        width: 340px;
-    }
-}
-
-.representative-container {
-    width: 100%;
-
-    >* {
-        display: inline-block;
-    }
-
-    &__relation-label {
-        margin-left: 0px;
-    }
-
-    &__text {
-        width: 100%;
+.inactive-button {
+    &--postal {
+        @extend .inactive-button;
+        width: 81px;
+        @include font-shape(#FFF, 1.4rem, nth($font-family-base, 2));
+        font-weight: bold;
+        background-color: $color-icon-default;
     }
 }
 
@@ -157,58 +255,6 @@ footer,
     }
 }
 
-.address-container {
-    display: flex;
-    gap: 5px;
-
-    &__select-prefecture {
-        width: 120px;
-    }
-
-    &__text-city {
-        width: 211px;
-
-        >input {
-            width: inherit;
-        }
-    }
-}
-
-.building-container {
-    .text-building {
-        width: 340px;
-    }
-}
-
-.password-container {
-    &__text-password {
-        width: 340px;
-    }
-
-    &__icon-password {
-        &--visible {
-            position: relative;
-            z-index: 10;
-            left: 31.5rem;
-            bottom: 3.5rem;
-        }
-
-        &--invisible {
-            display: none;
-            position: relative;
-            z-index: 10;
-            bottom: 3.5rem;
-            left: 31.5rem;
-        }
-    }
-}
-
-.address-number-container {
-    &__text-number {
-        width: 340px;
-    }
-}
-
 .cirtificate-button {
     display: block;
     width: 220px;
@@ -222,21 +268,28 @@ footer,
         font-size: 1.2rem;
     }
 
+    &--normal {
+        font-size: 1.2rem;
+    }
+
     &--representative {
         font-size: 1.2rem;
         display: block;
     }
 
     &--password {
-        margin-top: -20px;
         font-size: 1.2rem;
         display: block;
         width: 340px;
     }
 }
 
-.icon__wrapper--optional {
-    margin: 0;
+.icon {
+    &__wrapper {
+        &--optional {
+            margin: 0;
+        }
+    }
 }
 
 .radio {
@@ -252,8 +305,12 @@ footer,
     }
 }
 
-.select__wrapper--shevron::after {
-    right: 0.5rem;
+.select {
+    &__wrapper {
+        &--shevron::after {
+            right: 0.5rem;
+        }
+    }
 }
 
 #radio {
@@ -319,84 +376,5 @@ footer,
         font-size: 1.6rem;
     }
 
-    .resistration-form {
-        align-items: center;
-        flex-direction: row;
-        margin-bottom: 35px;
-        gap: 20px;
 
-        &__title {
-            flex-basis: 248px;
-            align-items: center;
-
-            &--dm {
-                flex-basis: 248px;
-                align-items: center;
-
-                >* {
-                    display: inline;
-                }
-            }
-        }
-
-        &__field {
-            flex-basis: 632px;
-        }
-    }
-
-    .name-container {
-        gap: 20px;
-
-        >* {
-            width: 190px;
-        }
-
-
-        &__name-label {
-            margin-right: 5px;
-        }
-
-        &__name-text {
-            width: 160px;
-        }
-    }
-
-    .representative-container {
-        width: auto;
-
-        &__relation-label {
-            margin-left: 40px;
-        }
-
-        &__text {
-            width: 230px;
-        }
-    }
-
-    .password-container {
-
-        &__text-password {
-            width: 340px;
-        }
-
-        &__icon-password {
-            &--visible {
-                right: 3rem;
-                left: auto;
-                bottom: auto;
-            }
-
-            &--invisible {
-                right: 3rem;
-                left: auto;
-                left: auto;
-            }
-        }
-    }
-
-    .caution {
-        &--password {
-            margin-top: 0px;
-        }
-    }
 }
