@@ -297,8 +297,16 @@ select::-ms-expand {
   display: inline-block;
 }
 
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--pet-gander .f11__pie__radiobtn-wrapper--male .f11__pie__radio-check__wrapper--male::after {
+  content: 'オス';
+}
+
 .pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--pet-gander .f11__pie__radiobtn-wrapper--female {
   display: inline-block;
+}
+
+.pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__pie__radiobtn-wrapper--pet-gander .f11__pie__radiobtn-wrapper--female .f11__pie__radio-focused__wrapper--female::after {
+  content: 'メス';
 }
 
 .pie__main__wrapper .f11_pie__wrapper--required-edititem-txt .f11__pie__wrapper--input-btn .f11__group-wrapper__input-dropdown--birth-date {

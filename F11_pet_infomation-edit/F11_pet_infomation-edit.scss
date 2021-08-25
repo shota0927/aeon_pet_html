@@ -26,9 +26,6 @@
             height: 724px;
             margin-left: 0%;
 
-
-
-
             .f11_pie__required-wrapper--1 {
                 margin: 0;
 
@@ -66,8 +63,6 @@
             top: 238px;
             display: inline-block;
             height: 724px;
-
-
 
             .f11_pie__txt--pet-name {
                 margin-top: 0;
@@ -119,15 +114,22 @@
             }
 
             .f11__pie__radiobtn-wrapper--pet-gander {
-
                 margin-top: 28px;
 
                 .f11__pie__radiobtn-wrapper--male {
                     display: inline-block;
+
+                    .f11__pie__radio-check__wrapper--male::after{
+                        content: 'オス';
+                    }
                 }
 
                 .f11__pie__radiobtn-wrapper--female {
                     display: inline-block;
+
+                    .f11__pie__radio-focused__wrapper--female::after{
+                        content: 'メス';
+                    }
                 }
             }
 
