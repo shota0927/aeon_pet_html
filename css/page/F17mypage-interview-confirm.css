@@ -2814,6 +2814,7 @@ footer {
   width: 220px;
   margin: 0 auto;
   margin-bottom: 30px;
+  margin: 30px auto;
 }
 
 .icon__wrapper--optional, .icon__wrapper--required {
@@ -2831,13 +2832,6 @@ footer {
 
 .select__wrapper--symptom, .select__wrapper--part {
   margin-left: 0;
-}
-
-.cirtificate-button {
-  display: block;
-  width: 220px;
-  margin: 0 auto;
-  margin-bottom: 30px;
 }
 
 .radio__dog-kind--label {
