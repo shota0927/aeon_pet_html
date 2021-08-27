@@ -1337,38 +1337,40 @@
         <ul class="content__formlist">
             <li class="resistration-form">
                 <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
+                    <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <label for="text-pet-name" class="resistration-form__title--title">
+                    <label for="text-pet-name--kanji">
                         ペットのお名前
                     </label>
                 </div>
-                <div class="input__wrapper resistration-form__field pet-container">
-                    <input type="text" class="input__area--default pet-container__text-pet-name" placeholder="小太郎"
-                        id="text-pet-name">
+                <div class="resistration-form__field">
+                    <div class="input__wrapper">
+                        <input type="text" class="input__area--pet-name" placeholder="小太郎" id="text-pet-name--kanji">
+                    </div>
                 </div>
             </li>
             <li class="resistration-form">
                 <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
+                    <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <label for="text-pet-name" class="resistration-form__title--title">
+                    <label for="text-pet-name--kana">
                         ペットのお名前（カナ）
                     </label>
                 </div>
-                <div class="input__wrapper resistration-form__field pet-container">
-                    <input type="text" class="input__area--default pet-container__text-pet-name" placeholder="コタロウ"
-                        id="text-pet-name">
+                <div class="resistration-form__field">
+                    <div class="input__wrapper">
+                        <input type="text" class="input__area--pet-name" placeholder="コタロウ" id="text-pet-name--kana">
+                    </div>
                 </div>
             </li>
             <li class="resistration-form">
                 <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
+                    <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <span class="resistration-form__title--title">
+                    <span>
                         ペットの性別
                     </span>
                 </div>
@@ -1393,95 +1395,48 @@
             </li>
             <li class="resistration-form">
                 <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
+                    <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <span class="resistration-form__title--title">
+                    <span>
                         ペットの生年月日
                     </span>
                 </div>
-                <div class="resistration-form__field pet-birth-container">
-                    <div class="input__wrapper select__wrapper--thevron pet-birth-container__year">
-                        <select name="select__birth-year" id="select__birth-year"
-                            class="select__wrapper is-empty pet-birth-field__select">
+                <div class="resistration-form__field--pet-birth">
+                    <div class="input__wrapper--pet-birth-year select__wrapper--shevron">
+                        <select name="select__birth-year" id="select__birth-year" class="select__wrapper is-empty">
                             <option value="" class="select__option" selected>年</option>
                             <option value="option1" class="select__option">選択済み項目1</option>
                             <option value="option2" class="select__option">選択済み項目2</option>
                         </select>
                     </div>
-                    <div class="input__wrapper select__wrapper--thevron pet-birth-container__month">
-                        <select name="select__birth-month" id="select__birth-month"
-                            class="select__wrapper is-empty pet-birth-field__select">
+                    <div class="input__wrapper--pet-birth-month select__wrapper--shevron">
+                        <select name="select__birth-month" id="select__birth-month" class="select__wrapper is-empty">
                             <option value="" class="select__option" selected>月</option>
                             <option value="option1" class="select__option">選択済み項目1</option>
                             <option value="option2" class="select__option">選択済み項目2</option>
                         </select>
                     </div>
-                    <div class="input__wrapper select__wrapper--thevron pet-birth-container__day">
-                        <select name="select__birth-day" id="select__birth-day"
-                            class="select__wrapper is-empty pet-birth-field__select">
+                    <div class="input__wrapper--pet-birth-day select__wrapper--shevron">
+                        <select name="select__birth-day" id="select__birth-day" class="select__wrapper is-empty">
                             <option value="" class="select__option" selected>月</option>
                             <option value="option1" class="select__option">選択済み項目1</option>
                             <option value="option2" class="select__option">選択済み項目2</option>
                         </select>
                     </div>
-                    <div class="pet-birth-container__age">
-                        年齢<span class="age-font">00歳00ヶ月</span>
-                    </div>
-
-                </div>
-            </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
-                        <p class="icon__text--required">必須</p>
-                    </div>
-                    <span class="resistration-form__title--title">
-                        お名前
-                    </span>
-                </div>
-                <div class="resistration-form__field name-container">
-                    <div class="input__wrapper name-container__last-name">
-                        <label for="input__lastname-kanji" class="name-container__name-label">姓</label>
-                        <input type="text" class="input__area--default name-container__name-text" placeholder="日本"
-                            id="text__lastname-kanji">
-                    </div>
-                    <div class="input__wrapper name-container__first-name">
-                        <label for="text__firstname-kanji" class="name-container__name-label">名</label>
-                        <input type="text" class="input__area--default name-container__name-text" placeholder="花子"
-                            id="text__firstname-kanji">
+                    <div class="pet-age-container">
+                        年齢<span class="pet-age-container__age-font">00歳00ヶ月</span>
                     </div>
                 </div>
             </li>
             <li class="resistration-form">
-                <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
+                <div class="resistration-form__title--vaccine-date">
+                    <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <span class="resistration-form__title--title">
-                        ふりがな
-                    </span>
-                </div>
-                <div class="resistration-form__field name-container">
-                    <div class="input__wrapper name-container__last-name">
-                        <label for="text__lastname-kana" class="name-container__name-label">姓</label>
-                        <input type="text" class="input__area--default name-container__name-text" placeholder="にほん"
-                            id="text__lastname-kana">
-                    </div>
-                    <div class="input__wrapper name-container__first-name">
-                        <label for="text__firstname-kana" class="name-container__name-label">名</label>
-                        <input type="text" class="input__area--default name-container__name-text" placeholder="はなこ"
-                            id="text__firstname-kana">
-                    </div>
-                </div>
-            </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
-                        <p class="icon__text--required">必須</p>
-                    </div>
-                    <span class="resistration-form__title--title">
-                        狂犬病・混合ワクチンの<span>最終接種日</span>
+                    <span>
+                        <span>狂犬病・混合ワクチンの</span>
+                        <span>最終接種日</span>
                     </span>
                 </div>
             </li>
@@ -1489,8 +1444,8 @@
                 <div class="resistration-form__title--vaccine">
                     混合ワクチン
                 </div>
-                <div class="resistration-form__field vaccine-container">
-                    <div class="radio__wrapper--individual vaccine-container__radio">
+                <div class="resistration-form__field">
+                    <div class="radio__wrapper--vaccine">
                         <label class="radio__label">
                             <div class="radio__wrapper--item" id="radio__mix-vaccine--done">
                                 <input type="radio" name="radio__mix-vacctine" class="radio__invisible" checked>
@@ -1498,7 +1453,7 @@
                             </div>
                         </label>
                     </div>
-                    <div class="radio__wrapper--individual vaccine-container__radio">
+                    <div class="radio__wrapper--vaccine">
                         <label class="radio__label">
                             <div class="radio__wrapper--item" id="radio__mix-vaccine--not-yet">
                                 <input type="radio" name="radio__mix-vacctine" class="radio__invisible">
@@ -1506,9 +1461,8 @@
                             </div>
                         </label>
                     </div>
-                    <div class="input__wrapper vaccine-container__calender">
-                        <input type="date" class="input__area--default vaccine-container__date-vaccine"
-                            id="date-mix-vaccine">
+                    <div class="input__wrapper--vaccine-calender">
+                        <input type="date" class="input__area--vaccine-calender" id="date-mix-vaccine">
                     </div>
                 </div>
             </li>
@@ -1516,8 +1470,8 @@
                 <div class="resistration-form__title--vaccine">
                     狂犬病ワクチン
                 </div>
-                <div class="resistration-form__field vaccine-container">
-                    <div class="radio__wrapper--individual vaccine-container__radio">
+                <div class="resistration-form__field">
+                    <div class="radio__wrapper--vaccine">
                         <label class="radio__label">
                             <div class="radio__wrapper--item" id="radio__rabies-vaccine--done">
                                 <input type="radio" name="radio__rabies-vacctine" class="radio__invisible" checked>
@@ -1525,7 +1479,7 @@
                             </div>
                         </label>
                     </div>
-                    <div class="radio__wrapper--individual vaccine-container__radio">
+                    <div class="radio__wrapper--vaccine">
                         <label class="radio__label">
                             <div class="radio__wrapper--item" id="radio__rabies-vaccine--not-yet">
                                 <input type="radio" name="radio__rabies-vacctine" class="radio__invisible">
@@ -1533,19 +1487,19 @@
                             </div>
                         </label>
                     </div>
-                    <div class="input__wrapper vaccine-container__calender">
-                        <input type="date" class="input__area--default vaccine-container__date-vaccine"
-                            id="date-rabies-vaccine">
+                    <div class="input__wrapper--vaccine-calender">
+                        <input type="date" class="input__area--vaccine-calender" id="date-rabies-vaccine">
                     </div>
                 </div>
             </li>
             <li class="resistration-form">
-                <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
+                <div class="resistration-form__title--shelter">
+                    <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <span class="resistration-form__title--title">
-                        保健所登録は<span>済んでいますか？</span>
+                    <span>
+                        <span>保健所登録は</span>
+                        <span>済んでいますか？</span>
                     </span>
                 </div>
                 <div class="resistration-form__field">
@@ -1569,10 +1523,10 @@
             </li>
             <li class="resistration-form">
                 <div class="resistration-form__title">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
+                    <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <span class="resistration-form__title--title">
+                    <span>
                         避妊・去勢はしていますか？
                     </span>
                 </div>
@@ -1597,10 +1551,10 @@
             </li>
             <li class="resistration-form">
                 <div class="resistration-form__title--pet-kind">
-                    <div class="icon__wrapper--required resistration-form__title--icon">
+                    <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <span class="resistration-form__title--title">
+                    <span>
                         ペットの犬種
                     </span>
                 </div>
@@ -1738,7 +1692,6 @@
         </ul>
         <a href="" class="most-important-button cirtificate-button">確認画面へ</a>
     </div>
-
     <footer class="footer">
         <a class="footer__page-top-button" href="#">
             <span></span>

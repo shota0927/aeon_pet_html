@@ -7,6 +7,9 @@
     font-weight: $font-weight;
 }
 
+$font-size--pc-normal: 1.6rem;
+$font-size--sp-normal: 1.4rem;
+
 .radio-button-module {
     display: inline-block;
 
@@ -103,7 +106,7 @@
 }
 
 .radio-button-module {
-    margin-right: calc(1.6rem * 3);
+    margin-right: calc($font-size--pc-normal * 3);
 }
 
 .checkbox-button-module {
@@ -118,14 +121,13 @@
     }
 }
 
-
 input,
 select {
-    font-size: 1.4rem;
+    font-size: $font-size--sp-normal;
 }
 
 body {
-    @include font-shape($color-text-main, 1.6rem);
+    @include font-shape($color-text-main, $font-size--pc-normal);
 }
 
 body,
@@ -159,260 +161,66 @@ footer {
         }
     }
 
-    &__reservation {
-        background-color: $color-thin-green;
-        border-radius: 10px;
-        padding: 15px;
+    &__note {
         margin-bottom: 20px;
-
-        .reservation-title {
-            color: $color-main;
-
-            >span {
-                display: block;
-
-                @include mq() {
-                    display: inline;
-                }
-            }
-
-            &__time {
-                &::before {
-                    content: "受付時間：";
-
-                    @include mq() {
-                        content: "　";
-                    }
-                }
-            }
-
-            &__pick-up {
-                &::before {
-                    @include mq() {
-                        content: "　";
-                    }
-                }
-            }
-
-            @include mq() {
-                font-size: 1.8rem;
-            }
-        }
-
-        .reservation-list {
-            font-size: 1.4rem;
-
-            @include mq() {
-                font-size: 1.6rem;
-            }
-        }
-    }
-
-    &__formlist {
-        list-style: none;
-
-        @include mq() {
-            padding-left: 10px;
-        }
-    }
-}
-
-.errorlist {
-    color: $color-alert;
-    list-style-position: inside;
-    font-size: 1.4rem;
-
-    >li {
-        &::before {
-            content: "・";
-            width: 3px;
-        }
-    }
-}
-
-.resistration-form {
-
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-
-    @include mq() {
-        margin: 25px 0;
-        align-items: center;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    @mixin extResistrationForm {
-        @extend .resistration-form;
-        display: block;
-    }
-
-    &--anamnesis {
-        @include extResistrationForm();
         width: 100%;
-        overflow-x: scroll;
+    }
+}
+
+.confirm-table {
+    &__row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 3px;
+        min-height: 47px;
 
     }
 
     &__title {
-        @mixin extResitrationTitle {
-            @extend .resistration-form__title;
-        }
-
-        display: flex;
-        flex-direction: row;
-        margin: 10px 0px;
-        align-items: center;
-
-        >span,
-        label {
-            position: relative;
-            left: 1rem;
-
-            @include mq() {
-                width: 176px;
-            }
-        }
-
-        &--pet-kind,
-        &--vaccine-date,
-        &--shelter {
-            @include extResitrationTitle();
-        }
-
-        &--vaccine-date,
-        &--shelter {
-            @include mq() {
-                >.icon__wrapper--required {
-                    position: relative;
-                    top: -1.2rem;
-                }
-
-                >span>span,
-                label>span {
-                    display: block;
-                }
-            }
-        }
+        background-color: $color-thin-green;
+        padding: $font-size--pc-normal;
+        flex-basis: 133px;
+        font-size: $font-size--sp-normal;
 
         @include mq() {
-            margin: 0;
             flex-basis: 248px;
-            align-items: center;
-            align-self: flex-start;
+            font-size: $font-size--pc-normal;
 
-
-            &--vaccine {
-                flex-basis: 248px;
-                padding-left: 4rem;
-                margin-bottom: 45px;
-            }
-
-            &--pet-kind {
-                flex-basis: 248px;
-                margin-bottom: 900px;
-            }
         }
     }
 
-    &__field {
-        @mixin extResitrationField {
-            @extend .resistration-form__field;
-        }
-
-        position: relative;
-
-        >* {
-            display: inline-block;
-        }
+    &__answer-content {
+        background-color: $color-background-base;
+        padding: $font-size--pc-normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 208px;
 
         @include mq() {
-            flex-basis: 632px;
+            flex-basis: 682px;
         }
+    }
 
-        &--anamnesis {
-            @include extResitrationField();
-            width: 100%;
-        }
+    .answer-content {
+        margin: auto;
 
+        &__answer {}
 
-        &--worried {
-            @include extResitrationField();
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            flex-basis: 40%;
-            gap: 10px;
-
-            >* {
-                flex: 1;
-                flex-basis: 45%;
-            }
-        }
-
-        &--feces,
-        &--drinking {
-            @include extResitrationField();
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-
+        &__detail {}
     }
 }
 
-.input {
-    &__wrapper {
-
-        &--symptom,
-        &--part {
-            width: 178px;
-        }
-
-        &--symptom {
-            float: right;
-
-            &::after {
-                display: block;
-                clear: both;
-            }
-        }
-    }
-
-    &__area {
-        @mixin extInputTxt() {
-            @extend .input__area--default;
-        }
-
-        &--pet-doctor {
-            @include extInputTxt();
-            width: 340px;
-        }
-
-        &--pet-detail {
-            @include extInputTxt();
-            width: 383px;
-        }
-    }
+.worried-list,
+.anamnesis-list {
+    margin: $font-size--pc-normal 0;
 }
 
-.textarea {
-    height: 70px;
-    padding: 0.75rem;
 
-    @include mq() {
-        height: 118px;
-    }
 
-    &__wrapper {
-        width: 100%;
-
-    }
-}
-
-.cirtificate-button {
+.most-important-button,
+.sub-button {
     display: block;
     width: 220px;
     margin: 0 auto;
@@ -488,7 +296,7 @@ footer {
 
     &__header {
         background-color: $color-bright-green;
-        @include font-shape($color-background-base, 1.4rem);
+        @include font-shape($color-background-base, $font-size--sp-normal);
         text-align: center;
     }
 
@@ -517,7 +325,7 @@ footer {
 @include mq() {
 
     .errorlist {
-        font-size: 1.6rem;
+        font-size: $font-size--pc-normal;
     }
 
 }

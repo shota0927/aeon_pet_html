@@ -8,19 +8,21 @@
     font-family: $font-family, nth($font-family-base, 3);
 }
 
-body {
-    @include font-shape($color-text-main, 1.6rem);
-}
-
 input,
 select {
     font-size: 1.4rem;
 }
 
+body,
 header,
-footer,
-.content {
+footer {
+    @include font-shape($color-text-main, 1.6rem);
     min-width: 375px;
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
 }
 
 .content {
@@ -28,9 +30,19 @@ footer,
     width: 375px;
     padding: 0 17px;
 
+    @include mq() {
+        box-sizing: content-box;
+        width: 930px;
+        margin: 0 auto;
+    }
+
     &__title {
         @include font-shape($color-main, 2.4rem);
         text-align: center;
+
+        @include mq() {
+            font-size: 3rem;
+        }
     }
 
     &__note {
@@ -47,6 +59,10 @@ footer,
 
     &__formlist {
         list-style: none;
+
+        @include mq() {
+            padding-left: 10px;
+        }
     }
 }
 
@@ -80,9 +96,10 @@ footer,
         flex-direction: row;
         gap: 10px;
         margin: 10px 0px;
+        align-items: center;
 
         @include mq() {
-            margin-bottom: 0;
+            margin: 0;
             flex-basis: 248px;
             align-items: center;
         }
@@ -91,20 +108,15 @@ footer,
             @include mq() {
                 flex-basis: 248px;
                 align-items: center;
-
-                >* {
-                    display: inline;
-
-                }
-
-                >* {
-                    display: block;
-                }
             }
         }
     }
 
     &__field {
+        @mixin extResitrationField {
+            @extend .resistration-form__field;
+        }
+
         >* {
             display: inline-block;
         }
@@ -114,15 +126,24 @@ footer,
         }
 
         &--name {
+            @include extResitrationField();
             display: flex;
             flex-direction: row;
             gap: 20px;
         }
 
         &--birth {
+            @include extResitrationField();
             display: flex;
             flex-direction: row;
             gap: 10px;
+        }
+
+        &--representative {
+            @include extResitrationField();
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
     }
@@ -157,6 +178,10 @@ footer,
             width: 340px;
         }
 
+        &--relation {
+            margin-left: auto;
+        }
+
         &--prefecture {
             width: 120px;
         }
@@ -189,7 +214,8 @@ footer,
             width: 340px;
         }
 
-        &--representative {
+        &--representative,
+        &--relation {
             @include extInputTxt();
             width: 340px;
 
@@ -242,19 +268,6 @@ footer,
     }
 }
 
-.postal-container {
-    &__text-postal {
-        width: 120px;
-    }
-
-    &__button-search {
-        width: 81px;
-        @include font-shape(#FFF, 1.4rem, nth($font-family-base, 2));
-        font-weight: bold;
-        background-color: $color-icon-default;
-    }
-}
-
 .cirtificate-button {
     display: block;
     width: 220px;
@@ -279,6 +292,8 @@ footer,
 
     &--password {
         font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: -2.15px;
         display: block;
         width: 340px;
     }
@@ -288,6 +303,13 @@ footer,
     &__wrapper {
         &--optional {
             margin: 0;
+        }
+
+        &--optional,
+        &--required {
+            width: 32px;
+            min-width: 32px;
+            height: 17px;
         }
     }
 }
@@ -348,33 +370,4 @@ footer,
             }
         }
     }
-}
-
-@include mq() {
-
-    body,
-    header,
-    footer {
-        min-width: 1336px;
-    }
-
-    .content {
-        box-sizing: content-box;
-        width: 930px;
-        margin: 0 auto;
-
-        &__title {
-            font-size: 3rem;
-        }
-
-        &__formlist {
-            padding-left: 10px;
-        }
-    }
-
-    .errorlist {
-        font-size: 1.6rem;
-    }
-
-
 }

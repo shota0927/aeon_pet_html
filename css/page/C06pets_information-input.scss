@@ -1,4 +1,5 @@
 @import "../setting/_setting.scss";
+@import "../styles.scss";
 
 @mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
     font-size: $font-size;
@@ -7,20 +8,305 @@
     font-family: $font-family, nth($font-family-base, 3);
 }
 
-body {
-    @include font-shape($color-text-main, 1.6rem);
-}
-
 input,
 select {
     font-size: 1.4rem;
 }
 
+body,
 header,
-footer,
-.content {
+footer {
+    @include font-shape($color-text-main, 1.6rem);
     min-width: 375px;
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
 }
+
+.content {
+    margin: 0 auto;
+    width: 375px;
+    padding: 0 17px;
+
+    @include mq() {
+        box-sizing: content-box;
+        width: 930px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @include font-shape($color-main, 2.4rem);
+        text-align: center;
+
+        @include mq() {
+            font-size: 3rem;
+        }
+    }
+
+    &__note {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &__error {
+        background-color: $color-error;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__formlist {
+        list-style: none;
+
+        @include mq() {
+            padding-left: 10px;
+        }
+    }
+}
+
+.errorlist {
+    color: $color-alert;
+    list-style-position: inside;
+    font-size: 1.4rem;
+
+    >li {
+        &::before {
+            content: "・";
+            width: 3px;
+        }
+    }
+}
+
+.resistration-form {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+
+
+    @include mq() {
+        margin: 10px 0;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    &__title {
+        @mixin extResitrationTitle {
+            @extend .resistration-form__title;
+        }
+
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0px;
+        align-items: center;
+
+        >span,
+        label {
+            position: relative;
+            left: 1rem;
+        }
+
+        &--pet-kind,
+        &--vaccine-date,
+        &--shelter {
+            @include extResitrationTitle();
+        }
+
+        &--vaccine-date,
+        &--shelter {
+            @include mq() {
+                >.icon__wrapper--required {
+                    position: relative;
+                    top: -1.2rem;
+                }
+
+                >span>span,
+                label>span {
+                    display: block;
+                }
+            }
+        }
+
+        @include mq() {
+            margin: 0;
+            flex-basis: 248px;
+            align-items: center;
+
+
+            &--vaccine {
+                flex-basis: 248px;
+                padding-left: 4rem;
+                margin-bottom: 45px;
+            }
+
+            &--pet-kind {
+                flex-basis: 248px;
+                margin-bottom: 900px;
+            }
+        }
+    }
+
+    &__field {
+        @mixin extResitrationField {
+            @extend .resistration-form__field;
+        }
+
+        position: relative;
+
+        >* {
+            display: inline-block;
+        }
+
+        @include mq() {
+            flex-basis: 632px;
+        }
+
+        &--name {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        &--pet-birth {
+            @include extResitrationField();
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+
+            .pet-age-container {
+                display: inline-block;
+                background-color: $color-thin-green;
+                flex-basis: 250px;
+                width: 250px;
+                height: 46px;
+                text-align: center;
+                padding-top: 5px;
+
+                @include mq() {
+                    margin: 10px 0 10px auto;
+                }
+
+                &__age-font {
+                    @include font-shape($color-main, 2.0rem)
+                }
+            }
+        }
+
+    }
+}
+
+.input {
+    &__wrapper {
+
+        &--name {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            gap: 20px;
+            display: inline-block;
+
+            @include mq() {
+                width: 191px;
+                flex-basis: 191px;
+            }
+        }
+
+        &--pet-birth-year {
+            width: 100px;
+        }
+
+        &--pet-birth-month,
+        &--pet-birth-day {
+            width: 80px;
+        }
+
+        &--vaccine-calender {
+            position: absolute;
+            top: 5px;
+            left: 100px;
+            z-index: 10;
+        }
+    }
+
+    &__area {
+        @mixin extInputTxt() {
+            @extend .input__area--default;
+        }
+
+        &--pet-name {
+            @include extInputTxt();
+            width: 140px;
+
+            @include mq() {
+                width: 190px;
+            }
+        }
+
+        &--vaccine-calender {
+            width: 180px;
+            @extend .input__area--default;
+        }
+    }
+}
+
+.cirtificate-button {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.icon {
+    &__wrapper {
+        &--optional {
+            margin: 0;
+        }
+
+        &--optional,
+        &--required {
+            width: 32px;
+            min-width: 32px;
+            height: 17px;
+        }
+    }
+}
+
+.radio {
+
+    &__wrapper {
+        @mixin extResitrationRadio {
+            @extend .radio__wrapper--individual;
+        }
+
+        &--individual {
+            height: auto;
+        }
+
+        &--vaccine {
+            @include extResitrationRadio();
+            display: block;
+        }
+
+        &--item::after {
+            content: "";
+        }
+    }
+}
+
+.select {
+    &__wrapper {
+        &--shevron::after {
+            right: 0.5rem;
+        }
+    }
+}
+
+
 
 .modal-container {
     position: fixed;
@@ -83,7 +369,9 @@ footer,
     }
 
     &__button-container {
-        height: 10%;
+        height: 58px;
+        position: relative;
+        top: 5px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -151,28 +439,6 @@ footer,
 
 }
 
-.content {
-    margin: 0 auto;
-    width: 375px;
-    padding: 0 17px;
-
-    &__title {
-        @include font-shape($color-main, 2.4rem);
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    &__error {
-        background-color: $color-error;
-        border-radius: 10px;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-
-    &__formlist {
-        list-style: none;
-    }
-}
 
 .errorlist {
     color: $color-alert;
@@ -187,104 +453,6 @@ footer,
     }
 }
 
-.resistration-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-
-    &__title {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-
-        &--pet-kind {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-        }
-    }
-
-    &__field {
-        >* {
-            display: inline-block;
-            margin: 10px 0;
-        }
-
-    }
-}
-
-.name-container {
-    display: flex;
-    margin: 0 auto;
-    gap: 20px;
-
-    >* {
-        width: 160px;
-    }
-
-    &__name-label {
-        display: inline-block;
-    }
-
-    &__name-text {
-        width: 140px;
-        display: inline-block;
-    }
-}
-
-.pet-birth-container {
-    width: 280px;
-
-    &__year {
-        display: inline-block;
-        width: 100px;
-    }
-
-    &__month,
-    &__day {
-        display: inline-block;
-        width: 80px;
-    }
-
-    &__age {
-        display: inline-block;
-        background-color: $color-thin-green;
-        margin: 10px auto;
-        width: 250px;
-        height: 46px;
-        text-align: center;
-        padding-top: 5px;
-
-        .age-font {
-            @include font-shape($color-main, 2.0rem)
-        }
-    }
-}
-
-.pet-container {
-    &__pet-name {
-        width: 340px;
-    }
-}
-
-.vaccine-container {
-    position: relative;
-
-    &__radio {
-        display: block;
-    }
-
-    &__calender {
-        position: absolute;
-        top: -10px;
-        left: 100px;
-        z-index: 10;
-    }
-
-    &__date-vaccine {
-        width: 180px;
-    }
-}
 
 .dog-kind {
     &__others {
@@ -294,8 +462,8 @@ footer,
         text-align: center;
     }
 
-    &__container{
-        >*{
+    &__container {
+        >* {
             margin: 10px 0;
         }
     }
@@ -348,6 +516,10 @@ footer,
         &--individual {
             height: auto;
             margin-right: 20px;
+        }
+
+        &-- {
+            display: block;
         }
 
         &--item::after {
@@ -416,6 +588,11 @@ footer,
 
         &--radio:checked+&--label {
             background-color: $color-thin-green;
+            border: white solid 1px;
+        }
+
+        &--radio:focus+&--label {
+            background-color: $color-thin-green;
             border: $color-circle-border solid 1px;
         }
     }
@@ -424,86 +601,8 @@ footer,
 
 @include mq() {
 
-    body,
-    header,
-    footer {
-        min-width: 1336px;
-    }
-
-    .content {
-        box-sizing: content-box;
-        width: 930px;
-        margin: 0 auto;
-
-        &__title {
-            font-size: 3rem;
-        }
-
-        &__formlist {
-            padding-left: 10px;
-        }
-    }
-
     .errorlist {
         font-size: 1.6rem;
-    }
-
-    .resistration-form {
-        align-items: center;
-        flex-direction: row;
-        margin-bottom: 35px;
-        gap: 20px;
-
-        &__title {
-            flex-basis: 248px;
-            align-items: center;
-
-            &--title>* {
-                display: block;
-            }
-
-            &--vaccine {
-                flex-basis: 248px;
-                margin-left: 4rem;
-                margin-bottom: 45px;
-            }
-
-            &--pet-kind {
-                flex-basis: 248px;
-                margin-bottom: 900px;
-            }
-        }
-
-        &__field {
-            flex-basis: 632px;
-        }
-    }
-
-    .pet-container {
-        gap: 20px;
-
-        >* {
-            width: 190px;
-        }
-
-
-        &__name-label {
-            margin-right: 5px;
-        }
-
-        &__name-text {
-            width: 160px;
-        }
-    }
-
-    .pet-birth-container {
-        display: flex;
-        gap: 10px;
-
-        &__age {
-            margin: 0;
-            margin-left: auto;
-        }
     }
 
     .dog-kind {
