@@ -181,11 +181,11 @@ select::-ms-expand {
   display: none;
 }
 
-.pic__main__wrapper {
+.f11__pic__main__wrapper {
   height: 651px;
 }
 
-.pic__main__wrapper .pic__txt--pet-infomation-detales {
+.f11__pic__main__wrapper .f11__pic__txt--pet-infomation-detales {
   color: #6F8D1B;
   text-align: center;
   margin: 37px 0 45px 0;
@@ -194,25 +194,25 @@ select::-ms-expand {
   font-family: "Noto Sans JP", "Lato", sans-serif;
 }
 
-.pic__main__wrapper .pic__btn__warpper--change {
+.f11__pic__main__wrapper .f11__pic__btn__warpper--change {
   text-align: right;
   margin-right: 13.5%;
   margin-bottom: 5px;
 }
 
-.pic__main__wrapper .pic__table__wrapper {
+.f11__pic__main__wrapper .f11__pic__table__wrapper {
   display: inline-block;
   width: 560px;
   margin-left: 15%;
 }
 
-.pic__main__wrapper .pic__table__wrapper .pic__table--pet-infomation .pic__table__text--left {
+.f11__pic__main__wrapper .f11__pic__table__wrapper .f11__pic__table--pet-infomation .f11__pic__table__text--left {
   width: 280px;
 }
 
-.pic__main__wrapper .pic__bottom-link {
+.f11__pic__main__wrapper .f11__pic__bottom-link {
   display: block;
   text-align: center;
   margin-top: 50px;
 }
-/*# sourceMappingURL=F12_pet_infomation-check.css.map */
+/*# sourceMappingURL=F11_pet_infomation-check.css.map */
