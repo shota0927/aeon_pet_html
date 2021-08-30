@@ -1,18 +1,18 @@
-@import "css/setting/_reset.scss";
-@import "css/setting/_setting.scss";
+@import "../css/setting/reset";
+@import "../css/setting/setting";
 // @import "css/setting/_reset.scss";
 // @import "css/styles.scss";
 
-.bdcc__background--grey {
+.f03__bdcc__background--grey {
     height: 735px;
     background: #999;
     text-align: center;
 
-    .bdcc__inner__group{
+    .f03__bdcc__inner__group{
 
-        .bdcc__crossbtn__wrapper {
+        .f03__bdcc__crossbtn__wrapper {
     
-            .bdcc__crossbtn {
+            .f03__bdcc__crossbtn {
                 background-color: $color-accordion-icon;
                 position: absolute;
                 left: 83.8%;
@@ -27,7 +27,7 @@
             }
         }
     
-        .bdcc__container--white {
+        .f03__bdcc__container--white {
             background: $color-background-base;
             display: inline-block;
             width: 72vw;
@@ -39,7 +39,7 @@
                 width: 90%;
             }
     
-            .bdcc__txt--cancel {
+            .f03__bdcc__txt--cancel {
                 color: $color-text-main;
                 margin-top: 73px;
                 font-size: 14pt;
@@ -53,7 +53,7 @@
                 }
             }
     
-            .bdcc__btn-wrapper--yes-no {
+            .f03__bdcc__btn-wrapper--yes-no {
                 margin-top: 52px;
 
                 @media screen and(max-width:768px) {
@@ -61,8 +61,8 @@
                     
                 }
     
-                .bdcc__btn--no,
-                .bdcc__btn--yes {
+                .f03__bdcc__btn--no,
+                .f03__bdcc__btn--yes {
                     margin: 0 5px 0 5px;
                     width: 192px;
 

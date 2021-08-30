@@ -1,0 +1,60 @@
+@import "../css/setting/reset";
+@import "../css/setting/setting";
+
+.f14__pic__main__wrapper {
+
+    .f14__pic__txt--pet-infomation-detales {
+        color: $color-main;
+        text-align: center;
+        margin: 37px 0 25px 0;
+        font-size: 24pt;
+    }
+
+    .f14__pic__table__wrapper {
+        display: inline-block;
+        width: 88%;
+        margin: 0 10.6% 0 4.3%;
+
+        @media screen and(min-width:768px) {
+            width: 43.5%;
+            margin-left: 16.4%;
+
+        }
+
+        .f14__pic__main-sentence {
+            font-size: 14pt;
+
+            @media screen and(min-width:768px) {
+                font-size: 14pt;
+
+            }
+
+        }
+
+
+        .f14__pic__table--pet-infomation {
+            margin-top: 33px;
+
+
+            .f14__pic__table__text--left {
+                width: 38%;
+
+                @media screen and(max-width:320px) {
+                    width: 45%;
+
+
+                }
+            }
+        }
+    }
+
+    .f14__pic__btn--sign-up {
+        display: block;
+        margin: 35px auto 0 auto;
+    }
+
+    .f14__pic__btn--fix {
+        display: block;
+        margin: 25px auto 77px auto;
+    }
+}
