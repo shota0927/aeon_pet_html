@@ -3577,6 +3577,193 @@ a:hover {
   color: #707070;
 }
 
+.main__password__input__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  padding: 15px 0;
+  margin: 20px 0 0 0;
+}
+
+.main__password__input__text {
+  font-size: 1.6rem;
+  padding-bottom: 15px;
+}
+
+.main__password__input__mailtextarea {
+  background-color: #F8F8F8;
+  font-size: 1.6rem;
+  padding: 25px 15px;
+  margin: 0 auto;
+}
+
+.main__password__input__mailtextarea .main__item__title {
+  padding-bottom: 15px;
+}
+
+.main__password__input__mailtextarea .main__item {
+  padding: 10px 0;
+}
+
+.main__password__input__passwordarea {
+  margin-bottom: 20px;
+}
+
+.main__password__input__passwordarea__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0 10px 0;
+}
+
+.main__password__input__passwordarea__title .main__item {
+  padding: 0 0 0 7px;
+}
+
+.main__password__input__passwordarea__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.main__password__input__passwordarea__input .input__wrapper {
+  width: 100%;
+}
+
+.main__password__input__passwordarea__input .input__wrapper .input__area--default {
+  width: 100%;
+}
+
+.main__password__input__passwordarea__input .input__wrapper .input__area--default::-webkit-input-placeholder {
+  color: #DEDEDE;
+}
+
+.main__password__input__passwordarea__input .input__wrapper .input__area--default:-ms-input-placeholder {
+  color: #DEDEDE;
+}
+
+.main__password__input__passwordarea__input .input__wrapper .input__area--default::-ms-input-placeholder {
+  color: #DEDEDE;
+}
+
+.main__password__input__passwordarea__input .input__wrapper .input__area--default::placeholder {
+  color: #DEDEDE;
+}
+
+.main__password__input__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 2vw;
+}
+
+.main__password__input__icon .icon__wrapper--invisible {
+  position: absolute;
+  top: 12px;
+}
+
+.main__password__input__text-attention {
+  font-size: 1.2rem;
+}
+
+.main__password__input__text-attention .hidden-mobile {
+  display: none;
+}
+
+.main__password__input__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0;
+  padding: 0 0 35px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main__password__input .container {
+    width: 930px;
+    padding: 0;
+    margin: auto;
+  }
+  .main__password__input__title {
+    padding: 30px 0;
+    margin: 10px 0 0 0;
+  }
+  .main__password__input__text {
+    margin: 0;
+    padding: 0;
+  }
+  .main__password__input__mailtextarea {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .main__password__input__mailtextarea .main__item {
+    padding: 0;
+  }
+  .main__password__input__passwordarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 705px;
+    margin: 0 auto;
+  }
+  .main__password__input__passwordarea .main__password__input__passwordarea__input .input__wrapper {
+    width: 430px;
+  }
+  .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--default {
+    width: 430px;
+  }
+  .main__password__input__icon {
+    right: 1vw;
+  }
+  .main__password__input__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__password__input__text-attention {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 70px 0;
+  }
+  .main__password__input__text-attention .hidden-mobile {
+    display: block;
+  }
+  .main__password__input__button {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding: 0;
+  }
+}
+
+.main__underline {
+  color: #707070;
+}
+
 .main__password__finish__title {
   display: -webkit-box;
   display: -ms-flexbox;
