@@ -16,7 +16,7 @@
         margin: 0 10.6% 0 4.3%;
 
         @media screen and(min-width:768px) {
-            width: 43.5%;
+            width: 48.5%;
             margin-left: 16.4%;
 
         }
@@ -38,10 +38,22 @@
 
             .f14__pic__table__text--left {
                 width: 38%;
+                font-size: $font-size-base;
+
+                @media screen and(min-width:768px) {
+                    font-size: 12pt;
+                }
 
                 @media screen and(max-width:320px) {
                     width: 45%;
+                }
+            }
 
+            .f14__pic__table__text--right {
+                font-size: $font-size-base;
+
+                @media screen and(min-width:768px) {
+                    font-size: 12pt;
 
                 }
             }
@@ -51,10 +63,21 @@
     .f14__pic__btn--sign-up {
         display: block;
         margin: 35px auto 0 auto;
+
+        @media screen and(min-width:768px) {
+            margin: 55px auto 0 auto;
+
+
+        }
     }
 
     .f14__pic__btn--fix {
         display: block;
         margin: 25px auto 77px auto;
+
+        @media screen and(min-width:768px) {
+            margin: 25px auto 110px auto;
+
+        }
     }
 }
