@@ -1,0 +1,99 @@
+@import "../../../../../css/setting/setting";
+@import "../../../../../css/setting/reset";
+
+.f11__pic__main__wrapper {
+
+    .f11__pic__txt--pet-infomation-detales {
+        color: $color-main;
+        text-align: center;
+        margin: 42px 0 45px 0;
+        font-size: 30pt;
+        font-weight: $font-weight-base;
+        font-family: $font-family-base;
+
+        @media screen and(max-width:768px) {
+            font-size: 24pt;
+            margin: 37px 0 19px 0;
+
+
+        }
+    }
+
+    .f11__pic__btn__warpper--change {
+        text-align: right;
+        margin-right: 16%;
+        margin-bottom: 10px;
+
+        @media screen and(max-width:768px) {
+            margin-right: 6.5%;
+
+        }
+    }
+
+    .f11__pic__error-maesage {
+        display: inline-block;
+        background-color: $color-error;
+        border-radius: 10px;
+        padding: 10px 10px 16px 10px;
+        color: $color-alert;
+        font-size: 12pt;
+        margin: 0 4.6%;
+        width: 91%;
+
+        @media screen and(min-width:768px) {
+            display: none;
+
+        }
+
+
+
+    }
+
+    .f11__pic__table__wrapper {
+        display: inline-block;
+        width: 68%;
+        margin-left: 16%;
+        margin-bottom: 90px;
+
+        @media screen and(max-width:768px) {
+            margin: 10px 4.6%;
+            width: 91%;
+
+        }
+
+        .f11__pic__table--pet-infomation {
+
+            .f11__pic__table__text--left {
+                width: 26.7%;
+                font-size: 12pt;
+
+                @media screen and(max-width:768px) {
+                    font-size: 86%;
+                    width: 39%;
+                }
+            }
+
+            .f11__pic__table__text--right {
+                font-size: 12pt;
+
+                @media screen and(max-width:768px) {
+                    font-size: 100%;
+
+                }
+            }
+        }
+
+    }
+
+    .f11__pic__bottom-link {
+        display: inline-block;
+        margin: 20px 4.6% 66px 4.6%;
+        width: 91%;
+        text-align: center;
+
+        @media screen and(min-width:768px) {
+            display: none;
+
+        }
+    }
+}

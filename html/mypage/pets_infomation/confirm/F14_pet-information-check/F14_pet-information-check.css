@@ -181,79 +181,88 @@ a:hover {
   }
 }
 
-.f03__bdcc__background--grey {
-  height: 735px;
-  background: #999;
+.f14__pic__main__wrapper .f14__pic__txt--pet-infomation-detales {
+  color: #6F8D1B;
   text-align: center;
+  margin: 37px 0 19px 0;
+  font-size: 18pt;
 }
 
-.f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__crossbtn__wrapper .f03__bdcc__crossbtn {
-  background-color: #ABBC7C;
-  position: absolute;
-  left: 83.8%;
-  top: 29%;
-}
-
-@media screen and (max-width: 768px) {
-  .f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__crossbtn__wrapper .f03__bdcc__crossbtn {
-    position: absolute;
-    left: 91.6%;
-    top: 29%;
+@media screen and (min-width: 768px) {
+  .f14__pic__main__wrapper .f14__pic__txt--pet-infomation-detales {
+    font-size: 24pt;
+    margin: 42px 0 43px 0;
   }
 }
 
-.f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white {
-  background: #fff;
+.f14__pic__main__wrapper .f14__pic__table__wrapper {
   display: inline-block;
-  width: 72vw;
-  height: 265px;
-  border-radius: 10px;
-  margin-top: 230px;
+  width: 91%;
+  margin: 0 4.6% 0 4.6%;
 }
 
-@media screen and (max-width: 768px) {
-  .f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white {
-    width: 90%;
+@media screen and (min-width: 768px) {
+  .f14__pic__main__wrapper .f14__pic__table__wrapper {
+    width: 68.1%;
+    margin: 0 16%;
   }
 }
 
-.f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white .f03__bdcc__txt--cancel {
-  color: #333;
-  margin-top: 73px;
-  font-size: 14pt;
-  font-family: "Noto Sans JP", "Lato", sans-serif;
-  font-weight: 400;
+.f14__pic__main__wrapper .f14__pic__table__wrapper .f14__pic__main-sentence {
+  font-size: 12pt;
 }
 
-@media screen and (max-width: 768px) {
-  .f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white .f03__bdcc__txt--cancel {
-    margin-top: 60px;
-    font-size: 97.5%;
+.f14__pic__main__wrapper .f14__pic__table__wrapper .f14__pic__table--pet-infomation {
+  margin-top: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .f14__pic__main__wrapper .f14__pic__table__wrapper .f14__pic__table--pet-infomation {
+    margin-top: 48px;
   }
 }
 
-.f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white .f03__bdcc__btn-wrapper--yes-no {
-  margin-top: 52px;
+.f14__pic__main__wrapper .f14__pic__table__wrapper .f14__pic__table--pet-infomation .f14__pic__table__text--left {
+  width: 39%;
+  font-size: 87%;
 }
 
-@media screen and (max-width: 768px) {
-  .f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white .f03__bdcc__btn-wrapper--yes-no {
-    margin-top: 43px;
+@media screen and (min-width: 768px) {
+  .f14__pic__main__wrapper .f14__pic__table__wrapper .f14__pic__table--pet-infomation .f14__pic__table__text--left {
+    font-size: 12pt;
+    width: 26.7%;
   }
 }
 
-.f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white .f03__bdcc__btn-wrapper--yes-no .f03__bdcc__btn--no,
-.f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white .f03__bdcc__btn-wrapper--yes-no .f03__bdcc__btn--yes {
-  margin: 0 5px 0 5px;
-  width: 192px;
+.f14__pic__main__wrapper .f14__pic__table__wrapper .f14__pic__table--pet-infomation .f14__pic__table__text--right {
+  font-size: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white .f03__bdcc__btn-wrapper--yes-no .f03__bdcc__btn--no,
-  .f03__bdcc__background--grey .f03__bdcc__inner__group .f03__bdcc__container--white .f03__bdcc__btn-wrapper--yes-no .f03__bdcc__btn--yes {
-    display: block;
-    margin: 10px auto;
-    width: 205px;
+@media screen and (min-width: 768px) {
+  .f14__pic__main__wrapper .f14__pic__table__wrapper .f14__pic__table--pet-infomation .f14__pic__table__text--right {
+    font-size: 12pt;
   }
 }
-/*# sourceMappingURL=F03_booking_detales_cancel_confirmmation.css.map */
+
+.f14__pic__main__wrapper .f14__pic__btn--sign-up {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .f14__pic__main__wrapper .f14__pic__btn--sign-up {
+    margin: 40px auto 0 auto;
+  }
+}
+
+.f14__pic__main__wrapper .f14__pic__btn--fix {
+  display: block;
+  margin: 20px auto 66px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .f14__pic__main__wrapper .f14__pic__btn--fix {
+    margin: 20px auto 101px auto;
+  }
+}
+/*# sourceMappingURL=F14_pet-information-check.css.map */
