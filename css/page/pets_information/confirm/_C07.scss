@@ -1,0 +1,69 @@
+.main__underline{
+  color: #707070;
+}
+.main__pets__information__confirm__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+.main__pets__information__confirm__text{
+  text-align: left;
+  font-size: 1.6rem;
+  margin: 0 0 23px 0;
+}
+.main__pets__information__confirm__table{
+  margin: 0 auto;
+  & td{
+    display: flex;
+    font-size: 1.4rem;
+  }
+  & .birthday-old{
+    padding: 0 15px 18px 15px;
+  }
+}
+.main__pets__information__confirm__button{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+}
+.main__pets__information__confirm__button-sub{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 66px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__pets__information__confirm__title{
+    font-size: 3.0rem;
+    margin: 36px 0 29px 0;
+  }
+  .main__pets__information__confirm__text{
+    width: 930px;
+    text-align: left;
+    margin: 0 auto 43px auto;
+  }
+  .main__pets__information__confirm__table{
+    width: 930px;
+    & th{
+      font-size: 1.6rem;
+      white-space: nowrap;
+    }
+    & td{
+      font-size: 1.6rem;
+      display: inline-block;
+    }
+    & .birthday-old{
+      padding: 18px 15px;
+    }
+  }
+  .main__pets__information__confirm__button{
+    margin: 40px 0 20px 0;
+  }
+  .main__pets__information__confirm__button-sub{
+    margin: 0 0 101px 0;
+  }
+}

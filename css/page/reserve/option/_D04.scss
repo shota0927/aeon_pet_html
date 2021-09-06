@@ -1,0 +1,117 @@
+.main__underline{
+  color: #707070;
+}
+.main__reserve__option__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+
+.main__reserve__option__container{
+  background-color: #F2F5E9;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  & .checkbox__indicator2{
+    position: absolute;
+    right: 0px;
+  }
+  & .main__reserve__option-1{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 0 0 0;
+    & .label__wrapper--checked::after {
+      content: "+1,800円（税込）";
+      top: 60%;
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+  }
+   & .main__reserve__option-2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 0 0 0;
+    & .label__wrapper--item:after {
+      content: "+1,200円（税込）";
+      top: 60%;
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+  }
+  & .main__reserve__option-3{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 0 0 0;
+    & .label__wrapper--checked::after {
+      content: "+1,900円（税込）";
+      top: 60%;
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+  }
+}
+.main__reserve__option__text-title{
+  color: #6F8D1B;
+  text-align: left;
+  font-size: 1.6rem;
+  margin: 0 0 8px 0;
+}
+.main__reserve__option__text-content{
+  margin-bottom: 53px;
+}
+
+.main__reserve__option__button{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 66px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__reserve__option{
+    & .container{
+      width: 930px;
+      margin: auto;
+      padding: 0;
+    }
+  }
+  .main__reserve__option__title{
+    font-size: 3.0rem;
+    margin: 36px 0 31px 0;
+  }
+  .main__reserve__option__container{
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 20px;
+    & .main__reserve__option-1{
+      padding: 94px 0 0 0;
+    }
+    & .main__reserve__option-2{
+      padding: 94px 0 0 0;
+    }
+    & .main__reserve__option-3{
+      padding: 94px 0 0 0;
+    }
+  }
+  .main__reserve__option__text-title{
+    font-size: 1.8rem;
+  }
+  .main__reserve__option__text-content{
+    margin: 0;
+  }
+  .main__reserve__option__text-content .main__item{
+    font-size: 0;
+  }
+  .main__reserve__option__text-content .main__item::before{
+    font-size: 1.6rem;
+    content: 'オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。オプションタイトルが入ります。';
+  }
+  .main__reserve__option__button{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 101px 0;
+  }
+}

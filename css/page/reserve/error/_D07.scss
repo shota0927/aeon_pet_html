@@ -1,0 +1,33 @@
+.main__underline{
+  color: #707070;
+}
+.main__reserve__error__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+.main__reserve__error__text-fir{
+  text-align: center;
+  margin: 0 0 33px 0;
+}
+.main__reserve__error__text-sec{
+  text-align: center;
+}
+.main__reserve__error-button {
+  display: flex;
+  justify-content: center;
+  margin: 33px 0 66px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main__reserve__error__title{
+    font-size: 3.0rem;
+    margin: 36px 0 29px 0;
+  }
+  .main__reserve__error-button{
+    margin: 53px 0 101px 0;
+  }
+}
