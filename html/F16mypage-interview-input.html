@@ -26,7 +26,7 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/page/F16mypage-interview-input.css" />
-    <script src="../js/C06pets_information-input.js"></script>
+    <script src="../js/F16mypage-interview-input.js"></script>
     <link rel="icon" href="" />
 </head>
 
@@ -125,7 +125,7 @@
         </div>
     </div>
     <div class="content">
-        <h1 class="content__title">事前問診票</h1>
+        <h1 class="content__title">事前確認事項</h1>
         <div class="content__reservation">
             <p class="reservation-title">
                 <span class="reservation-title__date">2021年7月1日(木)</span>
@@ -181,21 +181,21 @@
                     </span>
                 </div>
                 <div class="resistration-form__field">
-                    <label for="pet-health--bad" class="radio-button-module">
-                        <input type="radio" id="pet-health--bad" name="pet-health-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">異常あり</span>
-                    </label>
                     <label for="pet-health--good" class="radio-button-module">
                         <input type="radio" id="pet-health--good" name="pet-health-group"
                             class="radio-button-module__radio">
                         <span class="radio-button-module__sentence">異常なし</span>
                     </label>
+                    <label for="pet-health--bad" class="radio-button-module">
+                        <input type="radio" id="pet-health--bad" name="pet-health-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">異常あり</span>
+                    </label>
                 </div>
             </li>
             <li class="resistration-form--anamnesis">
                 <div class="resistration-form__field--anamnesis">
-                    <table class="anamnesis-table">
+                    <table class="anamnesis-table" id="table--anamnesis">
                         <colgroup>
                             <col class="anamnesis-table__col--symptom">
                             <col class="anamnesis-table__col--part">
@@ -389,7 +389,7 @@
                         <span class="radio-button-module__sentence">ある</span>
                     </label>
                     <div class="textarea__wrapper">
-                        <textarea name="" id="" class="textarea" placeholder="治療状況など"></textarea>
+                        <textarea name="" id="textarea--pet-illness" class="textarea" placeholder="治療状況など"></textarea>
                     </div>
                 </div>
             </li>
@@ -531,7 +531,7 @@
                     <label for="pet-feces--diarrhea" class="radio-button-module">
                         <input type="radio" id="pet-feces--diarrhea" name="pet-feces-group"
                             class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">はい</span>
+                        <span class="radio-button-module__sentence">下痢が多い</span>
                     </label>
                 </div>
             </li>
@@ -583,7 +583,7 @@
                         <span class="radio-button-module__sentence">ある</span>
                     </label>
                     <div class="textarea__wrapper">
-                        <textarea name="" id="" class="textarea" placeholder="その時の様子など"></textarea>
+                        <textarea name="" id="textarea--pet-homesick" class="textarea" placeholder="その時の様子など"></textarea>
                     </div>
                 </div>
             </li>
@@ -608,7 +608,7 @@
                         <span class="radio-button-module__sentence">ある</span>
                     </label>
                     <div class="textarea__wrapper">
-                        <textarea name="" id="" class="textarea" placeholder="アレルゲン"></textarea>
+                        <textarea name="" id="textarea--pet-allergies" class="textarea" placeholder="アレルゲン"></textarea>
                     </div>
                 </div>
             </li>
@@ -640,28 +640,6 @@
                         <p class="icon__text--required">必須</p>
                     </div>
                     <span>
-                        マイクロチップはつけていますか？
-                    </span>
-                </div>
-                <div class="resistration-form__field">
-                    <label for="pet-microchip--no" class="radio-button-module">
-                        <input type="radio" id="pet-microchip--no" name="pet-microchip-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">つけていない</span>
-                    </label>
-                    <label for="pet-microchip--yes" class="radio-button-module">
-                        <input type="radio" id="pet-microchip--yes" name="pet-microchip-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">つけている</span>
-                    </label>
-                </div>
-            </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
-                    <div class="icon__wrapper--required">
-                        <p class="icon__text--required">必須</p>
-                    </div>
-                    <span>
                         他に同居ワンちゃん・ネコちゃんはいますか？
                     </span>
                 </div>
@@ -677,7 +655,7 @@
                         <span class="radio-button-module__sentence">いる</span>
                     </label>
                     <div class="textarea__wrapper">
-                        <textarea name="" id="" class="textarea" placeholder="種類や数、同居の様子など"></textarea>
+                        <textarea name="" id="textarea--pet-housemate" class="textarea" placeholder="種類や数、同居の様子など"></textarea>
                     </div>
                 </div>
             </li>
@@ -705,6 +683,11 @@
                         <input type="checkbox" id="pet-worried--stickness" name="pet-worried-group"
                             class="checkbox-button-module__checkbox">
                         <span class="checkbox-button-module__sentence">ベタつき</span>
+                    </label>
+                    <label for="pet-worried--oral-care" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-worried--oral-care" name="pet-worried-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">お口のケア</span>
                     </label>
                     <label for="pet-worried--hair-loss" class="checkbox-button-module">
                         <input type="checkbox" id="pet-worried--hair-loss" name="pet-worried-group"

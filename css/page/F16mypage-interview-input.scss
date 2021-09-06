@@ -1,105 +1,11 @@
 @import "../setting/_setting.scss";
 @import "../styles.scss";
+@import "./modules.scss";
 
 @mixin font-shape($font-color, $font-size: inherit, $font-weight: 400) {
     font-size: $font-size;
     color: $font-color;
     font-weight: $font-weight;
-}
-
-.radio-button-module {
-    display: inline-block;
-
-    &__radio {
-        display: block !important;
-        margin: 0;
-        opacity: 0;
-    }
-
-    &__sentence {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 5px;
-
-        &::before {
-            display: block;
-            content: "";
-            width: 3rem;
-            height: 3rem;
-            border: 1px solid $color-border-gray;
-            border-radius: 50%;
-        }
-    }
-
-    &__radio:checked~&__sentence {
-        &::before {
-            padding: 6px;
-            background-clip: content-box;
-            background-color: $color-main;
-        }
-    }
-
-    &__radio:focus~&__sentence {
-        &::before {
-            border-color: $color-main;
-        }
-    }
-}
-
-.checkbox-button-module {
-    display: inline-block;
-
-    &__checkbox {
-        display: block !important;
-        margin: 0;
-        opacity: 0;
-    }
-
-    &__sentence {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 5px;
-
-        &::before {
-            display: block;
-            content: "";
-            width: 3rem;
-            height: 3rem;
-            border: 1px solid $color-border-gray;
-            border-radius: 0.5rem;
-        }
-    }
-
-    &__checkbox:checked~&__sentence {
-        &::before {
-            padding: 6px;
-            background-color: $color-calendar-highlight;
-        }
-
-        &::after {
-            position: absolute;
-            top: 0.25rem;
-            left: 1rem;
-            display: block;
-            width: 1rem;
-            height: 2rem;
-            content: "";
-            transform: rotate(45deg);
-            border: solid $color-background-base;
-            border-width: 0 2px 2px 0;
-        }
-    }
-
-    &__checkbox:focus~&__sentence {
-        &::before {
-            border-color: $color-main;
-        }
-    }
 }
 
 .radio-button-module {
@@ -122,6 +28,10 @@
 input,
 select {
     font-size: 1.4rem;
+
+    &::placeholder{
+        color: $color-switch-off;
+    }
 }
 
 body {
@@ -164,6 +74,10 @@ footer {
         border-radius: 10px;
         padding: 15px;
         margin-bottom: 20px;
+
+        @include mq(){
+            padding: 30px;
+        }
 
         .reservation-title {
             color: $color-main;
@@ -231,34 +145,33 @@ footer {
 }
 
 .resistration-form {
-
+    $self: &;
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 
     @include mq() {
-        margin: 25px 0;
+        margin: 35px 0;
         align-items: center;
         flex-direction: row;
-        gap: 20px;
+        column-gap: 20px;
     }
 
-    @mixin extResistrationForm {
-        @extend .resistration-form;
-        display: block;
-    }
 
     &--anamnesis {
-        @include extResistrationForm();
+        @extend #{$self};
         width: 100%;
         overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
 
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__title {
-        @mixin extResitrationTitle {
-            @extend .resistration-form__title;
-        }
+        $self: &;
 
         display: flex;
         flex-direction: row;
@@ -278,7 +191,7 @@ footer {
         &--pet-kind,
         &--vaccine-date,
         &--shelter {
-            @include extResitrationTitle();
+            @extend #{$self};
         }
 
         &--vaccine-date,
@@ -317,9 +230,7 @@ footer {
     }
 
     &__field {
-        @mixin extResitrationField {
-            @extend .resistration-form__field;
-        }
+        $self: &;
 
         position: relative;
 
@@ -332,28 +243,34 @@ footer {
         }
 
         &--anamnesis {
-            @include extResitrationField();
+            @extend #{$self};
             width: 100%;
         }
 
 
         &--worried {
-            @include extResitrationField();
+            @extend #{$self};
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            flex-basis: 40%;
-            gap: 10px;
+            column-gap: 75px;
+            row-gap: 24px;
+
+            @include mq() {
+                flex-basis: 380px;
+                column-gap: 92px;
+                row-gap: 32px;
+            }
 
             >* {
                 flex: 1;
-                flex-basis: 45%;
+                flex-basis: 20%;
             }
         }
 
         &--feces,
         &--drinking {
-            @include extResitrationField();
+            @extend #{$self};
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -382,17 +299,15 @@ footer {
     }
 
     &__area {
-        @mixin extInputTxt() {
-            @extend .input__area--default;
-        }
+        $self: #{&}--default;
 
         &--pet-doctor {
-            @include extInputTxt();
+            @extend #{$self};
             width: 340px;
         }
 
         &--pet-detail {
-            @include extInputTxt();
+            @extend #{$self};
             width: 383px;
         }
     }
@@ -415,8 +330,7 @@ footer {
 .cirtificate-button {
     display: block;
     width: 220px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
 .icon {
@@ -440,24 +354,16 @@ footer {
     }
 
     &__wrapper {
-        @mixin extSelectWrapper() {
-            @extend .select__wrapper
-        }
+        $self: &;
 
         &--symptom,
         &--part {
-            @include extSelectWrapper();
+            @extend #{$self};
             margin-left: 0;
         }
     }
 }
 
-.cirtificate-button {
-    display: block;
-    width: 220px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
 
 .radio {
     &__dog-kind {

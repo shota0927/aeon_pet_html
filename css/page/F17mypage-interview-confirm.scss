@@ -1,5 +1,6 @@
 @import "../setting/_setting.scss";
 @import "../styles.scss";
+@import "./modules.scss";
 
 @mixin font-shape($font-color, $font-size: inherit, $font-weight: 400) {
     font-size: $font-size;
@@ -10,116 +11,6 @@
 $font-size--pc-normal: 1.6rem;
 $font-size--sp-normal: 1.4rem;
 
-.radio-button-module {
-    display: inline-block;
-
-    &__radio {
-        display: block !important;
-        margin: 0;
-        opacity: 0;
-    }
-
-    &__sentence {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 5px;
-
-        &::before {
-            display: block;
-            content: "";
-            width: 3rem;
-            height: 3rem;
-            border: 1px solid $color-border-gray;
-            border-radius: 50%;
-        }
-    }
-
-    &__radio:checked~&__sentence {
-        &::before {
-            padding: 6px;
-            background-clip: content-box;
-            background-color: $color-main;
-        }
-    }
-
-    &__radio:focus~&__sentence {
-        &::before {
-            border-color: $color-main;
-        }
-    }
-}
-
-.checkbox-button-module {
-    display: inline-block;
-
-    &__checkbox {
-        display: block !important;
-        margin: 0;
-        opacity: 0;
-    }
-
-    &__sentence {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 5px;
-
-        &::before {
-            display: block;
-            content: "";
-            width: 3rem;
-            height: 3rem;
-            border: 1px solid $color-border-gray;
-            border-radius: 0.5rem;
-        }
-    }
-
-    &__checkbox:checked~&__sentence {
-        &::before {
-            padding: 6px;
-            background-color: $color-calendar-highlight;
-        }
-
-        &::after {
-            position: absolute;
-            top: 0.25rem;
-            left: 1rem;
-            display: block;
-            width: 1rem;
-            height: 2rem;
-            content: "";
-            transform: rotate(45deg);
-            border: solid $color-background-base;
-            border-width: 0 2px 2px 0;
-        }
-    }
-
-    &__checkbox:focus~&__sentence {
-        &::before {
-            border-color: $color-main;
-        }
-    }
-}
-
-.radio-button-module {
-    margin-right: calc($font-size--pc-normal * 3);
-}
-
-.checkbox-button-module {
-    @mixin extCbModule() {
-        @extend .checkbox-button-module;
-    }
-
-    &--symptom {
-        @include extCbModule();
-        position: relative;
-        top: 0.6rem;
-    }
-}
 
 input,
 select {
@@ -162,7 +53,8 @@ footer {
     }
 
     &__note {
-        margin-bottom: 20px;
+        margin-top: 43px;
+        margin-bottom: 39px;
         width: 100%;
     }
 }
@@ -181,25 +73,45 @@ footer {
         background-color: $color-thin-green;
         padding: $font-size--pc-normal;
         flex-basis: 133px;
-        font-size: $font-size--sp-normal;
+        font-size: 1.2rem;
+        letter-spacing: -0.1rem;
+        padding: 20px;
 
         @include mq() {
             flex-basis: 248px;
             font-size: $font-size--pc-normal;
-
+            padding: 13px 15px;
         }
     }
 
     &__answer-content {
+        $self: &;
+
         background-color: $color-background-base;
         padding: $font-size--pc-normal;
         display: flex;
         flex-direction: column;
         justify-content: center;
         flex-basis: 208px;
+        padding: 13px 20px;
+        font-size: $font-size--sp-normal;
 
         @include mq() {
             flex-basis: 682px;
+            font-size: $font-size--pc-normal
+        }
+
+        &--anamnesis,
+        &--consultation,
+        &--checkup,
+        &--feces{
+            @extend #{$self};
+            padding: 25px 20px;
+        }
+
+        &--eating-sheet{
+            @extend #{$self};
+            padding: 50px 20px;
         }
     }
 
@@ -212,7 +124,6 @@ footer {
     }
 }
 
-.worried-list,
 .anamnesis-list {
     margin: $font-size--pc-normal 0;
 }

@@ -1,7 +1,6 @@
 $(function () {
   var preModalPet="";
 
-
   $(".modal-container__content").on("click", function () {
     event.stopPropagation();
   });

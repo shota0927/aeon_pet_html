@@ -1,5 +1,6 @@
 @import "../setting/_setting.scss";
 @import "../styles.scss";
+@import "./modules.scss";
 
 @mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
     font-size: $font-size;
@@ -240,11 +241,7 @@ footer {
 
         &--pet-name {
             @include extInputTxt();
-            width: 140px;
-
-            @include mq() {
-                width: 190px;
-            }
+            width: 341px;
         }
 
         &--vaccine-calender {

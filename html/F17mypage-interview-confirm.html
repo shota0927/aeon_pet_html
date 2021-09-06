@@ -125,7 +125,7 @@
         </div>
     </div>
     <div class="content">
-        <h1 class="content__title">事前問診票</h1>
+        <h1 class="content__title">事前確認事項</h1>
         <p class="content__note">以下の内容で登録いたします。よろしければ「登録する」ボタンを押してください。</p>
         <ul class="confirm-table">
             <li class="confirm-table__row">
@@ -142,7 +142,7 @@
             </li>
             <li class="confirm-table__row">
                 <p class="confirm-table__title">健康状態</p>
-                <section class="confirm-table__answer-content">
+                <section class="confirm-table__answer-content--anamnesis">
                     <p class="answer-content__answer">異常あり</p>
                     <ul class="answer-content__detail anamnesis-list">
                         <li class="anamnesis-list__item--symptom">
@@ -165,17 +165,17 @@
             <li class="confirm-table__row">
                 <p class="confirm-table__title">その他現在治療中の病気・怪我はございますか</p>
                 <section class="confirm-table__answer-content">
-                    <p class="answer-content__answer">異常あり</p>
+                    <p class="answer-content__answer">ある</p>
                     <p class="answer-content__detail"> 詳細テキスト詳細テキスト</p>
                 </section>
             </li>
             <li class="confirm-table__row">
                 <p class="confirm-table__title">最近動物病院に受診しましたか？</p>
-                <section class="confirm-table__answer-content">かかった</section>
+                <section class="confirm-table__answer-content--consultation">かかった</section>
             </li>
             <li class="confirm-table__row">
                 <p class="confirm-table__title">血液などの検査を1年以内にしていますか？</p>
-                <section class="confirm-table__answer-content">していない</section>
+                <section class="confirm-table__answer-content--checkup">していない</section>
             </li>
             <li class="confirm-table__row">
                 <p class="confirm-table__title">心臓病の検査を1年以内にしていますか？</p>
@@ -187,18 +187,18 @@
             </li>
             <li class="confirm-table__row">
                 <p class="confirm-table__title">室内でおトイレのワンちゃんにお伺いします。 ペットシーツを食べることがありますか？</p>
-                <section class="confirm-table__answer-content">ある</section>
+                <section class="confirm-table__answer-content">はい</section>
             </li>
             <li class="confirm-table__row">
                 <p class="confirm-table__title">いつものウンチの状態はいかがですか？</p>
-                <section class="confirm-table__answer-content">堅い</section>
+                <section class="confirm-table__answer-content--feces">堅い</section>
             </li>
             <li class="confirm-table__row">
                 <p class="confirm-table__title">お水の飲み方はどちらですか？</p>
                 <section class="confirm-table__answer-content">お皿</section>
             </li>
             <li class="confirm-table__row">
-                <p class="confirm-table__title">confirm体調を崩したことはございますか？</p>
+                <p class="confirm-table__title">体調を崩したことはございますか？</p>
                 <section class="confirm-table__answer-content">
                     <p class="answer-content__answer">ある</p>
                     <p class="answer-content__detail">詳細テキスト詳細テキスト</p>
@@ -237,12 +237,8 @@
                 <p class="confirm-table__title">その他、お手入れに関してお困りごとはありますか？</p>
                 <section class="confirm-table__answer-content">
                     <ul class="worried-list">
-                        <li class="worried-list__item--symptom">
-                            <div class="symptom-name">ヘルニア</div>
-                            <div class="symptom-level">軽度</div>
-                        </li>
-                        <li class="worried-list__item--part">首</li>
-                        <li class="worried-list__item--detail">詳細テキスト詳細テキスト</li>
+                        <li class="worried-list__item--worried">フケ</li>
+                        <li class="worried-list__item--worried">ベタつき</li>
                     </ul>
                 </section>
             </li>
