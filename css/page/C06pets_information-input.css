@@ -1170,7 +1170,7 @@ a:hover {
   padding: 4rem 2rem;
 }
 
-.calendar__wrapper {
+.calendar__wrapper, .calendar__wrapper--vaccine {
   position: relative;
   width: 27.5rem;
   padding: 1rem;
@@ -3745,7 +3745,7 @@ a:hover {
   padding: 4rem 2rem;
 }
 
-.calendar__wrapper {
+.calendar__wrapper, .calendar__wrapper--vaccine {
   position: relative;
   width: 27.5rem;
   padding: 1rem;
@@ -5149,7 +5149,7 @@ a:hover {
   background-color: #fff;
 }
 
-.radio-button-module {
+.radio-button-module, .radio-button-module--vaccine {
   display: inline-block;
 }
 
@@ -5378,7 +5378,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 0;
+  margin-bottom: 22px;
 }
 
 @media (min-width: 768px) {
@@ -5391,7 +5391,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 20px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    margin-bottom: 35px;
   }
 }
 
@@ -5452,16 +5454,16 @@ footer {
   }
 }
 
-.resistration-form__field, .resistration-form__field--pet-birth {
+.resistration-form__field, .resistration-form__field--name, .resistration-form__field--pet-birth {
   position: relative;
 }
 
-.resistration-form__field > *, .resistration-form__field--pet-birth > * {
+.resistration-form__field > *, .resistration-form__field--name > *, .resistration-form__field--pet-birth > * {
   display: inline-block;
 }
 
 @media (min-width: 768px) {
-  .resistration-form__field, .resistration-form__field--pet-birth {
+  .resistration-form__field, .resistration-form__field--name, .resistration-form__field--pet-birth {
     -ms-flex-preferred-size: 632px;
         flex-basis: 632px;
   }
@@ -5549,7 +5551,7 @@ footer {
 
 .input__wrapper--vaccine-calender {
   position: absolute;
-  top: 5px;
+  top: 15px;
   left: 100px;
   z-index: 10;
 }
@@ -5560,6 +5562,26 @@ footer {
 
 .input__area--vaccine-calender {
   width: 180px;
+}
+
+.calendar__wrapper, .calendar__wrapper--vaccine {
+  letter-spacing: -1px;
+}
+
+.calendar__wrapper--vaccine {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  z-index: 10;
+  width: 180px;
+}
+
+.calendar__wrapper--vaccine:hover {
+  cursor: pointer;
+}
+
+.datepicker:hover {
+  cursor: pointer;
 }
 
 .cirtificate-button {
@@ -5577,6 +5599,16 @@ footer {
   width: 32px;
   min-width: 32px;
   height: 17px;
+}
+
+.radio-button-module, .radio-button-module--vaccine {
+  margin: 10px 0;
+  margin-right: 45px;
+}
+
+.radio-button-module--vaccine {
+  display: block;
+  margin: 20px 0;
 }
 
 .radio__wrapper--individual, .radio__wrapper--vaccine {
@@ -5641,6 +5673,27 @@ footer {
           justify-content: center;
 }
 
+.tab-table__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.tab-table__tabs::after {
+  content: "";
+  width: 10%;
+  height: 40px;
+  background: #6F8D1B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+}
+
 .tab-table__label {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
@@ -5652,6 +5705,9 @@ footer {
   height: 40px;
   font-size: 1.4rem;
   white-space: nowrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
 }
 
 .tab-table__content {
@@ -5700,90 +5756,120 @@ footer {
   display: block;
 }
 
-#tab-table__a-line--radio:checked ~ #tab-table__a-line--label {
+#tab-table__a-line--radio:checked ~ .tab-table__tabs > #tab-table__a-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__a-line--radio:checked ~ .tab-table__tabs::after {
+  left: 0;
 }
 
 #tab-table__ka-line--radio:checked ~ #tab-table__ka-line--content {
   display: block;
 }
 
-#tab-table__ka-line--radio:checked ~ #tab-table__ka-line--label {
+#tab-table__ka-line--radio:checked ~ .tab-table__tabs > #tab-table__ka-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__ka-line--radio:checked ~ .tab-table__tabs::after {
+  left: 10%;
 }
 
 #tab-table__sa-line--radio:checked ~ #tab-table__sa-line--content {
   display: block;
 }
 
-#tab-table__sa-line--radio:checked ~ #tab-table__sa-line--label {
+#tab-table__sa-line--radio:checked ~ .tab-table__tabs > #tab-table__sa-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__sa-line--radio:checked ~ .tab-table__tabs::after {
+  left: 20%;
 }
 
 #tab-table__ta-line--radio:checked ~ #tab-table__ta-line--content {
   display: block;
 }
 
-#tab-table__ta-line--radio:checked ~ #tab-table__ta-line--label {
+#tab-table__ta-line--radio:checked ~ .tab-table__tabs > #tab-table__ta-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__ta-line--radio:checked ~ .tab-table__tabs::after {
+  left: 30%;
 }
 
 #tab-table__na-line--radio:checked ~ #tab-table__na-line--content {
   display: block;
 }
 
-#tab-table__na-line--radio:checked ~ #tab-table__na-line--label {
+#tab-table__na-line--radio:checked ~ .tab-table__tabs > #tab-table__na-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__na-line--radio:checked ~ .tab-table__tabs::after {
+  left: 40%;
 }
 
 #tab-table__ha-line--radio:checked ~ #tab-table__ha-line--content {
   display: block;
 }
 
-#tab-table__ha-line--radio:checked ~ #tab-table__ha-line--label {
+#tab-table__ha-line--radio:checked ~ .tab-table__tabs > #tab-table__ha-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__ha-line--radio:checked ~ .tab-table__tabs::after {
+  left: 50%;
 }
 
 #tab-table__ma-line--radio:checked ~ #tab-table__ma-line--content {
   display: block;
 }
 
-#tab-table__ma-line--radio:checked ~ #tab-table__ma-line--label {
+#tab-table__ma-line--radio:checked ~ .tab-table__tabs > #tab-table__ma-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__ma-line--radio:checked ~ .tab-table__tabs::after {
+  left: 60%;
 }
 
 #tab-table__ya-line--radio:checked ~ #tab-table__ya-line--content {
   display: block;
 }
 
-#tab-table__ya-line--radio:checked ~ #tab-table__ya-line--label {
+#tab-table__ya-line--radio:checked ~ .tab-table__tabs > #tab-table__ya-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__ya-line--radio:checked ~ .tab-table__tabs::after {
+  left: 70%;
 }
 
 #tab-table__ra-line--radio:checked ~ #tab-table__ra-line--content {
   display: block;
 }
 
-#tab-table__ra-line--radio:checked ~ #tab-table__ra-line--label {
+#tab-table__ra-line--radio:checked ~ .tab-table__tabs > #tab-table__ra-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__ra-line--radio:checked ~ .tab-table__tabs::after {
+  left: 80%;
 }
 
 #tab-table__wa-line--radio:checked ~ #tab-table__wa-line--content {
   display: block;
 }
 
-#tab-table__wa-line--radio:checked ~ #tab-table__wa-line--label {
+#tab-table__wa-line--radio:checked ~ .tab-table__tabs > #tab-table__wa-line--label {
   color: #FFF;
-  background-color: #6F8D1B;
+}
+
+#tab-table__wa-line--radio:checked ~ .tab-table__tabs::after {
+  left: 90%;
 }
 
 .kana-list {
@@ -5896,30 +5982,6 @@ footer {
   right: 0.5rem;
 }
 
-#radio__pet-sex--male::after {
-  content: "男の子";
-}
-
-#radio__pet-sex--female::after {
-  content: "女の子";
-}
-
-#radio__mix-vaccine--done::after, #radio__rabies-vaccine--done::after {
-  content: "済";
-}
-
-#radio__mix-vaccine--not-yet::after, #radio__rabies-vaccine--not-yet::after {
-  content: "未";
-}
-
-#radio__shelter--yes::after, #radio__fix--yes::after {
-  content: "はい";
-}
-
-#radio__shelter--no::after, #radio__fix--no::after {
-  content: "いいえ";
-}
-
 .radio__dog-kind--label {
   background-color: #F5F5F5;
   border-radius: 10px;
@@ -5961,6 +6023,9 @@ footer {
   .modal-container__content {
     width: 930px;
     height: 738px;
+  }
+  .tab-table__tabs::after {
+    height: 69px;
   }
   .tab-table__label {
     padding: 20px;
