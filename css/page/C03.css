@@ -2170,14 +2170,14 @@ a:hover {
   height: 12px;
 }
 
-.input__area--default, .input__area--pet-doctor, .input__area--pet-detail {
+.input__area--default, .input__area--name, .input__area--phone, .input__area--address, .input__area--building, .input__area--password, .input__area--representative, .input__area--relation, .input__area--postal, .input__area--city {
   width: 34.1rem;
   padding: 1rem;
   border: 0.1rem solid #DEDEDE;
   border-radius: 0.5rem;
 }
 
-.input__area--default:focus, .input__area--pet-doctor:focus, .input__area--pet-detail:focus {
+.input__area--default:focus, .input__area--name:focus, .input__area--phone:focus, .input__area--address:focus, .input__area--building:focus, .input__area--password:focus, .input__area--representative:focus, .input__area--relation:focus, .input__area--postal:focus, .input__area--city:focus {
   border: 0.1rem solid #ABBC7C;
 }
 
@@ -2230,7 +2230,7 @@ a:hover {
   color: #758B32;
 }
 
-.select__wrapper, .select__wrapper--symptom, .select__wrapper--part {
+.select__wrapper {
   position: relative;
   width: 100%;
   padding: 1rem;
@@ -2239,7 +2239,7 @@ a:hover {
   z-index: 2;
 }
 
-.select__wrapper.is-empty, .is-empty.select__wrapper--symptom, .is-empty.select__wrapper--part {
+.select__wrapper.is-empty {
   color: #DEDEDE;
 }
 
@@ -4745,14 +4745,14 @@ a:hover {
   height: 12px;
 }
 
-.input__area--default, .input__area--pet-doctor, .input__area--pet-detail {
+.input__area--default, .input__area--name, .input__area--phone, .input__area--address, .input__area--building, .input__area--password, .input__area--representative, .input__area--relation, .input__area--postal, .input__area--city {
   width: 34.1rem;
   padding: 1rem;
   border: 0.1rem solid #DEDEDE;
   border-radius: 0.5rem;
 }
 
-.input__area--default:focus, .input__area--pet-doctor:focus, .input__area--pet-detail:focus {
+.input__area--default:focus, .input__area--name:focus, .input__area--phone:focus, .input__area--address:focus, .input__area--building:focus, .input__area--password:focus, .input__area--representative:focus, .input__area--relation:focus, .input__area--postal:focus, .input__area--city:focus {
   border: 0.1rem solid #ABBC7C;
 }
 
@@ -4805,7 +4805,7 @@ a:hover {
   color: #758B32;
 }
 
-.select__wrapper, .select__wrapper--symptom, .select__wrapper--part {
+.select__wrapper {
   position: relative;
   width: 100%;
   padding: 1rem;
@@ -4814,7 +4814,7 @@ a:hover {
   z-index: 2;
 }
 
-.select__wrapper.is-empty, .is-empty.select__wrapper--symptom, .is-empty.select__wrapper--part {
+.select__wrapper.is-empty {
   color: #DEDEDE;
 }
 
@@ -5195,7 +5195,7 @@ a:hover {
   border-color: #6F8D1B;
 }
 
-.checkbox-button-module, .checkbox-button-module--symptom {
+.checkbox-button-module {
   display: inline-block;
 }
 
@@ -5265,7 +5265,7 @@ a:hover {
   background-color: #DEDEDE;
 }
 
-.button-module {
+.button-module, .button-module--postal {
   border-radius: 25px;
   background-color: #888;
   display: -webkit-box;
@@ -5279,7 +5279,7 @@ a:hover {
           justify-content: center;
 }
 
-.button-module:hover {
+.button-module:hover, .button-module--postal:hover {
   background-color: liegten(background-color, 10%);
   cursor: pointer;
 }
@@ -5313,49 +5313,18 @@ select::placeholder {
   height: 100%;
 }
 
-.radio-button-module {
-  margin-right: calc(1.6rem * 3);
-}
-
-.checkbox-button-module--symptom {
-  position: relative;
-  top: 0.6rem;
-}
-
 input,
 select {
   font-size: 1.4rem;
 }
 
-input::-webkit-input-placeholder,
-select::-webkit-input-placeholder {
-  color: #DEDEDE;
-}
-
-input:-ms-input-placeholder,
-select:-ms-input-placeholder {
-  color: #DEDEDE;
-}
-
-input::-ms-input-placeholder,
-select::-ms-input-placeholder {
-  color: #DEDEDE;
-}
-
-input::placeholder,
-select::placeholder {
-  color: #DEDEDE;
-}
-
-body {
-  font-size: 1.6rem;
-  color: #333;
-  font-weight: 400;
-}
-
 body,
 header,
 footer {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
   min-width: 375px;
 }
 
@@ -5385,73 +5354,35 @@ footer {
 .content__title {
   font-size: 2.4rem;
   color: #6F8D1B;
-  font-weight: 400;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
   .content__title {
     font-size: 3rem;
+    margin-bottom: 39px;
   }
 }
 
-.content__reservation {
-  background-color: #F2F5E9;
+.content__note {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .content__note {
+    margin-bottom: 43px;
+  }
+}
+
+.content__error {
+  background-color: #F5E1E2;
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .content__reservation {
-    padding: 30px;
-  }
-}
-
-.content__reservation .reservation-title {
-  color: #6F8D1B;
-}
-
-.content__reservation .reservation-title > span {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  .content__reservation .reservation-title > span {
-    display: inline;
-  }
-}
-
-.content__reservation .reservation-title__time::before {
-  content: "受付時間：";
-}
-
-@media (min-width: 768px) {
-  .content__reservation .reservation-title__time::before {
-    content: "　";
-  }
-}
-
-@media (min-width: 768px) {
-  .content__reservation .reservation-title__pick-up::before {
-    content: "　";
-  }
-}
-
-@media (min-width: 768px) {
-  .content__reservation .reservation-title {
-    font-size: 1.8rem;
-  }
-}
-
-.content__reservation .reservation-list {
-  font-size: 1.4rem;
-}
-
-@media (min-width: 768px) {
-  .content__reservation .reservation-list {
-    font-size: 1.6rem;
-  }
 }
 
 .content__formlist {
@@ -5475,7 +5406,7 @@ footer {
   width: 3px;
 }
 
-.resistration-form, .resistration-form--anamnesis {
+.resistration-form, .resistration-form--name-kanji, .resistration-form--postal, .resistration-form--address, .resistration-form--address-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5483,12 +5414,12 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
-  .resistration-form, .resistration-form--anamnesis {
-    margin: 35px 0;
+  .resistration-form, .resistration-form--name-kanji, .resistration-form--postal, .resistration-form--address, .resistration-form--address-number {
+    margin-bottom: 35px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -5501,18 +5432,11 @@ footer {
   }
 }
 
-.resistration-form--anamnesis {
-  width: 100%;
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.resistration-form--name-kanji, .resistration-form--postal, .resistration-form--address, .resistration-form--address-number {
+  margin-bottom: 15px;
 }
 
-.resistration-form--anamnesis::-webkit-scrollbar {
-  display: none;
-}
-
-.resistration-form__title, .resistration-form__title--pet-kind, .resistration-form__title--vaccine-date, .resistration-form__title--shelter {
+.resistration-form__title, .resistration-form__title--dm, .resistration-form__title--password, .resistration-form__title--representative {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5520,87 +5444,94 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 10px;
   margin: 10px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.resistration-form__title > span, .resistration-form__title--pet-kind > span, .resistration-form__title--vaccine-date > span, .resistration-form__title--shelter > span,
-.resistration-form__title label,
-.resistration-form__title--pet-kind label,
-.resistration-form__title--vaccine-date label,
-.resistration-form__title--shelter label {
-  position: relative;
-  left: 1rem;
-}
-
 @media (min-width: 768px) {
-  .resistration-form__title > span, .resistration-form__title--pet-kind > span, .resistration-form__title--vaccine-date > span, .resistration-form__title--shelter > span,
-  .resistration-form__title label,
-  .resistration-form__title--pet-kind label,
-  .resistration-form__title--vaccine-date label,
-  .resistration-form__title--shelter label {
-    width: 176px;
-  }
-}
-
-@media (min-width: 768px) {
-  .resistration-form__title--vaccine-date > .icon__wrapper--required, .resistration-form__title--shelter > .icon__wrapper--required {
-    position: relative;
-    top: -1.2rem;
-  }
-  .resistration-form__title--vaccine-date > span > span,
-  .resistration-form__title--vaccine-date label > span, .resistration-form__title--shelter > span > span,
-  .resistration-form__title--shelter label > span {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .resistration-form__title, .resistration-form__title--pet-kind, .resistration-form__title--vaccine-date, .resistration-form__title--shelter {
+  .resistration-form__title, .resistration-form__title--dm, .resistration-form__title--password, .resistration-form__title--representative {
     margin: 0;
     -ms-flex-preferred-size: 248px;
         flex-basis: 248px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  .resistration-form__title--vaccine {
-    -ms-flex-preferred-size: 248px;
-        flex-basis: 248px;
-    padding-left: 4rem;
-    margin-bottom: 45px;
-  }
-  .resistration-form__title--pet-kind {
-    -ms-flex-preferred-size: 248px;
-        flex-basis: 248px;
-    margin-bottom: 900px;
   }
 }
 
-.resistration-form__field, .resistration-form__field--anamnesis, .resistration-form__field--worried, .resistration-form__field--feces, .resistration-form__field--drinking {
-  position: relative;
-}
-
-.resistration-form__field > *, .resistration-form__field--anamnesis > *, .resistration-form__field--worried > *, .resistration-form__field--feces > *, .resistration-form__field--drinking > * {
+.resistration-form__title--dm {
   display: inline-block;
 }
 
 @media (min-width: 768px) {
-  .resistration-form__field, .resistration-form__field--anamnesis, .resistration-form__field--worried, .resistration-form__field--feces, .resistration-form__field--drinking {
+  .resistration-form__title--dm {
+    -ms-flex-preferred-size: 248px;
+        flex-basis: 248px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .resistration-form__title--dm > * {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .resistration-form__title--password {
+    position: relative;
+    top: -3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .resistration-form__title--representative {
+    position: relative;
+    top: -1rem;
+  }
+}
+
+.resistration-form__field > *, .resistration-form__field--name > *, .resistration-form__field--postal > *, .resistration-form__field--birth > *, .resistration-form__field--representative > * {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .resistration-form__field, .resistration-form__field--name, .resistration-form__field--postal, .resistration-form__field--birth, .resistration-form__field--representative {
     -ms-flex-preferred-size: 632px;
         flex-basis: 632px;
   }
 }
 
-.resistration-form__field--anamnesis {
-  width: 100%;
+.resistration-form__field--name, .resistration-form__field--postal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }
 
-.resistration-form__field--worried {
+.resistration-form__field--birth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.resistration-form__field--representative {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5610,152 +5541,186 @@ footer {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 75px;
-          column-gap: 75px;
-  row-gap: 24px;
 }
 
-@media (min-width: 768px) {
-  .resistration-form__field--worried {
-    -ms-flex-preferred-size: 380px;
-        flex-basis: 380px;
-    -webkit-column-gap: 92px;
-            column-gap: 92px;
-    row-gap: 32px;
-  }
-}
-
-.resistration-form__field--worried > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-}
-
-.resistration-form__field--feces, .resistration-form__field--drinking {
+.input__wrapper--name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-
-.input__wrapper--symptom, .input__wrapper--part {
-  width: 178px;
-}
-
-.input__wrapper--symptom {
-  float: right;
-}
-
-.input__wrapper--symptom::after {
-  display: block;
-  clear: both;
-}
-
-.input__area--pet-doctor {
-  width: 340px;
-}
-
-.input__area--pet-detail {
-  width: 383px;
-}
-
-.textarea {
-  height: 70px;
-  padding: 0.75rem;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  gap: 20px;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
-  .textarea {
-    height: 118px;
+  .input__wrapper--name {
+    width: 191px;
+    -ms-flex-preferred-size: 191px;
+        flex-basis: 191px;
   }
 }
 
-.textarea__wrapper {
-  width: 100%;
+.input__wrapper--birth-year {
+  width: 100px;
+}
+
+.input__wrapper--birth-month, .input__wrapper--birth-day {
+  width: 80px;
+}
+
+.input__wrapper--phone {
+  width: 340px;
+}
+
+.input__wrapper--relation {
+  margin-left: auto;
+}
+
+.input__wrapper--prefecture {
+  width: 120px;
+}
+
+.input__name--label {
+  display: inline-block;
+}
+
+.input__area--name {
+  width: 140px;
+}
+
+@media (min-width: 768px) {
+  .input__area--name {
+    margin-left: 5px;
+    width: 161px;
+  }
+}
+
+.input__area--phone, .input__area--address, .input__area--building, .input__area--password {
+  width: 340px;
+}
+
+.input__area--representative, .input__area--relation {
+  width: 340px;
+}
+
+@media (min-width: 768px) {
+  .input__area--representative, .input__area--relation {
+    width: 230px;
+  }
+}
+
+.input__area--postal {
+  width: 120px;
+}
+
+.input__area--city {
+  width: 211px;
+}
+
+.icon-password--visible, .icon-password--invisible {
+  display: block;
+  float: right;
+  position: relative;
+  z-index: 10;
+  top: -30px;
+  right: 10px;
+}
+
+@media (min-width: 768px) {
+  .icon-password--visible, .icon-password--invisible {
+    display: inline;
+    float: none;
+    top: 0px;
+    right: 30px;
+  }
+}
+
+.button-module--postal {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 81px;
+  height: 35px;
+  font-size: 1.4rem;
+  color: #FFF;
+  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  background-color: #888;
 }
 
 .cirtificate-button {
   display: block;
   width: 220px;
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.caution--title {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.caution--normal {
+  font-size: 1.2rem;
+}
+
+.caution--representative {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.caution--password {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: -2.15px;
+  display: block;
+  width: 340px;
+}
+
+.icon__wrapper--optional {
+  margin: 0;
 }
 
 .icon__wrapper--optional, .icon__wrapper--required {
   width: 32px;
   min-width: 32px;
   height: 17px;
-  margin-top: 0.5rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
-.select--shevron::after {
+.radio__wrapper--individual {
+  height: auto;
+}
+
+.radio__wrapper--item::after {
+  content: "";
+}
+
+.select__wrapper--shevron::after {
   right: 0.5rem;
 }
 
-.select__wrapper--symptom, .select__wrapper--part {
-  margin-left: 0;
+#radio__sex--man::after {
+  content: "男性";
 }
 
-.radio__dog-kind--label {
-  background-color: #F5F5F5;
-  border-radius: 10px;
-  display: block;
+#radio__sex--woman::after {
+  content: "女性";
 }
 
-.radio__dog-kind--radio:checked + .radio__dog-kind--label {
-  background-color: #F2F5E9;
-  border: #6F8D1B solid 1px;
+#radio__sex--noreply::after {
+  content: "無回答";
 }
 
-.anamnesis-table {
-  min-width: 894px;
+#radio__dm--yes::after {
+  content: "はい";
 }
 
-@media (min-width: 768px) {
-  .anamnesis-table {
-    width: 100%;
-  }
+#radio__dm--no::after {
+  content: "いいえ";
 }
-
-.anamnesis-table tr {
-  height: 46px;
-}
-
-.anamnesis-table__header {
-  background-color: #98AD5C;
-  font-size: 1.4rem;
-  color: #fff;
-  font-weight: 400;
-  text-align: center;
-}
-
-.anamnesis-table__cell > * {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.anamnesis-table__col--symptom {
-  width: 40%;
-}
-
-.anamnesis-table__col--part {
-  width: 20%;
-}
-
-.anamnesis-table__col--detail {
-  width: auto;
-}
-
-@media (min-width: 768px) {
-  .errorlist {
-    font-size: 1.6rem;
-  }
-}
-/*# sourceMappingURL=F16mypage-interview-input.css.map */
+/*# sourceMappingURL=C03.css.map */

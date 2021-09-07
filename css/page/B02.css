@@ -2796,29 +2796,138 @@ select::placeholder {
   height: 100%;
 }
 
-.l__inner {
-  padding: 0px;
-}
-
-.l__inner .tab__wrapper {
-  margin: 0 auto;
-  width: 375px;
+body,
+header,
+footer {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  min-width: 375px;
 }
 
 @media (min-width: 768px) {
-  .l__inner .tab__wrapper {
-    position: relative;
-    top: 1.6rem;
+  body,
+  header,
+  footer {
+    min-width: 1336px;
+  }
+}
+
+.tab-box__label-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: #E4EAD3 3px solid;
+  margin: 0 auto;
+  position: relative;
+  width: 355px;
+}
+
+@media (min-width: 768px) {
+  .tab-box__label-nav {
     width: 930px;
   }
 }
 
-.l__inner .text__wrapper {
-  padding-top: 1rem;
+.tab-box__tab-label {
+  display: block;
+  text-align: center;
+  color: #6F8D1B;
+  width: 108px;
 }
 
-.tab__label--list::after, .tab__label--map::after {
-  bottom: -1rem;
+@media (min-width: 768px) {
+  .tab-box__tab-label {
+    width: 151px;
+  }
+}
+
+.tab-box__tab-label:hover {
+  cursor: pointer;
+}
+
+.tab-box__content {
+  display: none;
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tab-box #label-shop {
+  position: relative;
+}
+
+.tab-box #label-shop::after {
+  content: "";
+  height: 3px;
+  width: 108px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #6F8D1B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .tab-box #label-shop::after {
+    width: 151px;
+  }
+}
+
+#tab-shop:checked ~ .tab-box__label-nav > #label-shop::after {
+  left: 0;
+}
+
+#tab-map:checked ~ .tab-box__label-nav > #label-shop::after {
+  left: 108px;
+}
+
+@media (min-width: 768px) {
+  #tab-map:checked ~ .tab-box__label-nav > #label-shop::after {
+    left: 151px;
+  }
+}
+
+.tab-box #tab-shop:checked ~ #shop-content {
+  display: block;
+  width: 100%;
+  background-color: #F2F5E9;
+}
+
+.tab-box #tab-map:checked ~ #map-content {
+  display: block;
 }
 
 .content {
@@ -2843,14 +2952,6 @@ select::placeholder {
   width: 100%;
 }
 
-.tab__store {
-  display: block;
-}
-
-.tab__map {
-  display: none;
-}
-
 .storelist {
   list-style: none;
   display: block;
@@ -2859,7 +2960,7 @@ select::placeholder {
 
 @media (min-width: 768px) {
   .storelist {
-    margin: 15px auto;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2867,7 +2968,7 @@ select::placeholder {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 15px 0;
-    max-width: 930px;
+    width: 930px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -2876,6 +2977,47 @@ select::placeholder {
             flex-direction: row;
     gap: 30px;
   }
+}
+
+.storelist__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 35px;
+  padding-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+  .storelist__button {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+.storelist__button > .most-important-button {
+  display: block;
+}
+
+.storelist__button > .most-important-button::after {
+  content: "";
+}
+
+.storelist__button > .sub-button {
+  background-color: RGBA(0, 0, 0, 0);
+}
+
+.storelist__button > * {
+  height: 48px;
 }
 
 .store {
@@ -3018,7 +3160,12 @@ select::placeholder {
   margin-bottom: 5px;
 }
 
+.search-button {
+  position: relative;
+  bottom: 3px;
+}
+
 .second-important-button {
   width: 100%;
 }
-/*# sourceMappingURL=B02search_shop-shop.css.map */
+/*# sourceMappingURL=B02.css.map */

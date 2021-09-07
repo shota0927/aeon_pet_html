@@ -19,9 +19,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="../../../css/styles.css" />
-    <link rel="stylesheet" href="../../../css/page/B02search_shop-shop.css" />
+    <link rel="stylesheet" href="../../../css/page/B02.css" />
     <script src="../../../js/script.js"></script>
-    <script src="../../../js/B02search_shop-shop.js"></script>
+    <script src="../../../js/B02.js"></script>
     <link rel="icon" href="" />
     <title>店舗検索＞検索結果（リスト）｜イオンペット グルーミング予約サイト</title>
 </head>
@@ -38,7 +38,8 @@
                     </picture>
                 </a>
             </h1>
-            <a href="" class="header__search"><img src="../../../image/common/search-icon.png" alt="サーチアイコン">店舗検索・ご予約</a>
+            <a href="" class="header__search"><img src="../../../image/common/search-icon.png"
+                    alt="サーチアイコン">店舗検索・ご予約</a>
         </div>
         <div class="header__right">
             <div class="header__btns">
@@ -60,7 +61,8 @@
             </div>
             <ul class="header-nav__items">
                 <li class="header-nav__item">
-                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/home-icon.png" alt="">ホーム</a>
+                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/home-icon.png"
+                            alt="">ホーム</a>
                 </li>
                 <li class="header-nav__item">
                     <a href="#"><img class="header-nav__title-icon" src="../../../image/common/search-icon-small.png"
@@ -88,7 +90,8 @@
         <div class="inner">
             <span class="breadcrumb__item">
                 <a href="" class="brandcrumb__item-link">
-                    <img src="../../../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン" class="breadcrumb__item-icon">
+                    <img src="../../../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン"
+                        class="breadcrumb__item-icon">
                 </a>
             </span>
             /
@@ -101,355 +104,353 @@
     </div>
     <div class="content">
         <h1 class="content__title">サロン店舗検索</h1>
-        <div class="l__inner">
-            <div class="tab__wrapper">
-                <div class="tab__content">
-                    <input type="radio" id="tab__input" name="tab" class="tab__input" value="store" checked=>
-                    <label for="tab__input" class="tab__label--list">リスト表示</label>
-                </div>
-                <div class="tab__content">
-                    <input type="radio" id="tab__map" name="tab" class="tab__input" value="map">
-                    <label for="tab__map" class="tab__label--map">地図表示</label>
+        <div class="tab-box">
+            <input type=radio id="tab-shop" class="tab-box__radio" name="tab-group" value="store" checked>
+            <input type=radio id="tab-map" class="tab-box__radio" name="tab-group" value="map">
+
+            <nav class="tab-box__label-nav">
+                <label for="tab-shop" class="tab-box__tab-label" id="label-shop">リスト表示</label>
+                <label for="tab-map" class="tab-box__tab-label" id="label-map">地図表示</label>
+            </nav>
+            <div id="shop-content" class="tab-box__content">
+                <ul class="storelist">
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="store">
+                        <h3 class="store__name">PETEMO札幌苗穂店</h3>
+                        <ul class="store__info-list">
+                            <li class="address-info">
+                                <i class="fas fa-map-marker-alt store__icon"></i>
+                                <p class="address-info__postal">〒007-0802</p>
+                                <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
+                            </li>
+                            <li class="operation-info">
+                                <div class="operation-info__time">
+                                    <i class="far fa-clock store__icon"></i>
+                                    <span class="time-info">9:00~21:00</span>
+                                </div>
+                                <div class="operation-info__phone">
+                                    <i class="fas fa-phone-alt store__icon"></i>
+                                    <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
+                                </div>
+                            </li>
+                            <li class="detail-button">
+                                <a href="" class="second-important-button">詳細を見る</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="storelist__button">
+                    <a href="" class="most-important-button">もっと見る</a>
+                    <a href="" class="sub-button sub-button--icon"><img
+                            src="../../../image/common/search-icon.png" alt="サーチアイコン">条件を変えて再検索する</a>
                 </div>
             </div>
-            <div class="text__wrapper active tab__store">
-                <div class=" tab__text content__store">
-                    <ul class="storelist">
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="store">
-                            <h3 class="store__name">PETEMO札幌苗穂店</h3>
-                            <ul class="store__info-list">
-                                <li class="address-info">
-                                    <i class="fas fa-map-marker-alt store__icon"></i>
-                                    <p class="address-info__postal">〒007-0802</p>
-                                    <p class="address-info__address">北海道札幌市東区東苗穂2条3-1-1 イオンモール札幌苗穂1階</p>
-                                </li>
-                                <li class="operation-info">
-                                    <div class="operation-info__time">
-                                        <i class="far fa-clock store__icon"></i>
-                                        <span class="time-info">9:00~21:00</span>
-                                    </div>
-                                    <div class="operation-info__phone">
-                                        <i class="fas fa-phone-alt store__icon"></i>
-                                        <a href="tel:011-787-7667" class="phone-info">011-787-7667</a>
-                                    </div>
-                                </li>
-                                <li class="detail-button">
-                                    <a href="" class="second-important-button">詳細を見る</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text__wrapper tab__map">
-                <div class="tab__text content__map">
-                    <div class="google-map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.1524411904406!2d141.40011451574108!3d43.08029037914511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b294d51c3650d%3A0xdf76fa8c181a12bf!2zUEVURU1P5pyt5bmM6IuX56mC5bqX!5e0!3m2!1sja!2sjp!4v1630981192392!5m2!1sja!2sjp"
-                            class="google-map__map" allowfullscreen="" loading="lazy"></iframe>
-                        <div class="google-map__button">
-                            <a href="" class="sub-button sub-button--icon"><img src="../../../image/common/search-icon.png"
-                                    alt="サーチアイコン">条件を変えて再検索する</a>
-                        </div>
+            <div id="map-content" class="tab-box__content">
+                <div class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.1524411904406!2d141.40011451574108!3d43.08029037914511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b294d51c3650d%3A0xdf76fa8c181a12bf!2zUEVURU1P5pyt5bmM6IuX56mC5bqX!5e0!3m2!1sja!2sjp!4v1630981192392!5m2!1sja!2sjp"
+                        class="google-map__map" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="google-map__button">
+                        <a href="" class="sub-button sub-button--icon"><img
+                                src="../../../image/common/search-icon.png" alt="サーチアイコン">条件を変えて再検索する</a>
                     </div>
                 </div>
             </div>
@@ -486,7 +487,8 @@
                         </li>
                         <li class="footer__nav-item">
                             <a href="">
-                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">プライバシーポリシー
+                                <img class="footer__icon--page" src="../../../image/common/page-icon.png"
+                                    alt="">プライバシーポリシー
                             </a>
                         </li>
                         <li class="footer__nav-item">
@@ -513,7 +515,8 @@
                         </li>
                         <li class="footer__nav-item">
                             <a href="">
-                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">サービスについて
+                                <img class="footer__icon--page" src="../../../image/common/page-icon.png"
+                                    alt="">サービスについて
                             </a>
                         </li>
                     </ul>
