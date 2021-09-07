@@ -2796,6 +2796,12 @@ select::placeholder {
   height: 100%;
 }
 
+header,
+footer,
+.content {
+  min-width: 375px;
+}
+
 .l__inner {
   padding: 0px;
 }
@@ -2820,6 +2826,10 @@ select::placeholder {
   bottom: -1rem;
 }
 
+.content {
+  width: 100%;
+}
+
 .content__title {
   font-size: 2.4rem;
   color: #6F8D1B;
@@ -2831,6 +2841,11 @@ select::placeholder {
 
 .content__store {
   background-color: #F2F5E9;
+  width: 100%;
+}
+
+.content__map {
+  width: 100%;
 }
 
 .tab__store {
@@ -2857,7 +2872,7 @@ select::placeholder {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 15px 0;
-    width: 930px;
+    max-width: 930px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -2880,8 +2895,8 @@ select::placeholder {
 @media (min-width: 768px) {
   .store {
     margin: 0;
-    -ms-flex-preferred-size: 450px;
-        flex-basis: 450px;
+    width: 450px;
+    max-width: 450px;
     height: 237px;
     padding: 30px;
   }
