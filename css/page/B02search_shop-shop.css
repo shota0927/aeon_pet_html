@@ -2796,25 +2796,20 @@ select::placeholder {
   height: 100%;
 }
 
-header,
-footer,
-.content {
-  min-width: 375px;
-}
-
 .l__inner {
   padding: 0px;
 }
 
 .l__inner .tab__wrapper {
   margin: 0 auto;
+  width: 375px;
 }
 
 @media (min-width: 768px) {
   .l__inner .tab__wrapper {
-    max-width: 150%;
     position: relative;
     top: 1.6rem;
+    width: 930px;
   }
 }
 

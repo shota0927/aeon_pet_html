@@ -7,13 +7,6 @@
     font-weight: normal;
 }
 
-header,
-footer,
-.content {
-    min-width: 375px;
-}
-
-
 .l__inner {
     padding: 0px;
 
@@ -21,16 +14,14 @@ footer,
 
     .tab__wrapper {
         margin: 0 auto;
+        width: 375px;
 
 
         @include mq() {
-            max-width: 150%;
             position: relative;
             top: 1.6rem;
-        }
+            width: 930px;
 
-        &::after {
-            // display: none;
         }
     }
 

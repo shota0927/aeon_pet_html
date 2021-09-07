@@ -30,7 +30,7 @@ $(function () {
   });
 
   $("#datepicker--mix-vaccine").datepicker({
-    buttonImage: "../image/common/icon__calendar.png",        // カレンダーアイコン画像
+    buttonImage: "../../../image/common/icon__calendar.png",        // カレンダーアイコン画像
     buttonText: "カレンダーを表示",
     buttonImageOnly: true,           // 画像として表示
     showOn: "both",                  // カレンダー呼び出し元の定義
@@ -41,7 +41,7 @@ $(function () {
   });
 
   $("#datepicker--rabies-vaccine").datepicker({
-    buttonImage: "../image/common/icon__calendar.png",        // カレンダーアイコン画像
+    buttonImage: "../../../image/common/icon__calendar.png",        // カレンダーアイコン画像
     buttonText: "カレンダーを表示",
     buttonImageOnly: true,           // 画像として表示
     showOn: "both",                  // カレンダー呼び出し元の定義
