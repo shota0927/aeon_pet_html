@@ -184,6 +184,10 @@ footer {
     width: 355px;
     height: 217px;
     padding: 20px;
+    
+    *{
+        line-height: 20px;
+    }
 
     @include mq() {
         margin: 0;
@@ -192,6 +196,10 @@ footer {
         max-width: 450px;
         height: 237px;
         padding: 30px;
+
+        *{
+            line-height: 26px;
+        }
 
     }
 
@@ -326,7 +334,17 @@ footer {
 }
 
 .second-important-button {
+    height: 26px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    >*{
+        display: block;
+        margin: auto;
+    }
 }
 
 .none{

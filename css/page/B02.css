@@ -3025,6 +3025,10 @@ footer {
   padding: 20px;
 }
 
+.store * {
+  line-height: 20px;
+}
+
 @media (min-width: 768px) {
   .store {
     margin: 0;
@@ -3032,6 +3036,9 @@ footer {
     max-width: 450px;
     height: 237px;
     padding: 30px;
+  }
+  .store * {
+    line-height: 26px;
   }
 }
 
@@ -3181,7 +3188,26 @@ footer {
 }
 
 .second-important-button {
+  height: 26px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.second-important-button > * {
+  display: block;
+  margin: auto;
 }
 
 .none {
