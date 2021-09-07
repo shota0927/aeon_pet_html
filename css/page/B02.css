@@ -3010,6 +3010,16 @@ footer {
 
 .storelist__button > .most-important-button::after {
   content: "";
+  display: inline-block;
+  position: relative;
+  right: -16px;
+  top: -2px;
+  width: 11px;
+  height: 11px;
+  border-right: #fff 2px solid;
+  border-bottom: #fff 2px solid;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .storelist__button > .sub-button {
@@ -3090,6 +3100,7 @@ footer {
   margin-top: 5%;
   width: 100%;
   height: 480px;
+  border: none;
 }
 
 @media (min-width: 768px) {
