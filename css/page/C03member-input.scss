@@ -1,5 +1,6 @@
 @import "../setting/_setting.scss";
 @import "../styles.scss";
+@import "./modules.scss";
 
 @mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
     font-size: $font-size;
@@ -39,15 +40,21 @@ footer {
     &__title {
         @include font-shape($color-main, 2.4rem);
         text-align: center;
+        margin-bottom: 16px;
 
         @include mq() {
             font-size: 3rem;
+            margin-bottom: 39px;
         }
     }
 
     &__note {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         width: 100%;
+
+        @include mq(){
+            margin-bottom: 43px;
+        }
     }
 
     &__error {
@@ -82,18 +89,29 @@ footer {
 .resistration-form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
+    margin-bottom: 15px;
+    $self: &;
 
     @include mq() {
-        margin: 10px 0;
+        margin-bottom: 35px;
         align-items: center;
         flex-direction: row;
-        gap: 20px;
+        column-gap: 20px;
+    }
+
+    &--name-kanji,
+    &--postal,
+    &--address,
+    &--address-number {
+        @extend #{$self};
+        margin-bottom: 15px;
     }
 
     &__title {
+        $self: &;
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         gap: 10px;
         margin: 10px 0px;
         align-items: center;
@@ -105,17 +123,37 @@ footer {
         }
 
         &--dm {
+            @extend #{$self};
+            display:inline-block;
+
             @include mq() {
                 flex-basis: 248px;
                 align-items: center;
+                >*{
+                    display: block;
+                }
+            }
+        }
+
+        &--password {
+            @extend #{$self};
+            @include mq() {
+                position: relative;
+                top: -3rem;
+            }
+        }
+
+        &--representative{
+            @extend #{$self};
+            @include mq() {
+                position: relative;
+                top: -1rem;
             }
         }
     }
 
     &__field {
-        @mixin extResitrationField {
-            @extend .resistration-form__field;
-        }
+        $self: &;
 
         >* {
             display: inline-block;
@@ -125,22 +163,24 @@ footer {
             flex-basis: 632px;
         }
 
-        &--name {
-            @include extResitrationField();
+        &--name,
+        &--postal {
+            @extend #{$self};
             display: flex;
             flex-direction: row;
+            align-items: center;
             gap: 20px;
         }
 
         &--birth {
-            @include extResitrationField();
+            @extend #{$self};
             display: flex;
             flex-direction: row;
             gap: 10px;
         }
 
         &--representative {
-            @include extResitrationField();
+            @extend #{$self};
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -258,10 +298,14 @@ footer {
     }
 }
 
-.inactive-button {
+.button-module {
+    $self: &;
+
     &--postal {
-        @extend .inactive-button;
+        display: flex !important;
+        @extend #{$self};
         width: 81px;
+        height: 35px;
         @include font-shape(#FFF, 1.4rem, nth($font-family-base, 2));
         font-weight: bold;
         background-color: $color-icon-default;

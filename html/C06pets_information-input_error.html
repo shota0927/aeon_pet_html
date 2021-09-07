@@ -115,28 +115,26 @@
                     <input id="tab-table__ya-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
                     <input id="tab-table__ra-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
                     <input id="tab-table__wa-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
-                    <nav class="tab-table__tabs">
-                        <label for="tab-table__a-line--radio" class="tab-table__label"
-                            id="tab-table__a-line--label">ア行</label>
-                        <label for="tab-table__ka-line--radio" class="tab-table__label"
-                            id="tab-table__ka-line--label">カ行</label>
-                        <label for="tab-table__sa-line--radio" class="tab-table__label"
-                            id="tab-table__sa-line--label">サ行</label>
-                        <label for="tab-table__ta-line--radio" class="tab-table__label"
-                            id="tab-table__ta-line--label">タ行</label>
-                        <label for="tab-table__na-line--radio" class="tab-table__label"
-                            id="tab-table__na-line--label">ナ行</label>
-                        <label for="tab-table__ha-line--radio" class="tab-table__label"
-                            id="tab-table__ha-line--label">ハ行</label>
-                        <label for="tab-table__ma-line--radio" class="tab-table__label"
-                            id="tab-table__ma-line--label">マ行</label>
-                        <label for="tab-table__ya-line--radio" class="tab-table__label"
-                            id="tab-table__ya-line--label">ヤ行</label>
-                        <label for="tab-table__ra-line--radio" class="tab-table__label"
-                            id="tab-table__ra-line--label">ラ行</label>
-                        <label for="tab-table__wa-line--radio" class="tab-table__label"
-                            id="tab-table__wa-line--label">ワ行</label>
-                    </nav>
+                    <label for="tab-table__a-line--radio" class="tab-table__label"
+                        id="tab-table__a-line--label">ア行</label>
+                    <label for="tab-table__ka-line--radio" class="tab-table__label"
+                        id="tab-table__ka-line--label">カ行</label>
+                    <label for="tab-table__sa-line--radio" class="tab-table__label"
+                        id="tab-table__sa-line--label">サ行</label>
+                    <label for="tab-table__ta-line--radio" class="tab-table__label"
+                        id="tab-table__ta-line--label">タ行</label>
+                    <label for="tab-table__na-line--radio" class="tab-table__label"
+                        id="tab-table__na-line--label">ナ行</label>
+                    <label for="tab-table__ha-line--radio" class="tab-table__label"
+                        id="tab-table__ha-line--label">ハ行</label>
+                    <label for="tab-table__ma-line--radio" class="tab-table__label"
+                        id="tab-table__ma-line--label">マ行</label>
+                    <label for="tab-table__ya-line--radio" class="tab-table__label"
+                        id="tab-table__ya-line--label">ヤ行</label>
+                    <label for="tab-table__ra-line--radio" class="tab-table__label"
+                        id="tab-table__ra-line--label">ラ行</label>
+                    <label for="tab-table__wa-line--radio" class="tab-table__label"
+                        id="tab-table__wa-line--label">ワ行</label>
                     <div class="tab-table__content" id="tab-table__a-line--content">
                         <ul class="kana-list">
                             <li class="kana-list__line">
@@ -1388,15 +1386,22 @@
                     </span>
                 </div>
                 <div class="resistration-form__field">
-                    <label for="pet-sex--male" class="radio-button-module">
-                        <input type="radio" id="pet-sex--male" name="pet-sex-group" class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">男の子</span>
-                    </label>
-                    <label for="pet-sex--female" class="radio-button-module">
-                        <input type="radio" id="pet-sex--female" name="pet-sex-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">女の子</span>
-                    </label>
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__pet-sex--male">
+                                <input type="radio" name="radio__sex" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__pet-sex--female">
+                                <input type="radio" name="radio__sex" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </li>
             <li class="resistration-form">
@@ -1451,18 +1456,24 @@
                     混合ワクチン
                 </div>
                 <div class="resistration-form__field">
-                    <label for="pet-mix-vaccine--yes" class="radio-button-module--vaccine">
-                        <input type="radio" id="pet-mix-vaccine--yes" name="pet-mix-vaccine-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">済</span>
-                    </label>
-                    <label for="pet-mix-vaccine--no" class="radio-button-module--vaccine">
-                        <input type="radio" id="pet-mix-vaccine--no" name="pet-mix-vaccine-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">未</span>
-                    </label>
-                    <div class="calendar__wrapper--vaccine">
-                        <input type="text" id="datepicker--mix-vaccine" class="datepicker" placeholder="日付">
+                    <div class="radio__wrapper--vaccine">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__mix-vaccine--done">
+                                <input type="radio" name="radio__mix-vacctine" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--vaccine">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__mix-vaccine--not-yet">
+                                <input type="radio" name="radio__mix-vacctine" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input__wrapper--vaccine-calender">
+                        <input type="date" class="input__area--vaccine-calender" id="date-mix-vaccine">
                     </div>
                 </div>
             </li>
@@ -1471,18 +1482,24 @@
                     狂犬病ワクチン
                 </div>
                 <div class="resistration-form__field">
-                    <label for="pet-rabies-vaccine--yes" class="radio-button-module--vaccine">
-                        <input type="radio" id="pet-rabies-vaccine--yes" name="pet-rabies-vaccine-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">済</span>
-                    </label>
-                    <label for="pet-rabies-vaccine--no" class="radio-button-module--vaccine">
-                        <input type="radio" id="pet-rabies-vaccine--no" name="pet-rabies-vaccine-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">未</span>
-                    </label>
-                    <div class="calendar__wrapper--vaccine">
-                        <input type="text" id="datepicker--rabies-vaccine" class="datepicker" placeholder="日付">
+                    <div class="radio__wrapper--vaccine">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__rabies-vaccine--done">
+                                <input type="radio" name="radio__rabies-vacctine" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--vaccine">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__rabies-vaccine--not-yet">
+                                <input type="radio" name="radio__rabies-vacctine" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="input__wrapper--vaccine-calender">
+                        <input type="date" class="input__area--vaccine-calender" id="date-rabies-vaccine">
                     </div>
                 </div>
             </li>
@@ -1497,16 +1514,22 @@
                     </span>
                 </div>
                 <div class="resistration-form__field">
-                    <label for="pet-shelter--yes" class="radio-button-module">
-                        <input type="radio" id="pet-shelter--yes" name="pet-shelter-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">はい</span>
-                    </label>
-                    <label for="pet-shelter--no" class="radio-button-module">
-                        <input type="radio" id="pet-shelter--no" name="pet-shelter-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">いいえ</span>
-                    </label>
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__shelter--yes">
+                                <input type="radio" name="radio__shelter" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__shelter--no">
+                                <input type="radio" name="radio__shelter" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </li>
             <li class="resistration-form">
@@ -1519,36 +1542,22 @@
                     </span>
                 </div>
                 <div class="resistration-form__field">
-                    <label for="pet-fix--yes" class="radio-button-module">
-                        <input type="radio" id="pet-fix--yes" name="pet-fix-group" class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">はい</span>
-                    </label>
-                    <label for="pet-fix--no" class="radio-button-module">
-                        <input type="radio" id="pet-fix--no" name="pet-fix-group" class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">いいえ</span>
-                    </label>
-                </div>
-            </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
-                    <div class="icon__wrapper--required">
-                        <p class="icon__text--required">必須</p>
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__fix--yes">
+                                <input type="radio" name="radio__fix" class="radio__invisible" checked>
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
                     </div>
-                    <span>
-                        マイクロチップはつけていますか？
-                    </span>
-                </div>
-                <div class="resistration-form__field">
-                    <label for="pet-microchip--no" class="radio-button-module">
-                        <input type="radio" id="pet-microchip--no" name="pet-microchip-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">つけていない</span>
-                    </label>
-                    <label for="pet-microchip--yes" class="radio-button-module">
-                        <input type="radio" id="pet-microchip--yes" name="pet-microchip-group"
-                            class="radio-button-module__radio">
-                        <span class="radio-button-module__sentence">つけている</span>
-                    </label>
+                    <div class="radio__wrapper--individual">
+                        <label class="radio__label">
+                            <div class="radio__wrapper--item" id="radio__fix--no">
+                                <input type="radio" name="radio__fix" class="radio__invisible">
+                                <div class="radio__indicator2"></div>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </li>
             <li class="resistration-form">
@@ -1570,7 +1579,7 @@
                                             class="radio__invisible radio__dog-kind--radio" checked
                                             id="radio__dog-kind--dachshund">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--dachshund">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/dachshund_long.png">
                                             <span>ダックス</span><span>（ロング）</span>
                                         </label>
                                     </td>
@@ -1579,7 +1588,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--chihuahua">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--chihuahua">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/chihuahua_long.png">
                                             <span>チワワ</span><span>（ロング）</span>
                                         </label>
                                     </td>
@@ -1588,7 +1597,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--pomeranian">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--pomeranian">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/pomeranian.png">
                                             <span>ポメラニアン</span>
                                         </label>
                                     </td>
@@ -1599,7 +1608,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--maltese">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--maltese">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/maltese.png">
                                             <span>マルチーズ</span>
                                         </label>
                                     </td>
@@ -1608,7 +1617,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--Yorkshire">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--Yorkshire">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/yorkshire.png">
                                             <span>ヨーキー</span>
                                         </label>
                                     </td>
@@ -1617,7 +1626,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--thih-tzu">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--thih-tzu">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/shih_tzu.png">
                                             <span>シー・ズー</span>
                                         </label>
                                     </td>
@@ -1628,7 +1637,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--thibainu">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--thibainu">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/shibainu.png">
                                             <span>柴犬</span>
                                         </label>
                                     </td>
@@ -1637,7 +1646,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--m-schnauzer">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--m-schnauzer">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/m_schnauzer.png">
                                             <span>Mシュナウザー</span>
                                         </label>
                                     </td>
@@ -1646,7 +1655,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--toy-poodle">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--toy-poodle">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/toy_poodle.png">
                                             <span>トイ・プードル</span>
                                         </label>
                                     </td>
@@ -1657,7 +1666,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--corgi-1">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--corgi-1">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/dachshund_long.png">
                                             <span>ウェルシュ・コーギー・ペンブローク</span>
                                         </label>
                                     </td>
@@ -1666,7 +1675,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--corgi-2">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--corgi-2">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/chihuahua_long.png">
                                             <span>ウェルシュ・コーギー・ペンブローク</span>
                                         </label>
                                     </td>
@@ -1675,7 +1684,7 @@
                                             class="radio__invisible radio__dog-kind--radio"
                                             id="radio__dog-kind--corgi-3">
                                         <label class="radio__dog-kind--label" for="radio__dog-kind--corgi-3">
-                                            <img src="../image/mix_silhouette.png">
+                                            <img src="dogs/pomeranian.png">
                                             <span>ウェルシュ・コーギー・ペンブローク</span>
                                         </label>
                                     </td>

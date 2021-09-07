@@ -1,18 +1,30 @@
 @import "../setting/_setting.scss";
+@import "./modules.scss";
 
-@mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
+@mixin font-shape($font-color, $font-size: inherit) {
     font-size: $font-size;
     color: $font-color;
     font-weight: normal;
-    font-family: $font-family, nth($font-family-base, 3);
 }
 
 .l__inner {
     padding: 0px;
 
+    &::before {}
+
     .tab__wrapper {
         margin: 0 auto;
-        max-width: 100%;
+
+
+        @include mq() {
+            max-width: 150%;
+            position: relative;
+            top: 1.6rem;
+        }
+
+        &::after {
+            // display: none;
+        }
     }
 
     .text__wrapper {
@@ -20,30 +32,39 @@
     }
 }
 
+.tab {
+    &__label {
 
-header,
-footer,
-.content {
-    min-width: 375px;
+        &--list,
+        &--map {
+            &::after {
+                bottom: -1rem;
+            }
+        }
+    }
 }
 
+
+
 .content {
-    width: 100%;
+
+
+    @include mq() {
+        // height: 1990px;
+    }
 
     &__title {
         @include font-shape($color-main, 2.4rem);
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 33px;
     }
 
     &__store {
         background-color: #F2F5E9;
-        width: 100%;
     }
 
-    &__map {
-        width: 100%;
-    }
+    &__map {}
 }
 
 .tab__store {
@@ -55,35 +76,67 @@ footer,
 }
 
 .storelist {
-    display: flex;
-    justify-content: center;
     list-style: none;
-    width: 70%;
-    max-width: 355px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    display: block;
+    padding: 10px;
+
+    @include mq() {
+        margin: 15px auto;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        width: 930px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 30px
+    }
 }
 
 .store {
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding: 2em;
 
-    flex-basis: 45%;
-    margin: 15px 0;
+    margin: 10px auto;
+    width: 355px;
+    height: 217px;
+    padding: 20px;
+
+    @include mq() {
+        margin: 0;
+        flex-basis: 450px;
+        height: 237px;
+        padding: 30px;
+
+    }
 
     &__name {
-        @include font-shape($color-main, 1.6rem, nth($font-family-base, 2));
+        @include font-shape($color-main, 1.6rem);
+
+        @include mq() {
+            font-size: 1.8rem;
+        }
     }
 
     &__info-list {
         @include font-shape($color-text-main, 1.4rem);
         height: 145px;
+
+        @include mq() {
+            font-size: 1.6rem;
+        }
     }
 
     &__icon {
         width: 1em;
+    }
+}
+
+.detail-button {
+    margin-top: 10px;
+
+
+    @include mq(){
+        margin-top: 15px;
     }
 }
 
@@ -96,11 +149,30 @@ footer,
     &__map {
         display: block;
         margin-top: 5%;
+        width: 100%;
+        height: 480px;
+
+        @include mq(){
+            height: 500px;
+        }
     }
 
     &__button {
         margin: 5% auto 10% auto;
         max-width: 277px;
+    }
+
+    @include mq() {
+        margin: 0 auto;
+        padding: 15px 0;
+
+        &__map {
+            height: 480px;
+        }
+
+        &__button {
+            width: 277px;
+        }
     }
 }
 
@@ -118,6 +190,11 @@ footer,
 
 .operation-info {
 
+    @include mq() {
+        display: flex;
+        gap: 5%;
+    }
+
     &__time {
         @include font-shape($color-text-main, 16px);
 
@@ -129,7 +206,7 @@ footer,
     &__phone {
         @include font-shape($color-text-main, 16px);
 
-        span {
+        a {
             border-bottom: solid 1px $color-text-main;
             margin-bottom: 5px;
         }
@@ -138,61 +215,4 @@ footer,
 
 .second-important-button {
     width: 100%;
-    margin-top: 1.5em;
-}
-
-@include mq() {
-
-    header,
-    footer,
-    .content {
-        min-width: 1336px;
-    }
-
-    .l__inner {
-        .tab__wrapper {
-            width: 100%;
-        }
-    }
-
-    .storelist {
-        padding: 15px 0;
-        max-width: 930px;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 5%;
-    }
-
-    .google-map {
-        width: 100%;
-        margin: 0 auto;
-        padding: 15px 0;
-
-        &__map {
-            width: 100%;
-            height: 480px;
-        }
-
-        &__button {
-            width: 277px;
-        }
-    }
-
-    .store {
-        height: 237px;
-
-        &__name {
-            @include font-shape($color-main, 1.8rem, nth($font-family-base, 2));
-        }
-
-        &__info-list {
-            @include font-shape($color-text-main, 1.4rem);
-        }
-    }
-
-    .operation-info {
-        display: flex;
-        gap: 5%;
-    }
-
 }
