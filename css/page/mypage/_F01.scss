@@ -1,0 +1,222 @@
+.main__underline{
+  color: #707070;
+}
+.main__mypage__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 25px 0 16px 0;
+}
+
+.main__mypage__close-time{
+  text-align: center;
+  background-color: #F2F5E9;
+  border-radius: 10px;
+  padding: 21px 10px 20px 10px;
+}
+.close-time-text{
+  color: #6F8D1B;
+  margin: 1px 0 8px 0;
+}
+.close-time{
+  color: #6F8D1B;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  padding: 12px 0 10px 0;
+  & img{
+    position: absolute;
+    width: 20px;
+    height: auto;
+    margin: 5px 0 0 0;
+    transform: translate(-160%, 0%)
+    }
+}
+
+.main__mypage__category{
+  margin-top: 20px;
+  margin-left: calc(-48vw + 50%);
+  margin-right: calc(-48vw + 50%);
+}
+
+.main__mypage__nearreserve-list{
+  background-color: #F2F5E9;
+  border-radius: 10px;
+  padding: 17px 0 20px 0;
+  margin: 10px 0 17px 0;
+}
+
+.main__mypage__nearreserve-contents{
+  padding: 0 10px 11px 10px;
+  & .reserve-time{
+    font-size: 1.6rem;
+    color: #6F8D1B;
+  }
+}
+
+.main__mypage__nearreserve-caution{
+  background-color: #FDF4F5;
+  border: 0.5px dotted #FF0000;
+  border-radius: 6px;
+  padding: 7px 0 8px 0;
+  margin: 0 3px 10px 3px;
+}
+.main__mypage__nearreserve-text{
+  color: #F4451C;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+.main__mypage__nearreserve-update{
+  display: flex;
+  justify-content: center;
+  .second-important-button{
+    background-color: #F3F5EA;
+    font-size: 1.2rem;
+    height: 25px;
+    width: 91.5%;
+  }
+}
+.main__mypage__nearreserve-confirmation{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  & .second-important-button{
+    height: 25px;
+    width: 90%;
+  }
+  & a{
+    background-color: #FDF4F5;
+  }
+}
+.main__mypage__nearreserve-detail{
+  display: flex;
+  justify-content: center;
+  & .second-important-button{
+    border: none;
+    font-size: 1.2rem;
+    height: 25px;
+    width: 90%;
+  }
+}
+
+.main__mypage__reservation-list{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.main__mypage__link{
+  margin: 0 0 66px 0;
+  & .link__wrapper{
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__mypage{
+    & .container{
+      width: 930px;
+      padding: 0;
+      margin: auto;
+    }
+  }
+  .main__mypage__title{
+    font-size: 3.0rem;
+    margin: 36px 0 39px 0;
+  }
+  .main__mypage__maingroup{
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__mypage__close-time{
+    width: 306px;
+    height: 277px;
+    padding: 16px 17px 17px 17px;
+    & .close-time-text{
+      text-align: left;
+      font-size: 1.8rem;
+      margin: 0 0 20px 0;
+    }
+    & .close-time{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: 272px;
+      height: 200px;
+      margin: 0 auto;
+      & img{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        transform: translate(630%, -120%)
+      }
+    }
+  }
+  .main__mypage__group{
+    width: 594px;
+    height: 277px;
+  }
+  .main__mypage__category{
+    margin: 0;
+    & .category-title{
+      height: 50px;
+      padding: 12px 17px;
+    }
+  }
+  .main__mypage__nearreserve-list{
+    display: flex;
+    flex-flow: column wrap;
+    height: 217px;
+    padding: 22px 30px 10px 30px;
+    margin: 10px 0 0 0;
+  }
+  .main__mypage__nearreserve-caution{
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 7px 10px 8px 10px;
+  }
+  .main__mypage__nearreserve-text{
+    margin: 0;
+  }
+  .main__mypage__nearreserve-update{
+    margin: 0;
+    & .second-important-button{
+      margin-bottom: 8px;
+    }
+  }
+  .main__mypage__nearreserve-contents{
+    margin: 0;
+    padding: 0 0 18px 0;
+    & .reserve-time{
+      font-size: 1.8rem;
+    }
+  }
+
+  .main__mypage__buttons{
+    position: absolute;
+    align-self: flex-end;
+    bottom: 70%;
+    padding-right: 0;
+  }
+  .main__mypage__nearreserve-confirmation{
+    justify-content: flex-end;
+    height: 26px;
+    width: 190px;
+  }
+  .main__mypage__nearreserve-detail{
+    justify-content: flex-end;
+    height: 26px;
+    width: 190px;
+  }
+  .main__mypage__reservation-list{
+    margin: 20px 0 50px 0;
+  }
+  .main__mypage__link{
+    margin: 94px 0 101px 0;
+  }
+}

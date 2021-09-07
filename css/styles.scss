@@ -32,7 +32,27 @@
 @import "module/send";
 @import "module/textarea";
 @import "module/check-radio";
-@import "page/test";
+
+@import "page/member/C01";
+@import "page/member/confirm/C04";
+@import "page/pets_information/confirm/C07";
+@import "page/pets_information/finish/C08";
+@import "page/reserve/confirm/D02";
+@import "page/reserve/option/D04";
+@import "page/reserve/campaign/D05";
+@import "page/reserve/elderly_dog/D06";
+@import "page/reserve/error/D07";
+@import "page/reserve/finish/D08";
+@import "page/password/input/E04";
+@import "page/password/finish/E05";
+@import "page/password/mail_finish/E06";
+@import "page/mypage/F01";
+@import "page/mypage/reservation/F02";
+@import "page/mypage/reservation/edit/F04";
+@import "page/mypage/member_information/F08";
+@import "page/mypage/mail/finish/F09";
+@import "page/mypage/pets_information/finish/F15";
+@import "page/mypage/interview/finish/F18";
 
 .test{
   background-color: #fff;

@@ -1,0 +1,98 @@
+.main__underline{
+  color: #707070;
+}
+.main__mypage__reservation__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 25px 0 16px 0;
+}
+.main__mypage__reservation-group{
+  background-color: #F2F5E9;
+  border-radius: 10px;
+  padding: 17px 10px 15px 10px;
+  margin-bottom: 10px;
+  & .main__mypage__reservation-contents-time{
+    color: #6F8D1B;
+    font-size: 1.6rem;
+    & li{
+      margin-bottom: 6px;
+    }
+  }
+  & .main__mypage__reservation-contents-text{
+    margin: 11px 0;
+  }
+  & .main__mypage__reservation__button-interview{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    & .second-important-button{
+      height: 26px;
+      width: 90%;
+      background-color: #FDF4F5;
+    }
+  }
+  & .main__mypage__reservation__button-detail{
+    display: flex;
+    justify-content: center;
+    & .second-important-button{
+      border: none;
+      height: 26px;
+      width: 90%;
+    }
+  }
+}
+.main__mypage__reservation__button-reserve{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 35px 0;
+}
+.main__mypage__reservation__anchor-mypage{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 66px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__mypage__reservation{
+    & .container{
+      width: 930px;
+      padding: 0;
+      margin: auto;
+    }
+  }
+  .main__mypage__reservation__title{
+    font-size: 3.0rem;
+    margin: 36px 0 39px 0;
+  }
+  .main__mypage__reservation-group-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main__mypage__reservation-group{
+    display: flex; 
+    width: 455px;
+    margin-bottom: 20px;
+    padding: 22px 28px 21px 30px;
+  }
+  .main__mypage__reservation-contents-time li{
+    font-size: 1.8rem;
+  }
+  .main__mypage__reservation__button-all{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex: 1;
+  }
+  .main__mypage__reservation__button-reserve{
+    padding: 0;
+    margin: 20px 0;
+  }
+  .main__mypage__reservation__anchor-mypage{
+    margin: 40px 0 101px 0;
+  }
+}

@@ -1,0 +1,69 @@
+.main__underline{
+  color: #707070;
+}
+.main__mypage__mail__finish__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+.main__mypage__mail__finish__text{
+  font-size: 1.6rem;
+  margin-bottom: 13px;
+}
+.main__mypage__mail__finish__text-attention{
+  font-size: 1.2rem;
+  margin-bottom: 21px;
+}
+.main__mypage__mail__finish__mailtextarea{
+  background-color: #F8F8F8;
+  font-size: 1.6rem;
+  padding: 20px 15px 19px 15px;
+  margin: 0 auto 10px auto;
+  & .main__item__title{
+    margin-bottom: 11px;
+  }
+}
+.main__mypage__mail__finish__anchor{
+  display: flex;
+  justify-content: center;
+  margin: 39px 0 66px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__mypage__mail__finish{
+    & .container{
+      width: 930px;
+      padding: 0;
+      margin: auto;
+    }
+  }
+  .main__mypage__mail__finish__title{
+    font-size: 3.0rem;
+    margin: 36px 0 29px 0;
+  }
+  .main__mypage__mail__finish__text{
+    margin-bottom: 21px;
+  }
+  .main__mypage__mail__finish__text-attention{
+    margin-bottom: 34px;
+  }
+  .main__mypage__mail__finish__mailtextarea{
+    text-align: center;
+    padding: 23px 0 27px 0;
+    margin: 0 0 28px 0;
+    & .main__item__title{
+      margin: 0 0 8px 0;
+    }
+    & .main__item{
+      margin: 0;
+    }
+  }
+  .main__mypage__mail__finish__anchor{
+    font-size: 1.4rem;
+    margin: 61px 0 101px 0;
+  }
+}

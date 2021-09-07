@@ -1,0 +1,152 @@
+.main__underline{
+  color: #707070;
+}
+.main__mypage__member__information{
+  overflow-x: hidden;
+}
+.main__mypage__member__information__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+.main__mypage__member__information__id{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 11px;
+}
+.main__mypage__member__information__mail{
+  display: flex;
+  justify-content: space-between;
+  background-color: #F4F4F4;
+  font-size: 1.6rem;
+  margin: 0 -200%;
+  padding: 12px 200%;
+}
+.main__mypage__member__information__mail__text{
+  font-size: 1.6rem;
+  margin: 16px 0 20px 0;
+}
+.main__mypage__member__information__info{
+  display: flex;
+  justify-content: space-between;
+  background-color: #F4F4F4;
+  font-size: 1.6rem;
+  margin: 0 -200%;
+  padding: 12px 200%;
+}
+.main__mypage__member__information__info__table{
+  margin: 15px auto;
+  & tr th{
+    padding: 13px 15px 14px 15px;
+  }
+  & tr td{
+    display: flex;
+    font-size: 1.4rem;
+    padding: 13px 15px 14px 15px;
+  }
+  & .tell-relation-title{
+    line-height: 1.5;
+  }
+  & .tell-relation-no{
+    padding: 12px 15px 4px 15px;
+  }
+  & .tell-relation{
+    padding: 6px 15px 12px 15px;
+  }
+  & .pass-hide-title{
+    vertical-align: top;
+  }
+  & .pass-hide{
+    font-size: 1.0rem;
+    padding: 8px 15px 4px 15px;
+  }
+  & .pass-hide-text{
+    font-size: 1.0rem;
+    padding: 0 15px 9px 15px;
+  }
+  & .notification-title{
+    line-height: 1.2;
+  }
+  & .notification-action{
+    display: table-cell;
+    padding: 21px 15px;
+  }
+}
+.main__mypage__member__information__anchor{
+  display: flex;
+  justify-content: center;
+  margin: 31px 0 66px 0;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .main__mypage__member__information{
+    & .container{
+      width: 930px;
+      padding: 0;
+      margin: auto;
+    }
+  }
+  .main__mypage__member__information__title{
+    font-size: 3.0rem;
+    margin: 36px 0 29px 0;
+  }
+  .main__mypage__member__information__id{
+    font-size: 1.4rem;
+  }
+  .main__mypage__member__information__mail{
+    margin: 0;
+    padding: 12px 20px;
+  }
+  .main__mypage__member__information__mail__text{
+    padding-left: 20px;
+  }
+  .main__mypage__member__information__info{
+    margin: 0;
+    padding: 12px 20px;
+  }
+  .main__mypage__member__information__info__table{
+    margin: 20px auto;
+    & tr th{
+      white-space: nowrap;
+      font-size: 1.6rem;
+      padding: 13px 20px 16px 20px;
+    }
+    & tr td{
+      display: inline-block;
+      font-size: 1.6rem;
+      padding: 13px 20px 16px 20px;
+    }
+    & .tell-relation-title{
+      line-height: 1;
+    }
+    & .tell-relation-no{
+      padding: 13px 0 16px 20px;
+    }
+    & .tell-relation{
+      padding: 13px 20px 16px 15px;
+    }
+    & .pass-hide{
+      display: flex;
+      font-size: 1.2rem;
+      padding: 9px 20px 6px 20px; 
+    }
+    & .pass-hide-text{
+      font-size: 1.2rem;
+      padding: 0 20px 9px 20px; 
+    }
+    & .notification-action{
+      padding: 13px 20px 16px 20px;
+    }
+    & .table-br{
+      display: none;
+    }
+  }
+  .main__mypage__member__information__anchor{
+    margin: 40px 0 101px 0;
+  }
+}
