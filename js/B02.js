@@ -22,4 +22,9 @@ $(function () {
       $("title").html(title);
     }
   });
+
+  $(document).on("click", ".more-info-button", function(){
+    $(".none").fadeIn();
+    
+  });
 });

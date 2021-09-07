@@ -3008,20 +3008,6 @@ footer {
   display: block;
 }
 
-.storelist__button > .most-important-button::after {
-  content: "";
-  display: inline-block;
-  position: relative;
-  right: -16px;
-  top: -2px;
-  width: 11px;
-  height: 11px;
-  border-right: #fff 2px solid;
-  border-bottom: #fff 2px solid;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 .storelist__button > .sub-button {
   background-color: RGBA(0, 0, 0, 0);
 }
@@ -3171,6 +3157,24 @@ footer {
   margin-bottom: 5px;
 }
 
+.more-info-button:hover {
+  background-color: #f7bd82;
+}
+
+.more-info-button::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  right: -16px;
+  top: -2px;
+  width: 11px;
+  height: 11px;
+  border-right: #fff 2px solid;
+  border-bottom: #fff 2px solid;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .search-button {
   position: relative;
   bottom: 3px;
@@ -3178,5 +3182,9 @@ footer {
 
 .second-important-button {
   width: 100%;
+}
+
+.none {
+  display: none;
 }
 /*# sourceMappingURL=B02.css.map */

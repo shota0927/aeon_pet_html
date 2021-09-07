@@ -165,19 +165,6 @@ footer {
         
         >.most-important-button{
             display: block;
-
-            &::after{
-                content: "";
-                display: inline-block;
-                position: relative;
-                right: -16px;
-                top: -2px;
-                width: 11px;
-                height: 11px;
-                border-right: $color-background-base 2px solid;
-                border-bottom: $color-background-base 2px solid;
-                transform: rotate(45deg);
-            }
         }
 
         >.sub-button{
@@ -313,6 +300,26 @@ footer {
     }
 }
 
+
+.more-info-button{
+    &:hover{
+        background-color: lighten($color-accent-orange,20%);
+    }
+
+    &::after{
+        content: "";
+        display: inline-block;
+        position: relative;
+        right: -16px;
+        top: -2px;
+        width: 11px;
+        height: 11px;
+        border-right: $color-background-base 2px solid;
+        border-bottom: $color-background-base 2px solid;
+        transform: rotate(45deg);
+    }
+}
+
 .search-button{
     position: relative;
     bottom: 3px;
@@ -320,4 +327,8 @@ footer {
 
 .second-important-button {
     width: 100%;
+}
+
+.none{
+    display: none;
 }
