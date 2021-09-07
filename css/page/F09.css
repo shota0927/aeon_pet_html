@@ -5482,6 +5482,15 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .resistration-form__title--relation {
+    -ms-flex-preferred-size: 248px;
+        flex-basis: 248px;
+    padding-left: 4rem;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 768px) {
   .resistration-form__title--password {
     position: relative;
     top: -3rem;
@@ -5495,12 +5504,12 @@ footer {
   }
 }
 
-.resistration-form__field > *, .resistration-form__field--name > *, .resistration-form__field--postal > *, .resistration-form__field--birth > *, .resistration-form__field--representative > * {
+.resistration-form__field > *, .resistration-form__field--name > *, .resistration-form__field--postal > *, .resistration-form__field--birth > *, .resistration-form__field--representative > *, .resistration-form__field--relation > * {
   display: inline-block;
 }
 
 @media (min-width: 768px) {
-  .resistration-form__field, .resistration-form__field--name, .resistration-form__field--postal, .resistration-form__field--birth, .resistration-form__field--representative {
+  .resistration-form__field, .resistration-form__field--name, .resistration-form__field--postal, .resistration-form__field--birth, .resistration-form__field--representative, .resistration-form__field--relation {
     -ms-flex-preferred-size: 632px;
         flex-basis: 632px;
   }
@@ -5541,6 +5550,13 @@ footer {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .resistration-form__field--relation {
+    -ms-flex-preferred-size: 341px;
+        flex-basis: 341px;
+  }
 }
 
 .input__wrapper--name {
@@ -5605,12 +5621,6 @@ footer {
 
 .input__area--representative, .input__area--relation {
   width: 340px;
-}
-
-@media (min-width: 768px) {
-  .input__area--representative, .input__area--relation {
-    width: 230px;
-  }
 }
 
 .input__area--postal {
@@ -5727,4 +5737,4 @@ footer {
 #radio__dm--no::after {
   content: "いいえ";
 }
-/*# sourceMappingURL=C03.css.map */
+/*# sourceMappingURL=F09.css.map */

@@ -136,6 +136,14 @@ footer {
             }
         }
 
+        &--relation {
+            @include mq() {
+                flex-basis: 248px;
+                padding-left: 4rem;
+                margin-bottom: 45px;
+            }
+        }
+
         &--password {
             @extend #{$self};
 
@@ -187,6 +195,14 @@ footer {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+        }
+
+        &--relation {
+            @extend #{$self};
+
+            @include mq() {
+                flex-basis: 341px;
+            }
         }
 
     }
@@ -262,9 +278,7 @@ footer {
             @include extInputTxt();
             width: 340px;
 
-            @include mq() {
-                width: 230px;
-            }
+            @include mq() {}
         }
 
         &--postal {
@@ -280,6 +294,7 @@ footer {
 }
 
 .icon-password {
+
     display: block;
     float: right;
     position: relative;
@@ -291,12 +306,15 @@ footer {
         cursor: pointer;
     }
 
+
     @include mq() {
         display: inline;
         float: none;
         top: 0px;
         right: 30px;
     }
+
+
 }
 
 .button-module {
