@@ -1,0 +1,100 @@
+.main__underline{
+  color: #707070;
+}
+.main__member__confirm__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+.main__member__confirm__text{
+  text-align: left;
+  font-size: 1.6rem;
+  margin: 0 0 23px 0;
+}
+.main__member__confirm__table{
+  margin: auto;
+  & .tell-relation-title{
+    line-height: 2;
+  }
+  & td{
+    display: flex;
+    font-size: 1.4rem;
+  }
+  & .tell-relation-no{
+    padding: 23px 15px 4px 15px;
+  }
+  & .tell-relation{
+    padding: 6px 15px 25px 15px;
+  }
+  & .pass-hide-title{
+    vertical-align: top;
+  }
+  & .pass-hide{
+    padding: 0 15px 18px 15px;
+  }
+  & .notification-title{
+    line-height: 2;
+  }
+  & .notification-action{
+    display: table-cell;
+
+  }
+}
+.main__member__confirm__button{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+}
+.main__member__confirm__button-sub{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 66px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__member__confirm__title{
+    font-size: 3.0rem;
+    margin: 36px 0 29px 0;
+  }
+  .main__member__confirm__text{
+    width: 930px;
+    text-align: left;
+    margin: 0 auto 43px auto;
+  }
+  .main__member__confirm__table{
+    width: 930px;
+    & th{
+      white-space: nowrap;
+      font-size: 1.6rem;
+    }
+    & td{
+      display: inline-block;
+      font-size: 1.6rem;
+    }
+    & .tell-relation-title{
+      line-height: 1;
+    }
+    & .tell-relation-no{
+      padding: 18px 15px;
+    }
+    & .tell-relation{
+      padding: 18px 15px;
+    }
+    & .pass-hide{
+      padding: 18px 15px; 
+    }
+    & .notification-title-br{
+      display: none;
+    }
+  }
+  .main__member__confirm__button{
+    margin: 40px 0 20px 0;
+  }
+  .main__member__confirm__button-sub{
+    margin: 0 0 101px 0;
+  }
+}

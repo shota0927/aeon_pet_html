@@ -1,0 +1,101 @@
+.main__underline{
+  color: #707070;
+}
+.main__reserve__elderly__dog__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 21px 0;
+}
+.main__reserve__elderly__dog__text{
+  margin: 0 0 69px 0;
+  & .main__item{
+    margin: 0 0 30px 0;
+  }
+}
+.main__reserve__elderly__dog__text-condition{
+  font-size: 1.6rem;
+  margin: 0 0 13px 0;
+}
+
+.main__reserve__elderly__dog__table{
+  margin: 0 auto 20px auto;
+  & thead tr th{
+    background-color: #98AD5C;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    height: 36px;
+    padding: 0;
+  }
+  & thead tr td{
+    background-color:#B0C17E;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    height: 36px;
+    padding: 0;
+    &:nth-of-type(1){
+    border-right: 1px solid #fff;
+    }
+  }
+  & tbody tr th{
+    height: 43px;
+    padding: 0 15px;
+  }
+  & tbody tr td{
+    font-size: 1.4rem;
+  }
+}
+.main__reserve__elderly__dog__button{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 66px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__reserve__elderly__dog{
+    & .container{
+      margin: auto;
+      width: 930px;
+      padding: 0;
+    }
+  }
+  .main__reserve__elderly__dog__title{
+    font-size: 3.0rem;
+    margin: 36px 0 29px 0;
+  }
+  .main__reserve__elderly__dog__text{
+    margin: 0;
+    & .main__item{
+      margin: 0 0 33px 0;
+    }
+  }
+  .main__reserve__elderly__dog__text-condition{
+    margin: 43px 0 17px 0;
+  }
+  .main__reserve__elderly__dog__table-dondition{
+    display: flex;
+    justify-content: space-between;
+    & .main__reserve__elderly__dog__table{
+      width: 450px;
+      margin: 0;
+    }
+    & .table2 tbody tr th{
+      height: 43px;
+      padding: 0 0 0 15px;
+    }
+    & .table2 tbody tr td{
+      height: 43px;
+      padding: 0 0 0 15px;
+    }
+  }
+  .main__reserve__elderly__dog__button{
+    display: flex;
+    justify-content: center;
+    margin: 55px 0 101px 0;
+  }
+}

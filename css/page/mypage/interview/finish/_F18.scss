@@ -1,0 +1,32 @@
+.main__underline{
+  color: #707070;
+}
+.main__mypage__interview__finish__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+.main__mypage__interview__finish__text{
+  text-align: center;
+}
+.main__mypage__interview__finish-link{
+  display: flex;
+  justify-content: center;
+  margin: 38px 0 66px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main__mypage__interview__finish__title{
+    font-size: 3.0rem;
+    margin: 36px 0 29px 0;
+  }
+  .main__mypage__interview__finish__text{
+    text-align: center;
+  }
+  .main__mypage__interview__finish-link{
+    margin: 43px 0 101px 0;
+  }
+}

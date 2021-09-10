@@ -1,0 +1,47 @@
+.main__underline{
+  color: #707070;
+}
+.main__password-mail_finish__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+.main__password-mail_finish__text{
+  text-align: left;
+  font-size: 1.6rem;
+  margin-bottom: 13px;
+}
+.main__password-mail_finish__text-attention{
+  font-size: 1.2rem;
+  & .main__item{
+    margin-bottom: 9px;
+  }
+}
+.main__password-mail_finish-link{
+  display: flex;
+  justify-content: center;
+  margin: 54px 0 66px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main__password-mail_finish__title{
+    font-size: 3.0rem;
+    margin: 36px 0 29px 0;
+  }
+  .main__password-mail_finish__text{
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .main__password-mail_finish__text-attention{
+    text-align: center;
+    & .main__item{
+      margin-bottom: 13px;
+    }
+  }
+  .main__password-mail_finish-link{
+    margin: 41px 0 101px 0;
+  }
+}
