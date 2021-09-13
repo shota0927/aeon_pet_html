@@ -1,0 +1,224 @@
+@import "../css/setting/setting";
+@import "../css/setting/reset";
+
+.f12_pie__main__wrapper {
+    height: 1800px;
+
+    .f12_pie__txt--pet-infomation-change {
+        text-align: center;
+        color: $color-main;
+        font-size: 26pt;
+        font-family: $font-family-base;
+        margin-top: 27px;
+        margin-bottom: 45px;
+    }
+
+    .f12_pie__wrapper--required-edititem-txt {
+
+        display: inline-block;
+        width: 620px;
+        margin-left: 18%;
+
+
+        .f12_pie__wrapper--required-group {
+            display: inline-block;
+            width: 50px;
+            height: 724px;
+            margin-left: 0%;
+
+            .f12_pie__required-wrapper--1 {
+                margin: 0;
+
+            }
+
+            .f12_pie__required-wrapper--2 {
+                margin-top: 45px;
+            }
+
+            .f12_pie__required-wrapper--3 {
+                margin-top: 58px;
+            }
+
+            .f12_pie__required-wrapper--4 {
+                margin-top: 58px;
+
+            }
+
+            .f12_pie__required-wrapper--5 {
+                margin-top: 58px;
+            }
+
+            .f12_pie__required-wrapper--6 {
+                margin-top: 47px;
+            }
+
+            .f12_pie__required-wrapper--7 {
+                margin-top: 314px;
+            }
+
+        }
+
+        .f12_pie__wrapper__edit-item {
+            position: absolute;
+            top: 238px;
+            display: inline-block;
+            height: 724px;
+
+            .f12_pie__txt--pet-name {
+                margin-top: 0;
+            }
+
+            .f12_pie__txt--pet-name-katakana {
+                margin-top: 38px;
+            }
+
+            .f12_pie__txt--pet-gender {
+                margin-top: 50px;
+            }
+
+            .f12_pie__txt--pet-birthdate {
+                margin-top: 51px;
+            }
+
+            .f12_pie__txt--type-of-pet {
+                margin-top: 51px;
+            }
+
+            .f12_pie__txt--valid-rabies-vaccination {
+                margin-top: 42px;
+            }
+
+            .f12_pie__txt--mixed-vaccine {
+                margin-top: 57px;
+
+            }
+
+            .f12_pie__txt--rabies-vaccine {
+                margin-top: 96px;
+            }
+
+            .f12_pie__txt--pet-breeds {
+                margin-top: 99px;
+            }
+
+        }
+
+        .f12__pie__wrapper--input-btn {
+            display: inline-block;
+            position: absolute;
+            top: 226px;
+            margin-left: 230px;
+
+            .f12__pie__input__wrapper--pet-name-katakana {
+                margin-top: 17px;
+            }
+
+            .f12__pie__radiobtn-wrapper--pet-gander {
+                margin-top: 28px;
+
+                .f12__pie__radiobtn-wrapper--male {
+                    display: inline-block;
+
+                    .f12__pie__radio-check__wrapper--male::after{
+                        content: 'オス';
+                    }
+                }
+
+                .f12__pie__radiobtn-wrapper--female {
+                    display: inline-block;
+
+                    .f12__pie__radio-focused__wrapper--female::after{
+                        content: 'メス';
+                    }
+                }
+            }
+
+            .f12__group-wrapper__input-dropdown--birth-date {
+                margin-top: 29px;
+
+                .f12__input-dropdown__wrapper--birth-date-year {
+                    display: inline-block;
+                    width: 92px;
+                }
+
+                .f12__input-dropdown__wrapper--birth-date-month {
+                    display: inline-block;
+                    width: 73px;
+                }
+
+                .f12__input-dropdown__wrapper--birth-date-day {
+                    display: inline-block;
+                    width: 73px;
+                }
+            }
+
+            .f12__pie__radiobtn-wrapper--type-of-pet {
+
+                margin-top: 29px;
+
+                .f12__pie__radiobtn-wrapper--dog {
+
+                    display: inline-block;
+                }
+
+                .f12__pie__radiobtn-wrapper--cat {
+                    display: inline-block;
+                }
+            }
+
+            .f12__pie__wrapper--mixed-vaccine-calender {
+                display: inline-block;
+                margin-top: 95px;
+
+                .f12__pie__radiobtn-wrapper--mixed-vaccine-completed {
+                    display: inline-block;
+                    position: relative;
+                    top: 10px;
+
+                }
+
+                .f12__pie__calender__wrapper--mixed-vaccine {
+                    display: inline-block;
+                    width: 165px;
+                   
+                }
+            }
+            .f12__pie__radiobtn-wrapper--mixed-vaccin-incomprete{
+                margin-top: 20px;
+            }
+
+            .f12__pie__wrapper--rabies-vaccine-calender{
+                display: inline-block;
+                margin-top: 14px;
+
+                .f12__pie__radiobtn-wrapper--rabies-vaccine-completed{
+                    display: inline-block;
+                    position: relative;
+                    top: 10px;
+                }
+                .f12__pie__calender__wrapper--rabies-vaccine{
+                    display: inline-block;
+                    width: 165px;
+                }
+            }
+            .f12__pie__radiobtn-wrapper--rabies-vaccine-incomprete{
+                margin-top: 20px;
+            }
+
+        }
+    }
+
+}
+.f12__pie__changebtn_back-to-petinfomation__wrapper{
+    text-align: center;
+
+    .f12__pie__change-btn--orange{
+        display: inline-block
+        
+    }
+    .f12__pie__linktxt--back-to-pet-infomation{
+        display: block;
+        margin-top: 45px;
+        margin-bottom: 105px;
+    }
+}
