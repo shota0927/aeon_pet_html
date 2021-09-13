@@ -1,0 +1,103 @@
+.main__shop__reservation__confirm__c4{
+	overflow-x: hidden;	
+	background-color: #707070;
+	& .container{
+		padding: 0;
+		background-color: #FFFFFF;
+		border-radius: 4px;
+		border:1px solid #FFFFFF;
+		margin: 28px 206px 27px 207px;
+	}
+}
+.main__shop__reservation__confirm__c4__titlehead{
+	display: flex;
+	justify-content: space-between;
+	& .titlehead-left{
+		font-size: 1.8rem;
+		margin: 32px 0 12px 40px;
+	}
+	& .titlehead-right{
+		margin: 27px 20px 15px 0;
+		& .small-button--right-arrow{
+			margin-left: 20px;
+		}
+	}
+}
+
+.main__shop__reservation__confirm__c4__reservedate{
+	& .table2{
+		//width: 100%;
+		margin: 0 40px;
+		& tr th{
+			vertical-align: top;
+			width: 151px;
+			height: 40px;
+			padding: 12px 10px;
+		}
+		& tr td{
+			padding: 11px 10px 13px 10px;
+			display: flex;
+			margin: 0;
+		}
+		& .table-reserve-name{
+			padding: 12px 0 47px 10px;
+		}
+		& .table-reserve-day{
+			padding: 11px 0 6px 10px;
+		}
+		& .table-reserve-intime{
+			padding: 0 0 6px 10px;
+		}
+		& .table-reserve-outtime{
+			padding: 0 0 12px 10px;
+		}
+		& .table-widetitle{
+			padding: 12px 0 30px 10px;
+		}
+		& .table-answer{
+			padding-bottom: 6px;
+		}
+		& .table-text{
+			padding-top: 0;
+		}
+		& .table-title-status{
+			padding: 12px 0 40px 10px;
+		}
+		& .table-title-status-flag{
+			padding: 0;
+			margin: 14px 10px;
+		}
+		& .switch__wrapper{
+			width: 105px;
+			height: 40px;
+			&::before{
+				content: "受付済み";
+			}
+			//&::after{
+			//	content: "受付待ち";
+			//}
+		}
+		& [type="checkbox"]:checked + .switch__knob {
+			&::before {
+				left: 6.8rem;
+			}
+		}
+	}
+}
+
+.main__shop__reservation__confirm__c4__button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 30px 0 40px 0;
+	& .sub-button.sub-button--icon{
+		background-color: #6F8D1B;
+		color: #fff;
+	}
+	& .sub-button{
+		width: 220px;
+		height: 48px;
+		margin-top: 12px;
+	}
+}
