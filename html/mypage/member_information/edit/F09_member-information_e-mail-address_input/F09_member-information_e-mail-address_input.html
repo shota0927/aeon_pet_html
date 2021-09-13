@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- meta情報 -->
-  <title>マイページ＞ペット情報（編集）｜イオンペット グルーミング予約サイト</title>
-  <meta name="description" content="イオンペット グルーミング予約サイトの「ペット情報（編集）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+  <title>マイページ＞メールアドレス変更｜PETEMO グルーミングサロン 予約サイト</title>
+  <meta name="description" content="PETEMO グルーミングサロン 予約サイトの「メールアドレス変更」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
   <meta name="keywords" content="" />
   <!-- reset css -->
   <link rel="stylesheet" href="../../../../../css/reset.css" />
@@ -24,11 +24,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <!-- css -->
   <link rel="stylesheet" href="../../../../../css/styles.css" />
+  <link rel="stylesheet" href="../../../../../css/page/F09_member-information_e-mail-address_input.css">
   <link rel="icon" href="" />
-  <link rel="stylesheet" href="../../../../../css/page/F11_pet_infomation-check.css">
+
 </head>
 
 <body>
+
   <!-- ヘッダー（未ログイン） -->
   <header class="header header--non-login">
     <div class="header__left">
@@ -120,70 +122,36 @@
       /
       <span class="breadcrumb__item">
         <a href="" class="brandcrumb__item-link">
-          ペット情報詳細
+          メールアドレス変更
         </a>
       </span>
     </div>
   </div>
-
-  <div class="f11__pic__main__wrapper">
-    <!-- テキスト（ペット情報詳細） -->
-    <p class="f11__pic__txt--pet-infomation-detales">ペット情報詳細</p>
-    <!-- ボタン（変更） -->
-    <div class="f11__pic__btn__warpper--change">
-      <a href="" class="second-important-button f11__pic__btn--change">変更</a>
+  <!-- メイン　ここから -->
+  <div class="f09__mieai__main-wrapper">
+    <p class="f09__mieai__txt--change-email-address">メールアドレス変更</p>
+    <p class="f09__mieai__txt--main-paragraph">
+      新しいメールアドレスを入力して「送信する」を押してください。入力したメールアドレス宛に確認メールが届きます。
+      <!-- インプットエリア -->
+    <div class="f09__mieai__wrapper--input-email-address">
+      <div class="f09__mieai__wrapper--required-txt">
+        <div class="icon__wrapper--required f09__mieai__wrapper--required">
+          <p class="icon__text--required">必須</p>
+        </div>
+        <p class="f09__mieai__txt--email-address">メールアドレス</p>
+      </div>
+      <div class="input__wrapper f09__mieai__wrapper--input">
+        <input type="text" class="input__area--default f09__mieai__input__area--email-address"
+          placeholder="Sample@aeonpet.com">
+      </div>
     </div>
-    <div class="f11__pic__error-maesage">
-      ワクチンの有効期限が切れています。<br>ご予約には有効期限内のワクチン接種が必須となります。
-    </div>
-
-    <!-- テーブル（ペット情報） -->
-    <div class="f11__pic__table__wrapper">
-      <table class="table2 f11__pic__table--pet-infomation">
-        <tbody>
-          <tr>
-            <th class="f11__pic__table__text--left">お名前</th>
-            <td class="f11__pic__table__text--right">小太郎（コタロウ）</td>
-          </tr>
-          <tr>
-            <th class="f11__pic__table__text--left">性別</th>
-            <td class="f11__pic__table__text--right">男の子</td>
-          </tr>
-          <tr>
-            <th class="f11__pic__table__text--left">生年月日</th>
-            <td class="f11__pic__table__text--right">1999年01月01日　00歳00ヶ月</td>
-          </tr>
-          <tr>
-            <th class="f11__pic__table__text--left">有効な狂犬病・ワクチン接種</th>
-            <td class="f11__pic__table__text--right">済(2021年01月23日)</td>
-          </tr>
-          <tr>
-            <th class="f11__pic__table__text--left">狂犬病ワクチン</th>
-            <td class="f11__pic__table__text--right">済(2021年01月23日)</td>
-          </tr>
-          <tr>
-            <th class="f11__pic__table__text--left">保健所登録は済んでいますか？</th>
-            <td class="f11__pic__table__text--right">はい</td>
-          </tr>
-          <tr>
-            <th class="f11__pic__table__text--left">避妊・去勢はしていますか？</th>
-            <td class="f11__pic__table__text--right">はい</td>
-          </tr>
-          <tr>
-            <th class="f11__pic__table__text--left">マイクロチップはつけていますか？</th>
-            <td class="f11__pic__table__text--right">つけていない</td>
-          </tr>
-          <tr>
-            <th class="f11__pic__table__text--left">犬種</th>
-            <td class="f11__pic__table__text--right">トイプードル
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!-- ペット情報一覧へ戻る -->
-    <a href="" class="anchor-text f11__pic__bottom-link"><span class="anchor-text__right-arrow"></span>ペット情報一覧へ戻る</a>
-
+    <p class="f09__mieai__txt--instructions--second">
+      ※迷惑メール対策等でドメイン指定を行っているとメールが受信できない場合がございます。「＠aeonpet.com」を受信設定して下さい。
+    </p>
+    <!-- ボタン -->
+    <a href="" class="most-important-button f09__mieai__transmisson-btn">送信</a>
+    <!-- アンカーテキスト -->
+    <a href="" class="anchor-text f09__mieai__anchor-txt"><span class="anchor-text__right-arrow "></span>会員情報へ戻る</a>
   </div>
 
   <!-- フッター -->
@@ -256,7 +224,7 @@
 
 
   <!-- js -->
-  <script defer type="text/javascript" src="../../../../../js/script.js"></script>
+  <script defer type="text/javascript" src="../../../js/script.js"></script>
 </body>
 
 </html>
