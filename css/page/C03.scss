@@ -1,0 +1,418 @@
+@import "../setting/_setting.scss";
+@import "../styles.scss";
+@import "./modules.scss";
+
+@mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: normal;
+    font-family: $font-family, nth($font-family-base, 3);
+}
+
+input,
+select {
+    font-size: 1.4rem;
+}
+
+body,
+header,
+footer {
+    @include font-shape($color-text-main, 1.6rem);
+    min-width: 375px;
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
+}
+
+.content {
+    margin: 0 auto;
+    width: 375px;
+    padding: 0 17px;
+
+    @include mq() {
+        box-sizing: content-box;
+        width: 930px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        @include font-shape($color-main, 2.4rem);
+        text-align: center;
+        margin-bottom: 16px;
+
+        @include mq() {
+            font-size: 3rem;
+            margin-bottom: 39px;
+        }
+    }
+
+    &__note {
+        margin-bottom: 30px;
+        width: 100%;
+
+        @include mq() {
+            margin-bottom: 43px;
+        }
+    }
+
+    &__error {
+        background-color: $color-error;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__formlist {
+        list-style: none;
+
+        @include mq() {
+            padding-left: 10px;
+        }
+    }
+}
+
+.errorlist {
+    color: $color-alert;
+    list-style-position: inside;
+    font-size: 1.4rem;
+
+    >li {
+        &::before {
+            content: "・";
+            width: 3px;
+        }
+    }
+}
+
+.resistration-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    $self: &;
+
+    @include mq() {
+        margin-bottom: 35px;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    &--name-kanji,
+    &--postal,
+    &--address,
+    &--address-number {
+        @extend #{$self};
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        $self: &;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin: 10px 0px;
+        align-items: center;
+
+        @include mq() {
+            margin: 0;
+            flex-basis: 248px;
+            align-items: center;
+        }
+
+        &--dm {
+            @extend #{$self};
+            display: inline-block;
+
+            @include mq() {
+                flex-basis: 248px;
+                align-items: center;
+
+                >* {
+                    display: block;
+                }
+            }
+        }
+
+        &--password {
+            @extend #{$self};
+
+            @include mq() {
+                position: relative;
+                top: -3rem;
+            }
+        }
+
+        &--representative {
+            @extend #{$self};
+
+            @include mq() {
+                position: relative;
+                top: -1rem;
+            }
+        }
+    }
+
+    &__field {
+        $self: &;
+
+        >* {
+            display: inline-block;
+        }
+
+        @include mq() {
+            flex-basis: 632px;
+        }
+
+        &--name,
+        &--postal {
+            @extend #{$self};
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &--birth {
+            @extend #{$self};
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        &--representative {
+            @extend #{$self};
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+    }
+}
+
+.input {
+    &__wrapper {
+
+        &--name {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            gap: 20px;
+            display: inline-block;
+
+            @include mq() {
+                width: 191px;
+                flex-basis: 191px;
+            }
+        }
+
+        &--birth-year {
+            width: 100px;
+        }
+
+        &--birth-month,
+        &--birth-day {
+            width: 80px;
+        }
+
+        &--phone {
+            width: 340px;
+        }
+
+        &--relation {
+            margin-left: auto;
+        }
+
+        &--prefecture {
+            width: 120px;
+        }
+    }
+
+    &__name--label {
+        display: inline-block;
+    }
+
+    &__area {
+        @mixin extInputTxt() {
+            @extend .input__area--default;
+        }
+
+        &--name {
+            @include extInputTxt();
+            width: 140px;
+
+            @include mq() {
+                margin-left: 5px;
+                width: 161px;
+            }
+        }
+
+        &--phone,
+        &--address,
+        &--building,
+        &--password {
+            @include extInputTxt();
+            width: 340px;
+        }
+
+        &--representative,
+        &--relation {
+            @include extInputTxt();
+            width: 340px;
+
+            @include mq() {
+                width: 230px;
+            }
+        }
+
+        &--postal {
+            @include extInputTxt();
+            width: 120px;
+        }
+
+        &--city {
+            @include extInputTxt();
+            width: 211px;
+        }
+    }
+}
+
+.icon-password {
+    display: block;
+    float: right;
+    position: relative;
+    z-index: 10;
+    top: -30px;
+    right: 10px;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    @include mq() {
+        display: inline;
+        float: none;
+        top: 0px;
+        right: 30px;
+    }
+}
+
+.button-module {
+    $self: &;
+
+    &--postal {
+        display: flex !important;
+        @extend #{$self};
+        width: 81px;
+        height: 35px;
+        @include font-shape(#FFF, 1.4rem, nth($font-family-base, 2));
+        font-weight: bold;
+        background-color: $color-icon-default;
+    }
+}
+
+.cirtificate-button {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.caution {
+    &--title {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    &--normal {
+        font-size: 1.2rem;
+    }
+
+    &--representative {
+        font-size: 1.2rem;
+        display: block;
+    }
+
+    &--password {
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: -2.15px;
+        display: block;
+        width: 340px;
+    }
+}
+
+.icon {
+    &__wrapper {
+        &--optional {
+            margin: 0;
+        }
+
+        &--optional,
+        &--required {
+            width: 32px;
+            min-width: 32px;
+            height: 17px;
+        }
+    }
+}
+
+.radio {
+
+    &__wrapper {
+        &--individual {
+            height: auto;
+        }
+
+        &--item::after {
+            content: "";
+        }
+    }
+}
+
+.select {
+    &__wrapper {
+        &--shevron::after {
+            right: 0.5rem;
+        }
+    }
+}
+
+#radio {
+    &__sex {
+        &--man {
+            &::after {
+                content: "男性"
+            }
+        }
+
+        &--woman {
+            &::after {
+                content: "女性"
+            }
+        }
+
+        &--noreply {
+            &::after {
+                content: "無回答"
+            }
+        }
+
+    }
+
+    &__dm {
+        &--yes {
+            &::after {
+                content: "はい"
+            }
+        }
+
+        &--no {
+            &::after {
+                content: "いいえ"
+            }
+        }
+    }
+}
