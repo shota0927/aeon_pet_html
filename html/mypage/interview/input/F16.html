@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta情報 -->
+    <title>マイページ＞事前確認事項（入力）｜イオンペット グルーミング予約サイト</title>
+    <meta name="description" content="イオンペット グルーミング予約サイトの「事前確認事項（入力）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <meta name="keywords" content="" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../../../../css/styles.css" />
+    <link rel="stylesheet" href="../../../../css/page/F16.css" />
+    <script src="../../../../js/script.js"></script>
+    <script src="../../../../js/F16.js"></script>
+    <link rel="icon" href="" />
+</head>
+
+<body>
+    <header class="header header--non-login">
+        <div class="header__left">
+            <h1>
+                <a href="/">
+                    <picture class="header__logo" aria-hidden="true">
+                        <source srcset="../../../../image/common/logo-pc.png" media="(min-width: 768px)"
+                            class="header__logo-pc" />
+                        <img src="../../../../image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
+                    </picture>
+                </a>
+            </h1>
+            <a href="" class="header__search"><img src="../../../../image/common/search-icon.png" alt="サーチアイコン">店舗検索・ご予約</a>
+        </div>
+        <div class="header__right">
+            <div class="header__btns">
+                <a href="" class="header__mypage">マイページ</a>
+            </div>
+            <div class="hamburger__menu js-hamburger--login">
+                <img src="../../../../image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
+            </div>
+        </div>
+        <nav class="header__nav header-nav header-nav--login">
+            <div class="header-nav__title">
+                <p class="sp">こんにちは<br>○○さん (マイページ)</p>
+                <p class="pc">こんにちは　○○さん (マイページ)</p>
+                <div class="header-nav__bars js-bars">
+                    <span class="header-nav__bar header-nav__bar--left"></span>
+                    <span class="header-nav__bar header-nav__bar--right"></span>
+                </div>
+            </div>
+            <ul class="header-nav__items">
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/home-icon.png" alt="">ホーム</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/search-icon-small.png"
+                            alt="">店舗検索・ご予約</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/current-booking-icon.png"
+                            alt="">現在のご予約<span class="header-nav__number header-nav__number--booking">99</span></a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/mypage-icon-green.png"
+                            alt="">マイページ</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/pet-info-icon.png" alt="">
+                        ペット情報<img class="header-nav__dog-icon" src="../../../../image/common/dog-icon.png" alt=""><span
+                            class="header-nav__number">99</span><img class="header-nav__cat-icon"
+                            src="../../../../image/common/cat-icon.png" alt=""><span class="header-nav__number">99</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header-nav__items">
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/booking-icon-green.png"
+                            alt="">ご予約方法</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/mypage-icon-green.png"
+                            alt="">マイページのご利用方法</a>
+                </li>
+                <div class="header-nav__logout-button">
+                    <a href="" class="logout-button"><img src="../../../../image/common/logout-icon.png"
+                            alt="ログアウトアイコン">ログアウト</a>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header__burger-musk"></div>
+    </header>
+    <div class="breadcrumb container">
+        <div class="inner">
+            <span class="breadcrumb__item">
+                <a href="" class="brandcrumb__item-link">
+                    <img src="../../../../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン" class="breadcrumb__item-icon">
+                </a>
+            </span>
+            /
+            <span class="breadcrumb__item">
+                <a href="" class="brandcrumb__item-link">
+                    マイページ
+                </a>
+            </span>
+            /
+            <span class="breadcrumb__item breadcrumb__item--orange">
+                <a href="" class="brandcrumb__item-link">
+                    事前確認事項（入力）
+                </a>
+            </span>
+        </div>
+    </div>
+    <div class="content">
+        <h1 class="content__title">事前確認事項</h1>
+        <div class="content__reservation">
+            <p class="reservation-title">
+                <span class="reservation-title__date">2021年7月1日(木)</span>
+                <span class="reservation-title__time">9:00~</span>
+                <span class="reservation-title__pickup">お迎え時間：15:00</span>
+            </p>
+            <ul class="ressevartion-list">
+                <li>店舗名：PETEMO札幌苗穂店</li>
+                <li>お名前：小太郎ちゃん</li>
+                <li>コース名：シャンプーコース</li>
+            </ul>
+        </div>
+        <ul class="content__formlist">
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--optional">
+                        <p class="icon__text--optional">任意</p>
+                    </div>
+                    <label for="text-pet-doctor">
+                        かかりつけの獣医
+                    </label>
+                </div>
+                <div class="resistration-form__field">
+                    <div class="input__wrapper">
+                        <input type="text" class="input__area--pet-doctor" placeholder="○○○○病院" id="text-pet-doctor">
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--optional">
+                        <p class="icon__text--optional">任意</p>
+                    </div>
+                    <label for="text-pet-name--kana">
+                        グルーミング中、後の写真撮影承諾
+                    </label>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-photograph--agreement" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-photograph--agreement" name="pet-photograph-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">同意する</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        健康状態
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-health--good" class="radio-button-module">
+                        <input type="radio" id="pet-health--good" name="pet-health-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">異常なし</span>
+                    </label>
+                    <label for="pet-health--bad" class="radio-button-module">
+                        <input type="radio" id="pet-health--bad" name="pet-health-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">異常あり</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form--anamnesis">
+                <div class="resistration-form__field--anamnesis">
+                    <table class="anamnesis-table" id="table--anamnesis">
+                        <colgroup>
+                            <col class="anamnesis-table__col--symptom">
+                            <col class="anamnesis-table__col--part">
+                            <col class="anamnesis-table__col--detail">
+                        </colgroup>
+                        <thead class="anamnesis-table__header">
+                            <tr>
+                                <th>症状・程度</th>
+                                <th>部位</th>
+                                <th>詳細</th>
+                            </tr>
+                        </thead>
+                        <tbody class="anamnesis-table__body">
+                            <tr class="anamnesis-table__row">
+                                <td class="anamnesis-table__cell">
+                                    <label for="pet-anamnesis--symptom" class="checkbox-button-module--symptom">
+                                        <input type="checkbox" id="pet-anamnesis--symptom" name="pet-anamnesis-group"
+                                            class="checkbox-button-module__checkbox">
+                                        <span class="checkbox-button-module__sentence">パテラ</span>
+                                    </label>
+                                    <div class="input__wrapper--symptom select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--symptom is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper--part select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--part is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper">
+                                        <input type="text" class="input__area--pet-detail" placeholder="入力してください"
+                                            id="text-pet-detail">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="anamnesis-table__row">
+                                <td class="anamnesis-table__cell">
+                                    <label for="pet-anamnesis--symptom" class="checkbox-button-module--symptom">
+                                        <input type="checkbox" id="pet-anamnesis--symptom" name="pet-anamnesis-group"
+                                            class="checkbox-button-module__checkbox">
+                                        <span class="checkbox-button-module__sentence">ヘルニア</span>
+                                    </label>
+                                    <div class="input__wrapper--symptom select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--symptom is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper--part select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--part is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper">
+                                        <input type="text" class="input__area--pet-detail" placeholder="入力してください"
+                                            id="text-pet-detail">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="anamnesis-table__row">
+                                <td class="anamnesis-table__cell">
+                                    <label for="pet-anamnesis--symptom" class="checkbox-button-module--symptom">
+                                        <input type="checkbox" id="pet-anamnesis--symptom" name="pet-anamnesis-group"
+                                            class="checkbox-button-module__checkbox">
+                                        <span class="checkbox-button-module__sentence">骨折歴</span>
+                                    </label>
+                                    <div class="input__wrapper--symptom select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--symptom is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper--part select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--part is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper">
+                                        <input type="text" class="input__area--pet-detail" placeholder="入力してください"
+                                            id="text-pet-detail">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="anamnesis-table__row">
+                                <td class="anamnesis-table__cell">
+                                    <label for="pet-anamnesis--symptom" class="checkbox-button-module--symptom">
+                                        <input type="checkbox" id="pet-anamnesis--symptom" name="pet-anamnesis-group"
+                                            class="checkbox-button-module__checkbox">
+                                        <span class="checkbox-button-module__sentence">心臓病</span>
+                                    </label>
+                                    <div class="input__wrapper--symptom select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--symptom is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper--part select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--part is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper">
+                                        <input type="text" class="input__area--pet-detail" placeholder="入力してください"
+                                            id="text-pet-detail">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="anamnesis-table__row">
+                                <td class="anamnesis-table__cell">
+                                    <label for="pet-anamnesis--symptom" class="checkbox-button-module--symptom">
+                                        <input type="checkbox" id="pet-anamnesis--symptom" name="pet-anamnesis-group"
+                                            class="checkbox-button-module__checkbox">
+                                        <span class="checkbox-button-module__sentence">てんかん</span>
+                                    </label>
+                                    <div class="input__wrapper--symptom select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--symptom is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper--part select__wrapper--shevron">
+                                        <select name="" id="" class="select__wrapper--part is-empty">
+                                            <option value="" class="select__option" selected>選択してください</option>
+                                            <option value="option1" class="select__option">選択済み項目1</option>
+                                            <option value="option2" class="select__option">選択済み項目2</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="anamnesis-table__cell">
+                                    <div class="input__wrapper">
+                                        <input type="text" class="input__area--pet-detail" placeholder="入力してください"
+                                            id="text-pet-detail">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        その他現在治療中の病気・怪我はございますか
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-illness--no" class="radio-button-module">
+                        <input type="radio" id="pet-illness--no" name="pet-illness-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">ない</span>
+                    </label>
+                    <label for="pet-illness--yes" class="radio-button-module">
+                        <input type="radio" id="pet-illness--yes" name="pet-illness-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">ある</span>
+                    </label>
+                    <div class="textarea__wrapper">
+                        <textarea name="" id="textarea--pet-illness" class="textarea" placeholder="治療状況など"></textarea>
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        最近動物病院に受診しましたか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-consultation--no" class="radio-button-module">
+                        <input type="radio" id="pet-consultation--no" name="pet-consultation-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">かかってない</span>
+                    </label>
+                    <label for="pet-consultation--yes" class="radio-button-module">
+                        <input type="radio" id="pet-consultation--yes" name="pet-consultation-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">かかった</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        血液などの検査を1年以内にしていますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-checkup--no" class="radio-button-module">
+                        <input type="radio" id="pet-checkup--no" name="pet-checkup-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">していない</span>
+                    </label>
+                    <label for="pet-checkup--yes" class="radio-button-module">
+                        <input type="radio" id="pet-checkup--yes" name="pet-checkup-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">している</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        心臓病の検査を1年以内にしていますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-heart--no" class="radio-button-module">
+                        <input type="radio" id="pet-heart--no" name="pet-heart-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">していない</span>
+                    </label>
+                    <label for="pet-heart--yes" class="radio-button-module">
+                        <input type="radio" id="pet-heart--yes" name="pet-heart-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">している</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        投薬中の薬があれば教えてください
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-medicine--no" class="radio-button-module">
+                        <input type="radio" id="pet-medicine--no" name="pet-medicine-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">ない</span>
+                    </label>
+                    <label for="pet-medicine--yes" class="radio-button-module">
+                        <input type="radio" id="pet-medicine--yes" name="pet-medicine-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">ある</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        室内でおトイレのワンちゃんにお伺いします。 ペットシーツを食べることがありますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-eating-sheet--no" class="radio-button-module">
+                        <input type="radio" id="pet-eating-sheet--no" name="pet-eating-sheet-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">いいえ</span>
+                    </label>
+                    <label for="pet-eating-sheet--yes" class="radio-button-module">
+                        <input type="radio" id="pet-eating-sheet--yes" name="pet-eating-sheet-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">はい</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        いつものウンチの状態はいかがですか？
+                    </span>
+                </div>
+                <div class="resistration-form__field--feces">
+                    <label for="pet-feces--hard" class="radio-button-module">
+                        <input type="radio" id="pet-feces--hard" name="pet-feces-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">堅い</span>
+                    </label>
+                    <label for="pet-feces--normal" class="radio-button-module">
+                        <input type="radio" id="pet-feces--normal" name="pet-feces-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">通常</span>
+                    </label>
+                    <label for="pet-feces--soft" class="radio-button-module">
+                        <input type="radio" id="pet-feces--soft" name="pet-feces-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">柔らかい</span>
+                    </label>
+                    <label for="pet-feces--diarrhea" class="radio-button-module">
+                        <input type="radio" id="pet-feces--diarrhea" name="pet-feces-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">下痢が多い</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        お水の飲み方はどちらですか？
+                    </span>
+                </div>
+                <div class="resistration-form__field--drinking">
+                    <label for="pet-drinking--bowl" class="radio-button-module">
+                        <input type="radio" id="pet-drinking--bowl" name="pet-drinking-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">お皿</span>
+                    </label>
+                    <label for="pet-drinking--warter-feeder" class="radio-button-module">
+                        <input type="radio" id="pet-drinking--warter-feeder" name="pet-drinking-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">給水器</span>
+                    </label>
+                    <label for="pet-drinking--both" class="radio-button-module">
+                        <input type="radio" id="pet-drinking--both" name="pet-drinking-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">どちらでも</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        預かり中に体調を崩したことはございますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-homesick--no" class="radio-button-module">
+                        <input type="radio" id="pet-homesick--no" name="pet-homesick-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">ない</span>
+                    </label>
+                    <label for="pet-homesick--yes" class="radio-button-module">
+                        <input type="radio" id="pet-homesick--yes" name="pet-homesick-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">ある</span>
+                    </label>
+                    <div class="textarea__wrapper">
+                        <textarea name="" id="textarea--pet-homesick" class="textarea" placeholder="その時の様子など"></textarea>
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        食べ物でアレルギーはございますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-allergies--no" class="radio-button-module">
+                        <input type="radio" id="pet-allergies--no" name="pet-allergies-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">ない</span>
+                    </label>
+                    <label for="pet-allergies--yes" class="radio-button-module">
+                        <input type="radio" id="pet-allergies--yes" name="pet-allergies-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">ある</span>
+                    </label>
+                    <div class="textarea__wrapper">
+                        <textarea name="" id="textarea--pet-allergies" class="textarea" placeholder="アレルゲン"></textarea>
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        ノミ・ダニ予防はされていますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-pest-prevention--no" class="radio-button-module">
+                        <input type="radio" id="pet-pest-prevention--no" name="pet-pest-prevention-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">していない</span>
+                    </label>
+                    <label for="pet-pest-prevention--yes" class="radio-button-module">
+                        <input type="radio" id="pet-pest-prevention--yes" name="pet-pest-prevention-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">している</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        他に同居ワンちゃん・ネコちゃんはいますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-housemate--no" class="radio-button-module">
+                        <input type="radio" id="pet-housemate--no" name="pet-housemate-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">いない</span>
+                    </label>
+                    <label for="pet-housemate--yes" class="radio-button-module">
+                        <input type="radio" id="pet-housemate--yes" name="pet-housemate-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">いる</span>
+                    </label>
+                    <div class="textarea__wrapper">
+                        <textarea name="" id="textarea--pet-housemate" class="textarea" placeholder="種類や数、同居の様子など"></textarea>
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        その他、お手入れに関してお困りごとはありますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field--worried">
+                    <label for="pet-worried--dandruff" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-worried--dandruff" name="pet-worried-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">フケ</span>
+                    </label>
+                    <label for="pet-worried--smell" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-worried--smell" name="pet-worried-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">ニオイ</span>
+                    </label>
+                    <label for="pet-worried--stickness" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-worried--stickness" name="pet-worried-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">ベタつき</span>
+                    </label>
+                    <label for="pet-worried--oral-care" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-worried--oral-care" name="pet-worried-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">お口のケア</span>
+                    </label>
+                    <label for="pet-worried--hair-loss" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-worried--hair-loss" name="pet-worried-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">抜け毛</span>
+                    </label>
+                    <label for="pet-hairball" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-hairball" name="pet-worried-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">もつれ、毛玉</span>
+                    </label>
+                    <label for="pet-dryness" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-dryness" name="pet-worried-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">乾燥</span>
+                    </label>
+                    <label for="pet-none" class="checkbox-button-module">
+                        <input type="checkbox" id="pet-none" name="pet-worried-group"
+                            class="checkbox-button-module__checkbox">
+                        <span class="checkbox-button-module__sentence">特になし</span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+        <a href="" class="most-important-button cirtificate-button">確認画面へ</a>
+    </div>
+    </div>
+    <footer class="footer">
+        <a class="footer__page-top-button" href="#">
+            <span></span>
+        </a>
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="../../../../image/common/footer-logo.png" alt="ロゴ">
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__nav-items--top">
+                    <li class="footer__nav-item--top">
+                        <a href="">
+                            <img class="footer__icon" src="../../../../image/common/booking-icon.png" alt="">ご予約方法
+                        </a>
+                    </li>
+                    <li class="footer__nav-item--top">
+                        <a href="">
+                            <img class="footer__icon" src="../../../../image/common/mypage-icon.png" alt="">マイページのご利用方法
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__wrapper">
+                    <ul class="footer__nav-items--bottom-left">
+                        <li class="footer__nav-item">
+                            <a href=""><span class="footer__arrow-right"></span>
+                                会員規約
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png" alt="">プライバシーポリシー
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png" alt="">お問い合わせ
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png" alt="">企業情報
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-items--bottom-right">
+                        <li class="footer__nav-item">
+                            <a href=""><span class="footer__arrow-right"></span>
+                                当サイトのご利用規約
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png" alt="">よくあるご質問
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png" alt="">サービスについて
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <small class="footer__copyright">Copyright Aeonpet.Co.LTD.All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

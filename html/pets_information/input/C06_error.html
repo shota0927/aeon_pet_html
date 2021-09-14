@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta情報 -->
+    <title>ペット登録（入力）｜イオンペット グルーミング予約サイト</title>
+    <meta name="description" content="イオンペット グルーミング予約サイトの「ペット登録（入力）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <meta name="keywords" content="" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../../../css/page/C06.css" />
+    <script src="../../../js/C06.js"></script>
+    <link rel="icon" href="" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__left">
+            <h1>
+                <a href="/">
+                    <picture class="header__logo" aria-hidden="true">
+                        <source srcset="../../../image/common/logo-pc.png" media="(min-width: 768px)"
+                            class="header__logo-pc" />
+                        <img src="../../../image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
+                    </picture>
+                </a>
+            </h1>
+            <a href="" class="header__search"><img src="../../../image/common/search-icon.png" alt="サーチアイコン">店舗検索・ご予約</a>
+        </div>
+        <div class="header__right">
+            <div class="header__btns">
+                <a href="" class="header__login">ログイン</a>
+                <a href="" class="header__member">無料会員登録</a>
+            </div>
+            <div class="hamburger__menu js-hamburger--non-login">
+                <img src="../../../image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
+            </div>
+        </div>
+        <nav class="header__nav header-nav header-nav--non-login">
+            <div class="header-nav__title">
+                <p class="sp">こんにちは<br>ゲストさん (ログイン)</p>
+                <p class="pc">こんにちは　ゲストさん (ログイン)</p>
+                <div class="header-nav__bars js-bars">
+                    <span class="header-nav__bar header-nav__bar--left"></span>
+                    <span class="header-nav__bar header-nav__bar--right"></span>
+                </div>
+            </div>
+            <ul class="header-nav__items">
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/home-icon.png" alt="">ホーム</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/search-icon-small.png"
+                            alt="">店舗検索・ご予約</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/login-icon.png" alt="">ログイン</a>
+                </li>
+            </ul>
+            <ul class="header-nav__items">
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/booking-icon-green.png"
+                            alt="">ご予約方法</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/mypage-icon-green.png"
+                            alt="">マイページのご利用方法</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__burger-musk"></div>
+    </header>
+    <div class="breadcrumb container">
+        <div class="inner">
+            <span class="breadcrumb__item">
+                <a href="" class="brandcrumb__item-link">
+                    <img src="../../../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン" class="breadcrumb__item-icon">
+                </a>
+            </span>
+            /
+            <span class="breadcrumb__item breadcrumb__item--orange">
+                <a href="" class="brandcrumb__item-link">
+                    ペット登録（入力）
+                </a>
+            </span>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div class="modal-container__bg modal-close">
+            <div class="modal-container__content">
+                <div class="tab-table">
+                    <input id="tab-table__a-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio"
+                        checked>
+                    <input id="tab-table__ka-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
+                    <input id="tab-table__sa-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
+                    <input id="tab-table__ta-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
+                    <input id="tab-table__na-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
+                    <input id="tab-table__ha-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
+                    <input id="tab-table__ma-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
+                    <input id="tab-table__ya-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
+                    <input id="tab-table__ra-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
+                    <input id="tab-table__wa-line--radio" type="radio" name="pet-kind-others" class="tab-table__radio">
+                    <nav class="tab-table__tabs">
+                        <label for="tab-table__a-line--radio" class="tab-table__label"
+                            id="tab-table__a-line--label">ア行</label>
+                        <label for="tab-table__ka-line--radio" class="tab-table__label"
+                            id="tab-table__ka-line--label">カ行</label>
+                        <label for="tab-table__sa-line--radio" class="tab-table__label"
+                            id="tab-table__sa-line--label">サ行</label>
+                        <label for="tab-table__ta-line--radio" class="tab-table__label"
+                            id="tab-table__ta-line--label">タ行</label>
+                        <label for="tab-table__na-line--radio" class="tab-table__label"
+                            id="tab-table__na-line--label">ナ行</label>
+                        <label for="tab-table__ha-line--radio" class="tab-table__label"
+                            id="tab-table__ha-line--label">ハ行</label>
+                        <label for="tab-table__ma-line--radio" class="tab-table__label"
+                            id="tab-table__ma-line--label">マ行</label>
+                        <label for="tab-table__ya-line--radio" class="tab-table__label"
+                            id="tab-table__ya-line--label">ヤ行</label>
+                        <label for="tab-table__ra-line--radio" class="tab-table__label"
+                            id="tab-table__ra-line--label">ラ行</label>
+                        <label for="tab-table__wa-line--radio" class="tab-table__label"
+                            id="tab-table__wa-line--label">ワ行</label>
+                    </nav>
+                    <div class="tab-table__content" id="tab-table__a-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>ア</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--a1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--a1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--a2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--a2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--a3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--a3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--a4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--a4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>イ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--i1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--i1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--i2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--i2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--i3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--i3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--i4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--i4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ウ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--u1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--u1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--u2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--u2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--u3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--u3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--u4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--u4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>エ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--e1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--e1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--e2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--e2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--e3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--e3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--e4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--e4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>オ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--o1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--o1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--o2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--o2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--o3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--o3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--o4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--o4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__content" id="tab-table__ka-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>カ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ka1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ka1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ka2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ka2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ka3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ka3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ka4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ka4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>キ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ki1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ki1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ki2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ki2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ki3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ki3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ki4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ki4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ク</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ku1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ku1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ku2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ku2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ku3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ku3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ku4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ku4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ケ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ke1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ke1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ke2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ke2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ke3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ke3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ke4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ke4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>コ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ko1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ko1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ko2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ko2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ko3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ko3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ko4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ko4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__content" id="tab-table__sa-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>カ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--sa1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--sa1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--sa2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--sa2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--sa3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--sa3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--sa4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--sa4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>キ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--si1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--si1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--si2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--si2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--si3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--si3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--si4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--si4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ク</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--su1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--su1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--su2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--su2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--su3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--su3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--su4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--su4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ケ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--se1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--se1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--se2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--se2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--se3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--se3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--se4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--se4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>コ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--so1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--so1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--so2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--so2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--so3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--so3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--so4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--so4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__content" id="tab-table__ta-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>カ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ta1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ta1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ta2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ta2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ta3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ta3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ta4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ta4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>キ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ti1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ti1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ti2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ti2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ti3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ti3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ti4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ti4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ク</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--tu1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--tu1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--tu2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--tu2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--tu3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--tu3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--tu4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--tu4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ケ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--te1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--te1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--te2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--te2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--te3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--te3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--te4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--te4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>コ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--to1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--to1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--to2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--to2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--to3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--to3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--to4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--to4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__content" id="tab-table__na-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>カ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--na1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--na1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--na2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--na2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--na3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--na3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--na4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--na4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>キ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ni1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ni1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ni2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ni2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ni3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ni3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ni4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ni4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ク</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--nu1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--nu1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--nu2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--nu2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--nu3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--nu3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--nu4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--nu4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ケ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ne1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ne1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ne2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ne2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ne3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ne3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ne4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ne4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>コ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--no1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--no1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--no2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--no2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--no3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--no3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--no4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--no4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__content" id="tab-table__ha-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>カ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ha1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ha1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ha2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ha2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ha3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ha3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ha4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ha4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>キ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--hi1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--hi1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--hi2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--hi2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--hi3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--hi3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--hi4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--hi4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ク</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--hu1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--hu1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--hu2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--hu2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--hu3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--hu3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--hu4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--hu4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ケ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--he1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--he1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--he2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--he2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--he3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--he3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--he4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--he4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>コ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ho1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ho1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ho2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ho2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ho3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ho3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ho4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ho4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__content" id="tab-table__ma-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>カ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ma1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ma1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ma2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ma2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ma3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ma3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ma4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ma4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>キ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mi1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mi1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mi2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mi2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mi3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mi3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mi4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mi4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ク</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mu1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mu1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mu2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mu2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mu3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mu3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mu4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mu4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ケ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--me1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--me1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--me2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--me2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--me3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--me3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--me4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--me4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>コ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mo1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mo1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mo2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mo2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mo3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mo3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--mo4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--mo4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__content" id="tab-table__ya-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>カ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ya1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ya1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ya2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ya2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ya3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ya3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ya4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ya4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>キ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yi1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yi1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yi2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yi2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yi3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yi3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yi4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yi4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ク</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yu1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yu1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yu2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yu2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yu3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yu3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yu4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yu4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ケ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ye1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ye1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ye2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ye2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ye3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ye3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ye4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ye4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>コ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yo1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yo1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yo2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yo2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yo3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yo3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--yo4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--yo4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__content" id="tab-table__ra-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>カ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ra1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ra1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ra2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ra2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ra3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ra3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ra4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ra4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>キ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ri1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ri1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ri2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ri2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ri3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ri3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ri4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ri4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ク</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ru1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ru1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ru2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ru2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ru3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ru3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ru4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ru4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ケ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--re1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--re1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--re2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--re2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--re3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--re3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--re4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--re4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>コ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ro1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ro1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ro2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ro2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ro3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ro3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--ro4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--ro4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__content" id="tab-table__wa-line--content">
+                        <ul class="kana-list">
+                            <li class="kana-list__line">
+                                <p>カ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wa1" checked>
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wa1">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wa2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wa2">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wa3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wa3">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wa4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wa4">
+                                    アメリカン・コツカー・スパニエル
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>キ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wi1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wi1">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wi2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wi2">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wi3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wi3">
+                                    イタリアン・グレーハウンド
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wi4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wi4">
+                                    イタリアン・グレーハウンド
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ク</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wu1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wu1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wu2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wu2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wu3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wu3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wu4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wu4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>ケ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--we1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--we1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--we2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--we2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--we3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--we3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--we4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--we4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                            <li class="kana-list__line">
+                                <p>コ</p>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wo1">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wo1">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wo2">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wo2">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wo3">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wo3">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                                <input type="radio" name="radio__dog-kind"
+                                    class="radio__invisible radio__dog-kind--radio" id="radio__dog-kind--wo4">
+                                <label class="radio__dog-kind--label" for="radio__dog-kind--wo4">
+                                    ウェルシュ・コーギー・ペンブローク
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-table__button-container"><a href="" class="sub-button cancel-kind">キャンセル</a><a
+                            href="" class="most-important-button decide-kind">犬種を選択</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__error">
+            <ul class="errorlist">
+                <li>お名前の入力は必須です</li>
+                <li>お名前の入力は必須です</li>
+                <li>お名前の入力は必須です</li>
+                <li>お名前の入力は必須です</li>
+                <li>お名前の入力は必須です</li>
+                <li>お名前の入力は必須です</li>
+                <li>お名前の入力は必須です</li>
+                <li>お名前の入力は必須です</li>
+            </ul>
+        </div>
+        <h1 class="content__title">ペット情報登録</h1>
+        <ul class="content__formlist">
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <label for="text-pet-name--kanji">
+                        ペットのお名前
+                    </label>
+                </div>
+                <div class="resistration-form__field">
+                    <div class="input__wrapper">
+                        <input type="text" class="input__area--pet-name" placeholder="小太郎" id="text-pet-name--kanji">
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <label for="text-pet-name--kana">
+                        ペットのお名前（カナ）
+                    </label>
+                </div>
+                <div class="resistration-form__field">
+                    <div class="input__wrapper">
+                        <input type="text" class="input__area--pet-name" placeholder="コタロウ" id="text-pet-name--kana">
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        ペットの性別
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-sex--male" class="radio-button-module">
+                        <input type="radio" id="pet-sex--male" name="pet-sex-group" class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">男の子</span>
+                    </label>
+                    <label for="pet-sex--female" class="radio-button-module">
+                        <input type="radio" id="pet-sex--female" name="pet-sex-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">女の子</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        ペットの生年月日
+                    </span>
+                </div>
+                <div class="resistration-form__field--pet-birth">
+                    <div class="input__wrapper--pet-birth-year select__wrapper--shevron">
+                        <select name="select__birth-year" id="select__birth-year" class="select__wrapper is-empty">
+                            <option value="" class="select__option" selected>年</option>
+                            <option value="option1" class="select__option">選択済み項目1</option>
+                            <option value="option2" class="select__option">選択済み項目2</option>
+                        </select>
+                    </div>
+                    <div class="input__wrapper--pet-birth-month select__wrapper--shevron">
+                        <select name="select__birth-month" id="select__birth-month" class="select__wrapper is-empty">
+                            <option value="" class="select__option" selected>月</option>
+                            <option value="option1" class="select__option">選択済み項目1</option>
+                            <option value="option2" class="select__option">選択済み項目2</option>
+                        </select>
+                    </div>
+                    <div class="input__wrapper--pet-birth-day select__wrapper--shevron">
+                        <select name="select__birth-day" id="select__birth-day" class="select__wrapper is-empty">
+                            <option value="" class="select__option" selected>月</option>
+                            <option value="option1" class="select__option">選択済み項目1</option>
+                            <option value="option2" class="select__option">選択済み項目2</option>
+                        </select>
+                    </div>
+                    <div class="pet-age-container">
+                        年齢<span class="pet-age-container__age-font">00歳00ヶ月</span>
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title--vaccine-date">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        <span>狂犬病・混合ワクチンの</span>
+                        <span>最終接種日</span>
+                    </span>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title--vaccine">
+                    混合ワクチン
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-mix-vaccine--yes" class="radio-button-module--vaccine">
+                        <input type="radio" id="pet-mix-vaccine--yes" name="pet-mix-vaccine-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">済</span>
+                    </label>
+                    <label for="pet-mix-vaccine--no" class="radio-button-module--vaccine">
+                        <input type="radio" id="pet-mix-vaccine--no" name="pet-mix-vaccine-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">未</span>
+                    </label>
+                    <div class="calendar__wrapper--vaccine">
+                        <input type="text" id="datepicker--mix-vaccine" class="datepicker" placeholder="日付">
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title--vaccine">
+                    狂犬病ワクチン
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-rabies-vaccine--yes" class="radio-button-module--vaccine">
+                        <input type="radio" id="pet-rabies-vaccine--yes" name="pet-rabies-vaccine-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">済</span>
+                    </label>
+                    <label for="pet-rabies-vaccine--no" class="radio-button-module--vaccine">
+                        <input type="radio" id="pet-rabies-vaccine--no" name="pet-rabies-vaccine-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">未</span>
+                    </label>
+                    <div class="calendar__wrapper--vaccine">
+                        <input type="text" id="datepicker--rabies-vaccine" class="datepicker" placeholder="日付">
+                    </div>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title--shelter">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        <span>保健所登録は</span>
+                        <span>済んでいますか？</span>
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-shelter--yes" class="radio-button-module">
+                        <input type="radio" id="pet-shelter--yes" name="pet-shelter-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">はい</span>
+                    </label>
+                    <label for="pet-shelter--no" class="radio-button-module">
+                        <input type="radio" id="pet-shelter--no" name="pet-shelter-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">いいえ</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        避妊・去勢はしていますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-fix--yes" class="radio-button-module">
+                        <input type="radio" id="pet-fix--yes" name="pet-fix-group" class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">はい</span>
+                    </label>
+                    <label for="pet-fix--no" class="radio-button-module">
+                        <input type="radio" id="pet-fix--no" name="pet-fix-group" class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">いいえ</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        マイクロチップはつけていますか？
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <label for="pet-microchip--no" class="radio-button-module">
+                        <input type="radio" id="pet-microchip--no" name="pet-microchip-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">つけていない</span>
+                    </label>
+                    <label for="pet-microchip--yes" class="radio-button-module">
+                        <input type="radio" id="pet-microchip--yes" name="pet-microchip-group"
+                            class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">つけている</span>
+                    </label>
+                </div>
+            </li>
+            <li class="resistration-form">
+                <div class="resistration-form__title--pet-kind">
+                    <div class="icon__wrapper--required">
+                        <p class="icon__text--required">必須</p>
+                    </div>
+                    <span>
+                        ペットの犬種
+                    </span>
+                </div>
+                <div class="resistration-form__field">
+                    <div class="dog-kind__container">
+                        <table class="dog-kind__table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio" checked
+                                            id="radio__dog-kind--dachshund">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--dachshund">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>ダックス</span><span>（ロング）</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--chihuahua">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--chihuahua">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>チワワ</span><span>（ロング）</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--pomeranian">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--pomeranian">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>ポメラニアン</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--maltese">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--maltese">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>マルチーズ</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--Yorkshire">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--Yorkshire">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>ヨーキー</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--thih-tzu">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--thih-tzu">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>シー・ズー</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--thibainu">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--thibainu">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>柴犬</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--m-schnauzer">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--m-schnauzer">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>Mシュナウザー</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--toy-poodle">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--toy-poodle">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>トイ・プードル</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--corgi-1">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--corgi-1">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>ウェルシュ・コーギー・ペンブローク</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--corgi-2">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--corgi-2">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>ウェルシュ・コーギー・ペンブローク</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="radio__dog-kind"
+                                            class="radio__invisible radio__dog-kind--radio"
+                                            id="radio__dog-kind--corgi-3">
+                                        <label class="radio__dog-kind--label" for="radio__dog-kind--corgi-3">
+                                            <img src="../../../image/mix_silhouette.png">
+                                            <span>ウェルシュ・コーギー・ペンブローク</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="" class="anchor-text dog-kind__others modal-open"><span
+                                class="anchor-text__right-arrow"></span>その他の犬種を選択</a>
+                        <div class="selected-pet-container">
+                            <p>選択した犬種</p>
+                            <p class="selected-pet-container__selected" id="selected-pet">アメリカンコッカースパニエル</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a href="" class="most-important-button cirtificate-button">確認画面へ</a>
+    </div>
+    <footer class="footer">
+        <a class="footer__page-top-button" href="#">
+            <span></span>
+        </a>
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="../../../image/common/footer-logo.png" alt="ロゴ">
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__nav-items--top">
+                    <li class="footer__nav-item--top">
+                        <a href="">
+                            <img class="footer__icon" src="../../../image/common/booking-icon.png" alt="">ご予約方法
+                        </a>
+                    </li>
+                    <li class="footer__nav-item--top">
+                        <a href="">
+                            <img class="footer__icon" src="../../../image/common/mypage-icon.png" alt="">マイページのご利用方法
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__wrapper">
+                    <ul class="footer__nav-items--bottom-left">
+                        <li class="footer__nav-item">
+                            <a href=""><span class="footer__arrow-right"></span>
+                                会員規約
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">プライバシーポリシー
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">お問い合わせ
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">企業情報
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-items--bottom-right">
+                        <li class="footer__nav-item">
+                            <a href=""><span class="footer__arrow-right"></span>
+                                当サイトのご利用規約
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">よくあるご質問
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">サービスについて
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <small class="footer__copyright">Copyright Aeonpet.Co.LTD.All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+
+</html>
