@@ -33,14 +33,16 @@ footer {
 }
 
 .content {
-    margin: 0 auto;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
     width: 375px;
     padding: 0 17px;
 
     @include mq() {
         box-sizing: content-box;
         width: 930px;
-        margin: 0 auto;
+        margin-top: 36px;
     }
 
     &__title {
@@ -104,12 +106,12 @@ footer {
         &--anamnesis,
         &--consultation,
         &--checkup,
-        &--feces{
+        &--feces {
             @extend #{$self};
             padding: 25px 20px;
         }
 
-        &--eating-sheet{
+        &--eating-sheet {
             @extend #{$self};
             padding: 50px 20px;
         }
