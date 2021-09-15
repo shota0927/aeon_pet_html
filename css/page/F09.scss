@@ -27,14 +27,16 @@ footer {
 }
 
 .content {
-    margin: 0 auto;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
     width: 375px;
     padding: 0 17px;
 
     @include mq() {
         box-sizing: content-box;
         width: 930px;
-        margin: 0 auto;
+        margin-top: 36px;
     }
 
     &__title {
@@ -237,6 +239,14 @@ footer {
             width: 340px;
         }
 
+        &--representative {
+            margin-bottom: 22px;
+
+            @include mq() {
+                margin-bottom: 0px;
+            }
+        }
+
         &--relation {
             margin-left: auto;
         }
@@ -248,6 +258,16 @@ footer {
 
     &__name--label {
         display: inline-block;
+    }
+
+    &__relation--label {
+        margin-bottom: 11px;
+        display: block;
+
+        @include mq() {
+            margin-bottom: 0px;
+            display: inline-block;
+        }
     }
 
     &__area {
@@ -302,7 +322,7 @@ footer {
     top: -30px;
     right: 10px;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 

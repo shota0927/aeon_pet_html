@@ -14,6 +14,14 @@ select {
     font-size: 1.4rem;
 }
 
+.datepicker {
+    letter-spacing: 1px;
+}
+
+.ui-datepicker-trigger {
+    right: 1rem;
+}
+
 body,
 header,
 footer {
@@ -27,14 +35,16 @@ footer {
 }
 
 .content {
-    margin: 0 auto;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
     width: 375px;
     padding: 0 17px;
 
     @include mq() {
         box-sizing: content-box;
+        margin-top: 36px;
         width: 930px;
-        margin: 0 auto;
     }
 
     &__title {
@@ -53,7 +63,7 @@ footer {
     }
 
     &__error {
-        background-color: $color-error;
+        background-color: #FEECE7;
         border-radius: 10px;
         padding: 10px;
         margin-bottom: 20px;
@@ -265,7 +275,7 @@ footer {
             z-index: 10;
             width: 180px;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
             }
         }
@@ -273,7 +283,7 @@ footer {
 }
 
 .datepicker {
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
@@ -381,13 +391,13 @@ footer {
     min-width: 375px;
     justify-content: center;
 
-    &__tabs{
+    &__tabs {
         display: flex;
         flex-direction: row;
         width: 100%;
 
-        &::after{
-            content:"";
+        &::after {
+            content: "";
             width: 10%;
             height: 40px;
             background: $color-main;
@@ -407,7 +417,7 @@ footer {
         font-size: 1.4rem;
         white-space: nowrap;
         transition: 0.5s;
-        z-index:2;
+        z-index: 2;
     }
 
     &__content {
@@ -447,21 +457,22 @@ footer {
     $lines: "__a-line", "__ka-line", "__sa-line", "__ta-line", "__na-line", "__ha-line", "__ma-line", "__ya-line", "__ra-line", "__wa-line";
 
     $position: 0;
+
     @each $line in $lines {
         &#{$line}--radio:checked~&#{$line}--content {
             display: block;
         }
 
-        &#{$line}--radio:checked~ .tab-table__tabs> &#{$line}--label {
+        &#{$line}--radio:checked~.tab-table__tabs>&#{$line}--label {
             color: #FFF;
             // background-color: $color-main;
         }
 
-        &#{$line}--radio:checked~ .tab-table__tabs::after{
+        &#{$line}--radio:checked~.tab-table__tabs::after {
             left: $position;
         }
-        
-        $position: $position+ 10%;
+
+        $position: $position+10%;
     }
 }
 
@@ -652,8 +663,8 @@ footer {
     }
 
     .tab-table {
-        &__tabs{
-            &::after{
+        &__tabs {
+            &::after {
                 height: 69px;
             }
         }
