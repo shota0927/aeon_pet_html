@@ -1,0 +1,197 @@
+@import "../../../../setting/reset";
+@import "../../../../setting/setting";
+
+.f12__pie__main__wrapper {
+    padding: 37px 17px 66px 17px;
+
+    .f12__pie__txt--change-pet-information {
+        font-size: 24px;
+        color: $color-main;
+        text-align: center;
+        margin-bottom: 46px;
+    }
+
+    .f12__pie__wrapper--input-pet-name {
+
+        .f12__pie__required-txt__wrapper--1 {
+
+
+            .f12__pie__required__wrapper--1 {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .f12__pie__txt--pet-name {
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 6px;
+            }
+        }
+
+        .f12__pie__input__wrapper--1 {
+            margin-top: 13px;
+        }
+    }
+
+    .f12__pie__wrapper--input-pet-name-kana {
+        margin-top: 20px;
+
+        .f12__pie__required-txt__wrapper--2 {
+
+            .f12__pie__required__wrapper--2 {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .f12__pie__txt--pet-name-kana {
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 6px;
+            }
+        }
+
+        .f12__pie__input__wrapper--2 {
+            margin-top: 13px;
+        }
+    }
+
+    .f12__pie__wrapper--input-pet-gender {
+        margin-top: 20px;
+
+        .f12__pie__required-txt__wrapper--3 {
+
+            .f12__pie__required__wrapper--3 {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .f12__pie__txt--pet-gender {
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 6px;
+            }
+        }
+
+        .f12__pie__redio-group__wrapper--gender {
+            margin-top: 13px;
+
+            .f12__pie__radio__wrapper--male {
+                display: inline-block;
+
+                .f12__pie__radio--male::after {
+                    content: '男の子';
+                }
+
+            }
+
+            .f12__pie__radio__wrapper--female {
+                display: inline-block;
+                position: relative;
+                right: 6px;
+
+                .f12__pie__radio--female::after {
+                    content: '女の子';
+                }
+            }
+        }
+    }
+
+    .f12__pie__wrapper--input-pet-birth-date {
+        margin-top: 20px;
+
+        .f12__pie__required-txt__wrapper--4 {
+
+            .f12__pie__required__wrapper--4 {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .f12__pie__txt--pet-birth-date {
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 6px;
+            }
+        }
+
+        .f12__pie__select-group__wrapper--birth-date {
+            margin-top: 13px;
+
+            .f12__pie__select__wrapper--year {
+                width: 100px;
+                display: inline-block;
+            }
+
+            .f12__pie__select__wrapper--month {
+                display: inline-block;
+                width: 80px;
+                margin-left: 10px;
+            }
+
+            .f12__pie__select__wrapper--day {
+                display: inline-block;
+                width: 80px;
+                margin-left: 10px;
+            }
+        }
+
+        .f12__pie__reflected__txt__background {
+            background-color: $color-thin-green;
+            display: inline-block;
+            width: 250px;
+            height: 46px;
+            margin-top: 15px;
+
+            p {
+                font-size: 16px;
+                margin-left: 48px;
+                margin-top: 6px;
+
+                span {
+                    font-size: 20px;
+                    margin-left: 10px;
+                    color: $color-main;
+                }
+            }
+        }
+
+        .f12__pie__complement-txt--1 {
+            font-size: 12px;
+        }
+    }
+
+    .f12__pie__wrapper--input--vaccintion-date {
+        margin-top: 20px;
+
+        .f12__pie__required-txt__wrapper--5 {
+
+            .f12__pie__required__wrapper--5 {
+                display: inline-block;
+                text-align: center;
+
+            }
+
+            .f12__pie__txt--rabies-mixed-vaccination-date {
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 6px;
+            }
+        }
+
+        .f12__pie__mixed-vaccination {
+            margin-top: 19px;
+
+            .f12__pie__txt--mixed-vaccine {
+                font-size: 16px;
+                margin-top: 20px;
+            }
+
+            // .f12__pie__radio__wrapper--completed-mixe {
+            //     display: inline-block;
+
+            //     .f12__pie__radio--mixed-1::after {
+            //         content: '済';
+            //     }
+            // }
+        }
+    }
+}
