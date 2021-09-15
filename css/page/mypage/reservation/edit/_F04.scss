@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   color: #6F8D1B;
+  text-align: center;
   font-weight: 100;
   font-size: 2.4rem;
   margin: 32px 0 16px 0;
@@ -211,6 +212,9 @@
   .main__mypage__reservation__edit__title{
     font-size: 3.0rem;
     margin: 36px 0 39px 0;
+    & .edit-title-br{
+      display: none;
+    }
   }
   .main__mypage__reservation__edit__text{
     margin: auto;
