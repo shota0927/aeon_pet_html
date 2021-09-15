@@ -1,0 +1,212 @@
+.main__home{
+  & .container{
+    padding: 0;
+    margin: auto;
+  }
+  & .column__title{
+    font-size: 1.6rem;
+    margin-bottom: 11px;
+  }
+}
+.main__home__mainpicture{
+  margin-bottom: 221px;
+}
+
+.main__home__title{
+  margin-top: 20px;
+  & .booking-category-title{
+    font-size: 1.8rem;
+  }
+}
+
+/* searechStore */
+.main__home_searcharea{
+  background-color: #F5F5F5;
+  padding: 22px 17px 0 17px;
+  & .main__home___area{
+    margin-bottom: 22px;
+    & .pull-down{
+      display: flex;
+      justify-content: center;
+      & .pull-down__select{
+        background-color: #fff;
+        width: 100%;
+        height: 46px;
+      }
+    }
+  }
+  & .main__home__prefectures{
+    margin-bottom: 22px;
+    & .search__map-btns{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    & .btn-square{
+      display: inline;
+      & label{
+        display: inline-block;
+        text-align: center;
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid  #DEDEDE;
+        color: #888888;
+        font-size: 14px;
+        height: 40px;
+        padding: 10px 33px 11px 32px;
+        margin-bottom: 8px;
+        user-select: none;
+      }
+      &:last-child{
+        display: none;
+      }
+    }
+    & .btn-square input[type="checkbox"] {
+      display: none;
+    }
+    & .btn-square input[type="checkbox"]:checked + label{
+      background-color: #E4EAD3;
+      border: 1px solid  #6F8D1B;
+      color: #6F8D1B;
+    }
+  }
+  & .section__hr{
+    display: none;
+  }
+  & .main__home__freeword{
+    & .column__freeword{
+      & .input__freeword{
+        border-radius: 4px;
+        border: 1px solid  #DEDEDE;
+        background-color: #fff;
+        font-size: 1.6rem;
+        padding: 13px 0 12px 18px;
+        width: 100%;
+        &:focus{
+          outline: none;
+        }
+        &::placeholder{
+          color: #DEDEDE;
+        }
+      }
+    }
+  }
+}
+.main__home__button{
+  display: flex;
+  justify-content: center;
+  background-color: #F5F5F5;
+  padding: 20px 0 19px 0;
+}
+
+.main__home__login-wrapper{
+  display: table;
+  width: 100%;
+  margin-bottom: 24px;
+  & .main__home__login{
+    display: table-cell;
+    width: 50%;
+    background-color: #6F8D1B;
+    text-align: center;
+    padding: 18px 0 19px 0;
+    & .login-button{
+      color: #fff;
+      font-size: 1.6rem;
+    }
+  }
+  & .main__home__member{
+    display: table-cell;
+    background-color: #957656;
+    text-align: center;
+    vertical-align: top;
+    padding: 12px 0 7px 8px;
+    & .member-button{
+      color: #fff;
+      font-size: 1.6rem;
+      & .entry-text{
+        font-size: 1.0rem;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__home{
+    & .container{
+      width: 930px;
+      padding: 0;
+      margin: auto;
+      & .column__title{
+        margin-bottom: 10px;
+      }
+    }
+    & .main__home__mainpicture{
+      margin-bottom: 494px;
+    }
+    & .main__home__title{
+      margin-top: 0;
+      & .booking-category-title{
+        font-size: 2.0rem;
+      }
+    }
+    & .main__home_searcharea{
+      padding: 22px 39px 0 41px;
+    }
+    & .searchshop_searcharea--wrap1{
+      display: flex;
+    }
+    & .main__home___area{
+      height: 70px;
+      margin: 0;
+      & .pull-down{
+        width: 230px;
+        height: 46px;
+      }
+    }
+    & .main__home__prefectures{
+      width: 100%;
+      padding: 0;
+      margin: 0 1px 0 21px;
+      & .btn-square{
+        display: flex;
+        justify-content: space-between;
+        & label{
+          font-size: 1.4rem;
+          height: 46px;
+          padding: 13px 17px 14px 16px;
+          margin: 0;
+        }
+        &:last-child{
+          display: initial;
+        }
+      }
+    }
+    & .section__hr{
+      display: block;
+      border: 1px solid #6F8D1B;
+      margin: 25px 0 21px 0;
+    }
+    & .main__home__freeword{
+      & .column__freeword{
+        & .input__freeword{
+          width: 410px;
+          height: 46px;
+        }
+      }
+    }
+    & .main__home__button{
+      border-radius: 0 0 6px 6px;
+      padding: 40px 0 50px 0;
+      margin-bottom: 101px;
+      & .most-important-button{
+        width: 220px;
+        height: 48px;
+      }
+    }
+    & .main__home__login-wrapper{
+      display: none;
+    }
+  }
+}

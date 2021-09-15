@@ -1,0 +1,224 @@
+.main__underline{
+  color: #707070;
+}
+.main__mypage__reservation__detail__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 17px 0;
+}
+.main__mypage__reservation__detail__table-detail{
+  & .table2{
+    & th{
+      height: 42px;
+      padding: 13px 15px 14px 15px;
+    }
+    & td{
+      display: block;
+      font-size: 1.4rem;
+      padding: 12px 15px;
+    }
+    & .reserve-day{
+      padding: 10px 0 5px 15px;
+    }
+    & .reserve-intime{
+      padding: 0 15px;
+    }
+    & .reserve-outtime{
+      padding: 5px 0 10px 15px;
+    }
+    & .campaign-title{
+      height: 60px;
+    }
+    & .campaign-text{
+      display: table-cell;
+    }
+  }
+}
+.main__mypage__reservation__detail__table-price {
+  margin: 1px 0 0 0;
+  & .table2{
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 1;
+    width: 100%;
+  }
+  & th{
+    font-size: 1.6rem;
+    font-weight: normal;
+    width: 120px;
+    background-color: #fff;
+    white-space: nowrap;
+    text-align: left;
+  }
+  & td{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: right;
+  }
+  & .table-cource-th{
+    padding: 22px 0 0 0;
+  }
+  & .table-cource-td{
+    padding: 23px 0 0 0;
+  }
+  & .table-option-th{
+    border-bottom: 1px solid #DEDEDE;
+    padding: 13px 0;
+  }
+  & .table-option-td{
+    border-bottom: 1px solid #DEDEDE;
+    padding: 15px 0 14px 0;
+  }
+  & .table-total-th{
+    padding: 7px 0 0 0;
+  }
+  & .table-total-td{
+    padding: 8px 0 0 0;
+  }
+  & .table-price-font{
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+}
+.main__mypage__reservation__detail__text{
+  text-align: left;
+  margin: 21px 0;
+}
+
+.main__mypage__reservation__detail__button-fir{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  & .most-important-button{
+    width: 304px;
+    padding: 13px 0 14px 0;
+    height: 48px;
+  }
+}
+
+.main__mypage__reservation__detail__text-cancel{
+  margin-bottom: 16px;
+}
+.main__mypage__reservation__detail__cancel-limit{
+  text-align: center;
+  background-color: #FDF4F5;
+  border: 1px dotted #FF0000;
+  border-radius: 6px;
+  & .cancel-limit-text{
+    margin: 7px 0 4px 0;
+  }
+  & .cancel-limit-time{
+    color: #F4451C;
+    font-size: 1.6rem;
+    margin-bottom: 9px;
+  }
+}
+.main__mypage__reservation__detail__button-sec{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+}
+.main__mypage__reservation__detail__anchor{
+  display: flex;
+  justify-content: center;
+  margin: 41px 0 66px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__mypage__reservation__detail {
+    & .container{
+      width: 930px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+  .main__mypage__reservation__detail__title{
+    font-size: 3.0rem;
+    margin: 36px 0 39px 0;
+  }
+  .main__mypage__reservation__detail__table-detail{
+    & .table2{
+      & th{
+        font-size: 1.6rem;
+        width: 248px;
+        height: 50px;
+        padding: 13px 20px 16px 20px;
+      }
+      & td{
+        font-size: 1.6rem;
+        height: 50px;
+        padding: 13px 20px 16px 20px;
+      }
+      & .reserve-day{
+        display: inline-block;
+        padding: 13px 0 16px 20px;
+      }
+      & .reserve-intime{
+        display: inline-block;
+        padding: 13px 0 16px 25px;
+      }
+      & .reserve-outtime{
+        display: inline-block;
+        padding: 13px 0 16px 16px;
+      }
+      & .reserve-br{
+        display: none;
+      }
+    }
+  } 
+  .main__mypage__reservation__detail__table-price{
+    & .table-cource-th{
+      padding: 30px 0 0 20px;
+    }
+    & .table-cource-td{
+      font-size: 2.4rem;
+      padding: 30px 20px 0 0;
+    }
+    & .table-option-th{
+      padding: 13px 0 18px 20px;
+    }
+    & .table-option-td{
+      font-size: 2.4rem;
+      padding: 5px 20px 15px 0;
+    }
+    & .table-total-th{
+      padding: 5px 0 0 20px;
+    }
+    & .table-total-td{
+      font-size: 2.4rem;
+      padding: 0 20px 0 0;
+    }
+    & .table-price-font{
+      font-size: 1.6rem;
+    }
+  }
+  .main__mypage__reservation__detail__text{
+    margin: 20px 20px 31px 20px;
+  }
+  .main__mypage__reservation__detail__button-fir{
+    margin: 31px 0 42px 0;
+  }
+  .main__mypage__reservation__detail__text-cancel{
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .main__mypage__reservation__detail__cancel-limit{
+    & .cancel-limit-text{
+      margin: 16px 0 9px 0;
+    }
+    & .cancel-limit-time{
+      margin-bottom: 19px;
+    }
+  }
+  .main__mypage__reservation__detail__button-sec{
+    margin: 40px 0 19px 0;
+  }
+  .main__mypage__reservation__detail__anchor{
+    margin: 42px 0 101px 0;
+  }
+
+}
