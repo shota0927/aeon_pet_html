@@ -16,12 +16,21 @@
 }
 .main__pets__information__confirm__table{
   margin: 0 auto;
+  & th{
+    width: 133px;
+    height: 42px;
+    padding: 13px 15px 14px 15px;
+  }
   & td{
     display: flex;
     font-size: 1.4rem;
+    padding: 12px 15px;
   }
   & .birthday-old{
     padding: 0 15px 18px 15px;
+  }
+  & .longcell-text{
+    display: table-cell;
   }
 }
 .main__pets__information__confirm__button{
@@ -47,17 +56,21 @@
     margin: 0 auto 43px auto;
   }
   .main__pets__information__confirm__table{
-    width: 930px;
     & th{
+      width: 248px;
       font-size: 1.6rem;
-      white-space: nowrap;
+      padding: 13px 20px 16px 20px;
     }
     & td{
       font-size: 1.6rem;
       display: inline-block;
+      padding: 13px 20px 16px 20px;
     }
     & .birthday-old{
-      padding: 18px 15px;
+      padding: 13px 0 16px 0;
+    }
+    & .longcell-text{
+      display: table-cell;
     }
   }
   .main__pets__information__confirm__button{

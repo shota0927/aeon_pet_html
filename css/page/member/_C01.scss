@@ -17,7 +17,16 @@
 .main__member__text-second{
   text-align: left;
   font-size: 1.6rem;
-  margin: 0 0 20px 0;
+  margin: 0 0 39px 0;
+}
+.main__member__text-caution{
+  color: #F4451C;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 21px;
+  & .main__item-br1{
+    display: none;
+  }
 }
 .main__member-link{
   display: flex;
@@ -74,7 +83,15 @@
   }
   .main__member__text-second{
     text-align: center;
-    margin: 0 0 13px 0;
+    margin: 0 0 20px 0;
+  }
+  .main__member__text-caution{
+    & .main__item-br1{
+      display: block;
+    }
+    & .main__item-br2{
+      display: none;
+    }
   }
   .main__member-link{
     margin: 0 0 40px 0;

@@ -3246,7 +3246,18 @@ a:hover {
 .main__member__text-second {
   text-align: left;
   font-size: 1.6rem;
-  margin: 0 0 20px 0;
+  margin: 0 0 39px 0;
+}
+
+.main__member__text-caution {
+  color: #F4451C;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 21px;
+}
+
+.main__member__text-caution .main__item-br1 {
+  display: none;
 }
 
 .main__member-link {
@@ -3339,7 +3350,13 @@ a:hover {
   }
   .main__member__text-second {
     text-align: center;
-    margin: 0 0 13px 0;
+    margin: 0 0 20px 0;
+  }
+  .main__member__text-caution .main__item-br1 {
+    display: block;
+  }
+  .main__member__text-caution .main__item-br2 {
+    display: none;
   }
   .main__member-link {
     margin: 0 0 40px 0;
@@ -3502,9 +3519,6 @@ a:hover {
   .main__member__confirm__table .pass-hide {
     padding: 18px 15px;
   }
-  .main__member__confirm__table .notification-title-br {
-    display: none;
-  }
   .main__member__confirm__button {
     margin: 40px 0 20px 0;
   }
@@ -3540,15 +3554,26 @@ a:hover {
   margin: 0 auto;
 }
 
+.main__pets__information__confirm__table th {
+  width: 133px;
+  height: 42px;
+  padding: 13px 15px 14px 15px;
+}
+
 .main__pets__information__confirm__table td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.4rem;
+  padding: 12px 15px;
 }
 
 .main__pets__information__confirm__table .birthday-old {
   padding: 0 15px 18px 15px;
+}
+
+.main__pets__information__confirm__table .longcell-text {
+  display: table-cell;
 }
 
 .main__pets__information__confirm__button {
@@ -3581,19 +3606,21 @@ a:hover {
     text-align: left;
     margin: 0 auto 43px auto;
   }
-  .main__pets__information__confirm__table {
-    width: 930px;
-  }
   .main__pets__information__confirm__table th {
+    width: 248px;
     font-size: 1.6rem;
-    white-space: nowrap;
+    padding: 13px 20px 16px 20px;
   }
   .main__pets__information__confirm__table td {
     font-size: 1.6rem;
     display: inline-block;
+    padding: 13px 20px 16px 20px;
   }
   .main__pets__information__confirm__table .birthday-old {
-    padding: 18px 15px;
+    padding: 13px 0 16px 0;
+  }
+  .main__pets__information__confirm__table .longcell-text {
+    display: table-cell;
   }
   .main__pets__information__confirm__button {
     margin: 40px 0 20px 0;
@@ -4261,17 +4288,23 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   color: #6F8D1B;
+  text-align: center;
   font-weight: 100;
   font-size: 2.4rem;
   margin: 32px 0 21px 0;
 }
 
 .main__reserve__elderly__dog__text {
-  margin: 0 0 69px 0;
+  margin: 0 0 71px 0;
 }
 
-.main__reserve__elderly__dog__text .main__item {
-  margin: 0 0 30px 0;
+.main__reserve__elderly__dog__text .dog-text-caution {
+  color: #F4451C;
+  margin-bottom: 31px;
+}
+
+.main__reserve__elderly__dog__text .dog-text {
+  margin: 0 0 21px 0;
 }
 
 .main__reserve__elderly__dog__text-condition {
@@ -4314,6 +4347,10 @@ a:hover {
   font-size: 1.4rem;
 }
 
+.main__reserve__elderly__dog__table-condition {
+  font-size: 1.2rem;
+}
+
 .main__reserve__elderly__dog__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4321,7 +4358,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 30px 0 66px 0;
+  margin: 31px 0 66px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -4332,7 +4369,10 @@ a:hover {
   }
   .main__reserve__elderly__dog__title {
     font-size: 3.0rem;
-    margin: 36px 0 29px 0;
+    margin: 36px 0 39px 0;
+  }
+  .main__reserve__elderly__dog__title .elderlydog-title-br {
+    display: none;
   }
   .main__reserve__elderly__dog__text {
     margin: 0;
@@ -4363,6 +4403,9 @@ a:hover {
     height: 43px;
     padding: 0 0 0 15px;
   }
+  .main__reserve__elderly__dog__table-condition {
+    margin-top: 20px;
+  }
   .main__reserve__elderly__dog__button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4370,7 +4413,7 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 55px 0 101px 0;
+    margin: 41px 0 101px 0;
   }
 }
 
@@ -5471,6 +5514,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   color: #6F8D1B;
+  text-align: center;
   font-weight: 100;
   font-size: 2.4rem;
   margin: 32px 0 16px 0;
@@ -5729,6 +5773,9 @@ a:hover {
   .main__mypage__reservation__edit__title {
     font-size: 3.0rem;
     margin: 36px 0 39px 0;
+  }
+  .main__mypage__reservation__edit__title .edit-title-br {
+    display: none;
   }
   .main__mypage__reservation__edit__text {
     margin: auto;
@@ -6034,9 +6081,6 @@ a:hover {
   }
   .main__mypage__member__information__info__table .notification-action {
     padding: 13px 20px 16px 20px;
-  }
-  .main__mypage__member__information__info__table .table-br {
-    display: none;
   }
   .main__mypage__member__information__anchor {
     margin: 40px 0 101px 0;
