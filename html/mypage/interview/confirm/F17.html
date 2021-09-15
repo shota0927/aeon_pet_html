@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta情報 -->
+    <title>マイページ＞事前確認事項（確認）｜イオンペット グルーミング予約サイト</title>
+    <meta name="description" content="イオンペット グルーミング予約サイトの「事前確認事項（確認）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <meta name="keywords" content="" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../../../../css/styles.css" />
+    <link rel="stylesheet" href="../../../../css/page/F17.css" />
+    <script src="../../../../js/script.js"></script>
+    <link rel="icon" href="" />
+</head>
+
+<body>
+    <header class="header header--non-login">
+        <div class="header__left">
+            <h1>
+                <a href="/">
+                    <picture class="header__logo" aria-hidden="true">
+                        <source srcset="../../../../image/common/logo-pc.png" media="(min-width: 768px)"
+                            class="header__logo-pc" />
+                        <img src="../../../../image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
+                    </picture>
+                </a>
+            </h1>
+            <a href="" class="header__search"><img src="../../../../image/common/search-icon.png"
+                    alt="サーチアイコン">店舗検索・ご予約</a>
+        </div>
+        <div class="header__right">
+            <div class="header__btns">
+                <a href="" class="header__mypage">マイページ</a>
+            </div>
+            <div class="hamburger__menu js-hamburger--login">
+                <img src="../../../../image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
+            </div>
+        </div>
+        <nav class="header__nav header-nav header-nav--login">
+            <div class="header-nav__title">
+                <p class="sp">こんにちは<br>○○さん (マイページ)</p>
+                <p class="pc">こんにちは　○○さん (マイページ)</p>
+                <div class="header-nav__bars js-bars">
+                    <span class="header-nav__bar header-nav__bar--left"></span>
+                    <span class="header-nav__bar header-nav__bar--right"></span>
+                </div>
+            </div>
+            <ul class="header-nav__items">
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/home-icon.png"
+                            alt="">ホーム</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/search-icon-small.png"
+                            alt="">店舗検索・ご予約</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon"
+                            src="../../../../image/common/current-booking-icon.png" alt="">現在のご予約<span
+                            class="header-nav__number header-nav__number--booking">99</span></a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/mypage-icon-green.png"
+                            alt="">マイページ</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/pet-info-icon.png"
+                            alt="">
+                        ペット情報<img class="header-nav__dog-icon" src="../../../../image/common/dog-icon.png" alt=""><span
+                            class="header-nav__number">99</span><img class="header-nav__cat-icon"
+                            src="../../../../image/common/cat-icon.png" alt=""><span
+                            class="header-nav__number">99</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header-nav__items">
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon"
+                            src="../../../../image/common/booking-icon-green.png" alt="">ご予約方法</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/mypage-icon-green.png"
+                            alt="">マイページのご利用方法</a>
+                </li>
+                <div class="header-nav__logout-button">
+                    <a href="" class="logout-button"><img src="../../../../image/common/logout-icon.png"
+                            alt="ログアウトアイコン">ログアウト</a>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header__burger-musk"></div>
+    </header>
+    <div class="breadcrumb container">
+        <div class="inner">
+            <span class="breadcrumb__item">
+                <a href="" class="brandcrumb__item-link">
+                    <img src="../../../../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン"
+                        class="breadcrumb__item-icon">
+                </a>
+            </span>
+            /
+            <span class="breadcrumb__item">
+                <a href="" class="brandcrumb__item-link">
+                    マイページ
+                </a>
+            </span>
+            /
+            <span class="breadcrumb__item breadcrumb__item--orange">
+                <a href="" class="brandcrumb__item-link">
+                    事前確認事項（確認）
+                </a>
+            </span>
+        </div>
+    </div>
+    <div class="content">
+        <h1 class="content__title">事前確認事項</h1>
+        <p class="content__note">以下の内容で登録いたします。よろしければ「登録する」ボタンを押してください。</p>
+        <ul class="confirm-table">
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">かかりつけの動物病院</p>
+                <section class="confirm-table__answer-content">
+                    <p class="answer-content__answer">○○○○病院</p>
+                </section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">グルーミング中や仕上がり後の写真を撮影してもよろしいですか？</p>
+                <section class="confirm-table__answer-content">
+                    <p class="answer-content__answer">同意する</p>
+                </section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">健康状態</p>
+                <section class="confirm-table__answer-content--anamnesis">
+                    <p class="answer-content__answer">異常あり</p>
+                    <ul class="answer-content__detail anamnesis-list">
+                        <li class="anamnesis-list__item--symptom">
+                            <div class="symptom-name">パテラ</div>
+                            <div class="symptom-level">グレード1</div>
+                        </li>
+                        <li class="anamnesis-list__item--part">体</li>
+                        <li class="anamnesis-list__item--detail">詳細テキスト詳細テキスト</li>
+                    </ul>
+                    <ul class="anamnesis-list">
+                        <li class="anamnesis-list__item--symptom">
+                            <div class="symptom-name">ヘルニア</div>
+                            <div class="symptom-level">軽度</div>
+                        </li>
+                        <li class="anamnesis-list__item--part">首</li>
+                        <li class="anamnesis-list__item--detail">詳細テキスト詳細テキスト</li>
+                    </ul>
+                </section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">その他現在治療中の病気・怪我はございますか</p>
+                <section class="confirm-table__answer-content">
+                    <p class="answer-content__answer">ある</p>
+                    <p class="answer-content__detail"> 詳細テキスト詳細テキスト</p>
+                </section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">最近動物病院を受診しましたか？</p>
+                <section class="confirm-table__answer-content--consultation">かかった</section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">血液などの検査を1年以内にしていますか？</p>
+                <section class="confirm-table__answer-content--checkup">していない</section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">心臓病の検査を1年以内にしていますか？</p>
+                <section class="confirm-table__answer-content">していない</section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">投薬中の薬があれば教えてください</p>
+                <section class="confirm-table__answer-content">ある</section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">室内でおトイレのワンちゃんにお伺いします。 ペットシーツを食べることがありますか？</p>
+                <section class="confirm-table__answer-content">はい</section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">いつものウンチの状態はいかがですか？</p>
+                <section class="confirm-table__answer-content--feces">堅い</section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">お水の飲み方はどちらですか？</p>
+                <section class="confirm-table__answer-content">お皿</section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">体調を崩したことはございますか？</p>
+                <section class="confirm-table__answer-content">
+                    <p class="answer-content__answer">ある</p>
+                    <p class="answer-content__detail">詳細テキスト詳細テキスト</p>
+                </section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">食べ物でアレルギーはございますか？</p>
+                <section class="confirm-table__answer-content">
+                    <p class="answer-content__answer">ある</p>
+                    <p class="answer-content__detail">詳細テキスト詳細テキスト</p>
+                </section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">ノミ・ダニ予防はされていますか？</p>
+                <section class="confirm-table__answer-content">
+                    <p class="answer-content__answer">
+                        していない
+                    </p>
+                </section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">マイクロチップはつけていますか？</p>
+                <section class="confirm-table__answer-content">
+                    <p class="answer-content__answer">
+                        つけていない
+                    </p>
+                </section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">同居している他のワンちゃん・ネコちゃんはいますか？</p>
+                <section class="confirm-table__answer-content">
+                    <p class="answer-content__answer">いる</p>
+                </section>
+            </li>
+            <li class="confirm-table__row">
+                <p class="confirm-table__title">その他、お手入れに関してお困りごとはありますか？</p>
+                <section class="confirm-table__answer-content">
+                    <ul class="worried-list">
+                        <li class="worried-list__item--worried">フケ</li>
+                        <li class="worried-list__item--worried">ベタつき</li>
+                    </ul>
+                </section>
+            </li>
+        </ul>
+        <a href="" class="most-important-button">登録する</a>
+        <a href="" class="sub-button">修正する</a>
+    </div>
+    </div>
+    <footer class="footer">
+        <a class="footer__page-top-button" href="#">
+            <span></span>
+        </a>
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="../../../../image/common/footer-logo.png" alt="ロゴ">
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__nav-items--top">
+                    <li class="footer__nav-item--top">
+                        <a href="">
+                            <img class="footer__icon" src="../../../../image/common/booking-icon.png" alt="">ご予約方法
+                        </a>
+                    </li>
+                    <li class="footer__nav-item--top">
+                        <a href="">
+                            <img class="footer__icon" src="../../../../image/common/mypage-icon.png" alt="">マイページのご利用方法
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__wrapper">
+                    <ul class="footer__nav-items--bottom-left">
+                        <li class="footer__nav-item">
+                            <a href=""><span class="footer__arrow-right"></span>
+                                会員規約
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png"
+                                    alt="">プライバシーポリシー
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png"
+                                    alt="">お問い合わせ
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png" alt="">企業情報
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-items--bottom-right">
+                        <li class="footer__nav-item">
+                            <a href=""><span class="footer__arrow-right"></span>
+                                当サイトのご利用規約
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png"
+                                    alt="">よくあるご質問
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="">
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png"
+                                    alt="">サービスについて
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <small class="footer__copyright">Copyright Aeonpet.Co.LTD.All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.main__underline{
+  color: #707070;
+}
+.main__pets__information__finish__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+.main__pets__information__finish__text{
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 33px;
+}
+.main__pets__information__finish-button-fir{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.main__pets__information__finish-button-sec{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.main__pets__information__finish-link{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 66px;
+}
+
+@media screen and (min-width: 768px) {
+  .main__pets__information__finish__title{
+    font-size: 3.0rem;
+    margin: 36px 0 29px 0;
+  }
+  .main__pets__information__finish__text{
+    margin-bottom: 53px;
+  }
+  .main__pets__information__finish-button-sec{
+    margin-bottom: 40px;
+  }
+  .main__pets__information__finish-link{
+    margin-bottom: 101px;
+  }
+}

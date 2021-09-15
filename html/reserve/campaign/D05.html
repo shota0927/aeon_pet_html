@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta情報 -->
+    <title>キャンペーン・クーポン選択｜イオンペット グルーミング予約サイト</title>
+    <meta name="description" content="イオンペット グルーミング予約サイトの「キャンペーン・クーポン選択」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <meta name="keywords" content="" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="../../../css/reset.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../../../css/styles.css" />
+    <link rel="icon" href="" />
+  </head>
+
+  <body>
+
+  <!-- ヘッダー（未ログイン） -->
+   <header class="header header--non-login">
+     <div class="header__left">
+       <h1>
+         <a href="/">
+           <picture class="header__logo" aria-hidden="true">
+             <source srcset="../../../image/common/logo-pc.png" media="(min-width: 768px)" class="header__logo-pc"/>
+             <img src="../../../image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
+           </picture>
+         </a>
+       </h1>
+       <a href="" class="header__search"><img src="../../../image/common/search-icon.png" alt="サーチアイコン">店舗検索・ご予約</a>
+     </div>
+     <div class="header__right">
+       <div class="header__btns">
+         <a href="" class="header__mypage">マイページ</a>
+       </div>
+       <div class="hamburger__menu js-hamburger--login">
+         <img src="../../../image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
+       </div>
+     </div>
+     <nav class="header__nav header-nav header-nav--login">
+       <div class="header-nav__title">
+         <p class="sp">こんにちは<br>○○さん  (マイページ)</p>
+         <p class="pc">こんにちは　○○さん  (マイページ)</p>
+         <div class="header-nav__bars js-bars">
+           <span class="header-nav__bar header-nav__bar--left"></span>
+           <span class="header-nav__bar header-nav__bar--right"></span>
+         </div>
+       </div>
+       <ul class="header-nav__items">
+         <li class="header-nav__item">
+           <a href="#"><img class="header-nav__title-icon" src="../../../image/common/home-icon.png" alt="">ホーム</a>
+         </li>
+         <li class="header-nav__item">
+           <a href="#"><img class="header-nav__title-icon" src="../../../image/common/search-icon-small.png" alt="">店舗検索・ご予約</a>
+         </li>
+         <li class="header-nav__item">
+           <a href="#"><img class="header-nav__title-icon" src="../../../image/common/current-booking-icon.png" alt="">現在のご予約<span class="header-nav__number header-nav__number--booking">99</span></a>
+         </li>
+         <li class="header-nav__item">
+           <a href="#"><img class="header-nav__title-icon" src="../../../image/common/mypage-icon-green.png" alt="">マイページ</a>
+         </li>
+         <li class="header-nav__item">
+           <a href="#"><img class="header-nav__title-icon" src="../../../image/common/pet-info-icon.png" alt="">
+             ペット情報<img class="header-nav__dog-icon" src="../../../image/common/dog-icon.png" alt=""><span class="header-nav__number">99</span><img class="header-nav__cat-icon" src="../../../image/common/cat-icon.png" alt=""><span class="header-nav__number">99</span>
+           </a>
+         </li>
+       </ul>
+       <ul class="header-nav__items">
+         <li class="header-nav__item">
+           <a href="#"><img class="header-nav__title-icon" src="../../../image/common/booking-icon-green.png" alt="">ご予約方法</a>
+         </li>
+         <li class="header-nav__item">
+           <a href="#"><img class="header-nav__title-icon" src="../../../image/common/mypage-icon-green.png" alt="">マイページのご利用方法</a>
+         </li>
+         <div class="header-nav__logout-button">
+           <a href="" class="logout-button"><img src="../../../image/common/logout-icon.png" alt="ログアウトアイコン">ログアウト</a>
+         </div>
+       </ul>
+     </nav>
+   
+     <div class="header__burger-musk"></div>
+   </header>
+
+    <!-- パンくずリスト -->
+    <div class="breadcrumb container">
+      <div class="inner">
+        <span class="breadcrumb__item">
+          <a href="" class="brandcrumb__item-link">
+            <img src="../../../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン" class="breadcrumb__item-icon">
+          </a>
+        </span>
+        /
+        <span class="breadcrumb__item">
+          <a href="" class="brandcrumb__item-link">
+            キャンペーン・クーポン選択
+          </a>
+        </span>
+      </div>
+    </div>
+
+    <!-- main_reserve-campaign -->
+    <hr class="main__underline">
+    <main class="main__reserve__campaign">
+      <div class="container">
+        <h2 class="main__reserve__campaign__title">キャンペーンの選択</h2>
+        
+        <!-- メインテキスト -->
+        <div class="main__reserve__campaign__container">
+          <div class="main__reserve__campaign__text-title">
+            <p class="main__item">キャンペーンタイトルが入ります。キャンペーンタイトルが入ります。</p>
+          </div>
+          <div class="main__reserve__campaign__text-content">
+            <p class="main__item">オプション内容が入ります。オプション内容が入ります。オプション内容が入ります。オプショオプション内容が入ります。オプション内容が入ります。オプション内容が入ります。オプショオプション内容が入ります。オプション内容が入ります。オプション内容が入ります。オプショ</p>
+          </div>
+          <div class="main__reserve__campaign-1">
+            <div class="checkbox__wrapper--individual">
+              <label for="checkbox2__third" class="checkbox__label">
+                <div class="label__wrapper--checked">
+                  <input type="checkbox" id="checkbox2__third" class="checkbox__invisible" checked>
+                  <div class="checkbox__indicator2"></div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- メインテキスト -->
+        <div class="main__reserve__campaign__container">
+          <div class="main__reserve__campaign__text-title">
+            <p class="main__item">キャンペーンタイトルが入ります。キャンペーンタイトルが入ります。</p>
+          </div>
+          <div class="main__reserve__campaign__text-content">
+            <p class="main__item">オプション内容が入ります。オプション内容が入ります。オプション内容が入ります。オプショオプション内容が入ります。オプション内容が入ります。オプション内容が入ります。オプショオプション内容が入ります。オプション内容が入ります。オプション内容が入ります。オプショ</p>
+          </div>
+          <div class="main__reserve__campaign-2">
+            <div class="checkbox__wrapper--individual">
+              <label for="checkbox2__first" class="checkbox__label">
+                <div class="label__wrapper--item">
+                  <input type="checkbox" id="checkbox2__first" class="checkbox__invisible">
+                  <div class="checkbox__indicator2"></div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- メインテキスト -->
+        <div class="main__reserve__campaign__container">
+          <div class="main__reserve__campaign__text-title">
+            <p class="main__item">キャンペーンタイトルが入ります。キャンペーンタイトルが入ります。</p>
+          </div>
+          <div class="main__reserve__campaign__text-content">
+            <p class="main__item">オプション内容が入ります。オプション内容が入ります。オプション内容が入ります。オプショオプション内容が入ります。オプション内容が入ります。オプション内容が入ります。オプショオプション内容が入ります。オプション内容が入ります。オプション内容が入ります。オプショ</p>
+          </div>
+          <div class="main__reserve__campaign-3">
+            <div class="checkbox__wrapper--individual">
+              <label for="checkbox2__third" class="checkbox__label">
+                <div class="label__wrapper--checked">
+                  <input type="checkbox" id="checkbox2__third" class="checkbox__invisible" checked>
+                  <div class="checkbox__indicator2"></div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <!-- ボタン（最重要） -->
+        <div class="main__reserve__campaign__button">
+          <a href="" class="most-important-button">この内容で設定する</a>
+        </div>
+     </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <a class="footer__page-top-button" href="#">
+        <span></span>
+      </a>
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <img src="../../../image/common/footer-logo.png" alt="ロゴ">
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-items--top">
+            <li class="footer__nav-item--top">
+              <a href="">
+                <img class="footer__icon" src="../../../image/common/booking-icon.png" alt="">ご予約方法
+              </a>
+            </li>
+            <li class="footer__nav-item--top">
+              <a href="">
+                <img class="footer__icon" src="../../../image/common/mypage-icon.png" alt="">マイページのご利用方法
+              </a>
+            </li>
+          </ul>
+          <div class="footer__wrapper">
+            <ul class="footer__nav-items--bottom-left">
+              <li class="footer__nav-item">
+                <a href=""><span class="footer__arrow-right"></span>
+                  会員規約
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="">
+                  <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">プライバシーポリシー
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="">
+                  <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">お問い合わせ
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="">
+                  <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">企業情報
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__nav-items--bottom-right">
+              <li class="footer__nav-item">
+                <a href=""><span class="footer__arrow-right"></span>
+                  当サイトのご利用規約
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="">
+                  <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">よくあるご質問
+                </a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="">
+                  <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">サービスについて
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <small class="footer__copyright">Copyright Aeonpet.Co.LTD.All rights reserved.</small>
+      </div>
+    </footer>
+
+
+    <!-- js -->
+    <script defer type="text/javascript" src="../../../js/script.js"></script>
+  </body>
+</html>

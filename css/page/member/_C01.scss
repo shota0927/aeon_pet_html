@@ -1,0 +1,128 @@
+.main__underline{
+  color: #707070;
+}
+.main__member__title{
+  display: flex;
+  justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+.main__member__text-first{
+  text-align: left;
+  font-size: 1.6rem;
+  margin: 0 0 35px 0;
+}
+.main__member__text-second{
+  text-align: left;
+  font-size: 1.6rem;
+  margin: 0 0 39px 0;
+}
+.main__member__text-caution{
+  color: #F4451C;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 21px;
+  & .main__item-br1{
+    display: none;
+  }
+}
+.main__member-link{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 32px 0;
+}
+.main__member__input-title{
+  display: flex;
+  align-items: center;
+  & .icon__wrapper--required{
+    width: 32px;
+    height: 16px;
+  }
+  & .icon__text--required{
+    font-size: 1.0rem;
+  }
+}
+.main__member__subtext{
+  font-size: 1.6rem;
+  margin: 0 0 0 10px;
+}
+.main__member__input{
+  display: block;
+  justify-content: left;
+  & .input__area--default{
+    margin: 11px 0 10px 0;
+  }
+  & .input__area--default::placeholder {
+    color: #DEDEDE;
+  }
+}
+.main__member__input-text{
+  font-size: 1.2rem;
+}
+.main__member__button{
+  display: flex;
+  justify-content: center;
+  margin: 49px 0 66px 0;
+  & .most-important-button {
+    width: 260px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .main__member__title{
+    font-size: 3.0rem;
+    padding: 0;
+    margin: 36px 0 29px 0;
+  }
+  .main__member__text-first{
+    text-align: center;
+    margin: 0 0 13px 0;
+  }
+  .main__member__text-second{
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+  .main__member__text-caution{
+    & .main__item-br1{
+      display: block;
+    }
+    & .main__item-br2{
+      display: none;
+    }
+  }
+  .main__member-link{
+    margin: 0 0 40px 0;
+  }
+  .main__member__input-wrap{
+    display: flex;
+    justify-content: center;
+  }
+  .main__member__input-title{
+    display: flex;
+    align-items: flex-start;
+    margin: 13px 55px 0 0;
+    & .icon__wrapper--required{
+      height: 16px;
+      margin: 5px 0;
+    }
+  }
+  .main__member__input{
+    display: block;
+    width: 430px;
+    & .input__area--default{
+      width: 430px;
+      margin: 0 0 10px 0;
+    }
+  }
+  .main__member__button{
+    display: flex;
+    justify-content: center;
+    margin: 51px 0 110px 0;
+    & .most-important-button {
+      width: 260px;
+    }
+  }
+}

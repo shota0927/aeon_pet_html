@@ -1,0 +1,431 @@
+@import "../setting/_setting.scss";
+@import "../styles.scss";
+@import "./modules.scss";
+
+@mixin font-shape($font-color, $font-size: inherit, $font-weight: 400) {
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: $font-weight;
+}
+
+.radio-button-module {
+    margin-right: calc(1.6rem * 3);
+}
+
+.checkbox-button-module {
+    @mixin extCbModule() {
+        @extend .checkbox-button-module;
+    }
+
+    &--symptom {
+        @include extCbModule();
+        position: relative;
+        top: 0.6rem;
+    }
+}
+
+
+input,
+select {
+    font-size: 1.4rem;
+
+    &::placeholder {
+        color: $color-switch-off;
+    }
+}
+
+body {
+    @include font-shape($color-text-main, 1.6rem);
+}
+
+body,
+header,
+footer {
+    min-width: 375px;
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
+}
+
+.content {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    padding: 0 17px;
+
+    @include mq() {
+        box-sizing: content-box;
+        width: 930px;
+        margin-top: 36px;
+    }
+
+    &__title {
+        @include font-shape($color-main, 2.4rem);
+        text-align: center;
+
+        @include mq() {
+            font-size: 3rem;
+        }
+    }
+
+    &__reservation {
+        background-color: $color-thin-green;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+
+        @include mq() {
+            padding: 30px;
+        }
+
+        .reservation-title {
+            color: $color-main;
+
+            >span {
+                display: block;
+
+                @include mq() {
+                    display: inline;
+                }
+            }
+
+            &__time {
+                &::before {
+                    content: "受付時間：";
+
+                    @include mq() {
+                        content: "　";
+                    }
+                }
+            }
+
+            &__pick-up {
+                &::before {
+                    @include mq() {
+                        content: "　";
+                    }
+                }
+            }
+
+            @include mq() {
+                font-size: 1.8rem;
+            }
+        }
+
+        .reservation-list {
+            font-size: 1.4rem;
+
+            @include mq() {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &__formlist {
+        list-style: none;
+
+        @include mq() {
+            padding-left: 10px;
+        }
+    }
+}
+
+.errorlist {
+    color: $color-alert;
+    list-style-position: inside;
+    font-size: 1.4rem;
+
+    >li {
+        &::before {
+            content: "・";
+            width: 3px;
+        }
+    }
+}
+
+.resistration-form {
+    $self: &;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    @include mq() {
+        margin: 35px 0;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+
+    &--anamnesis {
+        @extend #{$self};
+        width: 100%;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__title {
+        $self: &;
+
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0px;
+        align-items: center;
+
+        >span,
+        label {
+            position: relative;
+            left: 1rem;
+
+            @include mq() {
+                width: 176px;
+            }
+        }
+
+        &--pet-kind,
+        &--vaccine-date,
+        &--shelter {
+            @extend #{$self};
+        }
+
+        &--vaccine-date,
+        &--shelter {
+            @include mq() {
+                >.icon__wrapper--required {
+                    position: relative;
+                    top: -1.2rem;
+                }
+
+                >span>span,
+                label>span {
+                    display: block;
+                }
+            }
+        }
+
+        @include mq() {
+            margin: 0;
+            flex-basis: 248px;
+            align-items: center;
+            align-self: flex-start;
+
+
+            &--vaccine {
+                flex-basis: 248px;
+                padding-left: 4rem;
+                margin-bottom: 45px;
+            }
+
+            &--pet-kind {
+                flex-basis: 248px;
+                margin-bottom: 900px;
+            }
+        }
+    }
+
+    &__field {
+        $self: &;
+
+        position: relative;
+
+        >* {
+            display: inline-block;
+        }
+
+        @include mq() {
+            flex-basis: 632px;
+        }
+
+        &--anamnesis {
+            @extend #{$self};
+            width: 100%;
+        }
+
+
+        &--worried {
+            @extend #{$self};
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 75px;
+            row-gap: 24px;
+
+            @include mq() {
+                flex-basis: 380px;
+                column-gap: 92px;
+                row-gap: 32px;
+            }
+
+            >* {
+                flex: 1;
+                flex-basis: 20%;
+            }
+        }
+
+        &--feces,
+        &--drinking {
+            @extend #{$self};
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+    }
+}
+
+.input {
+    &__wrapper {
+
+        &--symptom,
+        &--part {
+            width: 178px;
+        }
+
+        &--symptom {
+            float: right;
+
+            &::after {
+                display: block;
+                clear: both;
+            }
+        }
+    }
+
+    &__area {
+        $self: #{&}--default;
+
+        &--pet-doctor {
+            @extend #{$self};
+            width: 340px;
+        }
+
+        &--pet-detail {
+            @extend #{$self};
+            width: 383px;
+        }
+    }
+}
+
+.textarea {
+    height: 70px;
+    padding: 0.75rem;
+
+    @include mq() {
+        height: 118px;
+    }
+
+    &__wrapper {
+        width: 100%;
+
+    }
+}
+
+.cirtificate-button {
+    display: block;
+    width: 220px;
+    margin: 30px auto;
+}
+
+.icon {
+    &__wrapper {
+
+        &--optional,
+        &--required {
+            width: 32px;
+            min-width: 32px;
+            height: 17px;
+            margin-top: 0.5rem;
+            align-self: flex-start;
+        }
+    }
+}
+
+.select {
+
+    &--shevron::after {
+        right: 0.5rem;
+    }
+
+    &__wrapper {
+        $self: &;
+
+        &--symptom,
+        &--part {
+            @extend #{$self};
+            margin-left: 0;
+        }
+    }
+}
+
+
+.radio {
+    &__dog-kind {
+        &--label {
+            background-color: $color-calendar-background;
+            border-radius: 10px;
+            display: block;
+        }
+
+        &--radio:checked+&--label {
+            background-color: $color-thin-green;
+            border: $color-circle-border solid 1px;
+        }
+    }
+}
+
+.anamnesis-table {
+
+    min-width: 894px;
+
+    @include mq() {
+        width: 100%;
+    }
+
+    tr {
+        height: 46px;
+    }
+
+    &__header {
+        background-color: $color-bright-green;
+        @include font-shape($color-background-base, 1.4rem);
+        text-align: center;
+    }
+
+    &__cell {
+        >* {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &__col {
+        &--symptom {
+            width: 40%;
+        }
+
+        &--part {
+            width: 20%;
+        }
+
+        &--detail {
+            width: auto;
+        }
+    }
+}
+
+@include mq() {
+
+    .errorlist {
+        font-size: 1.6rem;
+    }
+
+}
