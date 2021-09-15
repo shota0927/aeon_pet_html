@@ -57,10 +57,11 @@ footer {
 
     &__content {
         @keyframes fade {
-            from{
+            from {
                 opacity: 0;
             }
-            to{
+
+            to {
                 opacity: 1;
             }
         }
@@ -70,8 +71,9 @@ footer {
         transition: 2s;
     }
 
-    #label-shop{
+    #label-shop {
         position: relative;
+
         &::after {
             content: "";
             height: 3px;
@@ -89,19 +91,19 @@ footer {
         }
     }
 
-    #tab-shop:checked~ &__label-nav> #label-shop::after{
+    #tab-shop:checked~&__label-nav>#label-shop::after {
         left: 0;
     }
 
-    #tab-map:checked~ &__label-nav> #label-shop::after{
+    #tab-map:checked~&__label-nav>#label-shop::after {
         left: 108px;
 
-        @include mq(){
+        @include mq() {
             left: 151px;
         }
     }
 
-    #tab-shop:checked~#shop-content{
+    #tab-shop:checked~#shop-content {
         display: block;
         width: 100%;
         background-color: $color-thin-green;
@@ -121,7 +123,11 @@ footer {
         @include font-shape($color-main, 2.4rem);
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 33px;
+        margin-bottom: 18px;
+
+        @include mq() {
+            margin-bottom: 33px;
+        }
     }
 
     &__store {
@@ -150,7 +156,7 @@ footer {
         gap: 30px
     }
 
-    &__button{
+    &__button {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -158,19 +164,20 @@ footer {
         row-gap: 35px;
         padding-bottom: 45px;
 
-        @include mq(){
+        @include mq() {
             padding-top: 50px;
             padding-bottom: 80px;
         }
-        
-        >.most-important-button{
+
+        >.most-important-button {
             display: block;
         }
 
-        >.sub-button{
-            background-color: RGBA(0,0,0,0);
+        >.sub-button {
+            background-color: RGBA(0, 0, 0, 0);
         }
-        >*{
+
+        >* {
             height: 48px;
         }
     }
@@ -184,8 +191,8 @@ footer {
     width: 355px;
     height: 217px;
     padding: 20px;
-    
-    *{
+
+    * {
         line-height: 20px;
     }
 
@@ -197,7 +204,7 @@ footer {
         height: 237px;
         padding: 30px;
 
-        *{
+        * {
             line-height: 26px;
         }
 
@@ -205,6 +212,7 @@ footer {
 
     &__name {
         @include font-shape($color-main, 1.6rem);
+        margin-bottom: 9px;
 
         @include mq() {
             font-size: 1.8rem;
@@ -226,7 +234,7 @@ footer {
 }
 
 .detail-button {
-    margin-top: 10px;
+    margin-top: 20px;
 
 
     @include mq() {
@@ -309,12 +317,12 @@ footer {
 }
 
 
-.more-info-button{
-    &:hover{
-        background-color: lighten($color-accent-orange,20%);
+.more-info-button {
+    &:hover {
+        background-color: lighten($color-accent-orange, 20%);
     }
 
-    &::after{
+    &::after {
         content: "";
         display: inline-block;
         position: relative;
@@ -328,7 +336,7 @@ footer {
     }
 }
 
-.search-button{
+.search-button {
     position: relative;
     bottom: 3px;
 }
@@ -341,12 +349,13 @@ footer {
     align-content: center;
     justify-content: center;
     padding: 0;
-    >*{
+
+    >* {
         display: block;
         margin: auto;
     }
 }
 
-.none{
+.none {
     display: none;
 }
