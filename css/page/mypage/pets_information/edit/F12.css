@@ -182,7 +182,27 @@ a:hover {
 }
 
 .f12__pie__main__wrapper {
-  padding: 37px 17px 66px 17px;
+  padding: 37px 4.6% 66px 4.6%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper {
+    padding: 42px 16.3% 101px 16.3%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .f12__pie__main__wrapper {
+    padding-left: 10.3%;
+    padding-right: 10.3%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .f12__pie__main__wrapper {
+    padding-left: 4.6%;
+    padding-right: 4.6%;
+  }
 }
 
 .f12__pie__main__wrapper .f12__pie__txt--change-pet-information {
@@ -190,6 +210,18 @@ a:hover {
   color: #6F8D1B;
   text-align: center;
   margin-bottom: 46px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__txt--change-pet-information {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name .f12__pie__required-txt__wrapper--1 {
+    display: inline-block;
+  }
 }
 
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name .f12__pie__required-txt__wrapper--1 .f12__pie__required__wrapper--1 {
@@ -203,12 +235,43 @@ a:hover {
   margin-left: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name .f12__pie__required-txt__wrapper--1 .f12__pie__txt--pet-name {
+    margin-left: 10px;
+  }
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name .f12__pie__input__wrapper--1 {
   margin-top: 13px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name .f12__pie__input__wrapper--1 {
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 114px;
+    width: 37.1%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name .f12__pie__input__wrapper--1 .f12__pie__input__area--pet-name {
+  width: 100%;
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name-kana {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name-kana {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name-kana .f12__pie__required-txt__wrapper--2 {
+    display: inline-block;
+  }
 }
 
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name-kana .f12__pie__required-txt__wrapper--2 .f12__pie__required__wrapper--2 {
@@ -222,12 +285,44 @@ a:hover {
   margin-left: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name-kana .f12__pie__required-txt__wrapper--2 .f12__pie__txt--pet-name-kana {
+    margin-left: 10px;
+  }
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name-kana .f12__pie__input__wrapper--2 {
   margin-top: 13px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name-kana .f12__pie__input__wrapper--2 {
+    display: inline-block;
+    margin-left: 50px;
+    width: 37.1%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-name-kana .f12__pie__input__wrapper--2 .f12__pie__input__area--pet-name-kana {
+  width: 100%;
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender .f12__pie__required-txt__wrapper--3 {
+    display: inline-block;
+    position: relative;
+    bottom: 6px;
+  }
 }
 
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender .f12__pie__required-txt__wrapper--3 .f12__pie__required__wrapper--3 {
@@ -241,12 +336,38 @@ a:hover {
   margin-left: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender .f12__pie__required-txt__wrapper--3 .f12__pie__txt--pet-gender {
+    margin-left: 10px;
+  }
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender .f12__pie__redio-group__wrapper--gender {
   margin-top: 13px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender .f12__pie__redio-group__wrapper--gender {
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 130px;
+    width: 41%;
+  }
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender .f12__pie__redio-group__wrapper--gender .f12__pie__radio__wrapper--male {
   display: inline-block;
+  margin-right: 6.4%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender .f12__pie__redio-group__wrapper--gender .f12__pie__radio__wrapper--male {
+    margin-right: 12%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender .f12__pie__redio-group__wrapper--gender .f12__pie__radio__wrapper--male .f12__pie__radio--male {
+  width: 88px;
 }
 
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-gender .f12__pie__redio-group__wrapper--gender .f12__pie__radio__wrapper--male .f12__pie__radio--male::after {
@@ -267,6 +388,18 @@ a:hover {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__required-txt__wrapper--4 {
+    display: inline-block;
+  }
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__required-txt__wrapper--4 .f12__pie__required__wrapper--4 {
   display: inline-block;
   text-align: center;
@@ -278,38 +411,75 @@ a:hover {
   margin-left: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__required-txt__wrapper--4 .f12__pie__txt--pet-birth-date {
+    margin-left: 10px;
+  }
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__select-group__wrapper--birth-date {
   margin-top: 13px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__select-group__wrapper--birth-date {
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 98px;
+    width: 50.1%;
+  }
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__select-group__wrapper--birth-date .f12__pie__select__wrapper--year {
-  width: 100px;
+  width: 29.5%;
   display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__select-group__wrapper--birth-date .f12__pie__select__wrapper--year {
+    width: 29.3%;
+  }
 }
 
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__select-group__wrapper--birth-date .f12__pie__select__wrapper--month {
   display: inline-block;
-  width: 80px;
+  width: 23.5%;
   margin-left: 10px;
 }
 
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__select-group__wrapper--birth-date .f12__pie__select__wrapper--day {
   display: inline-block;
-  width: 80px;
+  width: 23.5%;
   margin-left: 10px;
 }
 
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__reflected__txt__background {
   background-color: #F2F5E9;
   display: inline-block;
-  width: 250px;
+  width: 73.5%;
   height: 46px;
   margin-top: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__reflected__txt__background {
+    display: inline-block;
+    width: 250px;
+    position: absolute;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__reflected__txt__background {
+    position: relative;
+    margin-top: 15px;
+  }
 }
 
 .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-birth-date .f12__pie__reflected__txt__background p {
   font-size: 16px;
-  margin-left: 48px;
   margin-top: 6px;
 }
 
@@ -327,6 +497,12 @@ a:hover {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date {
+    margin-top: 43px;
+  }
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__required-txt__wrapper--5 .f12__pie__required__wrapper--5 {
   display: inline-block;
   text-align: center;
@@ -338,12 +514,801 @@ a:hover {
   margin-left: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__required-txt__wrapper--5 .f12__pie__txt--rabies-mixed-vaccination-date {
+    margin-left: 10px;
+  }
+}
+
 .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination {
-  margin-top: 19px;
+  margin-top: 20px;
 }
 
 .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination .f12__pie__txt--mixed-vaccine {
   font-size: 16px;
+  margin-bottom: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination .f12__pie__txt--mixed-vaccine {
+    display: inline-block;
+    position: relative;
+    bottom: 6px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination .f12__pie__radio__wrapper--completed-mixed {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination .f12__pie__radio__wrapper--completed-mixed {
+    margin-left: 177px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination .f12__pie__radio__wrapper--completed-mixed .f12__pie__radio--mixed-1 {
+  width: 56px;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination .f12__pie__radio__wrapper--completed-mixed .f12__pie__radio--mixed-1::after {
+  content: '済';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination .f12__pie__calendar__wrapper--mixed-vaccine {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 46px;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination .f12__pie__radio__wrapper--incomplete-mixed {
+    margin-left: 277px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__mixed-vaccination .f12__pie__radio__wrapper--incomplete-mixed .f12__pie__radio--mixed-2::after {
+  content: '未';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination {
   margin-top: 20px;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination .f12__pie__txt--rabies-vaccine {
+  font-size: 16px;
+  margin-bottom: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination .f12__pie__txt--rabies-vaccine {
+    display: inline-block;
+    position: relative;
+    bottom: 6px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination .f12__pie__radio__wrapper--completed-rabies {
+  display: inline-block;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination .f12__pie__radio__wrapper--completed-rabies .f12__pie__radio--rabies-1 {
+  width: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination .f12__pie__radio__wrapper--completed-rabies .f12__pie__radio--rabies-1 {
+    margin-left: 162px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination .f12__pie__radio__wrapper--completed-rabies .f12__pie__radio--rabies-1::after {
+  content: '済';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination .f12__pie__calendar__wrapper--ranies-vaccine {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 46px;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination .f12__pie__radio--rabies-2 {
+    margin-left: 278px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input--vaccintion-date .f12__pie__rabies-vaccination .f12__pie__radio--rabies-2::after {
+  content: '未';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-government-register {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-government-register {
+    margin-top: 23px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__required-txt__wrapper--6 {
+  height: 40px;
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__required-txt__wrapper--6 {
+    display: inline-block;
+    position: relative;
+    top: 12px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__required-txt__wrapper--6 .f12__pie__required__wrapper--6 {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  position: relative;
+  top: 9px;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__required-txt__wrapper--6 .f12__pie__txt--government-register {
+  font-size: 16px;
+  display: inline-block;
+  width: 84%;
+  margin-left: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__required-txt__wrapper--6 .f12__pie__txt--government-register {
+    margin-left: 10px;
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__required-txt__wrapper--6 .f12__pie__txt--government-register {
+    position: absolute;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__radio__wrapper--yes-government {
+  display: inline-block;
+  margin-right: 11.8%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__radio__wrapper--yes-government {
+    margin-left: 62px;
+    margin-right: 5.5%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__radio__wrapper--yes-government .f12__pie__radio--government-1 {
+  width: 72px;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__radio__wrapper--yes-government .f12__pie__radio--government-1::after {
+  content: 'はい';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__radio__wrapper--no-government {
+  display: inline-block;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-government-register .f12__pie__radio__wrapper--no-government .f12__pie__radio--government-2::after {
+  content: 'いいえ';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-contraception {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-contraception {
+    margin-top: 35px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__required-txt__wrapper--7 {
+  height: 16px;
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__required-txt__wrapper--7 {
+    display: inline-block;
+    position: relative;
+    bottom: 8px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__required-txt__wrapper--7 .f12__pie__required__wrapper--7 {
+  display: inline-block;
+  text-align: center;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__required-txt__wrapper--7 .f12__pie__txt--contraception {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__radio__wrapper--yes-contraception {
+  display: inline-block;
+  margin-right: 11.8%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__radio__wrapper--yes-contraception {
+    margin-right: 5.5%;
+    margin-left: 28px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__radio__wrapper--yes-contraception .f12__pie__radio--contraception-1 {
+  width: 72px;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__radio__wrapper--yes-contraception .f12__pie__radio--contraception-1::after {
+  content: 'はい';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__radio__wrapper--no-contraception {
+  display: inline-block;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-contraception .f12__pie__radio__wrapper--no-contraception .f12__pie__radio--contraception-2::after {
+  content: 'いいえ';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-microchip {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-microchip {
+    margin-top: 50px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__required-txt__wrapper--8 {
+  height: 16px;
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__required-txt__wrapper--8 {
+    display: inline-block;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__required-txt__wrapper--8 .f12__pie__required__wrapper--8 {
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__required-txt__wrapper--8 .f12__pie__required__wrapper--8 {
+    vertical-align: top;
+    position: relative;
+    top: 9px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__required-txt__wrapper--8 .f12__pie__txt--microchip {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__required-txt__wrapper--8 .f12__pie__txt--microchip {
+    width: 176px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__radio__wrapper--yes-microchip {
+  display: inline-block;
+  margin-right: 11.8%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__radio__wrapper--yes-microchip {
+    margin-right: 5.5%;
+    margin-left: 60px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__radio__wrapper--yes-microchip .f12__pie__radio--microchip-1 {
+  width: 72px;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__radio__wrapper--yes-microchip .f12__pie__radio--microchip-1::after {
+  content: 'はい';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__radio__wrapper--no-microchip {
+  display: inline-block;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-microchip .f12__pie__radio__wrapper--no-microchip .f12__pie__radio--microchip-2::after {
+  content: 'いいえ';
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type {
+    margin-top: 50px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__required-txt__wrapper--9 {
+  margin-bottom: 13px;
+  height: 24px;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__required-txt__wrapper--9 .f12__pie__required__wrapper--9 {
+  display: inline-block;
+  text-align: center;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__required-txt__wrapper--9 .f12__pie__txt--pet-type {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 16px;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 {
+  display: inline-block;
+  width: 342px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 {
+    position: relative;
+    left: 29.1%;
+    bottom: 24px;
+    display: inline-block;
+    width: 655px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 input:checked + .f12__pie__dog-type--label {
+  border: solid #6F8D1B 1px;
+  background-color: #F2F5E9;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__dog-type--label {
+  width: 107px;
+  height: 107px;
+  display: inline-block;
+  background: #f5f5f5;
+  border-radius: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__dog-type--label {
+    width: 212px;
+    height: 212px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__dog-type--label .f12__pie__pet__img {
+  width: 89px;
+  height: 69px;
+  display: block;
+  margin: 7px auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__dog-type--label .f12__pie__pet__img {
+    width: 176px;
+    height: 124px;
+    margin-bottom: 6px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__dog-type--label span {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+  height: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__dog-type--label span {
+    font-size: 16px;
+    height: 22px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__label--chihuahua {
+  margin-left: 1%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__label--chihuahua {
+    margin-left: 0.8%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__label--pomeranian {
+  margin-left: 1%;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--1 .f12__pie__label--pomeranian {
+    margin-left: 0.8%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 {
+  margin-top: 10px;
+  display: inline-block;
+  width: 342px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 {
+    margin-top: 0.8%;
+    position: relative;
+    left: 29.1%;
+    bottom: 24px;
+    display: inline-block;
+    width: 655px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 input:checked + .f12__pie__dog-type--label {
+  border: solid #6F8D1B 1px;
+  background-color: #F2F5E9;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__dog-type--label {
+  width: 107px;
+  height: 107px;
+  display: inline-block;
+  background: #f5f5f5;
+  border-radius: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__dog-type--label {
+    width: 212px;
+    height: 212px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__dog-type--label .f12__pie__pet__img {
+  width: 89px;
+  height: 69px;
+  display: block;
+  margin: 7px auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__dog-type--label .f12__pie__pet__img {
+    width: 176px;
+    height: 124px;
+    margin-bottom: 6px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__dog-type--label span {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+  height: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__dog-type--label span {
+    font-size: 16px;
+    height: 22px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__label--yorkie {
+  margin-left: 1%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__label--yorkie {
+    margin-left: 0.8%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__label--shihtzu {
+  margin-left: 1%;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--2 .f12__pie__label--shihtzu {
+    margin-left: 0.8%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 {
+  margin-top: 10px;
+  display: inline-block;
+  width: 342px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 {
+    margin-top: 0.8%;
+    position: relative;
+    left: 29.1%;
+    bottom: 24px;
+    display: inline-block;
+    width: 655px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 input:checked + .f12__pie__dog-type--label {
+  border: solid #6F8D1B 1px;
+  background-color: #F2F5E9;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__dog-type--label {
+  width: 107px;
+  height: 107px;
+  display: inline-block;
+  background: #f5f5f5;
+  border-radius: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__dog-type--label {
+    width: 212px;
+    height: 212px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__dog-type--label .f12__pie__pet__img {
+  width: 89px;
+  height: 69px;
+  display: block;
+  margin: 7px auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__dog-type--label .f12__pie__pet__img {
+    width: 176px;
+    height: 124px;
+    margin-bottom: 6px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__dog-type--label span {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+  height: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__dog-type--label span {
+    font-size: 16px;
+    height: 22px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__label--schnauzer {
+  margin-left: 1%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__label--schnauzer {
+    margin-left: 0.8%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__label--toypoodle {
+  margin-left: 1.7%;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--3 .f12__pie__label--toypoodle {
+    margin-left: 0.8%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 {
+  margin-top: 10px;
+  display: inline-block;
+  width: 342px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 {
+    margin-top: 0.8%;
+    position: relative;
+    left: 29.1%;
+    bottom: 24px;
+    display: inline-block;
+    width: 655px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 input:checked + .f12__pie__dog-type--label {
+  border: solid #6F8D1B 1px;
+  background-color: #F2F5E9;
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__dog-type--label {
+  width: 107px;
+  height: 107px;
+  display: inline-block;
+  background: #f5f5f5;
+  border-radius: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__dog-type--label {
+    width: 212px;
+    height: 212px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__dog-type--label .f12__pie__pet__img {
+  width: 89px;
+  height: 69px;
+  display: block;
+  margin: 7px auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__dog-type--label .f12__pie__pet__img {
+    width: 176px;
+    height: 124px;
+    margin-bottom: 6px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__dog-type--label span {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+  height: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__dog-type--label span {
+    font-size: 16px;
+    height: 22px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__label--mix-2 {
+  margin-left: 1%;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__label--mix-2 {
+    margin-left: 0.8%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__label--mix-3 {
+  margin-left: 1%;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__label--mix-3 {
+    margin-left: 0.8%;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__anchor-txt--1 {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__anchor-txt--1 {
+    margin-top: 35px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__gray__wrapper {
+  height: 60px;
+  width: 100%;
+  background: #f5f5f5;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 4%;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__gray__wrapper {
+    margin-top: 33px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__gray__wrapper .f12__pie__gray__inner__txt--1 {
+  font-size: 14px;
+  height: 14px;
+}
+
+@media screen and (min-width) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__gray__wrapper .f12__pie__gray__inner__txt--1 {
+    font-size: 16px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__gray__wrapper .f12__pie__gray__inner__txt--2 {
+  margin-top: 4px;
+  font-size: 14px;
+  height: 14px;
+}
+
+@media screen and (min-width) {
+  .f12__pie__main__wrapper .f12__pie__wrapper--input-pet-type .f12__pie__pet-type__wrapper--4 .f12__pie__gray__wrapper .f12__pie__gray__inner__txt--2 {
+    font-size: 16px;
+  }
+}
+
+.f12__pie__main__wrapper .f12__pie__btn__orange {
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.f12__pie__main__wrapper .f12__pie__anchor-txt--2 {
+  margin-top: 35px;
+  display: block;
+  text-align: center;
 }
 /*# sourceMappingURL=F12.css.map */
