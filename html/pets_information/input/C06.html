@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta情報 -->
-    <title>ペット情報登録（入力）｜イオンペット グルーミング予約サイト</title>
-    <meta name="description" content="イオンペット グルーミング予約サイトの「ペット情報登録（入力）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <title>ペット情報登録（入力）｜PETEMO グルーミングサロン 予約サイト</title>
+    <meta name="description" content="PETEMO グルーミングサロン 予約サイトの「ペット情報登録（入力）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
     <meta name="keywords" content="" />
     <!-- reset css -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -24,9 +24,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- css -->
     <script src="../../../js/script.js"></script>
-    <link rel="stylesheet" href="../../../css/styles.css" />
-    <link rel="stylesheet" href="../../../css/page/C06.css" />
-    <script src="../../../js/C06.js"></script>
+    <link rel="stylesheet" href="../../../css/page/pets_information/input/C06.css" />
+    <script src="../../../js/pets_information/input/C06.js"></script>
     <link rel="icon" href="" />
 </head>
 
@@ -99,10 +98,8 @@
                 </a>
             </span>
             /
-            <span class="breadcrumb__item breadcrumb__item--orange">
-                <span class="brandcrumb__item-link">
-                    ペット情報登録（入力）
-                </span>
+            <span class="breadcrumb__item">
+                ペット情報登録（入力）
             </span>
         </div>
     </div>
@@ -1340,10 +1337,10 @@
         </div>
     </div>
     <div class="content">
-        <h1 class="content__title">ペット情報登録</h1>
+        <h1 class="content__title">ペット情報登録（入力）</h1>
         <ul class="content__formlist">
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -1351,14 +1348,14 @@
                         ペットのお名前
                     </label>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <div class="input__wrapper">
                         <input type="text" class="input__area--pet-name" placeholder="小太郎" id="text-pet-name--kanji">
                     </div>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -1366,14 +1363,14 @@
                         ペットのお名前（カナ）
                     </label>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <div class="input__wrapper">
                         <input type="text" class="input__area--pet-name" placeholder="コタロウ" id="text-pet-name--kana">
                     </div>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -1381,7 +1378,7 @@
                         ペットの性別
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-sex--male" class="radio-button-module">
                         <input type="radio" id="pet-sex--male" name="pet-sex-group" class="radio-button-module__radio">
                         <span class="radio-button-module__sentence">男の子</span>
@@ -1393,8 +1390,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -1402,7 +1399,7 @@
                         ペットの生年月日
                     </span>
                 </div>
-                <div class="resistration-form__field--pet-birth">
+                <div class="registration-form__field--pet-birth">
                     <div class="input__wrapper--pet-birth-year select__wrapper--shevron">
                         <select name="select__birth-year" id="select__birth-year" class="select__wrapper is-empty">
                             <option value="" class="select__option" selected>年</option>
@@ -1427,10 +1424,11 @@
                     <div class="pet-age-container">
                         年齢<span class="pet-age-container__age-font">00歳00ヶ月</span>
                     </div>
+                    <p class="caution--birth">※日付が不明な場合は不明を選択してください。</p>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title--vaccine-date">
+            <li class="registration-form">
+                <div class="registration-form__title--vaccine-date">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -1440,11 +1438,11 @@
                     </span>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title--vaccine">
+            <li class="registration-form">
+                <div class="registration-form__title--vaccine">
                     混合ワクチン
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-mix-vaccine--yes" class="radio-button-module--vaccine">
                         <input type="radio" id="pet-mix-vaccine--yes" name="pet-mix-vaccine-group"
                             class="radio-button-module__radio">
@@ -1460,11 +1458,11 @@
                     </div>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title--vaccine">
+            <li class="registration-form">
+                <div class="registration-form__title--vaccine">
                     狂犬病ワクチン
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-rabies-vaccine--yes" class="radio-button-module--vaccine">
                         <input type="radio" id="pet-rabies-vaccine--yes" name="pet-rabies-vaccine-group"
                             class="radio-button-module__radio">
@@ -1480,17 +1478,17 @@
                     </div>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title--shelter">
+            <li class="registration-form">
+                <div class="registration-form__title--shelter">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
-                    <span>
-                        <span>保健所登録は</span>
-                        <span>済んでいますか？</span>
+                    <span class="registration-form__title-text">
+                        <span>行政（市区町村）への</span>
+                        <span>登録はお済みですか？</span>
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-shelter--yes" class="radio-button-module">
                         <input type="radio" id="pet-shelter--yes" name="pet-shelter-group"
                             class="radio-button-module__radio">
@@ -1503,8 +1501,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -1512,7 +1510,7 @@
                         避妊・去勢はしていますか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-fix--yes" class="radio-button-module">
                         <input type="radio" id="pet-fix--yes" name="pet-fix-group" class="radio-button-module__radio">
                         <span class="radio-button-module__sentence">はい</span>
@@ -1523,8 +1521,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -1532,7 +1530,7 @@
                         マイクロチップを装着していますか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-microchip--yes" class="radio-button-module">
                         <input type="radio" id="pet-microchip--yes" name="pet-microchip-group"
                             class="radio-button-module__radio">
@@ -1545,8 +1543,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title--pet-kind">
+            <li class="registration-form">
+                <div class="registration-form__title--pet-kind">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -1554,7 +1552,7 @@
                         ペットの犬種
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <div class="dog-kind__container">
                         <table class="dog-kind__table">
                             <tbody>
@@ -1676,8 +1674,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="" class="anchor-text dog-kind__others modal-open"><span
-                                class="anchor-text__right-arrow"></span>その他の犬種を選択</a>
+                        <a href="" class="anchor-text--other-dogs dog-kind__others modal-open">その他の犬種を選択</a>
                         <div class="selected-pet-container">
                             <p>選択した犬種</p>
                             <p class="selected-pet-container__selected" id="selected-pet">アメリカンコッカースパニエル</p>
@@ -1686,7 +1683,7 @@
                 </div>
             </li>
         </ul>
-        <a href="" class="most-important-button cirtificate-button">確認画面へ</a>
+        <a href="" class="most-important-button certificate-button">確認画面へ</a>
     </div>
     <footer class="footer">
         <a class="footer__page-top-button" href="#">

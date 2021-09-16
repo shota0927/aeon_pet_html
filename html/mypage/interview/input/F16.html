@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta情報 -->
-    <title>マイページ＞事前確認事項（入力）｜イオンペット グルーミング予約サイト</title>
-    <meta name="description" content="イオンペット グルーミング予約サイトの「事前確認事項（入力）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <title>事前確認事項（入力）｜PETEMO グルーミングサロン 予約サイト</title>
+    <meta name="description" content="PETEMO グルーミングサロン 予約サイトの「事前確認事項（入力）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
     <meta name="keywords" content="" />
     <!-- reset css -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -25,9 +25,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="../../../../css/styles.css" />
-    <link rel="stylesheet" href="../../../../css/page/F16.css" />
+    <link rel="stylesheet" href="../../../../css/page/mypage/interview/input/F16.css" />
     <script src="../../../../js/script.js"></script>
-    <script src="../../../../js/F16.js"></script>
+    <script src="../../../../js/mypage/interview/input/F16.js"></script>
     <link rel="icon" href="" />
 </head>
 
@@ -118,36 +118,36 @@
                 </a>
             </span>
             /
-            <span class="breadcrumb__item">
-                <a href="" class="brandcrumb__item-link">
-                    マイページ
-                </a>
-            </span>
+            <a href="" class="brandcrumb__item-link breadcrumb__item--orange">
+                マイページ
+            </a>
             /
-            <span class="breadcrumb__item breadcrumb__item--orange">
-                <a href="" class="brandcrumb__item-link">
-                    事前確認事項（入力）
-                </a>
+            <span class="breadcrumb__item">
+                事前確認事項（入力）
             </span>
         </div>
     </div>
     <div class="content">
         <h1 class="content__title">事前確認事項</h1>
         <div class="content__reservation">
-            <p class="reservation-title">
-                <span class="reservation-title__date">2021年7月1日(木)</span>
-                <span class="reservation-title__time">9:00~</span>
-                <span class="reservation-title__pickup">お迎え予定時間：15:00</span>
-            </p>
-            <ul class="ressevartion-list">
-                <li>サロン名：PETEMO札幌苗穂店</li>
-                <li>お名前：小太郎ちゃん</li>
-                <li>コース名：シャンプーコース</li>
-            </ul>
+            <h4 class="reservation__title">ご予約内容</h4>
+            <section class="reservation__content">
+                <ul class="reservation-schedule">
+                    <li class="reservation-schedule__date">2021年7月1日(木)</li>
+                    <li class="reservation-schedule__time">受付時間：9:00</li>
+                    <li class="reservation-schedule__pick-up">お迎え予定時間：15:00</li>
+                </ul>
+                <ul class="reservation-list">
+                    <li>サロン名：PETEMO札幌苗穂店</li>
+                    <li>お名前：小太郎ちゃん</li>
+                    <li>コース名：シャンプーコース</li>
+                </ul>
+            </section>
         </div>
+
         <ul class="content__formlist">
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--optional">
                         <p class="icon__text--optional">任意</p>
                     </div>
@@ -155,22 +155,22 @@
                         かかりつけの動物病院
                     </label>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <div class="input__wrapper">
                         <input type="text" class="input__area--pet-doctor" placeholder="○○○○病院" id="text-pet-doctor">
                     </div>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--optional">
                         <p class="icon__text--optional">任意</p>
                     </div>
-                    <label for="text-pet-name--kana">
-                        グルーミング中、や仕上がり後の写真を撮影してもよろしいですか？
+                    <label for="text-pet-name--kana" class="registration-form__title-text">
+                        グルーミング中や仕上がり後の写真を撮影してもよろしいですか？
                     </label>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-photograph--agreement" class="checkbox-button-module">
                         <input type="checkbox" id="pet-photograph--agreement" name="pet-photograph-group"
                             class="checkbox-button-module__checkbox">
@@ -178,8 +178,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -187,7 +187,7 @@
                         健康状態
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-health--good" class="radio-button-module">
                         <input type="radio" id="pet-health--good" name="pet-health-group"
                             class="radio-button-module__radio">
@@ -200,8 +200,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form--anamnesis">
-                <div class="resistration-form__field--anamnesis">
+            <li class="registration-form--anamnesis">
+                <div class="registration-form__field--anamnesis">
                     <table class="anamnesis-table" id="table--anamnesis">
                         <colgroup>
                             <col class="anamnesis-table__col--symptom">
@@ -375,8 +375,8 @@
                     </table>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -384,7 +384,7 @@
                         その他現在治療中の病気・怪我はございますか
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-illness--no" class="radio-button-module">
                         <input type="radio" id="pet-illness--no" name="pet-illness-group"
                             class="radio-button-module__radio">
@@ -400,8 +400,8 @@
                     </div>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -409,7 +409,7 @@
                         最近動物病院を受診しましたか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-consultation--no" class="radio-button-module">
                         <input type="radio" id="pet-consultation--no" name="pet-consultation-group"
                             class="radio-button-module__radio">
@@ -422,8 +422,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -431,7 +431,7 @@
                         血液などの検査を1年以内にしていますか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-checkup--no" class="radio-button-module">
                         <input type="radio" id="pet-checkup--no" name="pet-checkup-group"
                             class="radio-button-module__radio">
@@ -444,8 +444,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -453,7 +453,7 @@
                         心臓病の検査を1年以内にしていますか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-heart--no" class="radio-button-module">
                         <input type="radio" id="pet-heart--no" name="pet-heart-group"
                             class="radio-button-module__radio">
@@ -466,8 +466,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -475,7 +475,7 @@
                         投薬中の薬があれば教えてください
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-medicine--no" class="radio-button-module">
                         <input type="radio" id="pet-medicine--no" name="pet-medicine-group"
                             class="radio-button-module__radio">
@@ -488,8 +488,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -497,7 +497,7 @@
                         室内でおトイレのワンちゃんにお伺いします。 ペットシーツを食べることがありますか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-eating-sheet--no" class="radio-button-module">
                         <input type="radio" id="pet-eating-sheet--no" name="pet-eating-sheet-group"
                             class="radio-button-module__radio">
@@ -510,8 +510,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -519,7 +519,7 @@
                         いつものウンチの状態はいかがですか？
                     </span>
                 </div>
-                <div class="resistration-form__field--feces">
+                <div class="registration-form__field--feces">
                     <label for="pet-feces--hard" class="radio-button-module">
                         <input type="radio" id="pet-feces--hard" name="pet-feces-group"
                             class="radio-button-module__radio">
@@ -542,8 +542,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -551,7 +551,7 @@
                         お水の飲み方はどちらですか？
                     </span>
                 </div>
-                <div class="resistration-form__field--drinking">
+                <div class="registration-form__field--drinking">
                     <label for="pet-drinking--bowl" class="radio-button-module">
                         <input type="radio" id="pet-drinking--bowl" name="pet-drinking-group"
                             class="radio-button-module__radio">
@@ -569,8 +569,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -578,7 +578,7 @@
                         預かり中に体調を崩したことはございますか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-homesick--no" class="radio-button-module">
                         <input type="radio" id="pet-homesick--no" name="pet-homesick-group"
                             class="radio-button-module__radio">
@@ -595,8 +595,8 @@
                     </div>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -604,7 +604,7 @@
                         食べ物でアレルギーはございますか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-allergies--no" class="radio-button-module">
                         <input type="radio" id="pet-allergies--no" name="pet-allergies-group"
                             class="radio-button-module__radio">
@@ -621,8 +621,8 @@
                     </div>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -630,7 +630,7 @@
                         ノミ・ダニ予防はされていますか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-pest-prevention--no" class="radio-button-module">
                         <input type="radio" id="pet-pest-prevention--no" name="pet-pest-prevention-group"
                             class="radio-button-module__radio">
@@ -643,8 +643,8 @@
                     </label>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -652,7 +652,7 @@
                         同居している他のワンちゃん・ネコちゃんはいますか？
                     </span>
                 </div>
-                <div class="resistration-form__field">
+                <div class="registration-form__field">
                     <label for="pet-housemate--no" class="radio-button-module">
                         <input type="radio" id="pet-housemate--no" name="pet-housemate-group"
                             class="radio-button-module__radio">
@@ -669,8 +669,8 @@
                     </div>
                 </div>
             </li>
-            <li class="resistration-form">
-                <div class="resistration-form__title">
+            <li class="registration-form">
+                <div class="registration-form__title">
                     <div class="icon__wrapper--required">
                         <p class="icon__text--required">必須</p>
                     </div>
@@ -678,7 +678,7 @@
                         その他、お手入れに関してお困りごとはありますか？
                     </span>
                 </div>
-                <div class="resistration-form__field--worried">
+                <div class="registration-form__field--worried">
                     <label for="pet-worried--dandruff" class="checkbox-button-module">
                         <input type="checkbox" id="pet-worried--dandruff" name="pet-worried-group"
                             class="checkbox-button-module__checkbox">
@@ -722,7 +722,7 @@
                 </div>
             </li>
         </ul>
-        <a href="" class="most-important-button cirtificate-button">確認画面へ</a>
+        <a href="" class="most-important-button certificate-button">確認画面へ</a>
     </div>
     </div>
     <footer class="footer">

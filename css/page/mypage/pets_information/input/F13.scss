@@ -1,0 +1,756 @@
+@import "../../../../setting/_setting.scss";
+@import "../../../../styles.scss";
+@import "./modules.scss";
+
+@mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: normal;
+    font-family: $font-family, nth($font-family-base, 3);
+}
+
+input,
+select {
+    font-size: 1.4rem;
+}
+
+.datepicker {
+    letter-spacing: 1px;
+}
+
+.ui-datepicker-trigger {
+    right: 1rem;
+}
+
+body,
+header,
+footer {
+    @include font-shape($color-text-main, 1.6rem);
+    min-width: 375px;
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
+}
+
+.content {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    padding: 0 17px;
+
+    @include mq() {
+        box-sizing: content-box;
+        width: 930px;
+        margin-top: 36px;
+    }
+
+    &__title {
+        @include font-shape($color-main, 2.4rem);
+        text-align: center;
+
+        @include mq() {
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__note {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &__error {
+        background-color: $color-error;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__formlist {
+        list-style: none;
+
+        @include mq() {
+            padding-left: 10px;
+        }
+    }
+}
+
+.errorlist {
+    color: $color-alert;
+    list-style-position: inside;
+    font-size: 1.4rem;
+
+    >li {
+        &::before {
+            content: "・";
+            width: 3px;
+        }
+    }
+}
+
+.registration-form {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+
+
+    @include mq() {
+        margin: 10px 0;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 20px;
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        $self: &;
+
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0px;
+        align-items: center;
+
+        >span,
+        label {
+            position: relative;
+            left: 1rem;
+        }
+
+        &--pet-kind,
+        &--vaccine-date,
+        &--shelter {
+            @extend #{$self};
+        }
+
+        &--vaccine-date,
+        &--shelter {
+            @include mq() {
+                >.icon__wrapper--required {
+                    position: relative;
+                    top: -1.2rem;
+                }
+
+                >span>span,
+                label>span {
+                    display: block;
+                }
+            }
+        }
+
+        @include mq() {
+            margin: 0;
+            flex-basis: 248px;
+            align-items: center;
+
+
+            &--vaccine {
+                flex-basis: 248px;
+                padding-left: 4rem;
+                margin-bottom: 45px;
+            }
+
+            &--pet-kind {
+                flex-basis: 248px;
+                margin-bottom: 900px;
+            }
+        }
+    }
+
+    &__title-text {
+        $self: &;
+
+        &--shelter {
+
+            letter-spacing: -0.1rem;
+
+            @include mq() {
+                letter-spacing: normal;
+            }
+        }
+    }
+
+    &__field {
+        $self: &;
+
+        position: relative;
+
+        >* {
+            display: inline-block;
+        }
+
+        @include mq() {
+            flex-basis: 632px;
+        }
+
+        &--name {
+            @extend #{$self};
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        &--pet-birth {
+            @extend #{$self};
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+
+            @include mq() {
+                column-gap: 10px;
+                row-gap: 0px;
+            }
+
+            .pet-age-container {
+                display: inline-block;
+                background-color: $color-thin-green;
+                flex-basis: 250px;
+                width: 250px;
+                height: 46px;
+                text-align: center;
+                padding-top: 5px;
+
+                @include mq() {
+                    margin: 10px 0 10px auto;
+                }
+
+                &__age-font {
+                    @include font-shape($color-main, 2.0rem)
+                }
+            }
+        }
+
+    }
+}
+
+.input {
+    &__wrapper {
+
+        &--name {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            gap: 20px;
+            display: inline-block;
+
+            @include mq() {
+                width: 191px;
+                flex-basis: 191px;
+            }
+        }
+
+        &--pet-birth-year {
+            width: 100px;
+        }
+
+        &--pet-birth-month,
+        &--pet-birth-day {
+            width: 80px;
+        }
+
+        &--vaccine-calender {
+            position: absolute;
+            top: 15px;
+            left: 100px;
+            z-index: 10;
+        }
+    }
+
+    &__area {
+        @mixin extInputTxt() {
+            @extend .input__area--default;
+        }
+
+        &--pet-name {
+            @include extInputTxt();
+            width: 341px;
+        }
+
+        &--vaccine-calender {
+            width: 180px;
+            @extend .input__area--default;
+        }
+    }
+}
+
+.calendar {
+    &__wrapper {
+        $self: &;
+        letter-spacing: -1px;
+
+        &--vaccine {
+            @extend #{$self};
+            position: absolute;
+            top: 15px;
+            left: 100px;
+            z-index: 10;
+            width: 180px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.datepicker {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.certificate-button {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    @include mq() {
+        margin-top: 40px;
+    }
+}
+
+.anchor-text {
+    $self: &;
+    display: block;
+    margin: 35px auto 45px auto;
+    width: 161px;
+    font-size: 1.4rem;
+
+    @include mq() {
+        width: 180px;
+        margin: 40px auto 80px auto;
+        font-size: 1.6rem;
+
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        border: 0px;
+        border-top: solid 1px $color-main;
+        border-right: solid 1px $color-main;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg) translateY(-50%);
+        width: 8px;
+        height: 8px;
+    }
+
+    &--back {
+        @extend #{$self};
+        margin-bottom: 66px;
+
+        @include mq() {
+            margin-bottom: 101px;
+
+        }
+    }
+
+    &--other-dogs {
+        @extend #{$self};
+        margin: 20px auto 30px auto !important;
+
+        @include mq() {
+            margin: 30px auto !important;
+        }
+    }
+}
+
+.icon {
+    &__wrapper {
+        &--optional {
+            margin: 0;
+        }
+
+        &--optional,
+        &--required {
+            width: 32px;
+            min-width: 32px;
+            height: 17px;
+        }
+    }
+}
+
+.radio-button-module {
+    $self: &;
+    margin: 10px 0;
+    margin-right: 45px;
+
+    &--vaccine {
+        @extend #{$self};
+        display: block;
+        margin: 20px 0;
+    }
+}
+
+.radio {
+
+    &__wrapper {
+        @mixin extResitrationRadio {
+            @extend .radio__wrapper--individual;
+        }
+
+        &--individual {
+            height: auto;
+        }
+
+        &--vaccine {
+            @include extResitrationRadio();
+            display: block;
+        }
+
+        &--item::after {
+            content: "";
+        }
+    }
+}
+
+.select {
+    &__wrapper {
+        &--shevron::after {
+            right: 0.5rem;
+        }
+    }
+}
+
+
+
+.modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    overflow-y: hidden;
+
+    &__bg {
+        background: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        position: fixed;
+        width: 100%;
+    }
+
+    &__content {
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 83px;
+        height: 100%;
+        z-index: 200;
+        background-color: $color-background-base;
+    }
+}
+
+.tab-table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0px;
+    height: 90%;
+    min-width: 375px;
+    justify-content: center;
+
+    &__tabs {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        &::after {
+            content: "";
+            width: 10%;
+            height: 40px;
+            background: $color-main;
+            transition: 0.5s;
+            position: absolute;
+        }
+    }
+
+    &__label {
+        flex-basis: 10%;
+        max-width: 10%;
+        text-align: center;
+        display: inline-block;
+        border: $color-border-gray 1px solid;
+        padding: 4px;
+        height: 40px;
+        font-size: 1.4rem;
+        white-space: nowrap;
+        transition: 0.5s;
+        z-index: 2;
+        color: $color-main;
+    }
+
+    &__content {
+        height: 90%;
+        flex-basis: 100%;
+        display: none;
+        font-size: 1.4rem;
+    }
+
+    &__radio {
+        color: $color-main;
+    }
+
+    &__button-container {
+        height: 58px;
+        position: relative;
+        top: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        >* {
+            width: 166px;
+        }
+    }
+}
+
+.selected-pet-container {
+    background-color: $color-calendar-background;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+#tab-table {
+    $lines: "__a-line", "__ka-line", "__sa-line", "__ta-line", "__na-line", "__ha-line", "__ma-line", "__ya-line", "__ra-line", "__wa-line";
+
+    $position: 0;
+
+    @each $line in $lines {
+        &#{$line}--radio:checked~&#{$line}--content {
+            display: block;
+        }
+
+        &#{$line}--radio:checked~.tab-table__tabs>&#{$line}--label {
+            color: #FFF;
+            // background-color: $color-main;
+        }
+
+        &#{$line}--radio:checked~.tab-table__tabs::after {
+            left: $position;
+        }
+
+        $position: $position+10%;
+    }
+}
+
+.kana-list {
+    height: 100%;
+    overflow-y: scroll;
+    /* IE, Edge 対応 */
+    -ms-overflow-style: none;
+    /* Firefox 対応 */
+    scrollbar-width: none;
+
+    /* Chrome, Safari 対応 */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__line {
+        >p {
+            background-color: $color-thin-green;
+            padding-left: 30px;
+            height: 30px;
+        }
+
+        >label {
+            padding-top: 10px;
+            height: 46px;
+            display: block;
+            padding-left: 50px;
+            border-bottom: $color-border-gray 1px solid;
+            border-radius: 0px;
+            background-color: $color-background-base;
+        }
+    }
+
+
+}
+
+
+.errorlist {
+    color: $color-alert;
+    list-style-position: inside;
+    font-size: 1.4rem;
+
+    >li {
+        &::before {
+            content: "・";
+            width: 3px;
+        }
+    }
+}
+
+
+.dog-kind {
+    &__others {
+        display: block;
+        margin: 0 auto;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    &__container {
+        >* {
+            margin: 10px 0;
+        }
+    }
+
+    &__table {
+        border-spacing: 7px;
+
+        td {
+            width: 107px;
+            height: 107px;
+        }
+
+        img {
+            width: 89px;
+            height: 63px;
+            display: block;
+            margin: auto;
+            image-rendering: -webkit-optimize-contrast;
+        }
+
+        label {
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            font-size: 1.2rem;
+
+            >span {
+                display: block;
+            }
+        }
+    }
+}
+
+.caution {
+    &--title {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    &--normal {
+        font-size: 1.2rem;
+    }
+
+    &--birth {
+        position: relative;
+        font-size: 1.2rem;
+        top: -1rem;
+    }
+}
+
+.icon__wrapper--optional {
+    margin: 0;
+}
+
+.radio {
+
+    &__wrapper {
+        &--individual {
+            height: auto;
+            margin-right: 20px;
+        }
+
+        &-- {
+            display: block;
+        }
+
+        &--item::after {
+            content: "";
+        }
+    }
+}
+
+.select__wrapper--shevron::after {
+    right: 0.5rem;
+}
+
+.radio {
+    &__dog-kind {
+        &--label {
+            background-color: $color-calendar-background;
+            border-radius: 10px;
+            display: block;
+        }
+
+        &--radio:checked+&--label {
+            background-color: $color-thin-green;
+            border: white solid 1px;
+        }
+
+        &--radio:focus+&--label {
+            background-color: $color-thin-green;
+            border: $color-circle-border solid 1px;
+        }
+    }
+}
+
+
+@include mq() {
+
+    .errorlist {
+        font-size: 1.6rem;
+    }
+
+    .dog-kind {
+        &__others {
+            font-size: 1.6rem;
+        }
+
+        &__table {
+            border-spacing: 7px;
+
+            td {
+                width: 212px;
+                height: 212px;
+            }
+
+            img {
+                width: 176px;
+                height: 129px;
+            }
+
+            label {
+                padding: 5px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .modal-container {
+        &__content {
+            width: 930px;
+            height: 738px;
+        }
+    }
+
+    .tab-table {
+        &__tabs {
+            &::after {
+                height: 69px;
+            }
+        }
+
+        &__label {
+            padding: 20px;
+            height: 69px;
+        }
+    }
+}
