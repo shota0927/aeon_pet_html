@@ -1,0 +1,335 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.7;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* フォームリセット */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="submit"],
+input[type="button"],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-size: 1.4rem;
+  background-color: #fff;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Noto Sans JP", "Lato", sans-serif;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.container {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .inner {
+    width: 100%;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.e03__fyp__main-wrapper {
+  width: 68.1%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .e03__fyp__main-wrapper {
+    width: 91%;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__txt--reset-password {
+  font-size: 24pt;
+  color: #6F8D1B;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Noto Sans JP", "Lato", sans-serif;
+  margin-top: 42px;
+}
+
+@media screen and (max-width: 768px) {
+  .e03__fyp__main-wrapper .e03__fyp__txt--reset-password {
+    margin-top: 37px;
+    font-size: 18pt;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__txt--main-paragraph {
+  margin-top: 43px;
+}
+
+.e03__fyp__main-wrapper .e03__fyp__txt--main-paragraph span {
+  color: #F4451C;
+}
+
+@media screen and (max-width: 768px) {
+  .e03__fyp__main-wrapper .e03__fyp__txt--main-paragraph {
+    margin-top: 19px;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__txt--instructions-first {
+  margin-top: 16px;
+  font-size: 12px;
+}
+
+.e03__fyp__main-wrapper .e03__fyp__txt--instructions-first span {
+  color: #F4451C;
+}
+
+.e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address {
+  margin-top: 33px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address {
+    margin-top: 30px;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--required-txt {
+  display: inline-block;
+  width: 190px;
+  text-align: left;
+}
+
+@media screen and (max-width: 940px) {
+  .e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--required-txt {
+    display: block;
+    margin-bottom: 13px;
+    text-align: left;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--required-txt .e03__fyp__wrapper--required {
+  display: inline-block;
+  margin-right: 1.4%;
+  text-align: center;
+}
+
+@media screen and (max-width: 940px) {
+  .e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--required-txt .e03__fyp__wrapper--required {
+    text-align: center;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--required-txt .e03__fyp__txt--email-address {
+  display: inline-block;
+  margin-right: 2.2%;
+}
+
+@media screen and (max-width: 768px) {
+  .e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--required-txt .e03__fyp__txt--email-address {
+    font-size: 12pt;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--input {
+  display: inline-block;
+}
+
+@media screen and (max-width: 940px) {
+  .e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--input {
+    width: 100%;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--input .e03__fyp__input__area--email-address {
+  width: 430px;
+}
+
+@media screen and (max-width: 940px) {
+  .e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--input .e03__fyp__input__area--email-address {
+    width: 100%;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__wrapper-transmission_cancel-btn {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .e03__fyp__main-wrapper .e03__fyp__wrapper-transmission_cancel-btn {
+    margin-top: 30px;
+  }
+}
+
+.e03__fyp__main-wrapper .e03__fyp__wrapper-transmission_cancel-btn .e03__fyp__transmisson-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.e03__fyp__main-wrapper .e03__fyp__wrapper-transmission_cancel-btn .e03__fyp__cancel-btn {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+.e03__fyp__main-wrapper .e03__fyp__txt--instructions--second {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 104px;
+}
+
+@media screen and (max-width: 768px) {
+  .e03__fyp__main-wrapper .e03__fyp__txt--instructions--second {
+    margin-bottom: 71px;
+    margin-top: 15px;
+  }
+}
+/*# sourceMappingURL=E03.css.map */

@@ -22,7 +22,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/flickity.css" />
     <link rel="icon" href="" />
+    <!-- js -->
+    <script src="../js/flickity.pkgd.js"></script>
+
+
   </head>
 
   <body>
@@ -83,9 +88,24 @@
 
     <!-- main__home -->
     <main class="main__home">
+      <div class="main__home__mainpicture">
+        <div class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround": true }'>
+          <img class="gallery-cell" src="../image/messageImage_1631707100706.jpg" alt="">
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+        </div>
+        <div class="green_back">
+        </div>
+      </div>
+      
       <div class="container">
 
-        <div class="main__home__mainpicture"></div>
+
+
 
         <div class="main__home__title">
           <div class="booking-category-title">

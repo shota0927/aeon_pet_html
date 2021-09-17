@@ -58,7 +58,7 @@ footer {
     }
 
     &__error {
-        background-color: $color-error;
+        background-color: #FEECE7;
         border-radius: 10px;
         padding: 10px;
         margin-bottom: 20px;
@@ -221,6 +221,14 @@ footer {
             width: 340px;
         }
 
+        &--representative {
+            margin-bottom: 22px;
+
+            @include mq() {
+                margin-bottom: 0px;
+            }
+        }
+
         &--relation {
             margin-left: auto;
         }
@@ -232,6 +240,16 @@ footer {
 
     &__name--label {
         display: inline-block;
+    }
+
+    &__relation--label {
+        margin-bottom: 11px;
+        display: block;
+
+        @include mq() {
+            margin-bottom: 0px;
+            display: inline-block;
+        }
     }
 
     &__area {
@@ -287,7 +305,7 @@ footer {
     top: -30px;
     right: 10px;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 

@@ -8,8 +8,43 @@
     margin-bottom: 11px;
   }
 }
+
+.green_back{
+  height: 180px;
+  width: 100%;
+  background-color: #E4EAD3;
+  position: absolute;
+  z-index: 1;
+  top: 331px;
+}
 .main__home__mainpicture{
-  margin-bottom: 221px;
+  margin-bottom: 42px;
+  & .gallery {
+
+    width: 100%;
+    height: 367px;
+    z-index: 2;
+    & .gallery-cell {
+      width: 784px;
+      height: 367px;
+      margin-right: 10px;
+      background: #8C8;
+      counter-increment: gallery-cell;
+      border-radius: 10px;
+    }
+     
+    /* cell number */
+    & .gallery-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(gallery-cell);
+      line-height: 367px;
+      font-size: 80px;
+      color: white;
+    }
+
+
+  }
 }
 
 .main__home__title{
@@ -143,7 +178,8 @@
       }
     }
     & .main__home__mainpicture{
-      margin-bottom: 494px;
+      margin-bottom: 107px;
+      margin-top: 10px;
     }
     & .main__home__title{
       margin-top: 0;
