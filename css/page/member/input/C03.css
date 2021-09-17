@@ -886,7 +886,7 @@ a:hover {
   margin-right: 8px;
 }
 
-.anchor-text, .anchor-text--back, .anchor-text--other-dogs {
+.anchor-text {
   display: inline-block;
   color: #6F8D1B;
   text-decoration: underline;
@@ -1170,7 +1170,7 @@ a:hover {
   padding: 4rem 2rem;
 }
 
-.calendar__wrapper, .calendar__wrapper--vaccine {
+.calendar__wrapper {
   position: relative;
   width: 27.5rem;
   padding: 1rem;
@@ -2411,14 +2411,14 @@ a:hover {
   height: 12px;
 }
 
-.input__area--default, .input__area--pet-name, .input__area--vaccine-calender {
+.input__area--default, .input__area--name, .input__area--phone, .input__area--address, .input__area--building, .input__area--password, .input__area--representative, .input__area--relation, .input__area--postal, .input__area--city {
   width: 34.1rem;
   padding: 1rem;
   border: 0.1rem solid #DEDEDE;
   border-radius: 0.5rem;
 }
 
-.input__area--default:focus, .input__area--pet-name:focus, .input__area--vaccine-calender:focus {
+.input__area--default:focus, .input__area--name:focus, .input__area--phone:focus, .input__area--address:focus, .input__area--building:focus, .input__area--password:focus, .input__area--representative:focus, .input__area--relation:focus, .input__area--postal:focus, .input__area--city:focus {
   border: 0.1rem solid #ABBC7C;
 }
 
@@ -2711,7 +2711,7 @@ a:hover {
   border-color: #6F8D1B;
 }
 
-.radio__wrapper--individual, .radio__wrapper--vaccine {
+.radio__wrapper--individual {
   position: relative;
   margin-top: 1rem;
   height: 3rem;
@@ -3401,23 +3401,23 @@ a:hover {
           justify-content: left;
 }
 
-.main__member__input .input__area--default, .main__member__input .input__area--pet-name, .main__member__input .input__area--vaccine-calender {
+.main__member__input .input__area--default, .main__member__input .input__area--name, .main__member__input .input__area--phone, .main__member__input .input__area--address, .main__member__input .input__area--building, .main__member__input .input__area--password, .main__member__input .input__area--representative, .main__member__input .input__area--relation, .main__member__input .input__area--postal, .main__member__input .input__area--city {
   margin: 11px 0 10px 0;
 }
 
-.main__member__input .input__area--default::-webkit-input-placeholder, .main__member__input .input__area--pet-name::-webkit-input-placeholder, .main__member__input .input__area--vaccine-calender::-webkit-input-placeholder {
+.main__member__input .input__area--default::-webkit-input-placeholder, .main__member__input .input__area--name::-webkit-input-placeholder, .main__member__input .input__area--phone::-webkit-input-placeholder, .main__member__input .input__area--address::-webkit-input-placeholder, .main__member__input .input__area--building::-webkit-input-placeholder, .main__member__input .input__area--password::-webkit-input-placeholder, .main__member__input .input__area--representative::-webkit-input-placeholder, .main__member__input .input__area--relation::-webkit-input-placeholder, .main__member__input .input__area--postal::-webkit-input-placeholder, .main__member__input .input__area--city::-webkit-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__member__input .input__area--default:-ms-input-placeholder, .main__member__input .input__area--pet-name:-ms-input-placeholder, .main__member__input .input__area--vaccine-calender:-ms-input-placeholder {
+.main__member__input .input__area--default:-ms-input-placeholder, .main__member__input .input__area--name:-ms-input-placeholder, .main__member__input .input__area--phone:-ms-input-placeholder, .main__member__input .input__area--address:-ms-input-placeholder, .main__member__input .input__area--building:-ms-input-placeholder, .main__member__input .input__area--password:-ms-input-placeholder, .main__member__input .input__area--representative:-ms-input-placeholder, .main__member__input .input__area--relation:-ms-input-placeholder, .main__member__input .input__area--postal:-ms-input-placeholder, .main__member__input .input__area--city:-ms-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__member__input .input__area--default::-ms-input-placeholder, .main__member__input .input__area--pet-name::-ms-input-placeholder, .main__member__input .input__area--vaccine-calender::-ms-input-placeholder {
+.main__member__input .input__area--default::-ms-input-placeholder, .main__member__input .input__area--name::-ms-input-placeholder, .main__member__input .input__area--phone::-ms-input-placeholder, .main__member__input .input__area--address::-ms-input-placeholder, .main__member__input .input__area--building::-ms-input-placeholder, .main__member__input .input__area--password::-ms-input-placeholder, .main__member__input .input__area--representative::-ms-input-placeholder, .main__member__input .input__area--relation::-ms-input-placeholder, .main__member__input .input__area--postal::-ms-input-placeholder, .main__member__input .input__area--city::-ms-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__member__input .input__area--default::placeholder, .main__member__input .input__area--pet-name::placeholder, .main__member__input .input__area--vaccine-calender::placeholder {
+.main__member__input .input__area--default::placeholder, .main__member__input .input__area--name::placeholder, .main__member__input .input__area--phone::placeholder, .main__member__input .input__area--address::placeholder, .main__member__input .input__area--building::placeholder, .main__member__input .input__area--password::placeholder, .main__member__input .input__area--representative::placeholder, .main__member__input .input__area--relation::placeholder, .main__member__input .input__area--postal::placeholder, .main__member__input .input__area--city::placeholder {
   color: #DEDEDE;
 }
 
@@ -3484,7 +3484,7 @@ a:hover {
     display: block;
     width: 430px;
   }
-  .main__member__input .input__area--default, .main__member__input .input__area--pet-name, .main__member__input .input__area--vaccine-calender {
+  .main__member__input .input__area--default, .main__member__input .input__area--name, .main__member__input .input__area--phone, .main__member__input .input__area--address, .main__member__input .input__area--building, .main__member__input .input__area--password, .main__member__input .input__area--representative, .main__member__input .input__area--relation, .main__member__input .input__area--postal, .main__member__input .input__area--city {
     width: 430px;
     margin: 0 0 10px 0;
   }
@@ -4740,23 +4740,23 @@ a:hover {
   width: 100%;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default, .main__password__input__passwordarea__input .input__wrapper .input__area--name, .main__password__input__passwordarea__input .input__wrapper .input__area--phone, .main__password__input__passwordarea__input .input__wrapper .input__area--address, .main__password__input__passwordarea__input .input__wrapper .input__area--building, .main__password__input__passwordarea__input .input__wrapper .input__area--password, .main__password__input__passwordarea__input .input__wrapper .input__area--representative, .main__password__input__passwordarea__input .input__wrapper .input__area--relation, .main__password__input__passwordarea__input .input__wrapper .input__area--postal, .main__password__input__passwordarea__input .input__wrapper .input__area--city {
   width: 100%;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender::-webkit-input-placeholder {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--name::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--phone::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--address::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--building::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--password::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--representative::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--relation::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--postal::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--city::-webkit-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender:-ms-input-placeholder {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--name:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--phone:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--address:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--building:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--password:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--representative:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--relation:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--postal:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--city:-ms-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender::-ms-input-placeholder {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--name::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--phone::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--address::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--building::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--password::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--representative::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--relation::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--postal::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--city::-ms-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender::placeholder {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--name::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--phone::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--address::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--building::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--password::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--representative::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--relation::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--postal::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--city::placeholder {
   color: #DEDEDE;
 }
 
@@ -4830,7 +4830,7 @@ a:hover {
   .main__password__input__passwordarea .main__password__input__passwordarea__input .input__wrapper {
     width: 430px;
   }
-  .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--default, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--pet-name, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--vaccine-calender {
+  .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--default, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--name, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--phone, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--address, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--building, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--password, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--representative, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--relation, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--postal, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--city {
     width: 430px;
   }
   .main__password__input__icon {
@@ -7851,7 +7851,7 @@ a:hover {
   margin-right: 8px;
 }
 
-.anchor-text, .anchor-text--back, .anchor-text--other-dogs {
+.anchor-text {
   display: inline-block;
   color: #6F8D1B;
   text-decoration: underline;
@@ -8135,7 +8135,7 @@ a:hover {
   padding: 4rem 2rem;
 }
 
-.calendar__wrapper, .calendar__wrapper--vaccine {
+.calendar__wrapper {
   position: relative;
   width: 27.5rem;
   padding: 1rem;
@@ -9376,14 +9376,14 @@ a:hover {
   height: 12px;
 }
 
-.input__area--default, .input__area--pet-name, .input__area--vaccine-calender {
+.input__area--default, .input__area--name, .input__area--phone, .input__area--address, .input__area--building, .input__area--password, .input__area--representative, .input__area--relation, .input__area--postal, .input__area--city {
   width: 34.1rem;
   padding: 1rem;
   border: 0.1rem solid #DEDEDE;
   border-radius: 0.5rem;
 }
 
-.input__area--default:focus, .input__area--pet-name:focus, .input__area--vaccine-calender:focus {
+.input__area--default:focus, .input__area--name:focus, .input__area--phone:focus, .input__area--address:focus, .input__area--building:focus, .input__area--password:focus, .input__area--representative:focus, .input__area--relation:focus, .input__area--postal:focus, .input__area--city:focus {
   border: 0.1rem solid #ABBC7C;
 }
 
@@ -9676,7 +9676,7 @@ a:hover {
   border-color: #6F8D1B;
 }
 
-.radio__wrapper--individual, .radio__wrapper--vaccine {
+.radio__wrapper--individual {
   position: relative;
   margin-top: 1rem;
   height: 3rem;
@@ -10366,23 +10366,23 @@ a:hover {
           justify-content: left;
 }
 
-.main__member__input .input__area--default, .main__member__input .input__area--pet-name, .main__member__input .input__area--vaccine-calender {
+.main__member__input .input__area--default, .main__member__input .input__area--name, .main__member__input .input__area--phone, .main__member__input .input__area--address, .main__member__input .input__area--building, .main__member__input .input__area--password, .main__member__input .input__area--representative, .main__member__input .input__area--relation, .main__member__input .input__area--postal, .main__member__input .input__area--city {
   margin: 11px 0 10px 0;
 }
 
-.main__member__input .input__area--default::-webkit-input-placeholder, .main__member__input .input__area--pet-name::-webkit-input-placeholder, .main__member__input .input__area--vaccine-calender::-webkit-input-placeholder {
+.main__member__input .input__area--default::-webkit-input-placeholder, .main__member__input .input__area--name::-webkit-input-placeholder, .main__member__input .input__area--phone::-webkit-input-placeholder, .main__member__input .input__area--address::-webkit-input-placeholder, .main__member__input .input__area--building::-webkit-input-placeholder, .main__member__input .input__area--password::-webkit-input-placeholder, .main__member__input .input__area--representative::-webkit-input-placeholder, .main__member__input .input__area--relation::-webkit-input-placeholder, .main__member__input .input__area--postal::-webkit-input-placeholder, .main__member__input .input__area--city::-webkit-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__member__input .input__area--default:-ms-input-placeholder, .main__member__input .input__area--pet-name:-ms-input-placeholder, .main__member__input .input__area--vaccine-calender:-ms-input-placeholder {
+.main__member__input .input__area--default:-ms-input-placeholder, .main__member__input .input__area--name:-ms-input-placeholder, .main__member__input .input__area--phone:-ms-input-placeholder, .main__member__input .input__area--address:-ms-input-placeholder, .main__member__input .input__area--building:-ms-input-placeholder, .main__member__input .input__area--password:-ms-input-placeholder, .main__member__input .input__area--representative:-ms-input-placeholder, .main__member__input .input__area--relation:-ms-input-placeholder, .main__member__input .input__area--postal:-ms-input-placeholder, .main__member__input .input__area--city:-ms-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__member__input .input__area--default::-ms-input-placeholder, .main__member__input .input__area--pet-name::-ms-input-placeholder, .main__member__input .input__area--vaccine-calender::-ms-input-placeholder {
+.main__member__input .input__area--default::-ms-input-placeholder, .main__member__input .input__area--name::-ms-input-placeholder, .main__member__input .input__area--phone::-ms-input-placeholder, .main__member__input .input__area--address::-ms-input-placeholder, .main__member__input .input__area--building::-ms-input-placeholder, .main__member__input .input__area--password::-ms-input-placeholder, .main__member__input .input__area--representative::-ms-input-placeholder, .main__member__input .input__area--relation::-ms-input-placeholder, .main__member__input .input__area--postal::-ms-input-placeholder, .main__member__input .input__area--city::-ms-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__member__input .input__area--default::placeholder, .main__member__input .input__area--pet-name::placeholder, .main__member__input .input__area--vaccine-calender::placeholder {
+.main__member__input .input__area--default::placeholder, .main__member__input .input__area--name::placeholder, .main__member__input .input__area--phone::placeholder, .main__member__input .input__area--address::placeholder, .main__member__input .input__area--building::placeholder, .main__member__input .input__area--password::placeholder, .main__member__input .input__area--representative::placeholder, .main__member__input .input__area--relation::placeholder, .main__member__input .input__area--postal::placeholder, .main__member__input .input__area--city::placeholder {
   color: #DEDEDE;
 }
 
@@ -10449,7 +10449,7 @@ a:hover {
     display: block;
     width: 430px;
   }
-  .main__member__input .input__area--default, .main__member__input .input__area--pet-name, .main__member__input .input__area--vaccine-calender {
+  .main__member__input .input__area--default, .main__member__input .input__area--name, .main__member__input .input__area--phone, .main__member__input .input__area--address, .main__member__input .input__area--building, .main__member__input .input__area--password, .main__member__input .input__area--representative, .main__member__input .input__area--relation, .main__member__input .input__area--postal, .main__member__input .input__area--city {
     width: 430px;
     margin: 0 0 10px 0;
   }
@@ -11705,23 +11705,23 @@ a:hover {
   width: 100%;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default, .main__password__input__passwordarea__input .input__wrapper .input__area--name, .main__password__input__passwordarea__input .input__wrapper .input__area--phone, .main__password__input__passwordarea__input .input__wrapper .input__area--address, .main__password__input__passwordarea__input .input__wrapper .input__area--building, .main__password__input__passwordarea__input .input__wrapper .input__area--password, .main__password__input__passwordarea__input .input__wrapper .input__area--representative, .main__password__input__passwordarea__input .input__wrapper .input__area--relation, .main__password__input__passwordarea__input .input__wrapper .input__area--postal, .main__password__input__passwordarea__input .input__wrapper .input__area--city {
   width: 100%;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender::-webkit-input-placeholder {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--name::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--phone::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--address::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--building::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--password::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--representative::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--relation::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--postal::-webkit-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--city::-webkit-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender:-ms-input-placeholder {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--name:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--phone:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--address:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--building:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--password:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--representative:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--relation:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--postal:-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--city:-ms-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender::-ms-input-placeholder {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--name::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--phone::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--address::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--building::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--password::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--representative::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--relation::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--postal::-ms-input-placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--city::-ms-input-placeholder {
   color: #DEDEDE;
 }
 
-.main__password__input__passwordarea__input .input__wrapper .input__area--default::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--pet-name::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--vaccine-calender::placeholder {
+.main__password__input__passwordarea__input .input__wrapper .input__area--default::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--name::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--phone::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--address::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--building::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--password::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--representative::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--relation::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--postal::placeholder, .main__password__input__passwordarea__input .input__wrapper .input__area--city::placeholder {
   color: #DEDEDE;
 }
 
@@ -11795,7 +11795,7 @@ a:hover {
   .main__password__input__passwordarea .main__password__input__passwordarea__input .input__wrapper {
     width: 430px;
   }
-  .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--default, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--pet-name, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--vaccine-calender {
+  .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--default, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--name, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--phone, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--address, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--building, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--password, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--representative, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--relation, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--postal, .main__password__input__passwordarea .main__password__input__passwordarea__input .input__area--city {
     width: 430px;
   }
   .main__password__input__icon {
@@ -13929,7 +13929,7 @@ header,
   background-color: #fff;
 }
 
-.radio-button-module, .radio-button-module--vaccine {
+.radio-button-module {
   display: inline-block;
 }
 
@@ -14045,7 +14045,7 @@ header,
   background-color: #DEDEDE;
 }
 
-.button-module {
+.button-module, .button-module--postal {
   border-radius: 25px;
   background-color: #888;
   display: -webkit-box;
@@ -14059,7 +14059,7 @@ header,
           justify-content: center;
 }
 
-.button-module:hover {
+.button-module:hover, .button-module--postal:hover {
   background-color: liegten(background-color, 10%);
   cursor: pointer;
 }
@@ -14098,14 +14098,6 @@ select {
   font-size: 1.4rem;
 }
 
-.datepicker {
-  letter-spacing: 1px;
-}
-
-.ui-datepicker-trigger {
-  right: 1rem;
-}
-
 body,
 header,
 footer {
@@ -14125,9 +14117,7 @@ footer {
 }
 
 .content {
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 375px;
   padding: 0 17px;
   text-align: left;
@@ -14137,8 +14127,10 @@ footer {
   .content {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
+    padding-left: 10px;
+    padding-right: 20px;
     width: 930px;
-    margin-top: 36px;
+    margin: 0 auto;
   }
 }
 
@@ -14148,25 +14140,41 @@ footer {
   font-weight: normal;
   font-family: "Noto Sans JP", sans-serif;
   text-align: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
   .content__title {
     font-size: 3rem;
-    margin-bottom: 40px;
+    margin-top: 36px;
+    margin-bottom: 39px;
   }
 }
 
 .content__note {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .content__note {
+    margin-bottom: 43px;
+  }
+}
+
 .content__error {
-  background-color: #F5E1E2;
+  background-color: rgba(244, 69, 28, 0.1);
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .content__error {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .content__formlist {
@@ -14190,7 +14198,7 @@ footer {
   width: 3px;
 }
 
-.registration-form {
+.registration-form, .registration-form--name-kanji, .registration-form--postal, .registration-form--address, .registration-form--address-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14198,12 +14206,12 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
-  .registration-form {
-    margin: 10px 0;
+  .registration-form, .registration-form--name-kanji, .registration-form--postal, .registration-form--address, .registration-form--address-number {
+    margin-bottom: 35px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -14213,11 +14221,14 @@ footer {
             flex-direction: row;
     -webkit-column-gap: 20px;
             column-gap: 20px;
-    margin-bottom: 35px;
   }
 }
 
-.registration-form__title, .registration-form__title--pet-kind, .registration-form__title--vaccine-date, .registration-form__title--shelter {
+.registration-form--name-kanji, .registration-form--postal, .registration-form--address, .registration-form--address-number {
+  margin-bottom: 15px;
+}
+
+.registration-form__title, .registration-form__title--dm, .registration-form__title--password, .registration-form__title--representative {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14225,35 +14236,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 10px;
   margin: 10px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.registration-form__title > span, .registration-form__title--pet-kind > span, .registration-form__title--vaccine-date > span, .registration-form__title--shelter > span,
-.registration-form__title label,
-.registration-form__title--pet-kind label,
-.registration-form__title--vaccine-date label,
-.registration-form__title--shelter label {
-  position: relative;
-  left: 1rem;
-}
-
 @media (min-width: 768px) {
-  .registration-form__title--vaccine-date > .icon__wrapper--required, .registration-form__title--shelter > .icon__wrapper--required {
-    position: relative;
-    top: -1.2rem;
-  }
-  .registration-form__title--vaccine-date > span > span,
-  .registration-form__title--vaccine-date label > span, .registration-form__title--shelter > span > span,
-  .registration-form__title--shelter label > span {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .registration-form__title, .registration-form__title--pet-kind, .registration-form__title--vaccine-date, .registration-form__title--shelter {
+  .registration-form__title, .registration-form__title--dm, .registration-form__title--password, .registration-form__title--representative {
     margin: 0;
     -ms-flex-preferred-size: 248px;
         flex-basis: 248px;
@@ -14261,45 +14254,52 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .registration-form__title--vaccine {
-    -ms-flex-preferred-size: 248px;
-        flex-basis: 248px;
-    padding-left: 4rem;
-    margin-bottom: 45px;
-  }
-  .registration-form__title--pet-kind {
-    -ms-flex-preferred-size: 248px;
-        flex-basis: 248px;
-    margin-bottom: 900px;
-  }
 }
 
-.registration-form__title-text--shelter {
-  letter-spacing: -0.1rem;
+.registration-form__title--dm {
+  display: inline-block;
+  letter-spacing: -0.2rem;
 }
 
 @media (min-width: 768px) {
-  .registration-form__title-text--shelter {
-    letter-spacing: normal;
+  .registration-form__title--dm {
+    -ms-flex-preferred-size: 248px;
+        flex-basis: 248px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .registration-form__title--dm > * {
+    display: block;
   }
 }
 
-.registration-form__field, .registration-form__field--name, .registration-form__field--pet-birth {
-  position: relative;
+@media (min-width: 768px) {
+  .registration-form__title--password {
+    position: relative;
+    top: -3rem;
+  }
 }
 
-.registration-form__field > *, .registration-form__field--name > *, .registration-form__field--pet-birth > * {
+@media (min-width: 768px) {
+  .registration-form__title--representative {
+    position: relative;
+    top: -1rem;
+  }
+}
+
+.registration-form__field > *, .registration-form__field--name > *, .registration-form__field--postal > *, .registration-form__field--birth > *, .registration-form__field--representative > * {
   display: inline-block;
 }
 
 @media (min-width: 768px) {
-  .registration-form__field, .registration-form__field--name, .registration-form__field--pet-birth {
+  .registration-form__field, .registration-form__field--name, .registration-form__field--postal, .registration-form__field--birth, .registration-form__field--representative {
     -ms-flex-preferred-size: 632px;
         flex-basis: 632px;
   }
 }
 
-.registration-form__field--name {
+.registration-form__field--name, .registration-form__field--postal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14307,10 +14307,24 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 
-.registration-form__field--pet-birth {
+.registration-form__field--birth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.registration-form__field--representative {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14320,42 +14334,8 @@ footer {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (min-width: 768px) {
-  .registration-form__field--pet-birth {
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
-    row-gap: 0px;
-  }
-}
-
-.registration-form__field--pet-birth .pet-age-container {
-  display: inline-block;
-  background-color: #F2F5E9;
-  -ms-flex-preferred-size: 250px;
-      flex-basis: 250px;
-  width: 250px;
-  height: 46px;
-  text-align: center;
-  padding-top: 5px;
-}
-
-@media (min-width: 768px) {
-  .registration-form__field--pet-birth .pet-age-container {
-    margin: 10px 0 10px auto;
-  }
-}
-
-.registration-form__field--pet-birth .pet-age-container__age-font {
-  font-size: 2rem;
-  color: #6F8D1B;
-  font-weight: normal;
-  font-family: "Noto Sans JP", sans-serif;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
 }
 
 .input__wrapper--name {
@@ -14379,108 +14359,166 @@ footer {
   }
 }
 
-.input__wrapper--pet-birth-year {
+.input__wrapper--birth-year {
   width: 100px;
 }
 
-.input__wrapper--pet-birth-month, .input__wrapper--pet-birth-day {
+.input__wrapper--birth-month, .input__wrapper--birth-day {
   width: 80px;
 }
 
-.input__wrapper--vaccine-calender {
-  position: absolute;
-  top: 15px;
-  left: 100px;
+.input__wrapper--phone {
+  width: 340px;
+}
+
+.input__wrapper--representative {
+  margin-bottom: 22px;
+}
+
+@media (min-width: 768px) {
+  .input__wrapper--representative {
+    margin-bottom: 0px;
+  }
+}
+
+.input__wrapper--relation {
+  margin-left: 0;
+}
+
+.input__wrapper--prefecture {
+  width: 120px;
+}
+
+.input__name--label {
+  display: inline-block;
+}
+
+.input__relation--label {
+  margin-bottom: 11px;
+  display: block;
+  letter-spacing: -0.145rem;
+}
+
+@media (min-width: 768px) {
+  .input__relation--label {
+    margin-bottom: 0px;
+    margin-right: 32px;
+    display: inline-block;
+  }
+}
+
+.input__area--name {
+  width: 140px;
+}
+
+@media (min-width: 768px) {
+  .input__area--name {
+    margin-left: 5px;
+    width: 161px;
+  }
+}
+
+.input__area--phone, .input__area--address, .input__area--building, .input__area--password {
+  width: 340px;
+}
+
+.input__area--representative {
+  width: 340px;
+}
+
+@media (min-width: 768px) {
+  .input__area--representative {
+    width: 230px;
+  }
+}
+
+.input__area--relation {
+  width: 340px;
+}
+
+@media (min-width: 768px) {
+  .input__area--relation {
+    width: 182px;
+  }
+}
+
+.input__area--postal {
+  width: 120px;
+}
+
+.input__area--city {
+  width: 211px;
+}
+
+.icon-password {
+  display: block;
+  float: right;
+  position: relative;
   z-index: 10;
+  top: -30px;
+  right: 10px;
 }
 
-.input__area--pet-name {
-  width: 341px;
-}
-
-.input__area--vaccine-calender {
-  width: 180px;
-}
-
-.calendar__wrapper, .calendar__wrapper--vaccine {
-  letter-spacing: -1px;
-}
-
-.calendar__wrapper--vaccine {
-  position: absolute;
-  top: 15px;
-  left: 100px;
-  z-index: 10;
-  width: 180px;
-}
-
-.calendar__wrapper--vaccine:hover {
+.icon-password:hover {
   cursor: pointer;
 }
 
-.datepicker:hover {
-  cursor: pointer;
+@media (min-width: 768px) {
+  .icon-password {
+    display: inline;
+    float: none;
+    top: 0px;
+    right: 30px;
+  }
+}
+
+.button-module--postal {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 81px;
+  height: 35px;
+  font-size: 1.4rem;
+  color: #FFF;
+  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  background-color: #888;
 }
 
 .certificate-button {
   display: block;
   width: 220px;
   margin: 0 auto;
-  margin-top: 30px;
-}
-
-@media (min-width: 768px) {
-  .certificate-button {
-    margin-top: 40px;
-  }
-}
-
-.anchor-text, .anchor-text--back, .anchor-text--other-dogs {
-  display: block;
-  margin: 35px auto 45px auto;
-  width: 161px;
-  font-size: 1.4rem;
-}
-
-@media (min-width: 768px) {
-  .anchor-text, .anchor-text--back, .anchor-text--other-dogs {
-    width: 180px;
-    margin: 40px auto 80px auto;
-    font-size: 1.6rem;
-  }
-}
-
-.anchor-text::before, .anchor-text--back::before, .anchor-text--other-dogs::before {
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-  border: 0px;
-  border-top: solid 1px #6F8D1B;
-  border-right: solid 1px #6F8D1B;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg) translateY(-50%);
-  width: 8px;
-  height: 8px;
-}
-
-.anchor-text--back {
   margin-bottom: 66px;
 }
 
 @media (min-width: 768px) {
-  .anchor-text--back {
+  .certificate-button {
     margin-bottom: 101px;
   }
 }
 
-.anchor-text--other-dogs {
-  margin: 20px auto 30px auto !important;
+.caution--title {
+  margin: 0.5rem;
+  font-size: 1.2rem;
 }
 
-@media (min-width: 768px) {
-  .anchor-text--other-dogs {
-    margin: 30px auto !important;
-  }
+.caution--normal {
+  font-size: 1.2rem;
+}
+
+.caution--representative {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.caution--password {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: -1.9px;
+  display: block;
+  width: 340px;
 }
 
 .icon__wrapper--optional {
@@ -14493,22 +14531,8 @@ footer {
   height: 17px;
 }
 
-.radio-button-module, .radio-button-module--vaccine {
-  margin: 10px 0;
-  margin-right: 45px;
-}
-
-.radio-button-module--vaccine {
-  display: block;
-  margin: 20px 0;
-}
-
-.radio__wrapper--individual, .radio__wrapper--vaccine {
+.radio__wrapper--individual {
   height: auto;
-}
-
-.radio__wrapper--vaccine {
-  display: block;
 }
 
 .radio__wrapper--item::after {
@@ -14519,418 +14543,23 @@ footer {
   right: 0.5rem;
 }
 
-.modal-container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  display: none;
-  overflow-y: hidden;
+#radio__sex--man::after {
+  content: "男性";
 }
 
-.modal-container__bg {
-  background: rgba(0, 0, 0, 0.8);
-  height: 100%;
-  position: fixed;
-  width: 100%;
+#radio__sex--woman::after {
+  content: "女性";
 }
 
-.modal-container__content {
-  position: relative;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 83px;
-  height: 100%;
-  z-index: 200;
-  background-color: #fff;
+#radio__sex--noreply::after {
+  content: "無回答";
 }
 
-.tab-table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 0px;
-  height: 90%;
-  min-width: 375px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#radio__dm--yes::after {
+  content: "はい";
 }
 
-.tab-table__tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
+#radio__dm--no::after {
+  content: "いいえ";
 }
-
-.tab-table__tabs::after {
-  content: "";
-  width: 10%;
-  height: 40px;
-  background: #6F8D1B;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: absolute;
-}
-
-.tab-table__label {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
-  max-width: 10%;
-  text-align: center;
-  display: inline-block;
-  border: #DEDEDE 1px solid;
-  padding: 4px;
-  height: 40px;
-  font-size: 1.4rem;
-  white-space: nowrap;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 2;
-  color: #6F8D1B;
-}
-
-.tab-table__content {
-  height: 90%;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  display: none;
-  font-size: 1.4rem;
-}
-
-.tab-table__radio {
-  color: #6F8D1B;
-}
-
-.tab-table__button-container {
-  height: 58px;
-  position: relative;
-  top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-}
-
-.tab-table__button-container > * {
-  width: 166px;
-}
-
-.selected-pet-container {
-  background-color: #F5F5F5;
-  padding: 5px;
-  font-size: 1.4rem;
-}
-
-#tab-table__a-line--radio:checked ~ #tab-table__a-line--content {
-  display: block;
-}
-
-#tab-table__a-line--radio:checked ~ .tab-table__tabs > #tab-table__a-line--label {
-  color: #FFF;
-}
-
-#tab-table__a-line--radio:checked ~ .tab-table__tabs::after {
-  left: 0;
-}
-
-#tab-table__ka-line--radio:checked ~ #tab-table__ka-line--content {
-  display: block;
-}
-
-#tab-table__ka-line--radio:checked ~ .tab-table__tabs > #tab-table__ka-line--label {
-  color: #FFF;
-}
-
-#tab-table__ka-line--radio:checked ~ .tab-table__tabs::after {
-  left: 10%;
-}
-
-#tab-table__sa-line--radio:checked ~ #tab-table__sa-line--content {
-  display: block;
-}
-
-#tab-table__sa-line--radio:checked ~ .tab-table__tabs > #tab-table__sa-line--label {
-  color: #FFF;
-}
-
-#tab-table__sa-line--radio:checked ~ .tab-table__tabs::after {
-  left: 20%;
-}
-
-#tab-table__ta-line--radio:checked ~ #tab-table__ta-line--content {
-  display: block;
-}
-
-#tab-table__ta-line--radio:checked ~ .tab-table__tabs > #tab-table__ta-line--label {
-  color: #FFF;
-}
-
-#tab-table__ta-line--radio:checked ~ .tab-table__tabs::after {
-  left: 30%;
-}
-
-#tab-table__na-line--radio:checked ~ #tab-table__na-line--content {
-  display: block;
-}
-
-#tab-table__na-line--radio:checked ~ .tab-table__tabs > #tab-table__na-line--label {
-  color: #FFF;
-}
-
-#tab-table__na-line--radio:checked ~ .tab-table__tabs::after {
-  left: 40%;
-}
-
-#tab-table__ha-line--radio:checked ~ #tab-table__ha-line--content {
-  display: block;
-}
-
-#tab-table__ha-line--radio:checked ~ .tab-table__tabs > #tab-table__ha-line--label {
-  color: #FFF;
-}
-
-#tab-table__ha-line--radio:checked ~ .tab-table__tabs::after {
-  left: 50%;
-}
-
-#tab-table__ma-line--radio:checked ~ #tab-table__ma-line--content {
-  display: block;
-}
-
-#tab-table__ma-line--radio:checked ~ .tab-table__tabs > #tab-table__ma-line--label {
-  color: #FFF;
-}
-
-#tab-table__ma-line--radio:checked ~ .tab-table__tabs::after {
-  left: 60%;
-}
-
-#tab-table__ya-line--radio:checked ~ #tab-table__ya-line--content {
-  display: block;
-}
-
-#tab-table__ya-line--radio:checked ~ .tab-table__tabs > #tab-table__ya-line--label {
-  color: #FFF;
-}
-
-#tab-table__ya-line--radio:checked ~ .tab-table__tabs::after {
-  left: 70%;
-}
-
-#tab-table__ra-line--radio:checked ~ #tab-table__ra-line--content {
-  display: block;
-}
-
-#tab-table__ra-line--radio:checked ~ .tab-table__tabs > #tab-table__ra-line--label {
-  color: #FFF;
-}
-
-#tab-table__ra-line--radio:checked ~ .tab-table__tabs::after {
-  left: 80%;
-}
-
-#tab-table__wa-line--radio:checked ~ #tab-table__wa-line--content {
-  display: block;
-}
-
-#tab-table__wa-line--radio:checked ~ .tab-table__tabs > #tab-table__wa-line--label {
-  color: #FFF;
-}
-
-#tab-table__wa-line--radio:checked ~ .tab-table__tabs::after {
-  left: 90%;
-}
-
-.kana-list {
-  height: 100%;
-  overflow-y: scroll;
-  /* IE, Edge 対応 */
-  -ms-overflow-style: none;
-  /* Firefox 対応 */
-  scrollbar-width: none;
-  /* Chrome, Safari 対応 */
-}
-
-.kana-list::-webkit-scrollbar {
-  display: none;
-}
-
-.kana-list__line > p {
-  background-color: #F2F5E9;
-  padding-left: 30px;
-  height: 30px;
-}
-
-.kana-list__line > label {
-  padding-top: 10px;
-  height: 46px;
-  display: block;
-  padding-left: 50px;
-  border-bottom: #DEDEDE 1px solid;
-  border-radius: 0px;
-  background-color: #fff;
-}
-
-.errorlist {
-  color: #F4451C;
-  list-style-position: inside;
-  font-size: 1.4rem;
-}
-
-.errorlist > li::before {
-  content: "・";
-  width: 3px;
-}
-
-.dog-kind__others {
-  display: block;
-  margin: 0 auto;
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-.dog-kind__container > * {
-  margin: 10px 0;
-}
-
-.dog-kind__table {
-  border-spacing: 7px;
-}
-
-.dog-kind__table td {
-  width: 107px;
-  height: 107px;
-}
-
-.dog-kind__table img {
-  width: 89px;
-  height: 63px;
-  display: block;
-  margin: auto;
-  image-rendering: -webkit-optimize-contrast;
-}
-
-.dog-kind__table label {
-  text-align: center;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 5px;
-  font-size: 1.2rem;
-}
-
-.dog-kind__table label > span {
-  display: block;
-}
-
-.caution--title {
-  margin: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.caution--normal {
-  font-size: 1.2rem;
-}
-
-.caution--birth {
-  position: relative;
-  font-size: 1.2rem;
-  top: -1rem;
-}
-
-.icon__wrapper--optional {
-  margin: 0;
-}
-
-.radio__wrapper--individual, .radio__wrapper--vaccine {
-  height: auto;
-  margin-right: 20px;
-}
-
-.radio__wrapper-- {
-  display: block;
-}
-
-.radio__wrapper--item::after {
-  content: "";
-}
-
-.select__wrapper--shevron::after {
-  right: 0.5rem;
-}
-
-.radio__dog-kind--label {
-  background-color: #F5F5F5;
-  border-radius: 10px;
-  display: block;
-}
-
-.radio__dog-kind--radio:checked + .radio__dog-kind--label {
-  background-color: #F2F5E9;
-  border: white solid 1px;
-}
-
-.radio__dog-kind--radio:focus + .radio__dog-kind--label {
-  background-color: #F2F5E9;
-  border: #6F8D1B solid 1px;
-}
-
-@media (min-width: 768px) {
-  .errorlist {
-    font-size: 1.6rem;
-  }
-  .dog-kind__others {
-    font-size: 1.6rem;
-  }
-  .dog-kind__table {
-    border-spacing: 7px;
-  }
-  .dog-kind__table td {
-    width: 212px;
-    height: 212px;
-  }
-  .dog-kind__table img {
-    width: 176px;
-    height: 129px;
-  }
-  .dog-kind__table label {
-    padding: 5px;
-    font-size: 1.6rem;
-  }
-  .modal-container__content {
-    width: 930px;
-    height: 738px;
-  }
-  .tab-table__tabs::after {
-    height: 69px;
-  }
-  .tab-table__label {
-    padding: 20px;
-    height: 69px;
-  }
-}
-/*# sourceMappingURL=F12.css.map */
+/*# sourceMappingURL=C03.css.map */

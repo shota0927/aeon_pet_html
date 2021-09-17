@@ -14106,6 +14106,54 @@ select {
   right: 1rem;
 }
 
+.anchor-text, .anchor-text--back, .anchor-text--other-dogs {
+  display: block;
+  margin: 35px auto 45px auto;
+  width: 161px;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .anchor-text, .anchor-text--back, .anchor-text--other-dogs {
+    width: 180px;
+    margin: 40px auto 80px auto;
+    font-size: 1.6rem;
+  }
+}
+
+.anchor-text::before, .anchor-text--back::before, .anchor-text--other-dogs::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  border: 0px;
+  border-top: solid 1px #6F8D1B;
+  border-right: solid 1px #6F8D1B;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateY(-50%);
+  width: 8px;
+  height: 8px;
+}
+
+.anchor-text--back {
+  margin-bottom: 66px;
+}
+
+@media (min-width: 768px) {
+  .anchor-text--back {
+    margin-bottom: 101px;
+  }
+}
+
+.anchor-text--other-dogs {
+  margin: 20px auto 30px auto !important;
+}
+
+@media (min-width: 768px) {
+  .anchor-text--other-dogs {
+    margin: 30px auto !important;
+  }
+}
+
 body,
 header,
 footer {
@@ -14137,8 +14185,8 @@ footer {
   .content {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
-    width: 930px;
     margin-top: 36px;
+    width: 930px;
   }
 }
 
@@ -14163,7 +14211,7 @@ footer {
 }
 
 .content__error {
-  background-color: #F5E1E2;
+  background-color: rgba(244, 69, 28, 0.1);
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
@@ -14274,14 +14322,8 @@ footer {
   }
 }
 
-.registration-form__title-text--shelter {
+.registration-form__title-text {
   letter-spacing: -0.1rem;
-}
-
-@media (min-width: 768px) {
-  .registration-form__title-text--shelter {
-    letter-spacing: normal;
-  }
 }
 
 .registration-form__field, .registration-form__field--name, .registration-form__field--pet-birth {
@@ -14426,60 +14468,12 @@ footer {
   display: block;
   width: 220px;
   margin: 0 auto;
-  margin-top: 30px;
-}
-
-@media (min-width: 768px) {
-  .certificate-button {
-    margin-top: 40px;
-  }
-}
-
-.anchor-text, .anchor-text--back, .anchor-text--other-dogs {
-  display: block;
-  margin: 35px auto 45px auto;
-  width: 161px;
-  font-size: 1.4rem;
-}
-
-@media (min-width: 768px) {
-  .anchor-text, .anchor-text--back, .anchor-text--other-dogs {
-    width: 180px;
-    margin: 40px auto 80px auto;
-    font-size: 1.6rem;
-  }
-}
-
-.anchor-text::before, .anchor-text--back::before, .anchor-text--other-dogs::before {
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-  border: 0px;
-  border-top: solid 1px #6F8D1B;
-  border-right: solid 1px #6F8D1B;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg) translateY(-50%);
-  width: 8px;
-  height: 8px;
-}
-
-.anchor-text--back {
   margin-bottom: 66px;
 }
 
 @media (min-width: 768px) {
-  .anchor-text--back {
+  .certificate-button {
     margin-bottom: 101px;
-  }
-}
-
-.anchor-text--other-dogs {
-  margin: 20px auto 30px auto !important;
-}
-
-@media (min-width: 768px) {
-  .anchor-text--other-dogs {
-    margin: 30px auto !important;
   }
 }
 
@@ -14933,4 +14927,4 @@ footer {
     height: 69px;
   }
 }
-/*# sourceMappingURL=F12.css.map */
+/*# sourceMappingURL=C06.css.map */

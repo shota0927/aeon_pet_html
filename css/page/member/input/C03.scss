@@ -1,6 +1,6 @@
-@import "../../../../setting/_setting.scss";
-@import "../../../../styles.scss";
-@import "./modules.scss";
+@import "../../../setting/_setting.scss";
+@import "../../../styles.scss";
+@import "./_modules.scss";
 
 @mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
     font-size: $font-size;
@@ -12,45 +12,6 @@
 input,
 select {
     font-size: 1.4rem;
-}
-
-.anchor-text {
-    $self: &;
-    display: block;
-    margin: 35px auto 45px auto;
-    width: 117px;
-    font-size: 1.4rem;
-
-    @include mq() {
-        width: 130px;
-        margin: 40px auto 80px auto;
-        font-size: 1.6rem;
-
-    }
-
-    &::before {
-        content: "";
-        display: inline-block;
-        margin-right: 10px;
-        border: 0px;
-        border-top: solid 1px $color-main;
-        border-right: solid 1px $color-main;
-        -ms-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg) translateY(-50%);
-        width: 8px;
-        height: 8px;
-    }
-
-    &--back {
-        @extend #{$self};
-        margin-bottom: 66px;
-
-        @include mq() {
-            margin-bottom: 101px;
-
-        }
-    }
 }
 
 body,
@@ -66,26 +27,28 @@ footer {
 }
 
 .content {
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 375px;
     padding: 0 17px;
     text-align: left;
 
     @include mq() {
         box-sizing: content-box;
+        padding-left: 10px;
+        padding-right: 20px;
         width: 930px;
-        margin-top: 36px;
+        margin: 0 auto;
     }
 
     &__title {
         @include font-shape($color-main, 2.4rem);
         text-align: center;
+        margin-top: 32px;
         margin-bottom: 16px;
 
         @include mq() {
             font-size: 3rem;
+            margin-top: 36px;
             margin-bottom: 39px;
         }
     }
@@ -100,10 +63,15 @@ footer {
     }
 
     &__error {
-        background-color: $color-error;
+        background-color: rgba($color-alert, 0.1);
         border-radius: 10px;
         padding: 10px;
         margin-bottom: 20px;
+
+        @include mq() {
+            margin-right: 0;
+            margin-left: 0;
+        }
     }
 
     &__formlist {
@@ -179,14 +147,6 @@ footer {
             }
         }
 
-        &--relation {
-            @include mq() {
-                flex-basis: 248px;
-                padding-left: 4rem;
-                margin-bottom: 45px;
-            }
-        }
-
         &--password {
             @extend #{$self};
 
@@ -239,14 +199,6 @@ footer {
             flex-direction: row;
             flex-wrap: wrap;
             column-gap: 24px;
-        }
-
-        &--relation {
-            @extend #{$self};
-
-            @include mq() {
-                flex-basis: 341px;
-            }
         }
 
     }
@@ -366,7 +318,6 @@ footer {
 }
 
 .icon-password {
-
     display: block;
     float: right;
     position: relative;
@@ -378,15 +329,12 @@ footer {
         cursor: pointer;
     }
 
-
     @include mq() {
         display: inline;
         float: none;
         top: 0px;
         right: 30px;
     }
-
-
 }
 
 .button-module {
@@ -407,7 +355,12 @@ footer {
     display: block;
     width: 220px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 66px;
+
+    @include mq() {
+        margin-bottom: 101px;
+
+    }
 }
 
 .caution {
@@ -428,7 +381,7 @@ footer {
     &--password {
         font-size: 1.2rem;
         font-weight: 300;
-        letter-spacing: -2.15px;
+        letter-spacing: -1.9px;
         display: block;
         width: 340px;
     }

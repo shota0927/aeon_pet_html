@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- meta情報 -->
-    <title>会員登録（入力）｜PETEMO グルーミングサロン 予約サイト</title>
-    <meta name="description" content="PETEMO グルーミングサロン 予約サイトの「会員登録（入力）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+    <title>会員情報（編集）｜PETEMO グルーミングサロン 予約サイト</title>
+    <meta name="description" content="PETEMO グルーミングサロン 予約サイトの「会員情報（編集）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
     <meta name="keywords" content="" />
     <!-- reset css -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -23,40 +23,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- css -->
-    <script defer type="text/javascript" src="../../../js/member/input/C03.js"></script>
-    <script src="../../../js/script.js"></script>
-    <link rel="stylesheet" href="../../../css/page/member/input/C03.css" />
+    <script defer type="text/javascript" src="../../../../js/script.js"></script>
+    <script defer type="text/javascript" src="../../../../js/mypage/member_information/edit/F09.js"></script>
+    <link rel="stylesheet" href="../../../../css/page/mypage/member_information/edit/F09.css" />
     <link rel="icon" href="" />
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header--non-login">
         <div class="header__left">
             <h1>
                 <a href="/">
                     <picture class="header__logo" aria-hidden="true">
-                        <source srcset="../../../image/common/logo-pc.png" media="(min-width: 768px)"
+                        <source srcset="../../../../image/common/logo-pc.png" media="(min-width: 768px)"
                             class="header__logo-pc" />
-                        <img src="../../../image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
+                        <img src="../../../../image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
                     </picture>
                 </a>
             </h1>
-            <a href="" class="header__search"><img src="../../../image/common/search-icon.png"
+            <a href="" class="header__search"><img src="../../../../image/common/search-icon.png"
                     alt="サーチアイコン">店舗検索・ご予約</a>
         </div>
         <div class="header__right">
             <div class="header__btns">
-                <a href="" class="header__login">ログイン</a>
-                <a href="" class="header__member">無料会員登録</a>
+                <a href="" class="header__mypage">マイページ</a>
             </div>
-            <div class="hamburger__menu js-hamburger--non-login">
-                <img src="../../../image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
+            <div class="hamburger__menu js-hamburger--login">
+                <img src="../../../../image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
             </div>
         </div>
-        <nav class="header__nav header-nav header-nav--non-login">
+        <nav class="header__nav header-nav header-nav--login">
             <div class="header-nav__title">
-                <p class="sp">こんにちは<br>ゲストさん (ログイン)</p>
-                <p class="pc">こんにちは　ゲストさん (ログイン)</p>
+                <p class="sp">こんにちは<br>○○さん (マイページ)</p>
+                <p class="pc">こんにちは　○○さん (マイページ)</p>
                 <div class="header-nav__bars js-bars">
                     <span class="header-nav__bar header-nav__bar--left"></span>
                     <span class="header-nav__bar header-nav__bar--right"></span>
@@ -64,62 +63,70 @@
             </div>
             <ul class="header-nav__items">
                 <li class="header-nav__item">
-                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/home-icon.png"
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/home-icon.png"
                             alt="">ホーム</a>
                 </li>
                 <li class="header-nav__item">
-                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/search-icon-small.png"
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/search-icon-small.png"
                             alt="">店舗検索・ご予約</a>
                 </li>
                 <li class="header-nav__item">
-                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/login-icon.png"
-                            alt="">ログイン</a>
+                    <a href="#"><img class="header-nav__title-icon"
+                            src="../../../../image/common/current-booking-icon.png" alt="">現在のご予約<span
+                            class="header-nav__number header-nav__number--booking">99</span></a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/mypage-icon-green.png"
+                            alt="">マイページ</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/pet-info-icon.png"
+                            alt="">
+                        ペット情報<img class="header-nav__dog-icon" src="../../../../image/common/dog-icon.png" alt=""><span
+                            class="header-nav__number">99</span><img class="header-nav__cat-icon"
+                            src="../../../../image/common/cat-icon.png" alt=""><span
+                            class="header-nav__number">99</span>
+                    </a>
                 </li>
             </ul>
             <ul class="header-nav__items">
                 <li class="header-nav__item">
-                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/booking-icon-green.png"
-                            alt="">ご予約方法</a>
+                    <a href="#"><img class="header-nav__title-icon"
+                            src="../../../../image/common/booking-icon-green.png" alt="">ご予約方法</a>
                 </li>
                 <li class="header-nav__item">
-                    <a href="#"><img class="header-nav__title-icon" src="../../../image/common/mypage-icon-green.png"
+                    <a href="#"><img class="header-nav__title-icon" src="../../../../image/common/mypage-icon-green.png"
                             alt="">マイページのご利用方法</a>
                 </li>
+                <div class="header-nav__logout-button">
+                    <a href="" class="logout-button"><img src="../../../../image/common/logout-icon.png"
+                            alt="ログアウトアイコン">ログアウト</a>
+                </div>
             </ul>
         </nav>
+
         <div class="header__burger-musk"></div>
     </header>
     <div class="breadcrumb container">
         <div class="inner">
             <span class="breadcrumb__item">
                 <a href="" class="brandcrumb__item-link">
-                    <img src="../../../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン"
+                    <img src="../../../../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン"
                         class="breadcrumb__item-icon">
                 </a>
             </span>
             /
-            <span class="breadcrumb__item breadcrumb__item--orange">
-                <a href="" class="brandcrumb__item-link">
-                    会員登録（入力）
-                </a>
+            <a href="" class="brandcrumb__item-link breadcrumb__item--orange">
+                マイページ
+            </a>
+            /
+            <span class="breadcrumb__item">
+                会員情報（編集）
             </span>
         </div>
     </div>
     <div class="content">
-        <h1 class="content__title">会員登録</h1>
-        <p class="content__note">以下より必要事項をご入力いただき本登録を行ってください。</p>
-        <div class="content__error">
-            <ul class="errorlist">
-                <li>お名前の入力は必須です</li>
-                <li>お名前の入力は必須です</li>
-                <li>お名前の入力は必須です</li>
-                <li>お名前の入力は必須です</li>
-                <li>お名前の入力は必須です</li>
-                <li>お名前の入力は必須です</li>
-                <li>お名前の入力は必須です</li>
-                <li>お名前の入力は必須です</li>
-            </ul>
-        </div>
+        <h1 class="content__title">会員情報変更</h1>
         <ul class="content__formlist">
             <li class="registration-form--name-kanji">
                 <div class="registration-form__title">
@@ -396,7 +403,8 @@
                 </div>
             </li>
         </ul>
-        <a href="" class="most-important-button certificate-button">確認画面へ</a>
+        <a href="" class="most-important-button certificate-button">変更する</a>
+        <a href="" class="anchor-text--back">会員情報へ戻る</a>
     </div>
 
     <footer class="footer">
@@ -405,18 +413,18 @@
         </a>
         <div class="footer__inner">
             <div class="footer__logo">
-                <img src="../../../image/common/footer-logo.png" alt="ロゴ">
+                <img src="../../../../image/common/footer-logo.png" alt="ロゴ">
             </div>
             <nav class="footer__nav">
                 <ul class="footer__nav-items--top">
                     <li class="footer__nav-item--top">
                         <a href="">
-                            <img class="footer__icon" src="../../../image/common/booking-icon.png" alt="">ご予約方法
+                            <img class="footer__icon" src="../../../../image/common/booking-icon.png" alt="">ご予約方法
                         </a>
                     </li>
                     <li class="footer__nav-item--top">
                         <a href="">
-                            <img class="footer__icon" src="../../../image/common/mypage-icon.png" alt="">マイページのご利用方法
+                            <img class="footer__icon" src="../../../../image/common/mypage-icon.png" alt="">マイページのご利用方法
                         </a>
                     </li>
                 </ul>
@@ -429,18 +437,19 @@
                         </li>
                         <li class="footer__nav-item">
                             <a href="">
-                                <img class="footer__icon--page" src="../../../image/common/page-icon.png"
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png"
                                     alt="">プライバシーポリシー
                             </a>
                         </li>
                         <li class="footer__nav-item">
                             <a href="">
-                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">お問い合わせ
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png"
+                                    alt="">お問い合わせ
                             </a>
                         </li>
                         <li class="footer__nav-item">
                             <a href="">
-                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">企業情報
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png" alt="">企業情報
                             </a>
                         </li>
                     </ul>
@@ -452,12 +461,13 @@
                         </li>
                         <li class="footer__nav-item">
                             <a href="">
-                                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">よくあるご質問
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png"
+                                    alt="">よくあるご質問
                             </a>
                         </li>
                         <li class="footer__nav-item">
                             <a href="">
-                                <img class="footer__icon--page" src="../../../image/common/page-icon.png"
+                                <img class="footer__icon--page" src="../../../../image/common/page-icon.png"
                                     alt="">サービスについて
                             </a>
                         </li>

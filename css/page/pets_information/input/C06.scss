@@ -1,5 +1,5 @@
-@import "../../../../setting/_setting.scss";
-@import "../../../../styles.scss";
+@import "../../../setting/_setting.scss";
+@import "../../../styles.scss";
 @import "./modules.scss";
 
 @mixin font-shape($font-color, $font-size: inherit, $font-family: nth($font-family-base, 1)) {
@@ -20,6 +20,54 @@ select {
 
 .ui-datepicker-trigger {
     right: 1rem;
+}
+
+.anchor-text {
+    $self: &;
+    display: block;
+    margin: 35px auto 45px auto;
+    width: 161px;
+    font-size: 1.4rem;
+
+    @include mq() {
+        width: 180px;
+        margin: 40px auto 80px auto;
+        font-size: 1.6rem;
+
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        border: 0px;
+        border-top: solid 1px $color-main;
+        border-right: solid 1px $color-main;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg) translateY(-50%);
+        width: 8px;
+        height: 8px;
+    }
+
+    &--back {
+        @extend #{$self};
+        margin-bottom: 66px;
+
+        @include mq() {
+            margin-bottom: 101px;
+
+        }
+    }
+
+    &--other-dogs {
+        @extend #{$self};
+        margin: 20px auto 30px auto !important;
+
+        @include mq() {
+            margin: 30px auto !important;
+        }
+    }
 }
 
 body,
@@ -44,8 +92,8 @@ footer {
 
     @include mq() {
         box-sizing: content-box;
-        width: 930px;
         margin-top: 36px;
+        width: 930px;
     }
 
     &__title {
@@ -64,7 +112,7 @@ footer {
     }
 
     &__error {
-        background-color: $color-error;
+        background-color: rgba($color-alert, 0.1);
         border-radius: 10px;
         padding: 10px;
         margin-bottom: 20px;
@@ -162,16 +210,7 @@ footer {
     }
 
     &__title-text {
-        $self: &;
-
-        &--shelter {
-
-            letter-spacing: -0.1rem;
-
-            @include mq() {
-                letter-spacing: normal;
-            }
-        }
+        letter-spacing: -0.1rem;
     }
 
     &__field {
@@ -309,58 +348,11 @@ footer {
     display: block;
     width: 220px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-bottom: 66px;
 
     @include mq() {
-        margin-top: 40px;
-    }
-}
+        margin-bottom: 101px;
 
-.anchor-text {
-    $self: &;
-    display: block;
-    margin: 35px auto 45px auto;
-    width: 161px;
-    font-size: 1.4rem;
-
-    @include mq() {
-        width: 180px;
-        margin: 40px auto 80px auto;
-        font-size: 1.6rem;
-
-    }
-
-    &::before {
-        content: "";
-        display: inline-block;
-        margin-right: 10px;
-        border: 0px;
-        border-top: solid 1px $color-main;
-        border-right: solid 1px $color-main;
-        -ms-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg) translateY(-50%);
-        width: 8px;
-        height: 8px;
-    }
-
-    &--back {
-        @extend #{$self};
-        margin-bottom: 66px;
-
-        @include mq() {
-            margin-bottom: 101px;
-
-        }
-    }
-
-    &--other-dogs {
-        @extend #{$self};
-        margin: 20px auto 30px auto !important;
-
-        @include mq() {
-            margin: 30px auto !important;
-        }
     }
 }
 
