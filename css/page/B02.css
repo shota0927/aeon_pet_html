@@ -3158,7 +3158,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__searchshop .container {
@@ -3372,7 +3376,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__member__title {
@@ -3506,9 +3514,6 @@ a:hover {
   .main__member__text-caution .main__item-br1 {
     display: block;
   }
-  .main__member__text-caution .main__item-br2 {
-    display: none;
-  }
   .main__member-link {
     margin: 0 0 40px 0;
   }
@@ -3556,7 +3561,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__member__confirm__title {
@@ -3679,7 +3688,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__pets__information__confirm__title {
@@ -3721,6 +3734,10 @@ a:hover {
 
 .main__pets__information__confirm__table .birthday-old {
   padding: 0 15px 18px 15px;
+}
+
+.main__pets__information__confirm__table .longcell-title {
+  line-height: 1.5;
 }
 
 .main__pets__information__confirm__table .longcell-text {
@@ -3782,7 +3799,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__pets__information__finish__title {
@@ -4428,7 +4449,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__reserve__elderly__dog__title {
@@ -4446,7 +4471,7 @@ a:hover {
 }
 
 .main__reserve__elderly__dog__text {
-  margin: 0 0 71px 0;
+  margin: 0 0 50px 0;
 }
 
 .main__reserve__elderly__dog__text .dog-text-caution {
@@ -4460,6 +4485,7 @@ a:hover {
 
 .main__reserve__elderly__dog__text-condition {
   font-size: 1.6rem;
+  font-weight: bold;
   margin: 0 0 13px 0;
 }
 
@@ -4496,6 +4522,11 @@ a:hover {
 
 .main__reserve__elderly__dog__table tbody tr td {
   font-size: 1.4rem;
+}
+
+.main__reserve__elderly__dog__table .tablelong-text {
+  color: #F4451C;
+  line-height: 1.5;
 }
 
 .main__reserve__elderly__dog__table-condition {
@@ -4569,7 +4600,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__reserve__error__title {
@@ -4615,7 +4650,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__reserve__finish__title {
@@ -4881,7 +4920,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__password__finish__title {
@@ -4928,7 +4971,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__password-mail_finish__title {
@@ -4989,7 +5036,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__mypage__title {
@@ -5261,7 +5312,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__mypage__reservation__title {
@@ -6051,7 +6106,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__mypage__member__information {
@@ -6239,7 +6298,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__mypage__mail__finish__title {
@@ -6320,7 +6383,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__mypage__petsinformation .container {
@@ -6406,7 +6473,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__mypage__pets__information__finish__title {
@@ -6462,7 +6533,11 @@ a:hover {
 }
 
 .main__underline {
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0;
 }
 
 .main__mypage__interview__finish__title {
