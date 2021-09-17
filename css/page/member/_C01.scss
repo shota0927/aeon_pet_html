@@ -1,5 +1,9 @@
 .main__underline{
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0; 
 }
 .main__member__title{
   display: flex;
@@ -88,9 +92,6 @@
   .main__member__text-caution{
     & .main__item-br1{
       display: block;
-    }
-    & .main__item-br2{
-      display: none;
     }
   }
   .main__member-link{
