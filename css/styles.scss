@@ -38,8 +38,11 @@
 
 @import "page/A01_nologin";
 @import "page/search_shop/B01";
+@import "page/search_shop/shop/B02.scss";
 @import "page/member/C01";
+@import "page/member/input/C03.scss";
 @import "page/member/confirm/C04";
+@import "page/pets_information/input/C06.scss";
 @import "page/pets_information/confirm/C07";
 @import "page/pets_information/finish/C08";
 @import "page/reserve/confirm/D02";
@@ -56,9 +59,14 @@
 @import "page/mypage/reservation/detail/F03";
 @import "page/mypage/reservation/edit/F04";
 @import "page/mypage/member_information/F08";
+@import "page/mypage/member_information/edit/F09";
 @import "page/mypage/mail/finish/F09";
 @import "page/mypage/pets_information/F10";
+@import "page/mypage/pets_information/edit/F12";
+@import "page/mypage/pets_information/input/F13";
 @import "page/mypage/pets_information/finish/F15";
+@import "page/mypage/interview/input/F16";
+@import "page/mypage/interview/confirm/F17";
 @import "page/mypage/interview/finish/F18";
 @import "page/member/error/C02_error";
 @import "page/member/finish/C05";

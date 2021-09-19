@@ -25,11 +25,11 @@
     <!-- css -->
     <script defer type="text/javascript" src="../../../js/member/input/C03.js"></script>
     <script src="../../../js/script.js"></script>
-    <link rel="stylesheet" href="../../../css/page/member/input/C03.css" />
+    <link rel="stylesheet" href="../../../css/styles.css" />
     <link rel="icon" href="" />
 </head>
 
-<body>
+<body class="c03">
     <header class="header">
         <div class="header__left">
             <h1>
@@ -156,31 +156,19 @@
                         性別
                     </span>
                 </div>
-                <div class="registration-form__field">
-                    <div class="radio__wrapper--individual">
-                        <label class="radio__label">
-                            <div class="radio__wrapper--item" id="radio__sex--man">
-                                <input type="radio" name="radio__sex" class="radio__invisible" checked>
-                                <div class="radio__indicator2"></div>
-                            </div>
-                        </label>
-                    </div>
-                    <div class="radio__wrapper--individual">
-                        <label class="radio__label">
-                            <div class="radio__wrapper--item" id="radio__sex--woman">
-                                <input type="radio" name="radio__sex" class="radio__invisible">
-                                <div class="radio__indicator2"></div>
-                            </div>
-                        </label>
-                    </div>
-                    <div class="radio__wrapper--individual">
-                        <label class="radio__label">
-                            <div class="radio__wrapper--item" id="radio__sex--noreply">
-                                <input type="radio" name="radio__sex" class="radio__invisible">
-                                <div class="radio__indicator2"></div>
-                            </div>
-                        </label>
-                    </div>
+                <div class="registration-form__field--sex">
+                    <label for="sex--male" class="radio-button-module">
+                        <input type="radio" id="sex--male" name="sex-group" class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">男性</span>
+                    </label>
+                    <label for="sex--female" class="radio-button-module">
+                        <input type="radio" id="sex--female" name="sex-group" class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">女性</span>
+                    </label>
+                    <label for="sex--no-answer" class="radio-button-module">
+                        <input type="radio" id="sex--no-answer" name="sex-group" class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">無回答</span>
+                    </label>
                 </div>
             </li>
             <li class="registration-form">
@@ -362,27 +350,19 @@
             </li>
             <li class="registration-form">
                 <p class="registration-form__title--dm"><span>当店より郵送DMなどをお送りしてもよろしいですか？</span></p>
-                <div class="registration-form__field">
-                    <div class="radio__wrapper--individual">
-                        <label class="radio__label">
-                            <div class="radio__wrapper--item" id="radio__dm--yes">
-                                <input type="radio" name="radio__dm" class="radio__invisible" checked>
-                                <div class="radio__indicator2"></div>
-                            </div>
-                        </label>
-                    </div>
-                    <div class="radio__wrapper--individual">
-                        <label class="radio__label">
-                            <div class="radio__wrapper--item" id="radio__dm--no">
-                                <input type="radio" name="radio__dm" class="radio__invisible">
-                                <div class="radio__indicator2"></div>
-                            </div>
-                        </label>
-                    </div>
+                <div class="registration-form__field--dm">
+                    <label for="dm--yes" class="radio-button-module">
+                        <input type="radio" id="dm--yes" name="dm-group" class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">はい</span>
+                    </label>
+                    <label for="dm--no" class="radio-button-module">
+                        <input type="radio" id="dm--no" name="dm-group" class="radio-button-module__radio">
+                        <span class="radio-button-module__sentence">いいえ</span>
+                    </label>
                 </div>
             </li>
         </ul>
-        <a href="" class="most-important-button certificate-button">確認画面へ</a>
+        <a href="" class="certificate-button most-important-button">確認画面へ</a>
     </div>
 
     <footer class="footer">

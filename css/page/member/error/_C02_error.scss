@@ -1,148 +1,150 @@
 header,
 .content {
-    text-align: center;
+  text-align: center;
 }
 
 .content {
 
-    &__title {
-        font-size: 30px;
-        color: #6F8D1B;
-        text-align: center;
-        margin-bottom: 18px;
-        margin-top:33px;
+  &__title {
+    font-size: 30px;
+    color: #6F8D1B;
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 33px;
 
-    }
+  }
 
-    &__error {
-        background-color: $color-error;
-        margin-bottom: 40px;
-        margin-left: 218px;
-        margin-right: 218px;
-        border-radius: 10px;
-        padding: 20px;
-        color: $color-alert;
-        font-size: 16px;
-        text-align: left;
-    }
+  &__error {
+    background-color: rgba($color-alert, 0.1);
+    margin-bottom: 40px;
+    margin-left: 218px;
+    margin-right: 218px;
+    border-radius: 10px;
+    padding: 20px;
+    color: $color-alert;
+    font-size: 16px;
+    text-align: left;
+  }
 }
 
 .resistration-form {
   display: flex;
   width: 503px;
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 40px;
 
-      &__title {
-          display: flex;
-          gap: 10px;
-          font-size: 16px;
-          align-items: center;
-          margin-right: 10px;
-      }
+  &__title {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    align-items: center;
+    margin-right: 10px;
+  }
 }
 
 
-.most-important-button{
-    width: 220px;
+.most-important-button {
+  width: 220px;
 }
 
-.nav__gray{
-    background-color: #F8F8F8;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding-top: 26px;
-    padding-bottom: 26px;
-    margin-bottom: 46px;
-    margin-left: 218px;
-    margin-right: 218px;
+.nav__gray {
+  background-color: #F8F8F8;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-bottom: 46px;
+  margin-left: 218px;
+  margin-right: 218px;
 }
 
-.nav__text{
+.nav__text {
   margin-bottom: 10px;
 }
 
-.sub-button{
-    margin-bottom: 30px;
+.sub-button {
+  margin-bottom: 30px;
 }
 
 
 @media screen and (max-width: 768px) {
 
 
-    .content {
+  .content {
 
-        &__title {
-          font-size: 24px;
-          color: #6F8D1B;
-          text-align: center;
-          margin-bottom: 18px;
-          margin-top:33px;
-
-        }
-        &__error {
-          background-color: $color-error;
-          margin-bottom: 30px;
-          margin-left: 17px;
-          margin-right: 17px;
-          border-radius: 10px;
-          padding-right: 10px;
-          padding-left: 10px;
-          padding-top: 12px;
-          padding-bottom: 12px;
-          color: $color-alert;
-          font-size: 14px;
-          text-align: left;
-      }
-    }
-
-    .resistration-form {
-        display: inline;
-        align-items: center;
-        gap: 10px;
-
-        &__title {
-            display: flex;
-            margin-left: 17px;
-            align-items: center;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-    }
-
-    .most-important-button{
-      width: 220px;
-      margin-bottom: 5px;
-      margin-top: 40px;
-  }
-
-    .icon__text--required{
-        font-size:10px;
-    }
-    .nav__gray{
-      background-color: #F8F8F8;
-      margin: 0 auto;
-      margin-top: 30px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      margin-bottom: 46px;
-      margin-left: 17px;
-      margin-right: 17px;
-  }
-
-    .nav__text{
+    &__title {
+      font-size: 24px;
+      color: #6F8D1B;
       text-align: center;
-      margin-right: 17px;
+      margin-bottom: 18px;
+      margin-top: 33px;
+
+    }
+
+    &__error {
+      background-color: rgba($color-alert, 0.1);
+      margin-bottom: 30px;
       margin-left: 17px;
-      padding-left: 10px;
+      margin-right: 17px;
+      border-radius: 10px;
       padding-right: 10px;
+      padding-left: 10px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      color: $color-alert;
+      font-size: 14px;
+      text-align: left;
     }
+  }
 
-    .nav__text__pass{
-      text-align: center;
-      margin-right: 17px;
+  .resistration-form {
+    display: inline;
+    align-items: center;
+    gap: 10px;
+
+    &__title {
+      display: flex;
       margin-left: 17px;
-      padding-left: 50px;
-      padding-right: 50px;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 10px;
     }
+  }
+
+  .most-important-button {
+    width: 220px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+  }
+
+  .icon__text--required {
+    font-size: 10px;
+  }
+
+  .nav__gray {
+    background-color: #F8F8F8;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 46px;
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+
+  .nav__text {
+    text-align: center;
+    margin-right: 17px;
+    margin-left: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nav__text__pass {
+    text-align: center;
+    margin-right: 17px;
+    margin-left: 17px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
