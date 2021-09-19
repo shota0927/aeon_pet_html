@@ -15,6 +15,13 @@
 }
 
 body.f12 {
+    @include font-shape($color-text-main, 1.6rem);
+    min-width: 375px;
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
 
     input,
     select {
@@ -77,7 +84,6 @@ body.f12 {
         }
     }
 
-    body,
     header,
     footer {
         @include font-shape($color-text-main, 1.6rem);
@@ -398,7 +404,7 @@ body.f12 {
 
         &--vaccine {
             @extend #{$self};
-            display: block;
+            display: block !important;
             margin: 20px 0;
         }
     }

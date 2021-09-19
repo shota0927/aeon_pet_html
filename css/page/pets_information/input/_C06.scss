@@ -16,6 +16,13 @@
 }
 
 body.c06 {
+    @include font-shape($color-text-main, 1.6rem);
+    min-width: 375px;
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
 
     input,
     select {
@@ -78,7 +85,6 @@ body.c06 {
         }
     }
 
-    body,
     header,
     footer {
         @include font-shape($color-text-main, 1.6rem);
@@ -124,6 +130,8 @@ body.c06 {
             border-radius: 10px;
             padding: 10px;
             margin-bottom: 20px;
+            padding: 20px;
+
 
             @include mq() {
                 margin: 0;
@@ -399,7 +407,7 @@ body.c06 {
 
         &--vaccine {
             @extend #{$self};
-            display: block;
+            display: block !important;
             margin: 20px 0;
         }
     }

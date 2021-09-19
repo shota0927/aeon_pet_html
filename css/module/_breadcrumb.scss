@@ -1,28 +1,36 @@
-.breadcrumb{
+.breadcrumb {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 12px;
   margin-top: 3px;
   margin-bottom: 3px;
+
+  border-bottom: solid 1px #F2F2F2
 }
-.breadcrumb__item{
+
+.breadcrumb__item {
   margin-right: 15px;
   margin-left: 15px;
   font-size: 12px;
 }
-.breadcrumb__item--orange{
+
+.breadcrumb__item--orange {
   color: $color-accent-orange;
 }
-.breadcrumb__item:first-child{
+
+.breadcrumb__item:first-child {
   margin-left: 0;
 }
-.breadcrumb__item:last-child{
+
+.breadcrumb__item:last-child {
   margin-right: 0;
 }
-.brandcrumb__item-link{
+
+.brandcrumb__item-link {
   padding: 8px;
 }
-.breadcrumb__item-icon{
+
+.breadcrumb__item-icon {
   width: 14px;
   height: 12px;
 }

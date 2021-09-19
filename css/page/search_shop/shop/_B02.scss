@@ -14,8 +14,14 @@
 }
 
 body.b02 {
+    @include font-shape($color-text-main, 1.6rem);
+    min-width: 375px;
 
-    body,
+    @include mq() {
+
+        min-width: 1336px;
+    }
+
     header,
     footer {
         @include font-shape($color-text-main, 1.6rem);
@@ -30,15 +36,6 @@ body.b02 {
     .content {
         width: 100%;
         $self: getExtendClass(&);
-
-        &--b02 {
-            text-align: left;
-            width: 100%;
-
-            @include mq() {
-                margin: 0 !important;
-            }
-        }
 
         &__title {
             @include font-shape($color-main, 2.4rem);

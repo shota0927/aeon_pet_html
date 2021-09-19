@@ -1137,10 +1137,6 @@ a:hover {
   cursor: pointer;
 }
 
-#ui-datepicker-div {
-  left: 2rem !important;
-}
-
 .ui-datepicker-header {
   background-color: #fff;
   border: none;
@@ -1150,7 +1146,8 @@ a:hover {
   color: #DEDEDE;
 }
 
-.ui-state-highlight, .ui-state-active {
+.ui-state-highlight,
+.ui-state-active {
   color: #fff !important;
 }
 
@@ -1159,7 +1156,8 @@ a:hover {
   border: none !important;
 }
 
-.ui-state-highlight, .ui-state-active {
+.ui-state-highlight,
+.ui-state-active {
   background-color: #ABBC7C !important;
 }
 
@@ -2324,6 +2322,7 @@ a:hover {
   font-size: 12px;
   margin-top: 3px;
   margin-bottom: 3px;
+  border-bottom: solid 1px #F2F2F2;
 }
 
 .breadcrumb__item {
@@ -3539,7 +3538,19 @@ select::placeholder {
   height: 100%;
 }
 
-body.b02 body,
+body.b02 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  min-width: 375px;
+}
+
+@media (min-width: 768px) {
+  body.b02 {
+    min-width: 1336px;
+  }
+}
+
 body.b02 header,
 body.b02 footer {
   font-size: 1.6rem;
@@ -3549,7 +3560,6 @@ body.b02 footer {
 }
 
 @media (min-width: 768px) {
-  body.b02 body,
   body.b02 header,
   body.b02 footer {
     min-width: 1336px;
@@ -3558,17 +3568,6 @@ body.b02 footer {
 
 body.b02 .content {
   width: 100%;
-}
-
-body.b02 .content--b02 {
-  text-align: left;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  body.b02 .content--b02 {
-    margin: 0 !important;
-  }
 }
 
 body.b02 .content__title {
@@ -4581,7 +4580,17 @@ select::placeholder {
 }
 
 body.c03 {
-  text-align: left;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+  min-width: 375px;
+}
+
+@media (min-width: 768px) {
+  body.c03 {
+    min-width: 1336px;
+  }
 }
 
 body.c03 input,
@@ -4589,7 +4598,6 @@ body.c03 select {
   font-size: 1.4rem;
 }
 
-body.c03 body,
 body.c03 header,
 body.c03 footer {
   font-size: 1.6rem;
@@ -4600,7 +4608,6 @@ body.c03 footer {
 }
 
 @media (min-width: 768px) {
-  body.c03 body,
   body.c03 header,
   body.c03 footer {
     min-width: 1336px;
@@ -4664,6 +4671,7 @@ body.c03 .content__error {
   body.c03 .content__error {
     margin: 0;
     margin-bottom: 20px;
+    padding: 20px;
   }
 }
 
@@ -5021,6 +5029,10 @@ body.c03 .button-module--postal {
   background-color: #888;
 }
 
+body.c03 .radio-button-module__sentence::before {
+  margin-right: 10px;
+}
+
 body.c03 .certificate-button {
   display: block;
   width: 220px;
@@ -5050,7 +5062,6 @@ body.c03 .caution--representative {
 
 body.c03 .caution--password {
   font-size: 1.2rem;
-  font-weight: 300;
   letter-spacing: -1.9px;
   display: block;
   width: 340px;
@@ -5615,6 +5626,20 @@ select::placeholder {
   height: 100%;
 }
 
+body.c06 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+  min-width: 375px;
+}
+
+@media (min-width: 768px) {
+  body.c06 {
+    min-width: 1336px;
+  }
+}
+
 body.c06 input,
 body.c06 select {
   font-size: 1.4rem;
@@ -5676,7 +5701,6 @@ body.c06 .anchor-text--other-dogs {
   }
 }
 
-body.c06 body,
 body.c06 header,
 body.c06 footer {
   font-size: 1.6rem;
@@ -5687,7 +5711,6 @@ body.c06 footer {
 }
 
 @media (min-width: 768px) {
-  body.c06 body,
   body.c06 header,
   body.c06 footer {
     min-width: 1336px;
@@ -5737,6 +5760,7 @@ body.c06 .content__error {
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 @media (min-width: 768px) {
@@ -6051,7 +6075,7 @@ body.c06 .radio-button-module, body.c06 .radio-button-module--vaccine {
 }
 
 body.c06 .radio-button-module--vaccine {
-  display: block;
+  display: block !important;
   margin: 20px 0;
 }
 
@@ -9378,6 +9402,20 @@ select::placeholder {
   height: 100%;
 }
 
+body.f09 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+  min-width: 375px;
+}
+
+@media (min-width: 768px) {
+  body.f09 {
+    min-width: 1336px;
+  }
+}
+
 body.f09 input,
 body.f09 select {
   font-size: 1.4rem;
@@ -9421,7 +9459,6 @@ body.f09 .anchor-text--back {
   }
 }
 
-body.f09 body,
 body.f09 header,
 body.f09 footer {
   font-size: 1.6rem;
@@ -9432,7 +9469,6 @@ body.f09 footer {
 }
 
 @media (min-width: 768px) {
-  body.f09 body,
   body.f09 header,
   body.f09 footer {
     min-width: 1336px;
@@ -9855,6 +9891,10 @@ body.f09 .button-module--postal {
   background-color: #888;
 }
 
+body.f09 .radio-button-module__sentence::before {
+  margin-right: 10px;
+}
+
 body.f09 .certificate-button {
   display: block;
   width: 220px;
@@ -9878,7 +9918,6 @@ body.f09 .caution--representative {
 
 body.f09 .caution--password {
   font-size: 1.2rem;
-  font-weight: 300;
   letter-spacing: -2.15px;
   display: block;
   width: 340px;
@@ -10361,6 +10400,20 @@ select::placeholder {
   height: 100%;
 }
 
+body.f12 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+  min-width: 375px;
+}
+
+@media (min-width: 768px) {
+  body.f12 {
+    min-width: 1336px;
+  }
+}
+
 body.f12 input,
 body.f12 select {
   font-size: 1.4rem;
@@ -10422,7 +10475,6 @@ body.f12 .anchor-text--other-dogs {
   }
 }
 
-body.f12 body,
 body.f12 header,
 body.f12 footer {
   font-size: 1.6rem;
@@ -10433,7 +10485,6 @@ body.f12 footer {
 }
 
 @media (min-width: 768px) {
-  body.f12 body,
   body.f12 header,
   body.f12 footer {
     min-width: 1336px;
@@ -10797,7 +10848,7 @@ body.f12 .radio-button-module, body.f12 .radio-button-module--vaccine {
 }
 
 body.f12 .radio-button-module--vaccine {
-  display: block;
+  display: block !important;
   margin: 20px 0;
 }
 
@@ -11514,6 +11565,20 @@ select::placeholder {
   height: 100%;
 }
 
+body.f13 {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+  min-width: 375px;
+}
+
+@media (min-width: 768px) {
+  body.f13 {
+    min-width: 1336px;
+  }
+}
+
 body.f13 input,
 body.f13 select {
   font-size: 1.4rem;
@@ -11575,7 +11640,6 @@ body.f13 .anchor-text--other-dogs {
   }
 }
 
-body.f13 body,
 body.f13 header,
 body.f13 footer {
   font-size: 1.6rem;
@@ -11586,7 +11650,6 @@ body.f13 footer {
 }
 
 @media (min-width: 768px) {
-  body.f13 body,
   body.f13 header,
   body.f13 footer {
     min-width: 1336px;
@@ -11950,7 +12013,7 @@ body.f13 .radio-button-module, body.f13 .radio-button-module--vaccine {
 }
 
 body.f13 .radio-button-module--vaccine {
-  display: block;
+  display: block !important;
   margin: 20px 0;
 }
 
@@ -12727,6 +12790,19 @@ select::placeholder {
   height: 100%;
 }
 
+body.f16 {
+  min-width: 375px;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  body.f16 {
+    min-width: 1336px;
+  }
+}
+
 body.f16 .radio-button-module, body.f16 body.c06 .radio-button-module--vaccine, body.c06 body.f16 .radio-button-module--vaccine, body.f16 body.f12 .radio-button-module--vaccine, body.f12 body.f16 .radio-button-module--vaccine, body.f16 body.f13 .radio-button-module--vaccine, body.f13 body.f16 .radio-button-module--vaccine {
   margin-right: calc(1.6rem * 3);
 }
@@ -12770,20 +12846,12 @@ body.f16 select option {
   color: black;
 }
 
-body.f16 body {
-  font-size: 1.6rem;
-  color: #333;
-  font-weight: 400;
-}
-
-body.f16 body,
 body.f16 header,
 body.f16 footer {
   min-width: 375px;
 }
 
 @media (min-width: 768px) {
-  body.f16 body,
   body.f16 header,
   body.f16 footer {
     min-width: 1336px;
@@ -13499,25 +13567,30 @@ select::placeholder {
   height: 100%;
 }
 
-body.f17 input,
-body.f17 select {
-  font-size: 1.4rem;
-}
-
-body.f17 body {
+body.f17 {
+  min-width: 375px;
   font-size: 1.6rem;
   color: #333;
   font-weight: 400;
 }
 
-body.f17 body,
+@media (min-width: 768px) {
+  body.f17 {
+    min-width: 1336px;
+  }
+}
+
+body.f17 input,
+body.f17 select {
+  font-size: 1.4rem;
+}
+
 body.f17 header,
 body.f17 footer {
   min-width: 375px;
 }
 
 @media (min-width: 768px) {
-  body.f17 body,
   body.f17 header,
   body.f17 footer {
     min-width: 1336px;

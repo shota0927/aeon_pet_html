@@ -17,17 +17,20 @@ $font-size--pc-normal: 1.6rem;
 $font-size--sp-normal: 1.4rem;
 
 body.f17 {
+    min-width: 375px;
+    @include font-shape($color-text-main, $font-size--pc-normal);
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
+
 
     input,
     select {
         font-size: $font-size--sp-normal;
     }
 
-    body {
-        @include font-shape($color-text-main, $font-size--pc-normal);
-    }
-
-    body,
     header,
     footer {
         min-width: 375px;

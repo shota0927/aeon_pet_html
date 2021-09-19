@@ -14,6 +14,13 @@
 }
 
 body.f16 {
+    min-width: 375px;
+    @include font-shape($color-text-main, 1.6rem);
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
 
     .radio-button-module {
         margin-right: calc(1.6rem * 3);
@@ -47,11 +54,6 @@ body.f16 {
         }
     }
 
-    body {
-        @include font-shape($color-text-main, 1.6rem);
-    }
-
-    body,
     header,
     footer {
         min-width: 375px;
