@@ -1,0 +1,165 @@
+@import "../../../../setting/reset";
+@import "../../../../setting/setting";
+
+.f03__cancel__background {
+    height: 766px;
+    background: $color-icon-default;
+    text-align: center;
+
+    @media screen and(max-width:768px) {
+        height: 812px;
+
+    }
+
+
+    .f03__cancel__container--white {
+        width: 576px;
+        height: 539px;
+        background: $color-background-base;
+        margin-top: 114px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 36px 45px 40px 45px;
+
+        @media screen and(max-width:768px) {
+            width: 89.4%;
+            text-align: center;
+            padding: 25px 6% 35px 6%;
+            height: 585px;
+
+        }
+
+
+        .f03__cancel__main__wrapper {
+
+
+            .f03__cancel__alert__wrapper {
+                height: 100px;
+                text-align: center;
+
+                .f03__cancel__alert__icon {
+                    width: 31px;
+                    height: 31px;
+                }
+
+                .f03__cancel__alert__txt {
+                    color: $color-warning;
+                    font-size: 16px;
+                }
+
+                .f03__cancel__alert__txt--sub {
+                    font-size: 12px;
+                }
+
+            }
+
+            .f03__cancel__cancel-reason__wrapper {
+                margin-top: 25px;
+
+                .f03__cancel__txt--cancel-reason {
+                    font-size: 14px;
+                    text-align: left;
+
+                }
+
+                .f03__cancel__cancel-reason__input__wrapper {
+                    margin-top: 6px;
+                    height: 46px;
+
+                    @media screen and(max-width:768px) {
+                        width: 100%;
+
+                    }
+
+                }
+
+            }
+
+            .f03__cancel__other-memos__wrapper {
+                margin-top: 18px;
+
+                .f03__cancel__txt--other-memos {
+                    font-size: 14px;
+                    text-align: left;
+                }
+
+                .f03__cancel__other-memos__textarea__wrapper {
+                    margin-top: 6px;
+                    height: 140px;
+
+                    @media screen and(max-width:768px) {
+                        width: 100%;
+
+                    }
+
+                    .f03__cancel__textarea::placeholder {
+                        color: #D5D5D5;
+                    }
+                }
+            }
+
+
+
+            .f03__cancel__btn-wrapper {
+                margin-top: 30px;
+                text-align: center;
+
+                .f03__cancel__btn--white {
+                    display: inline-block;
+                    margin-right: 20px;
+                    height: 48px;
+
+                    @media screen and(max-width:768px) {
+                        display: block;
+                        margin: 0 auto;
+
+                    }
+                }
+
+                .f03__cancel__btn--red {
+                    background: $color-warning;
+                    display: inline-block;
+                    height: 48px;
+                    border: none;
+                    color: #fff;
+
+                    @media screen and(max-width:768px) {
+                        margin-top: 20px;
+
+                    }
+                }
+            }
+
+            .f03__cancel__xbtn__wrapper {
+                position: relative;
+                left: 510px;
+                bottom: 566px;
+                width: 40px;
+
+                @media screen and(max-width:768px) {
+                    position: relative;
+                    left: 103%;
+                    bottom: 625px;
+                }
+
+                @media screen and(max-width:425px) {
+                    left: 99%;
+                }
+
+                @media screen and(max-width:320px) {
+                    left: 97%;
+
+                }
+
+
+                .f03__cancel__xbtn {
+                    background: $color-accordion-icon;
+                    margin: 0%;
+                }
+            }
+
+        }
+
+    }
+
+}
