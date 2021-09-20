@@ -3158,6 +3158,530 @@ a:hover {
 }
 
 .main__underline {
+  color: #707070;
+}
+
+.main__searchshop .container {
+  padding: 0;
+  margin: auto;
+}
+
+.main__searchshop .column__title {
+  font-size: 1.6rem;
+  margin-bottom: 11px;
+}
+
+.main__searchshop__title {
+  margin-top: 20px;
+}
+
+.main__searchshop__title .booking-category-title {
+  font-size: 1.8rem;
+}
+
+/* searechStore */
+.main__searchshop_searcharea {
+  background-color: #F5F5F5;
+  padding: 22px 17px 0 17px;
+}
+
+.main__searchshop_searcharea .main__searchshop___area {
+  margin-bottom: 22px;
+}
+
+.main__searchshop_searcharea .main__searchshop___area .pull-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__searchshop_searcharea .main__searchshop___area .pull-down .pull-down__select {
+  background-color: #fff;
+  width: 100%;
+  height: 46px;
+}
+
+.main__searchshop_searcharea .main__searchshop__prefectures {
+  margin-bottom: 22px;
+}
+
+.main__searchshop_searcharea .main__searchshop__prefectures .search__map-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main__searchshop_searcharea .main__searchshop__prefectures .btn-square {
+  display: inline;
+}
+
+.main__searchshop_searcharea .main__searchshop__prefectures .btn-square label {
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid  #DEDEDE;
+  color: #888888;
+  font-size: 14px;
+  height: 40px;
+  padding: 10px 33px 11px 32px;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main__searchshop_searcharea .main__searchshop__prefectures .btn-square:last-child {
+  display: none;
+}
+
+.main__searchshop_searcharea .main__searchshop__prefectures .btn-square input[type="checkbox"] {
+  display: none;
+}
+
+.main__searchshop_searcharea .main__searchshop__prefectures .btn-square input[type="checkbox"]:checked + label {
+  background-color: #E4EAD3;
+  border: 1px solid  #6F8D1B;
+  color: #6F8D1B;
+}
+
+.main__searchshop_searcharea .section__hr {
+  border: none;
+}
+
+.main__searchshop_searcharea .main__searchshop__freeword .column__freeword .input__freeword {
+  border-radius: 4px;
+  border: 1px solid  #DEDEDE;
+  background-color: #fff;
+  font-size: 1.6rem;
+  padding: 13px 0 12px 18px;
+  width: 100%;
+}
+
+.main__searchshop_searcharea .main__searchshop__freeword .column__freeword .input__freeword:focus {
+  outline: none;
+}
+
+.main__searchshop_searcharea .main__searchshop__freeword .column__freeword .input__freeword::-webkit-input-placeholder {
+  color: #DEDEDE;
+}
+
+.main__searchshop_searcharea .main__searchshop__freeword .column__freeword .input__freeword:-ms-input-placeholder {
+  color: #DEDEDE;
+}
+
+.main__searchshop_searcharea .main__searchshop__freeword .column__freeword .input__freeword::-ms-input-placeholder {
+  color: #DEDEDE;
+}
+
+.main__searchshop_searcharea .main__searchshop__freeword .column__freeword .input__freeword::placeholder {
+  color: #DEDEDE;
+}
+
+.main__searchshop__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F5F5F5;
+  padding: 20px 0 50px 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .main__searchshop .container {
+    width: 930px;
+    padding: 0;
+    margin: auto;
+  }
+  .main__searchshop .container .column__title {
+    margin-bottom: 10px;
+  }
+  .main__searchshop .main__searchshop__title {
+    margin-top: 40px;
+  }
+  .main__searchshop .main__searchshop__title .booking-category-title {
+    font-size: 2.0rem;
+  }
+  .main__searchshop .main__searchshop_searcharea {
+    padding: 22px 39px 0 41px;
+  }
+  .main__searchshop .searchshop_searcharea--wrap1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__searchshop .main__searchshop___area {
+    height: 70px;
+    margin: 0;
+  }
+  .main__searchshop .main__searchshop___area .pull-down {
+    width: 230px;
+    height: 46px;
+  }
+  .main__searchshop .main__searchshop__prefectures {
+    width: 100%;
+    padding: 0;
+    margin: 0 1px 0 21px;
+  }
+  .main__searchshop .main__searchshop__prefectures .btn-square {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__searchshop .main__searchshop__prefectures .btn-square label {
+    font-size: 1.4rem;
+    height: 46px;
+    padding: 13px 17px 14px 16px;
+    margin: 0;
+  }
+  .main__searchshop .main__searchshop__prefectures .btn-square:last-child {
+    display: initial;
+  }
+  .main__searchshop .section__hr {
+    border: 1px solid #6F8D1B;
+    margin: 25px 0 21px 0;
+  }
+  .main__searchshop .main__searchshop__freeword .column__freeword .input__freeword {
+    width: 410px;
+    height: 46px;
+  }
+  .main__searchshop .main__searchshop__button {
+    border-radius: 0 0 6px 6px;
+    padding: 40px 0 50px 0;
+    margin-bottom: 101px;
+  }
+  .main__searchshop .main__searchshop__button .most-important-button {
+    width: 220px;
+    height: 48px;
+  }
+}
+
+.main__home .container {
+  padding: 0;
+  margin: auto;
+}
+
+.main__home .column__title {
+  font-size: 1.6rem;
+  margin-bottom: 11px;
+}
+
+<<<<<<< HEAD
+.main__member__text-second {
+  text-align: left;
+  font-size: 1.6rem;
+  margin: 0 0 39px 0;
+}
+
+.main__member__text-caution {
+  color: #F4451C;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 21px;
+}
+
+.main__member__text-caution .main__item-br1 {
+  display: none;
+=======
+.green_back {
+  height: 180px;
+  width: 100%;
+  background-color: #E4EAD3;
+  position: absolute;
+  z-index: 1;
+  top: 331px;
+>>>>>>> ceee0f7695a2bbe10091b07c22a98370d41a0be5
+}
+
+.main__home__mainpicture {
+  margin-bottom: 42px;
+}
+
+.main__home__mainpicture .gallery {
+  width: 100%;
+  height: 367px;
+  z-index: 2;
+  /* cell number */
+}
+
+.main__home__mainpicture .gallery .gallery-cell {
+  width: 784px;
+  height: 367px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+  border-radius: 10px;
+}
+
+.main__home__mainpicture .gallery .gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 367px;
+  font-size: 80px;
+  color: white;
+}
+
+.main__home__title {
+  margin-top: 20px;
+}
+
+.main__home__title .booking-category-title {
+  font-size: 1.8rem;
+}
+
+/* searechStore */
+.main__home_searcharea {
+  background-color: #F5F5F5;
+  padding: 22px 17px 0 17px;
+}
+
+.main__home_searcharea .main__home___area {
+  margin-bottom: 22px;
+}
+
+.main__home_searcharea .main__home___area .pull-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__home_searcharea .main__home___area .pull-down .pull-down__select {
+  background-color: #fff;
+  width: 100%;
+  height: 46px;
+}
+
+.main__home_searcharea .main__home__prefectures {
+  margin-bottom: 22px;
+}
+
+.main__home_searcharea .main__home__prefectures .search__map-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main__home_searcharea .main__home__prefectures .btn-square {
+  display: inline;
+}
+
+.main__home_searcharea .main__home__prefectures .btn-square label {
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid  #DEDEDE;
+  color: #888888;
+  font-size: 14px;
+  height: 40px;
+  padding: 10px 33px 11px 32px;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main__home_searcharea .main__home__prefectures .btn-square:last-child {
+  display: none;
+}
+
+.main__home_searcharea .main__home__prefectures .btn-square input[type="checkbox"] {
+  display: none;
+}
+
+.main__home_searcharea .main__home__prefectures .btn-square input[type="checkbox"]:checked + label {
+  background-color: #E4EAD3;
+  border: 1px solid  #6F8D1B;
+  color: #6F8D1B;
+}
+
+.main__home_searcharea .section__hr {
+  display: none;
+}
+
+.main__home_searcharea .main__home__freeword .column__freeword .input__freeword {
+  border-radius: 4px;
+  border: 1px solid  #DEDEDE;
+  background-color: #fff;
+  font-size: 1.6rem;
+  padding: 13px 0 12px 18px;
+  width: 100%;
+}
+
+.main__home_searcharea .main__home__freeword .column__freeword .input__freeword:focus {
+  outline: none;
+}
+
+.main__home_searcharea .main__home__freeword .column__freeword .input__freeword::-webkit-input-placeholder {
+  color: #DEDEDE;
+}
+
+.main__home_searcharea .main__home__freeword .column__freeword .input__freeword:-ms-input-placeholder {
+  color: #DEDEDE;
+}
+
+.main__home_searcharea .main__home__freeword .column__freeword .input__freeword::-ms-input-placeholder {
+  color: #DEDEDE;
+}
+
+.main__home_searcharea .main__home__freeword .column__freeword .input__freeword::placeholder {
+  color: #DEDEDE;
+}
+
+.main__home__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F5F5F5;
+  padding: 20px 0 19px 0;
+}
+
+.main__home__login-wrapper {
+  display: table;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.main__home__login-wrapper .main__home__login {
+  display: table-cell;
+  width: 50%;
+  background-color: #6F8D1B;
+  text-align: center;
+  padding: 18px 0 19px 0;
+}
+
+.main__home__login-wrapper .main__home__login .login-button {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.main__home__login-wrapper .main__home__member {
+  display: table-cell;
+  background-color: #957656;
+  text-align: center;
+  vertical-align: top;
+  padding: 12px 0 7px 8px;
+}
+
+.main__home__login-wrapper .main__home__member .member-button {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.main__home__login-wrapper .main__home__member .member-button .entry-text {
+  font-size: 1.0rem;
+  margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .main__home .container {
+    width: 930px;
+    padding: 0;
+    margin: auto;
+  }
+  .main__home .container .column__title {
+    margin-bottom: 10px;
+  }
+  .main__home .main__home__mainpicture {
+    margin-bottom: 107px;
+    margin-top: 10px;
+  }
+  .main__home .main__home__title {
+    margin-top: 0;
+  }
+  .main__home .main__home__title .booking-category-title {
+    font-size: 2.0rem;
+  }
+  .main__home .main__home_searcharea {
+    padding: 22px 39px 0 41px;
+  }
+  .main__home .searchshop_searcharea--wrap1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__home .main__home___area {
+    height: 70px;
+    margin: 0;
+  }
+  .main__home .main__home___area .pull-down {
+    width: 230px;
+    height: 46px;
+  }
+  .main__home .main__home__prefectures {
+    width: 100%;
+    padding: 0;
+    margin: 0 1px 0 21px;
+  }
+  .main__home .main__home__prefectures .btn-square {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__home .main__home__prefectures .btn-square label {
+    font-size: 1.4rem;
+    height: 46px;
+    padding: 13px 17px 14px 16px;
+    margin: 0;
+  }
+  .main__home .main__home__prefectures .btn-square:last-child {
+    display: initial;
+  }
+  .main__home .section__hr {
+    display: block;
+    border: 1px solid #6F8D1B;
+    margin: 25px 0 21px 0;
+  }
+  .main__home .main__home__freeword .column__freeword .input__freeword {
+    width: 410px;
+    height: 46px;
+  }
+  .main__home .main__home__button {
+    border-radius: 0 0 6px 6px;
+    padding: 40px 0 50px 0;
+    margin-bottom: 101px;
+  }
+  .main__home .main__home__button .most-important-button {
+    width: 220px;
+    height: 48px;
+  }
+  .main__home .main__home__login-wrapper {
+    display: none;
+  }
+}
+
+.main__underline {
   display: block;
   width: 100%;
   height: 1px;
@@ -3513,6 +4037,12 @@ a:hover {
   }
   .main__member__text-caution .main__item-br1 {
     display: block;
+<<<<<<< HEAD
+  }
+  .main__member__text-caution .main__item-br2 {
+    display: none;
+=======
+>>>>>>> ceee0f7695a2bbe10091b07c22a98370d41a0be5
   }
   .main__member-link {
     margin: 0 0 40px 0;
@@ -3736,10 +4266,13 @@ a:hover {
   padding: 0 15px 18px 15px;
 }
 
+<<<<<<< HEAD
+=======
 .main__pets__information__confirm__table .longcell-title {
   line-height: 1.5;
 }
 
+>>>>>>> ceee0f7695a2bbe10091b07c22a98370d41a0be5
 .main__pets__information__confirm__table .longcell-text {
   display: table-cell;
 }
@@ -4471,7 +5004,11 @@ a:hover {
 }
 
 .main__reserve__elderly__dog__text {
+<<<<<<< HEAD
+  margin: 0 0 71px 0;
+=======
   margin: 0 0 50px 0;
+>>>>>>> ceee0f7695a2bbe10091b07c22a98370d41a0be5
 }
 
 .main__reserve__elderly__dog__text .dog-text-caution {
@@ -4524,11 +5061,14 @@ a:hover {
   font-size: 1.4rem;
 }
 
+<<<<<<< HEAD
+=======
 .main__reserve__elderly__dog__table .tablelong-text {
   color: #F4451C;
   line-height: 1.5;
 }
 
+>>>>>>> ceee0f7695a2bbe10091b07c22a98370d41a0be5
 .main__reserve__elderly__dog__table-condition {
   font-size: 1.2rem;
 }
@@ -6478,6 +7018,92 @@ a:hover {
   height: 1px;
   background-color: #EEEEEE;
   border: 0;
+}
+
+.main__mypage__petsinformation .container {
+  padding: 0;
+  margin: auto;
+}
+
+.main__mypage__petsinformation__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #6F8D1B;
+  font-weight: 100;
+  font-size: 2.4rem;
+  margin: 32px 0 16px 0;
+}
+
+.petsinformation_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F5E9;
+  border-radius: 4px;
+  padding: 15px 17px 16px 15px;
+  margin: 8px 17px;
+}
+
+.petsinformation_button .anchor-text__right-arrow {
+  margin-top: 6px;
+}
+
+.main__mypage__petsinformation__button-add {
+  text-align: center;
+  margin: 30px 0 66px 0;
+}
+
+.main__mypage__petsinformation__button-add .small-button--sign-up {
+  width: 163px;
+  height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .main__mypage__petsinformation .container {
+    width: 930px;
+    padding: 0;
+    margin: auto;
+  }
+  .main__mypage__petsinformation__title {
+    font-size: 3.0rem;
+    margin: 36px 0 39px 0;
+  }
+  .petsinformation_button {
+    height: 44px;
+    padding: 10px 30px 13px 30px;
+    margin: 8px 0;
+  }
+  .petsinformation_button .anchor-text__right-arrow {
+    margin-top: 8px;
+  }
+  .main__mypage__petsinformation__button-add {
+    margin: 30px 0 101px 0;
+  }
+  .main__mypage__petsinformation__button-add .small-button--sign-up {
+    font-size: 1.4rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .main__mypage__petsinformation__button-add .small-button--sign-up img {
+    width: 11px;
+    height: 11px;
+    margin-top: 3px;
+    margin-right: 14px;
+  }
+}
+
+.main__underline {
+  color: #707070;
 }
 
 .main__mypage__pets__information__finish__title {
