@@ -1,0 +1,459 @@
+@import "../../../../setting/setting";
+@import "./modules.scss";
+
+@mixin font-shape($font-color, $font-size: inherit, $font-weight: 400) {
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: $font-weight;
+}
+
+@function getExtendClass($compoClass) {
+    $splitter: selector-parse($compoClass);
+    $self: nth(nth($splitter, 1), length(nth($splitter, 1)));
+    @return $self;
+}
+
+body.f16 {
+    min-width: 375px;
+    @include font-shape($color-text-main, 1.6rem);
+
+    @include mq() {
+
+        min-width: 1336px;
+    }
+
+    .radio-button-module {
+        margin-right: calc(1.6rem * 3);
+    }
+
+    .checkbox-button-module {
+        @mixin extCbModule() {
+            @extend .checkbox-button-module;
+        }
+
+        &--symptom {
+            @include extCbModule();
+            position: relative;
+            top: 0.6rem;
+        }
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 1.4rem;
+
+        &::placeholder {
+            color: $color-switch-off;
+        }
+    }
+
+    select {
+        option {
+            color: black;
+        }
+    }
+
+    header,
+    footer {
+        min-width: 375px;
+
+        @include mq() {
+
+            min-width: 1336px;
+        }
+    }
+
+    .content {
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 375px;
+        padding: 0 17px;
+        text-align: left;
+
+        @include mq() {
+            box-sizing: content-box;
+            width: 930px;
+            margin-top: 36px;
+        }
+
+        &__title {
+            @include font-shape($color-main, 2.4rem);
+            text-align: center;
+
+            @include mq() {
+                font-size: 3rem;
+            }
+        }
+
+        &__reservation {}
+
+        &__formlist {
+            list-style: none;
+
+            @include mq() {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .reservation {
+        &__title {
+            font-weight: normal;
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+            margin-left: 10px;
+
+            @include mq() {
+                margin-bottom: 13px;
+            }
+        }
+
+        &__content {
+            background-color: $color-thin-green;
+            border-radius: 10px;
+            padding: 12px 10px;
+            margin-bottom: 20px;
+
+            @include mq() {
+                padding: 22px 30px;
+            }
+        }
+
+        &-schedule {
+            color: $color-main;
+
+            &__time {}
+
+            &__pick-up {}
+
+            @include mq() {
+                font-size: 1.8rem;
+            }
+        }
+
+        &-list {
+            font-size: 1.4rem;
+
+            @include mq() {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .errorlist {
+        color: $color-alert;
+        list-style-position: inside;
+        font-size: 1.4rem;
+
+        >li {
+            &::before {
+                content: "・";
+                width: 3px;
+            }
+        }
+    }
+
+    .registration-form {
+        $self: getExtendClass(&);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        @include mq() {
+            margin: 35px 0;
+            align-items: center;
+            flex-direction: row;
+            column-gap: 20px;
+        }
+
+
+        &--anamnesis {
+            @extend #{$self};
+            width: 100%;
+            overflow-x: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__title {
+            $self: getExtendClass(&);
+
+            display: flex;
+            flex-direction: row;
+            margin: 10px 0px;
+            align-items: center;
+
+            >span,
+            label {
+                position: relative;
+                left: 1rem;
+
+                @include mq() {
+                    width: 206px;
+                }
+            }
+
+            &-text {
+                @include mq() {
+                    letter-spacing: -0.23rem;
+                }
+            }
+
+            &--pet-kind,
+            &--vaccine-date,
+            &--shelter {
+                @extend #{$self};
+            }
+
+            &--vaccine-date,
+            &--shelter {
+                @include mq() {
+                    >.icon__wrapper--required {
+                        position: relative;
+                        top: -1.2rem;
+                    }
+
+                    >span>span,
+                    label>span {
+                        display: block;
+                    }
+                }
+            }
+
+            @include mq() {
+                margin: 0;
+                flex-basis: 248px;
+                align-items: center;
+                align-self: flex-start;
+
+
+                &--vaccine {
+                    flex-basis: 248px;
+                    padding-left: 4rem;
+                    margin-bottom: 45px;
+                }
+
+                &--pet-kind {
+                    flex-basis: 248px;
+                    margin-bottom: 900px;
+                }
+            }
+        }
+
+        &__field {
+            $self: getExtendClass(&);
+
+            position: relative;
+
+            >* {
+                display: inline-block;
+            }
+
+            @include mq() {
+                flex-basis: 632px;
+            }
+
+            &--anamnesis {
+                @extend #{$self};
+                width: 100%;
+            }
+
+
+            &--worried {
+                @extend #{$self};
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                column-gap: 75px;
+                row-gap: 24px;
+
+                @include mq() {
+                    flex-basis: 380px;
+                    column-gap: 92px;
+                    row-gap: 32px;
+                }
+
+                >* {
+                    flex: 1;
+                    flex-basis: 20%;
+                }
+            }
+
+            &--feces,
+            &--drinking {
+                @extend #{$self};
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+
+        }
+    }
+
+    .input {
+        &__wrapper {
+
+            &--symptom,
+            &--part {
+                width: 178px;
+            }
+
+            &--symptom {
+                float: right;
+
+                &::after {
+                    display: block;
+                    clear: both;
+                }
+            }
+        }
+
+        &__area {
+            $self: getExtendClass(&);
+            padding: 1rem;
+            border: 0.1rem solid $color-border-gray;
+            border-radius: 0.5rem;
+
+            &:focus {
+                border: 0.1rem solid $color-focus;
+            }
+
+            &--pet-doctor {
+                @extend #{$self};
+                width: 340px;
+            }
+
+            &--pet-detail {
+                @extend #{$self};
+                width: 383px;
+            }
+        }
+    }
+
+    .textarea {
+        height: 70px;
+        padding: 0.75rem;
+
+        @include mq() {
+            height: 118px;
+        }
+
+        &__wrapper {
+            width: 100%;
+
+        }
+    }
+
+    .certificate-button {
+        display: block;
+        width: 220px;
+        margin: 30px auto;
+        margin-bottom: 66px;
+
+        @include mq() {
+            margin-bottom: 101px;
+        }
+    }
+
+    .icon {
+        &__wrapper {
+
+            &--optional,
+            &--required {
+                width: 32px;
+                min-width: 32px;
+                height: 17px;
+                margin-top: 0.5rem;
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .select {
+
+        &--shevron::after {
+            right: 0.5rem;
+        }
+
+        &__wrapper {
+            $self: getExtendClass(&);
+
+            &--symptom,
+            &--part {
+                @extend #{$self};
+                margin-left: 0;
+            }
+        }
+    }
+
+
+    .radio {
+        &__dog-kind {
+            &--label {
+                background-color: $color-calendar-background;
+                border-radius: 10px;
+                display: block;
+            }
+
+            &--radio:checked+&--label {
+                background-color: $color-thin-green;
+                border: $color-circle-border solid 1px;
+            }
+        }
+    }
+
+    .anamnesis-table {
+
+        min-width: 894px;
+
+        @include mq() {
+            width: 100%;
+        }
+
+        tr {
+            height: 46px;
+        }
+
+        &__header {
+            background-color: $color-bright-green;
+            @include font-shape($color-background-base, 1.4rem);
+            text-align: center;
+        }
+
+        &__cell {
+            >* {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        &__col {
+            &--symptom {
+                width: 40%;
+            }
+
+            &--part {
+                width: 20%;
+            }
+
+            &--detail {
+                width: auto;
+            }
+        }
+    }
+
+    @include mq() {
+
+        .errorlist {
+            font-size: 1.6rem;
+        }
+
+    }
+}

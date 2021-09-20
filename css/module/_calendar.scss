@@ -1,6 +1,4 @@
-.calendar {
-
-}
+.calendar {}
 
 .l__inner {
     padding: 4rem 2rem;
@@ -31,7 +29,7 @@
 }
 
 #ui-datepicker-div {
-    left: 2rem !important;
+    // left: 2rem !important;
 }
 
 .ui-datepicker-header {
@@ -45,7 +43,8 @@
     }
 }
 
-.ui-state-highlight, .ui-state-active {
+.ui-state-highlight,
+.ui-state-active {
     color: #fff !important;
 }
 
@@ -54,7 +53,8 @@
     border: none !important;
 }
 
-.ui-state-highlight, .ui-state-active {
+.ui-state-highlight,
+.ui-state-active {
     background-color: $color-calendar-highlight !important;
 }
 
