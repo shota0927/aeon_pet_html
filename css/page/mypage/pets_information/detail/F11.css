@@ -220,9 +220,18 @@ a:hover {
   width: 91%;
 }
 
+.f11__pic__main__wrapper .f11__pic__error-maesage span {
+  font-size: 12px;
+}
+
 @media screen and (min-width: 768px) {
   .f11__pic__main__wrapper .f11__pic__error-maesage {
-    display: none;
+    margin-left: 16%;
+    width: 68%;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
   }
 }
 
