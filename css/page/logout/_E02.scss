@@ -1,0 +1,45 @@
+header,
+.E02_content {
+    text-align: center;
+}
+
+.E02_content {
+
+    &__title {
+        font-size: 30px;
+        color: #6F8D1B;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top:33px;
+
+    }
+}
+
+
+.E02_nav__logout_ancer{
+  margin-bottom: 80px;
+}
+
+.E02_logout{
+  margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .E02_content {
+
+        &__title {
+          font-size: 24px;
+          color: #6F8D1B;
+          text-align: center;
+          margin-bottom: 18px;
+          margin-top:33px;
+
+        }
+    }
+    .E02_logout{
+      text-align: left;
+    }
+}

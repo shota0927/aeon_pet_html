@@ -293,6 +293,7 @@ a:hover {
   width: 430px;
 }
 
+<<<<<<< HEAD
 .e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--input .e03__fyp__input__area--email-address::-webkit-input-placeholder {
   color: #dedede;
 }
@@ -309,6 +310,8 @@ a:hover {
   color: #dedede;
 }
 
+=======
+>>>>>>> ceee0f7695a2bbe10091b07c22a98370d41a0be5
 @media screen and (max-width: 940px) {
   .e03__fyp__main-wrapper .e03__fyp__wrapper--input-email-address .e03__fyp__wrapper--input .e03__fyp__input__area--email-address {
     width: 100%;

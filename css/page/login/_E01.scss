@@ -1,0 +1,205 @@
+header,
+.E01_content {
+    text-align: center;
+}
+
+.E01_content {
+
+    &__title {
+        font-size: 30px;
+        color: #6F8D1B;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top:33px;
+
+    }
+}
+
+
+
+.E01_resistration-form {
+  display: flex;
+  width: 600px;
+  margin:0 auto;
+  margin-bottom: 40px;
+
+      &__title {
+          display: flex;
+          gap: 10px;
+          font-size: 16px;
+          align-items: center;
+          margin-right: 10px;
+      }
+}
+
+.E01_resistration-form_2 {
+  display: flex;
+  width: 600px;
+  margin:0 auto;
+  margin-bottom: 40px;
+
+      &__title_2 {
+          display: flex;
+          gap: 10px;
+          font-size: 16px;
+          align-items: center;
+          margin-right: 10px;
+      }
+}
+
+.E01_resistration-form__title--title_2{
+  margin-right: 30px;
+}
+
+
+.most-important-button{
+    width: 220px;
+    margin-top: 60px;
+}
+
+.E01_nav__gray{
+    background-color: #F8F8F8;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-bottom: 100px;
+    margin-left: 218px;
+    margin-right: 218px;
+}
+
+.E01_nav__text{
+  margin-bottom: 10px;
+}
+
+.sub-button{
+    margin-bottom: 30px;
+}
+
+.checkbox__wrapper--individual{
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.label__wrapper--checked {
+  position: relative;
+  width: 24rem;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  &::after {
+      position: absolute;
+      content: "次回から自動ログインする";
+      top: 50%;
+      left: 4rem;
+      transform: translateY(-40%)
+  }
+}
+
+.E01_icon-password {
+  display: block;
+    float: right;
+    position: relative;
+    z-index: 10;
+    top: 15px;
+    right: 30px;
+  
+  @include mq() {
+    
+    display: inline;
+    float: right;
+    top: 15px;
+    right: 30px;
+
+    &:hover {
+      cursor: pointer;
+  }
+  }
+
+  
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .E01_content {
+
+        &__title {
+          font-size: 24px;
+          color: #6F8D1B;
+          text-align: center;
+          margin-bottom: 18px;
+          margin-top:33px;
+
+        }
+    }
+
+    .E01_resistration-form {
+        display: inline;
+        align-items: center;
+        gap: 10px;
+
+        &__title {
+            display: flex;
+            margin-left: 17px;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+
+    .most-important-button{
+      width: 220px;
+      margin-bottom: 5px;
+      margin-top: 40px;
+  }
+
+    .icon__text--required{
+        font-size:10px;
+    }
+    .E01_nav__gray{
+      background-color: #F8F8F8;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-bottom: 46px;
+      margin-left: 17px;
+      margin-right: 17px;
+  }
+
+    .E01_nav__text{
+      text-align: center;
+      margin-right: 17px;
+      margin-left: 17px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .E01_nav__text__pass{
+      text-align: center;
+      margin-right: 17px;
+      margin-left: 17px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .E01_resistration-form_2 {
+      display: inline;
+      align-items: center;
+      gap: 10px;
+    
+          &__title_2 {
+            display: flex;
+            margin-left: 17px;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+    }
+
+    .E01_container{
+      margin-left: 10px;
+    }
+}

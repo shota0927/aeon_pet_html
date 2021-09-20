@@ -1,5 +1,9 @@
 .main__underline{
-  color: #707070;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border: 0; 
 }
 .main__pets__information__confirm__title{
   display: flex;
@@ -28,6 +32,9 @@
   }
   & .birthday-old{
     padding: 0 15px 18px 15px;
+  }
+  & .longcell-title{
+    line-height: 1.5;
   }
   & .longcell-text{
     display: table-cell;
