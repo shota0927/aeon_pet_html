@@ -2759,12 +2759,12 @@ a:hover {
 }
 
 .green_back {
-  height: 180px;
+  height: 107px;
   width: 100%;
   background-color: #E4EAD3;
   position: absolute;
   z-index: 1;
-  top: 331px;
+  top: 154px;
 }
 
 .main__home__mainpicture {
@@ -2773,14 +2773,15 @@ a:hover {
 
 .main__home__mainpicture .gallery {
   width: 100%;
-  height: 367px;
+  height: 150px;
   z-index: 2;
+  margin-top: 13px;
   /* cell number */
 }
 
 .main__home__mainpicture .gallery .gallery-cell {
-  width: 784px;
-  height: 367px;
+  width: 321px;
+  height: 150px;
   margin-right: 10px;
   background: #8C8;
   counter-increment: gallery-cell;
@@ -2797,7 +2798,7 @@ a:hover {
 }
 
 .main__home__title {
-  margin-top: 20px;
+  margin-top: 58px;
 }
 
 .main__home__title .booking-category-title {
@@ -2973,6 +2974,13 @@ a:hover {
     margin-bottom: 107px;
     margin-top: 10px;
   }
+  .main__home .main__home__mainpicture .gallery {
+    height: 367px;
+  }
+  .main__home .main__home__mainpicture .gallery .gallery-cell {
+    height: 367px;
+    width: 784px;
+  }
   .main__home .main__home__title {
     margin-top: 0;
   }
@@ -3037,6 +3045,10 @@ a:hover {
   }
   .main__home .main__home__login-wrapper {
     display: none;
+  }
+  .green_back {
+    height: 180px;
+    top: 331px;
   }
 }
 

@@ -3168,7 +3168,8 @@ PrevNextButton.prototype.createSVG = function() {
     path.setAttribute( 'transform', 'translate(100, 100) rotate(180) ' );
   }
   svg.appendChild( path );
-  return svg;
+  console.log(svg);
+  return svg
 };
 
 // get SVG path movmement

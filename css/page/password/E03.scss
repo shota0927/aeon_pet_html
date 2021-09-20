@@ -99,6 +99,10 @@
             .e03__fyp__input__area--email-address {
                 width: 430px;
 
+                &::placeholder {
+                    color: #dedede;
+                }
+
                 @media screen and(max-width:940px) {
                     width: 100%;
                 }
