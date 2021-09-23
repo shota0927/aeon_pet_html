@@ -1,0 +1,88 @@
+@import "../../../setting/reset";
+@import "../../../setting/setting";
+
+.c04__ch1__main__wrapper {
+    padding-top: 37px;
+    padding-left: 4.6%;
+    padding-right: 4.6%;
+    padding-bottom: 66px;
+
+    @media screen and(min-width:768px) {
+        padding-top: 42px;
+        padding-bottom: 101px;
+
+    }
+
+    .c04__ch1__inner__wrapper {
+        text-align: center;
+
+        .c04__ch1__txt--1 {
+            color: $color-main;
+            font-size: 24px;
+
+            @media screen and(min-width:768px) {
+                font-size: 30px;
+
+            }
+        }
+
+        .c04__ch1__txt--2 {
+            font-size: 16px;
+            text-align: left;
+            margin-top: 19px;
+
+            @media screen and(min-width:617px) {
+                text-align: center;
+            }
+
+            @media screen and(min-width:768px) {
+                margin-top: 43px;
+
+            }
+        }
+
+        .c04__ch1__btn__wrapper--1 {
+            margin-top: 38px;
+
+            @media screen and(min-width:768px) {
+                display: none;
+            }
+
+
+            .c04__ch1__btn--orange1 {
+                margin: 0 auto;
+                display: block;
+
+
+            }
+
+            .c04__ch1__btn--white1 {
+                margin: 20px auto 0 auto;
+                display: block;
+            }
+        }
+
+        .c04__ch1__btn__wrapper--2 {
+            margin-top: 46px;
+
+            @media screen and(max-width:767px) {
+                display: none;
+
+            }
+
+            .c04__ch1__btn--white2 {
+                margin: 0 10px 0 0;
+                width: 166px;
+
+
+            }
+
+            .c04__ch1__btn--orange2 {
+                margin: 0;
+                width: 166px;
+            }
+
+        }
+
+    }
+}

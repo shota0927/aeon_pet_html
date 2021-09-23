@@ -1,0 +1,176 @@
+@import "../../../setting/reset";
+@import "../../../setting/setting";
+
+.c04__ch3__main__wrapper {
+    padding-top: 37px;
+    padding-left: 4.6%;
+    padding-right: 4.6%;
+    padding-bottom: 66px;
+
+    @media screen and(min-width:768px) {
+        padding-top: 42px;
+        padding-bottom: 101px;
+        padding-left: 25.3%;
+        padding-right: 25.3%;
+
+    }
+
+    .c04__ch3__inner__wrapper {
+        text-align: center;
+
+        .c04__ch3__txt--1 {
+            color: $color-main;
+            font-size: 24px;
+
+            @media screen and(min-width:768px) {
+                font-size: 30px;
+
+            }
+        }
+
+        .c04__ch3__txt--2 {
+            font-size: 16px;
+            text-align: left;
+            margin-top: 19px;
+
+            @media screen and(min-width:768px) {
+                margin-top: 43px;
+                text-align: center;
+            }
+
+
+        }
+
+        .c04__ch3__txt--3 {
+            margin-top: 18px;
+            font-size: 12px;
+            text-align: left;
+
+            @media screen and(min-width:768px) {
+                text-align: center;
+
+            }
+
+
+        }
+
+        .c04__ch3__checkbox__area {
+            margin-left: 6%;
+            margin-top: 46px;
+
+            @media screen and(min-width:768px) {
+                margin-left: 31%;
+
+            }
+
+            .c04__ch3__checkbox__wrapper--individual:not(:first-child) {
+
+                margin-top: 32px;
+
+            }
+
+            .c04__ch3__label__wrapper--item--1 {
+
+                &::after {
+                    content: '小太郎（コタロウ）';
+                    left: 32px;
+                    top: 8px;
+                }
+
+                input[type=checkbox]:checked+.c04__ch3__checkbox__indicator {
+                    background-color: $color-main;
+                }
+
+                .c04__ch3__checkbox__indicator {
+                    width: 22px;
+                    height: 22px;
+
+                    &::after {
+                        width: 8px;
+                        height: 14px;
+                    }
+
+                }
+            }
+
+            .c04__ch3__label__wrapper--item--2 {
+
+                &::after {
+                    content: 'マロン（マロン）';
+                    left: 32px;
+                    top: 8px;
+                }
+
+                input[type=checkbox]:checked+.c04__ch3__checkbox__indicator {
+                    background-color: $color-main;
+                }
+
+                .c04__ch3__checkbox__indicator {
+                    width: 22px;
+                    height: 22px;
+
+                    &::after {
+                        width: 8px;
+                        height: 14px;
+                    }
+
+                }
+
+            }
+
+            .c04__ch3__label__wrapper--item--3 {
+
+                &::after {
+                    content: 'ムギ（ムギ）';
+                    left: 32px;
+                    top: 8px;
+                }
+
+                input[type=checkbox]:checked+.c04__ch3__checkbox__indicator {
+                    background-color: $color-main;
+                }
+
+                .c04__ch3__checkbox__indicator {
+                    width: 22px;
+                    height: 22px;
+
+                    &::after {
+                        width: 8px;
+                        height: 14px;
+                    }
+
+                }
+
+            }
+
+
+
+
+
+
+
+        }
+
+        .c04__ch3__btn__wrapper--1 {
+            margin-top: 46px;
+
+
+
+
+            .c04__ch3__btn--orange1 {
+                margin: 0 auto;
+                display: block;
+
+
+            }
+
+            .c04__ch3__btn--white1 {
+                margin: 20px auto 0 auto;
+                display: block;
+            }
+        }
+
+
+
+    }
+}

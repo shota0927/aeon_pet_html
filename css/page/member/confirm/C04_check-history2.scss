@@ -1,0 +1,128 @@
+@import "../../../setting/reset";
+@import "../../../setting/setting";
+
+.c04__ch2__main__wrapper {
+    padding-top: 37px;
+    padding-left: 4.6%;
+    padding-right: 4.6%;
+    padding-bottom: 66px;
+
+    @media screen and(min-width:768px) {
+        padding-top: 42px;
+        padding-bottom: 101px;
+        padding-left: 16%;
+        padding-right: 16%;
+
+    }
+
+    .c04__ch2__inner__wrapper {
+        text-align: center;
+
+        .c04__ch2__txt--1 {
+            color: $color-main;
+            font-size: 24px;
+
+            @media screen and(min-width:768px) {
+                font-size: 30px;
+
+            }
+        }
+
+        .c04__ch2__txt--2 {
+            font-size: 16px;
+            text-align: left;
+            margin-top: 19px;
+
+            @media screen and(min-width:476px) {
+                text-align: center;
+            }
+
+            @media screen and(min-width:768px) {
+                margin-top: 43px;
+
+            }
+        }
+
+        .c04__ch2__table__wrapper--1 {
+            margin-top: 28px;
+
+            @media screen and(min-width:768px) {
+                display: none;
+            }
+
+            tr {
+                line-height: 1.5;
+
+                td {
+                    text-align: left;
+                    font-size: 14px;
+
+                }
+            }
+        }
+
+        .c04__ch2__table__wrapper--2 {
+            margin-top: 48px;
+
+            @media screen and(max-width:767px) {
+                display: none;
+            }
+
+            th {
+                width: 26.7%;
+                font-size: 16px;
+
+            }
+
+            td {
+                text-align: left;
+                font-size: 16px;
+            }
+
+        }
+
+        .c04__ch2__btn__wrapper--1 {
+            margin-top: 30px;
+
+            @media screen and(min-width:768px) {
+                display: none;
+            }
+
+
+            .c04__ch2__btn--orange1 {
+                margin: 0 auto;
+                display: block;
+
+
+            }
+
+            .c04__ch2__btn--white1 {
+                margin: 20px auto 0 auto;
+                display: block;
+            }
+        }
+
+        .c04__ch2__btn__wrapper--2 {
+            margin-top: 40px;
+
+            @media screen and(max-width:767px) {
+                display: none;
+
+            }
+
+            .c04__ch2__btn--white2 {
+                margin: 0 10px 0 0;
+                width: 166px;
+
+
+            }
+
+            .c04__ch2__btn--orange2 {
+                margin: 0;
+                width: 166px;
+            }
+
+        }
+
+    }
+}
