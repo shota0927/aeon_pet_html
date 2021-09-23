@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta情報 -->
+  <title>会員登録（確認）｜PETEMO グルーミングサロン 予約サイト</title>
+  <meta name="description" content="PETEMO グルーミングサロン 予約サイトの「会員登録（確認）」ページです。イオンペットは、動物と人間の幸せな共生社会の実現を目指します。" />
+  <meta name="keywords" content="" />
+  <!-- reset css -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="../../../css/styles.css" />
+  <link rel="stylesheet" href="../../../css/page/member/confirm/C04_check-history1_multiple-entries.css">
+  <link rel="icon" href="" />
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header__left">
+      <h1>
+        <a href="/">
+          <picture class="header__logo" aria-hidden="true">
+            <source srcset="../../../image/common/logo-pc.png" media="(min-width: 768px)" class="header__logo-pc" />
+            <img src="../../../image/common/logo-sp.png" alt="ロゴ" class="header__logo-sp" />
+          </picture>
+        </a>
+      </h1>
+      <a href="" class="header__search"><img src="../../../image/common/search-icon.png" alt="サーチアイコン">店舗検索・ご予約</a>
+    </div>
+    <div class="header__right">
+      <div class="header__btns">
+        <a href="" class="header__login">ログイン</a>
+        <a href="" class="header__member">無料会員登録</a>
+      </div>
+      <div class="hamburger__menu js-hamburger--non-login">
+        <img src="../../../image/common/hamburger__menu-icon.png" alt="ハンバーガーアイコン">
+      </div>
+    </div>
+    <nav class="header__nav header-nav header-nav--non-login">
+      <div class="header-nav__title">
+        <p class="sp">こんにちは<br>ゲストさん (ログイン)</p>
+        <p class="pc">こんにちは　ゲストさん (ログイン)</p>
+        <div class="header-nav__bars js-bars">
+          <span class="header-nav__bar header-nav__bar--left"></span>
+          <span class="header-nav__bar header-nav__bar--right"></span>
+        </div>
+      </div>
+      <ul class="header-nav__items">
+        <li class="header-nav__item">
+          <a href="#"><img class="header-nav__title-icon" src="../../../image/common/home-icon.png" alt="">ホーム</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#"><img class="header-nav__title-icon" src="../../../image/common/search-icon-small.png"
+              alt="">店舗検索・ご予約</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#"><img class="header-nav__title-icon" src="../../../image/common/login-icon.png" alt="">ログイン</a>
+        </li>
+      </ul>
+      <ul class="header-nav__items">
+        <li class="header-nav__item">
+          <a href="#"><img class="header-nav__title-icon" src="../../../image/common/booking-icon-green.png"
+              alt="">ご予約方法</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#"><img class="header-nav__title-icon" src="../../../image/common/mypage-icon-green.png"
+              alt="">マイページのご利用方法</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__burger-musk"></div>
+  </header>
+
+  <!-- パンくずリスト -->
+  <div class="breadcrumb container">
+    <div class="inner">
+      <span class="breadcrumb__item">
+        <a href="" class="brandcrumb__item-link">
+          <img src="../../../image/common/breadcrumb-top-icon.png" alt="トップに戻るアイコン" class="breadcrumb__item-icon">
+        </a>
+      </span>
+      /
+      <span class="breadcrumb__item breadcrumb__item--orange">
+        <a href="" class="brandcrumb__item-link">
+          会員登録（確認）
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <!-- メイン -->
+  <div class="c04__ch1m__main__wrapper">
+    <div class="c04__ch1m__inner__wrapper">
+      <p class="c04__ch1m__txt--1">ご利用履歴の確認</p>
+      <p class="c04__ch1m__txt--2">過去のご利用履歴をお調べしましたが、自動紐づけができませんでした。
+        <br>以下の理由等が考えられますので、お手数をおかけしますが、ご来店の際にスタッフまでお声がけくださいますようお願いいたします。
+      </p>
+      <div class="c04__ch1m__gray__area">
+        <p class="c04__ch1m__gray__txt--1">
+          ・お客さまに該当する可能性のある情報が複数存在する<br>
+          ・お客さまに該当する情報を見つけることができない
+        </p>
+      </div>
+      <p class="c04__ch1m__txt--3">※過去にネコちゃんまたは超大型犬への施術をご利用をいただいたお客さまも、サロンにてスタッフにご利用履歴の確認をお申し付けください。</p>
+      <a href="" class="anchor-text c04__ch1m__anchor-text"><span class="anchor-text__right-arrow"></span>トップページへ戻る</a>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- フッター -->
+  <footer class="footer">
+    <a class="footer__page-top-button" href="#">
+      <span></span>
+    </a>
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img src="../../../image/common/footer-logo.png" alt="ロゴ">
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__nav-items--top">
+          <li class="footer__nav-item--top">
+            <a href="">
+              <img class="footer__icon" src="../../../image/common/booking-icon.png" alt="">ご予約方法
+            </a>
+          </li>
+          <li class="footer__nav-item--top">
+            <a href="">
+              <img class="footer__icon" src="../../../image/common/mypage-icon.png" alt="">マイページのご利用方法
+            </a>
+          </li>
+        </ul>
+        <div class="footer__wrapper">
+          <ul class="footer__nav-items--bottom-left">
+            <li class="footer__nav-item">
+              <a href=""><span class="footer__arrow-right"></span>
+                会員規約
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="">
+                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">プライバシーポリシー
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="">
+                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">お問い合わせ
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="">
+                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">企業情報
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__nav-items--bottom-right">
+            <li class="footer__nav-item">
+              <a href=""><span class="footer__arrow-right"></span>
+                当サイトのご利用規約
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="">
+                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">よくあるご質問
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="">
+                <img class="footer__icon--page" src="../../../image/common/page-icon.png" alt="">サービスについて
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <small class="footer__copyright">Copyright Aeonpet.Co.LTD.All rights reserved.</small>
+    </div>
+  </footer>
+
+
+  <!-- js -->
+  <script defer type="text/javascript" src="../js/script.js"></script>
+</body>
+
+</html>
