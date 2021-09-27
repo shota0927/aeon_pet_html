@@ -39,8 +39,7 @@ body.f16 {
     }
 
     input,
-    textarea,
-    select {
+    textarea {
         font-size: 1.4rem;
 
         &::placeholder {
@@ -49,8 +48,23 @@ body.f16 {
     }
 
     select {
+        font-size: 1.4rem;
+
+        &:invalid {
+            color: $color-switch-off;
+        }
+
+        &:disabled {
+            color: $color-switch-off;
+        }
+
         option {
             color: black;
+
+            &:disabled {
+                display: none;
+                color: $color-switch-off;
+            }
         }
     }
 

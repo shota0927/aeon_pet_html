@@ -62,6 +62,8 @@ body.f12 {
             transform: rotate(45deg) translateY(-50%);
             width: 8px;
             height: 8px;
+            position: relative;
+            top: 2px;
         }
 
         &--back {
@@ -231,7 +233,14 @@ body.f12 {
         }
 
         &__title-text {
-            letter-spacing: -0.1rem;
+            &--shelter {
+                letter-spacing: -0.1rem;
+                position: static;
+
+                @include mq() {
+                    letter-spacing: 0;
+                }
+            }
         }
 
         &__field {
@@ -374,10 +383,10 @@ body.f12 {
         display: block;
         width: 220px;
         margin: 0 auto;
-        margin-bottom: 66px;
+        margin-bottom: 35px;
 
         @include mq() {
-            margin-bottom: 101px;
+            margin-bottom: 40px;
 
         }
     }
@@ -600,11 +609,11 @@ body.f12 {
 
             @include mq() {
                 width: 930px;
-                height: 738px;
+                max-height: 738px;
             }
 
             .tab-table {
-                display: flex;
+                display: block;
                 flex-wrap: wrap;
                 flex-direction: row;
                 gap: 0px;
@@ -657,6 +666,14 @@ body.f12 {
                     flex-basis: 100%;
                     display: none;
                     font-size: 1.4rem;
+
+                    @media screen and (max-height: 667px) {
+                        height: 80%;
+                    }
+
+                    @media screen and (max-height: 482px) {
+                        height: 70%;
+                    }
                 }
 
                 &__radio {
@@ -676,6 +693,17 @@ body.f12 {
                     >* {
                         width: 166px;
                         margin: 0;
+                    }
+
+                    @include mq() {
+
+                        @media screen and (max-height: 667px) {
+                            top: 50px;
+                        }
+
+                        @media screen and (max-height: 482px) {
+                            top: 70px;
+                        }
                     }
                 }
             }

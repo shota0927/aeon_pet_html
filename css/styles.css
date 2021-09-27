@@ -3742,12 +3742,12 @@ body.b02 .google-map {
   display: block;
   max-width: 930px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 16px 0;
 }
 
 body.b02 .google-map__map {
   display: block;
-  margin-top: 5%;
+  margin-top: 0;
   width: 100%;
   height: 480px;
   border: none;
@@ -3760,20 +3760,21 @@ body.b02 .google-map__map {
 }
 
 body.b02 .google-map__button {
-  margin: 5% auto 10% auto;
+  margin: 45px auto;
   max-width: 277px;
 }
 
 @media (min-width: 768px) {
   body.b02 .google-map {
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 31px 0;
   }
   body.b02 .google-map__map {
     height: 480px;
   }
   body.b02 .google-map__button {
     width: 277px;
+    margin: 40px auto;
   }
 }
 
@@ -3904,11 +3905,13 @@ body.b02 .none {
   text-align: center;
   color: #6F8D1B;
   width: 108px;
+  padding-bottom: 7px;
 }
 
 @media (min-width: 768px) {
   .tab-box__tab-label {
     width: 151px;
+    padding-bottom: 17px;
   }
 }
 
@@ -4664,11 +4667,13 @@ body.c03 .content__title {
 body.c03 .content__note {
   margin-bottom: 30px;
   width: 100%;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
   body.c03 .content__note {
     margin-bottom: 43px;
+    text-align: center;
   }
 }
 
@@ -4827,7 +4832,7 @@ body.c03 .registration-form__field--name, body.c03 .registration-form__field--po
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 body.c03 .registration-form__field--birth {
@@ -4932,6 +4937,7 @@ body.c03 .input__wrapper--relation {
 
 body.c03 .input__wrapper--prefecture {
   width: 120px;
+  margin-right: 5px;
 }
 
 body.c03 .input__name--label {
@@ -5059,7 +5065,7 @@ body.c03 .certificate-button {
 }
 
 body.c03 .caution--title {
-  margin: 0.5rem;
+  margin-left: 5px;
   font-size: 1.2rem;
 }
 
@@ -5074,9 +5080,17 @@ body.c03 .caution--representative {
 
 body.c03 .caution--password {
   font-size: 1.2rem;
-  letter-spacing: -1.9px;
+  letter-spacing: -1.2px;
   display: block;
   width: 340px;
+  position: relative;
+  top: -10px;
+}
+
+@media (min-width: 768px) {
+  body.c03 .caution--password {
+    position: static;
+  }
 }
 
 body.c03 .icon__wrapper--optional {
@@ -5087,6 +5101,23 @@ body.c03 .icon__wrapper--optional, body.c03 .icon__wrapper--required {
   width: 32px;
   min-width: 32px;
   height: 17px;
+}
+
+body.c03 .icon__wrapper--relation {
+  display: inline-block;
+  text-align: center;
+  margin-right: 8px;
+}
+
+body.c03 .icon__wrapper--relation > * {
+  position: relative;
+  top: -1px;
+}
+
+@media (min-width: 768px) {
+  body.c03 .icon__wrapper--relation {
+    display: none;
+  }
 }
 
 body.c03 .select__wrapper--shevron::after {
@@ -5691,6 +5722,8 @@ body.c06 .anchor-text::before, body.c06 .anchor-text--back::before, body.c06 .an
   transform: rotate(45deg) translateY(-50%);
   width: 8px;
   height: 8px;
+  position: relative;
+  top: 2px;
 }
 
 body.c06 .anchor-text--back {
@@ -5906,8 +5939,15 @@ body.f09 body.c06 .registration-form__title--representative label {
   }
 }
 
-body.c06 .registration-form__title-text {
+body.c06 .registration-form__title-text--shelter {
   letter-spacing: -0.1rem;
+  position: static;
+}
+
+@media (min-width: 768px) {
+  body.c06 .registration-form__title-text--shelter {
+    letter-spacing: 0;
+  }
 }
 
 body.c06 .registration-form__field, body.c06 body.c03 .registration-form__field--postal, body.c03 body.c06 .registration-form__field--postal, body.c06 body.c03 .registration-form__field--birth, body.c03 body.c06 .registration-form__field--birth, body.c06 body.c03 .registration-form__field--representative, body.c03 body.c06 .registration-form__field--representative, body.c06 body.c03 .registration-form__field--sex, body.c03 body.c06 .registration-form__field--sex, body.c06 body.c03 .registration-form__field--dm, body.c03 body.c06 .registration-form__field--dm, body.c06 .registration-form__field--name, body.c06 .registration-form__field--pet-birth, body.c06 body.f09 .registration-form__field--postal, body.f09 body.c06 .registration-form__field--postal, body.c06 body.f09 .registration-form__field--birth, body.f09 body.c06 .registration-form__field--birth, body.c06 body.f09 .registration-form__field--representative, body.f09 body.c06 .registration-form__field--representative, body.c06 body.f09 .registration-form__field--relation, body.f09 body.c06 .registration-form__field--relation, body.c06 body.f09 .registration-form__field--sex, body.f09 body.c06 .registration-form__field--sex, body.c06 body.f09 .registration-form__field--dm, body.f09 body.c06 .registration-form__field--dm, body.c06 body.f16 .registration-form__field--anamnesis, body.f16 body.c06 .registration-form__field--anamnesis, body.c06 body.f16 .registration-form__field--worried, body.f16 body.c06 .registration-form__field--worried, body.c06 body.f16 .registration-form__field--feces, body.f16 body.c06 .registration-form__field--feces, body.c06 body.f16 .registration-form__field--drinking, body.f16 body.c06 .registration-form__field--drinking {
@@ -6264,14 +6304,12 @@ body.c06 .modal-container__content {
 @media (min-width: 768px) {
   body.c06 .modal-container__content {
     width: 930px;
-    height: 738px;
+    max-height: 738px;
   }
 }
 
 body.c06 .modal-container__content .tab-table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -6345,6 +6383,18 @@ body.c06 .modal-container__content .tab-table__content {
   font-size: 1.4rem;
 }
 
+@media screen and (max-height: 667px) {
+  body.c06 .modal-container__content .tab-table__content {
+    height: 80%;
+  }
+}
+
+@media screen and (max-height: 482px) {
+  body.c06 .modal-container__content .tab-table__content {
+    height: 70%;
+  }
+}
+
 body.c06 .modal-container__content .tab-table__radio {
   color: #6F8D1B;
 }
@@ -6372,6 +6422,18 @@ body.c06 .modal-container__content .tab-table__button-container {
 body.c06 .modal-container__content .tab-table__button-container > * {
   width: 166px;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-height: 667px) {
+  body.c06 .modal-container__content .tab-table__button-container {
+    top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 482px) {
+  body.c06 .modal-container__content .tab-table__button-container {
+    top: 70px;
+  }
 }
 
 body.c06 .modal-container__content .kana-list {
@@ -9511,7 +9573,7 @@ body.f09 .content__title {
   font-weight: normal;
   font-family: "Noto Sans JP", sans-serif;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: 768px) {
@@ -9682,7 +9744,7 @@ body.f09 .registration-form__field--name, body.f09 .registration-form__field--po
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 body.f09 .registration-form__field--birth {
@@ -9794,6 +9856,7 @@ body.f09 .input__wrapper--relation {
 
 body.f09 .input__wrapper--prefecture {
   width: 120px;
+  margin-right: 5px;
 }
 
 body.f09 .input__name--label {
@@ -9930,9 +9993,18 @@ body.f09 .caution--representative {
 
 body.f09 .caution--password {
   font-size: 1.2rem;
-  letter-spacing: -2.15px;
+  letter-spacing: -1.2px;
   display: block;
   width: 340px;
+  position: relative;
+  top: -10px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  body.f09 .caution--password {
+    position: static;
+  }
 }
 
 body.f09 .icon__wrapper--optional {
@@ -9943,6 +10015,23 @@ body.f09 .icon__wrapper--optional, body.f09 .icon__wrapper--required {
   width: 32px;
   min-width: 32px;
   height: 17px;
+}
+
+body.f09 .icon__wrapper--relation {
+  display: inline-block;
+  text-align: center;
+  margin-right: 8px;
+}
+
+body.f09 .icon__wrapper--relation > * {
+  position: relative;
+  top: -1px;
+}
+
+@media (min-width: 768px) {
+  body.f09 .icon__wrapper--relation {
+    display: none;
+  }
 }
 
 body.f09 .radio__wrapper--individual, body.f09 body.c06 .radio__wrapper--vaccine, body.c06 body.f09 .radio__wrapper--vaccine, body.f09 body.f12 .radio__wrapper--vaccine, body.f12 body.f09 .radio__wrapper--vaccine, body.f09 body.f13 .radio__wrapper--vaccine, body.f13 body.f09 .radio__wrapper--vaccine {
@@ -10465,6 +10554,8 @@ body.f12 .anchor-text::before, body.f12 .anchor-text--back::before, body.f12 .an
   transform: rotate(45deg) translateY(-50%);
   width: 8px;
   height: 8px;
+  position: relative;
+  top: 2px;
 }
 
 body.f12 .anchor-text--back {
@@ -10679,8 +10770,15 @@ body.f12 .registration-form__title--shelter label {
   }
 }
 
-body.f12 .registration-form__title-text {
+body.f12 .registration-form__title-text--shelter {
   letter-spacing: -0.1rem;
+  position: static;
+}
+
+@media (min-width: 768px) {
+  body.f12 .registration-form__title-text--shelter {
+    letter-spacing: 0;
+  }
 }
 
 body.f12 .registration-form__field, body.f12 body.c03 .registration-form__field--postal, body.c03 body.f12 .registration-form__field--postal, body.f12 body.c03 .registration-form__field--birth, body.c03 body.f12 .registration-form__field--birth, body.f12 body.c03 .registration-form__field--representative, body.c03 body.f12 .registration-form__field--representative, body.f12 body.c03 .registration-form__field--sex, body.c03 body.f12 .registration-form__field--sex, body.f12 body.c03 .registration-form__field--dm, body.c03 body.f12 .registration-form__field--dm, body.f12 body.f09 .registration-form__field--postal, body.f09 body.f12 .registration-form__field--postal, body.f12 body.f09 .registration-form__field--birth, body.f09 body.f12 .registration-form__field--birth, body.f12 body.f09 .registration-form__field--representative, body.f09 body.f12 .registration-form__field--representative, body.f12 body.f09 .registration-form__field--relation, body.f09 body.f12 .registration-form__field--relation, body.f12 body.f09 .registration-form__field--sex, body.f09 body.f12 .registration-form__field--sex, body.f12 body.f09 .registration-form__field--dm, body.f09 body.f12 .registration-form__field--dm, body.f12 .registration-form__field--name, body.f12 .registration-form__field--pet-birth, body.f12 body.f16 .registration-form__field--anamnesis, body.f16 body.f12 .registration-form__field--anamnesis, body.f12 body.f16 .registration-form__field--worried, body.f16 body.f12 .registration-form__field--worried, body.f12 body.f16 .registration-form__field--feces, body.f16 body.f12 .registration-form__field--feces, body.f12 body.f16 .registration-form__field--drinking, body.f16 body.f12 .registration-form__field--drinking {
@@ -10835,12 +10933,12 @@ body.f12 .certificate-button {
   display: block;
   width: 220px;
   margin: 0 auto;
-  margin-bottom: 66px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: 768px) {
   body.f12 .certificate-button {
-    margin-bottom: 101px;
+    margin-bottom: 40px;
   }
 }
 
@@ -11037,14 +11135,12 @@ body.f12 .modal-container__content {
 @media (min-width: 768px) {
   body.f12 .modal-container__content {
     width: 930px;
-    height: 738px;
+    max-height: 738px;
   }
 }
 
 body.f12 .modal-container__content .tab-table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -11118,6 +11214,18 @@ body.f12 .modal-container__content .tab-table__content {
   font-size: 1.4rem;
 }
 
+@media screen and (max-height: 667px) {
+  body.f12 .modal-container__content .tab-table__content {
+    height: 80%;
+  }
+}
+
+@media screen and (max-height: 482px) {
+  body.f12 .modal-container__content .tab-table__content {
+    height: 70%;
+  }
+}
+
 body.f12 .modal-container__content .tab-table__radio {
   color: #6F8D1B;
 }
@@ -11145,6 +11253,18 @@ body.f12 .modal-container__content .tab-table__button-container {
 body.f12 .modal-container__content .tab-table__button-container > * {
   width: 166px;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-height: 667px) {
+  body.f12 .modal-container__content .tab-table__button-container {
+    top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 482px) {
+  body.f12 .modal-container__content .tab-table__button-container {
+    top: 70px;
+  }
 }
 
 body.f12 .modal-container__content .kana-list {
@@ -11630,6 +11750,8 @@ body.f13 .anchor-text::before, body.f13 .anchor-text--back::before, body.f13 .an
   transform: rotate(45deg) translateY(-50%);
   width: 8px;
   height: 8px;
+  position: relative;
+  top: 2px;
 }
 
 body.f13 .anchor-text--back {
@@ -11844,8 +11966,15 @@ body.f13 .registration-form__title--shelter label {
   }
 }
 
-body.f13 .registration-form__title-text {
+body.f13 .registration-form__title-text--shelter {
   letter-spacing: -0.1rem;
+  position: static;
+}
+
+@media (min-width: 768px) {
+  body.f13 .registration-form__title-text--shelter {
+    letter-spacing: 0;
+  }
 }
 
 body.f13 .registration-form__field, body.f13 body.c03 .registration-form__field--postal, body.c03 body.f13 .registration-form__field--postal, body.f13 body.c03 .registration-form__field--birth, body.c03 body.f13 .registration-form__field--birth, body.f13 body.c03 .registration-form__field--representative, body.c03 body.f13 .registration-form__field--representative, body.f13 body.c03 .registration-form__field--sex, body.c03 body.f13 .registration-form__field--sex, body.f13 body.c03 .registration-form__field--dm, body.c03 body.f13 .registration-form__field--dm, body.f13 body.f09 .registration-form__field--postal, body.f09 body.f13 .registration-form__field--postal, body.f13 body.f09 .registration-form__field--birth, body.f09 body.f13 .registration-form__field--birth, body.f13 body.f09 .registration-form__field--representative, body.f09 body.f13 .registration-form__field--representative, body.f13 body.f09 .registration-form__field--relation, body.f09 body.f13 .registration-form__field--relation, body.f13 body.f09 .registration-form__field--sex, body.f09 body.f13 .registration-form__field--sex, body.f13 body.f09 .registration-form__field--dm, body.f09 body.f13 .registration-form__field--dm, body.f13 .registration-form__field--name, body.f13 .registration-form__field--pet-birth, body.f13 body.f16 .registration-form__field--anamnesis, body.f16 body.f13 .registration-form__field--anamnesis, body.f13 body.f16 .registration-form__field--worried, body.f16 body.f13 .registration-form__field--worried, body.f13 body.f16 .registration-form__field--feces, body.f16 body.f13 .registration-form__field--feces, body.f13 body.f16 .registration-form__field--drinking, body.f16 body.f13 .registration-form__field--drinking {
@@ -12000,12 +12129,12 @@ body.f13 .certificate-button {
   display: block;
   width: 220px;
   margin: 0 auto;
-  margin-bottom: 66px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: 768px) {
   body.f13 .certificate-button {
-    margin-bottom: 101px;
+    margin-bottom: 40px;
   }
 }
 
@@ -12202,14 +12331,12 @@ body.f13 .modal-container__content {
 @media (min-width: 768px) {
   body.f13 .modal-container__content {
     width: 930px;
-    height: 738px;
+    max-height: 738px;
   }
 }
 
 body.f13 .modal-container__content .tab-table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -12283,6 +12410,18 @@ body.f13 .modal-container__content .tab-table__content {
   font-size: 1.4rem;
 }
 
+@media screen and (max-height: 667px) {
+  body.f13 .modal-container__content .tab-table__content {
+    height: 80%;
+  }
+}
+
+@media screen and (max-height: 482px) {
+  body.f13 .modal-container__content .tab-table__content {
+    height: 70%;
+  }
+}
+
 body.f13 .modal-container__content .tab-table__radio {
   color: #6F8D1B;
 }
@@ -12310,6 +12449,18 @@ body.f13 .modal-container__content .tab-table__button-container {
 body.f13 .modal-container__content .tab-table__button-container > * {
   width: 166px;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-height: 667px) {
+  body.f13 .modal-container__content .tab-table__button-container {
+    top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 482px) {
+  body.f13 .modal-container__content .tab-table__button-container {
+    top: 70px;
+  }
 }
 
 body.f13 .modal-container__content .kana-list {
@@ -12825,37 +12976,49 @@ body.f16 .checkbox-button-module--symptom {
 }
 
 body.f16 input,
-body.f16 textarea,
-body.f16 select {
+body.f16 textarea {
   font-size: 1.4rem;
 }
 
 body.f16 input::-webkit-input-placeholder,
-body.f16 textarea::-webkit-input-placeholder,
-body.f16 select::-webkit-input-placeholder {
+body.f16 textarea::-webkit-input-placeholder {
   color: #DEDEDE;
 }
 
 body.f16 input:-ms-input-placeholder,
-body.f16 textarea:-ms-input-placeholder,
-body.f16 select:-ms-input-placeholder {
+body.f16 textarea:-ms-input-placeholder {
   color: #DEDEDE;
 }
 
 body.f16 input::-ms-input-placeholder,
-body.f16 textarea::-ms-input-placeholder,
-body.f16 select::-ms-input-placeholder {
+body.f16 textarea::-ms-input-placeholder {
   color: #DEDEDE;
 }
 
 body.f16 input::placeholder,
-body.f16 textarea::placeholder,
-body.f16 select::placeholder {
+body.f16 textarea::placeholder {
+  color: #DEDEDE;
+}
+
+body.f16 select {
+  font-size: 1.4rem;
+}
+
+body.f16 select:invalid {
+  color: #DEDEDE;
+}
+
+body.f16 select:disabled {
   color: #DEDEDE;
 }
 
 body.f16 select option {
   color: black;
+}
+
+body.f16 select option:disabled {
+  display: none;
+  color: #DEDEDE;
 }
 
 body.f16 header,
