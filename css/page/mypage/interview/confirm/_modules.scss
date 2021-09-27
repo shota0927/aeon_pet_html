@@ -1,6 +1,6 @@
-@import "../../../../setting/_setting.scss";
+@import "../../../../setting/setting";
 
-.radio-button-module {
+.f17-radio-button-module {
     display: inline-block;
 
     &__radio {
@@ -41,7 +41,7 @@
     }
 }
 
-.checkbox-button-module {
+.f17-checkbox-button-module {
     display: inline-block;
 
     &__checkbox {
@@ -80,7 +80,7 @@
 
         &::after {
             position: absolute;
-            top: calc(auto - 0.25rem);
+            top: 0.25rem;
             left: 1rem;
             display: block;
             width: 1rem;
@@ -103,7 +103,7 @@
     background-color: $color-switch-off;
 }
 
-.button-module {
+.f17-button-module {
     border-radius: 25px;
     background-color: $color-icon-default;
     display: flex;
@@ -123,11 +123,11 @@ select {
     }
 }
 
-.header__burger-musk {
+.f17-header__burger-musk {
     opacity: 0.8;
     height: 100%;
 }
 
-.header-nav {
+.f17-header-nav {
     height: 100%;
 }
