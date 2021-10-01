@@ -1,31 +1,32 @@
 $(function () {
   var preModalPet = "";
 
-  $(".modal-container__content").on("click", function () {
-    event.stopPropagation();
+  $(".f12-modal-container__content").on("click", function (e) {
+    e.stopPropagation();
   });
 
-  $(document).on("click", ".modal-open", function () {
-    $(".modal-container").fadeIn();
-    preModalPet = "#" + $("input[name='radio__dog-kind']:checked")[0].id;
+  $(document).on("click", ".f12-modal-open", function (e) {
+    e.preventDefault();
+    $(".f12-modal-container").fadeIn();
+    preModalPet = "#" + $("input[name='f12-radio__dog-kind']:checked")[0].id;
     return false;
   });
-  $(".modal-close").on("click", function () {
-    $("input[name='radio__dog-kind']:checked").prop("checked", false);
+  $(".f12-modal-close").on("click", function () {
+    $("input[name='f12-radio__dog-kind']:checked").prop("checked", false);
     $(preModalPet).prop("checked", true);
-    $(".modal-container").fadeOut();
+    $(".f12-modal-container").fadeOut();
     return false;
   });
 
-  $(".cancel-kind").on("click", function () {
+  $(".f12-cancel-kind").on("click", function () {
     $(preModalPet).prop("checked", true);
-    $(".modal-container").fadeOut();
+    $(".f12-modal-container").fadeOut();
     return false;
   });
 
-  $(".decide-kind").on("click", function () {
-    $("input[name='radio__dog-kind']:checked").prop("checked", true);
-    $(".modal-container").fadeOut();
+  $(".f12-decide-kind").on("click", function () {
+    $("input[name='f12-radio__dog-kind']:checked").prop("checked", true);
+    $(".f12-modal-container").fadeOut();
     return false;
   });
 
