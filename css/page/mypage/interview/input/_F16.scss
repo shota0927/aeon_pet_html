@@ -72,9 +72,7 @@ select {
     }
 }
 
-body.f16,
-header,
-footer {
+body.f16 {
     min-width: 375px;
 
     @include mq() {

@@ -3550,9 +3550,7 @@ select::placeholder {
   height: 100%;
 }
 
-body.b02,
-header,
-footer {
+body.b02 {
   font-size: 1.6rem;
   color: #333;
   font-weight: normal;
@@ -3560,9 +3558,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  body.b02,
-  header,
-  footer {
+  body.b02 {
     min-width: 1336px;
   }
 }
@@ -4588,9 +4584,7 @@ select {
   font-size: 1.4rem;
 }
 
-body.c03,
-header,
-footer {
+body.c03 {
   font-size: 1.6rem;
   color: #333;
   font-weight: normal;
@@ -4599,9 +4593,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  body.c03,
-  header,
-  footer {
+  body.c03 {
     min-width: 1336px;
   }
 }
@@ -5709,9 +5701,7 @@ select {
   }
 }
 
-body.c06,
-header,
-footer {
+body.c06 {
   font-size: 1.6rem;
   color: #333;
   font-weight: normal;
@@ -5720,9 +5710,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  body.c06,
-  header,
-  footer {
+  body.c06 {
     min-width: 1336px;
   }
 }
@@ -9443,9 +9431,7 @@ select {
   }
 }
 
-body.f09,
-header,
-footer {
+body.f09 {
   font-size: 1.6rem;
   color: #333;
   font-weight: normal;
@@ -9454,9 +9440,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  body.f09,
-  header,
-  footer {
+  body.f09 {
     min-width: 1336px;
   }
 }
@@ -10475,9 +10459,7 @@ select {
   }
 }
 
-body.c06,
-header,
-footer {
+body.c06 {
   font-size: 1.6rem;
   color: #333;
   font-weight: normal;
@@ -10486,9 +10468,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  body.c06,
-  header,
-  footer {
+  body.c06 {
     min-width: 1336px;
   }
 }
@@ -11620,9 +11600,7 @@ select {
   }
 }
 
-body.c06,
-header,
-footer {
+body.c06 {
   font-size: 1.6rem;
   color: #333;
   font-weight: normal;
@@ -11631,9 +11609,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  body.c06,
-  header,
-  footer {
+  body.c06 {
     min-width: 1336px;
   }
 }
@@ -12962,16 +12938,12 @@ select option:disabled {
   color: #DEDEDE;
 }
 
-body.f16,
-header,
-footer {
+body.f16 {
   min-width: 375px;
 }
 
 @media (min-width: 768px) {
-  body.f16,
-  header,
-  footer {
+  body.f16 {
     min-width: 1336px;
   }
 }
@@ -13659,16 +13631,12 @@ select {
   font-size: 1.4rem;
 }
 
-body.f17,
-header,
-footer {
+body.f17 {
   min-width: 375px;
 }
 
 @media (min-width: 768px) {
-  body.f17,
-  header,
-  footer {
+  body.f17 {
     min-width: 1336px;
   }
 }

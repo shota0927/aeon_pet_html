@@ -20,9 +20,7 @@ select {
     font-size: 1.4rem;
 }
 
-body.c03,
-header,
-footer {
+body.c03 {
     @include font-shape($color-text-main, 1.6rem);
     min-width: 375px;
 

@@ -21,9 +21,7 @@ select {
     font-size: $font-size--sp-normal;
 }
 
-body.f17,
-header,
-footer {
+body.f17 {
     min-width: 375px;
 
     @include mq() {

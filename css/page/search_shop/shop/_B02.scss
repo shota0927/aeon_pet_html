@@ -13,9 +13,7 @@
     @return $self;
 }
 
-body.b02,
-header,
-footer {
+body.b02 {
     @include font-shape($color-text-main, 1.6rem);
     min-width: 375px;
 

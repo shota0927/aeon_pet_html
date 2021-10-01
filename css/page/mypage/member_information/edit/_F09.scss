@@ -61,9 +61,7 @@ select {
     }
 }
 
-body.f09,
-header,
-footer {
+body.f09 {
     @include font-shape($color-text-main, 1.6rem);
     min-width: 375px;
 
